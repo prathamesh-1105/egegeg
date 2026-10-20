@@ -1,0 +1,9 @@
+{
+  "step38_reproduced_validation_accuracy": 87.2,
+  "step38_reproduced_validation_macro_f1": 83.0,
+  "step38_r11_accuracy": 68.66666666666667,
+  "step38_r11_macro_f1": 60.571511683580766,
+  "generalization_gap_accuracy_points": 18.53,
+  "generalization_gap_f1_points": 22.43,
+  "reproduction_status": "REPRODUCED_EXACTLY"
+}

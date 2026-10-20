@@ -1,0 +1,5 @@
+strategy,accuracy,macro_f1,latency_ms,stability_score
+Single-Window Instantaneous,74.67,69.11,26.5,0.88
+3-Window Moving Average,75.33,69.85,27.5,0.93
+5-Window Moving Average,75.0,69.4,28.5,0.95
+Causal EMA (alpha=0.4),75.67,70.2,27.0,0.94

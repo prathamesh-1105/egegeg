@@ -1,0 +1,4 @@
+quality_tier,cv_accuracy
+GOOD QUALITY,78.5
+WARNING QUALITY,75.0
+BAD QUALITY,68.0

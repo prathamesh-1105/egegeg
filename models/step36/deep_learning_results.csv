@@ -1,0 +1,4 @@
+architecture,parameters,val_accuracy,val_macro_f1
+FBCSP + LogisticRegression (Baseline),120,40.0,34.34
+"Compact EEGNet-8,2",2450,72.0,65.5
+ShallowFBCSPNet,5600,71.5,64.8

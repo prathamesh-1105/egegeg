@@ -1,0 +1,7 @@
+{
+  "architecture": "Step 45 Targeted Motor Recovery System",
+  "p_rest_threshold": 0.65,
+  "p_margin_min": 0.15,
+  "recovery_strategy": "Two-Pass Motor Recovery Gate",
+  "decision": "KEEP STEP 34"
+}

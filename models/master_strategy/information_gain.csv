@@ -1,0 +1,4 @@
+feature_combination,incremental_cv_accuracy
+FBCSP Only,74.5
+FBCSP + Contralateral Asymmetry,76.8
+FBCSP + Contralateral ERD + Asymmetry,77.8

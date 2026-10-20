@@ -1,0 +1,3 @@
+model,unseen_acc,motor_acc
+Step 56 Baseline Regularized LDA,85.8,81.2
+Step 57 Multi-Channel C3/C4/Cz/FC3/FC4 ERD Asymmetry Decoder,86.2,82.1

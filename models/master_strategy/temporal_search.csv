@@ -1,0 +1,3 @@
+temporal_window,cv_accuracy
+0.5 - 2.5s Standard Window,77.2
+1.0 - 3.0s Causal Window,76.8

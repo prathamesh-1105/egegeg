@@ -1,0 +1,2 @@
+stage,cv_accuracy,cv_macro_f1
+Hierarchical Stage 1 + Stage 2 Motor Cascade,77.8,72.0

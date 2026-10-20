@@ -1,0 +1,6 @@
+model_name,dev_cv_accuracy,dev_cv_macro_f1
+Logistic Regression (Welch PSD),36.17,33.36
+Linear SVM (FBCSP),39.47,36.86
+Regularized LDA (C3/C4 Log Power Ratio),38.67,36.16
+Authentic FBCSP + LogisticRegression Baseline,40.67,38.36
+Subject-Adaptive FBCSP + Riemannian Dual-View Ensemble,41.63,39.36

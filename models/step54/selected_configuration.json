@@ -1,0 +1,6 @@
+{
+  "calibration_strategy": "ERD Diversity Asymmetric Allocation (3 REST / 4 LEFT / 8 RIGHT)",
+  "calibration_count": 15,
+  "calibration_time_sec": 45,
+  "decision": "PROMOTE STEP 54 ADAPTIVE FEW-SHOT CHAMPION"
+}

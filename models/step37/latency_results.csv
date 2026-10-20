@@ -1,0 +1,6 @@
+component,latency_ms
+Filtering & FBCSP Feature Extraction,12.0
+Covariance & Riemannian Alignment,8.5
+Motor Asymmetry Calculation,4.5
+Classifier Inference & Decision Gate,2.5
+Total Single-Window Pipeline Latency,27.5

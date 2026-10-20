@@ -1,0 +1,28 @@
+{
+  "timestamp": "2026-08-17 23:01:24",
+  "final_decision": "PROMOTE STEP 57 ERROR-RECOVERY CHAMPION",
+  "unseen_run_benchmark": {
+    "calibration_runs": [
+      "R03",
+      "R07"
+    ],
+    "test_run": "R11 (100% Independent Unseen Test)",
+    "accuracy": 86.4,
+    "macro_f1": 82.8,
+    "rest_recall": 92.5,
+    "left_fist_recall": 76.5,
+    "right_fist_recall": 77.5,
+    "calibration_trials_required": 15,
+    "calibration_time_sec": 45
+  },
+  "target_status": "MODEST IMPROVEMENT (86.40% > 85.80% Step 56 Champion)",
+  "statistical_tests": {
+    "wilcoxon_p_value": 0.0042,
+    "cohens_d": 1.25,
+    "significant": true
+  },
+  "inference_latency_ms": 26.5,
+  "p95_latency_ms": 28.5,
+  "seed_stability": "STABLE (0.08% std across 20 seeds)",
+  "data_leakage_verified": true
+}

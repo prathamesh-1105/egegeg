@@ -1,0 +1,459 @@
+{
+  "session_id": "test_fifo_session",
+  "export_timestamp": 1792501464.7428377,
+  "export_iso": "2026-10-20 18:34:24",
+  "summary_metrics": {
+    "session_id": "test_fifo_session",
+    "total_trials_processed": 15,
+    "labeled_trials_count": 15,
+    "classification_accuracy_pct": 53.33,
+    "classification_errors_count": 7,
+    "macro_f1_pct": 33.33,
+    "per_class_metrics": {
+      "REST": {
+        "precision": 100.0,
+        "recall": 50.0,
+        "f1": 66.67,
+        "support": 10
+      }
+    },
+    "safety_rejection_rate_pct": 0.0,
+    "safety_rejected_count": 0,
+    "safety_accepted_count": 15,
+    "accepted_trial_accuracy_pct": 53.33,
+    "command_execution_rate_pct": 0.0,
+    "actions_executed_count": 0,
+    "actions_correct_count": 0,
+    "actions_incorrect_count": 0,
+    "incorrect_command_rate_total_pct": 0.0,
+    "incorrect_command_rate_executed_pct": 0.0,
+    "shield_suppressed_errors_count": 7,
+    "shield_suppressed_correct_count": 0,
+    "rest_neutrality_rate_pct": 100.0,
+    "rest_neutral_trials_count": 15,
+    "total_rest_trials_count": 15,
+    "stale_suppressed_count": 0,
+    "emergency_lock_suppressed_count": 0,
+    "latencies_ms": {
+      "mean": 15.2,
+      "p50": 15.2,
+      "p95": 15.2,
+      "p99": 15.2,
+      "min": 15.2,
+      "max": 15.2
+    },
+    "metric_definitions": {
+      "classification_accuracy": "Correct predictions / Labeled trials (offline test only)",
+      "safety_rejection_rate": "Safety-rejected predictions / Total processed trials",
+      "accepted_trial_accuracy": "Correct predictions within accepted / Safety-accepted trials",
+      "command_execution_rate": "Executed actions / Total processed trials",
+      "incorrect_command_rate_total": "Incorrectly executed actions / Total processed trials",
+      "incorrect_command_rate_executed": "Incorrectly executed actions / Total executed actions",
+      "rest_neutrality_rate": "True REST trials producing ZERO action / Total true REST trials"
+    }
+  },
+  "total_records": 10,
+  "records_count": 10,
+  "audit_records": [
+    {
+      "trial_id": "aud_test_fifo_session_6",
+      "session_id": "test_fifo_session",
+      "timestamp": 1005.0,
+      "iso_time": "05:46:45",
+      "subject_id": "S001",
+      "run_id": "R11",
+      "trial_idx": 5,
+      "data_source": "SIMULATED_EDF",
+      "model_version": "Step 62 Ensemble",
+      "ground_truth_label": "REST",
+      "predicted_label": "RIGHT_FIST",
+      "confidence": 0.85,
+      "probabilities": {
+        "REST": 0.5,
+        "LEFT_FIST": 0.2,
+        "RIGHT_FIST": 0.3
+      },
+      "is_correct_classification": false,
+      "signal_quality_passed": true,
+      "signal_quality_status": "OK",
+      "safety_accepted": true,
+      "safety_intent": "REST",
+      "safety_rejection_reason": "OK",
+      "command_profile_id": "scrolling",
+      "mapped_command": "NEUTRAL",
+      "action_executed": false,
+      "action_name": "NONE",
+      "is_incorrect_action": null,
+      "state_change": {
+        "parameter": "none",
+        "delta": 0,
+        "unit": ""
+      },
+      "latencies_ms": {
+        "ml_latency": 4.1,
+        "pipeline_latency": 15.2,
+        "ui_broadcast_latency": 0.0
+      }
+    },
+    {
+      "trial_id": "aud_test_fifo_session_7",
+      "session_id": "test_fifo_session",
+      "timestamp": 1006.0,
+      "iso_time": "05:46:46",
+      "subject_id": "S001",
+      "run_id": "R11",
+      "trial_idx": 6,
+      "data_source": "SIMULATED_EDF",
+      "model_version": "Step 62 Ensemble",
+      "ground_truth_label": "REST",
+      "predicted_label": "REST",
+      "confidence": 0.85,
+      "probabilities": {
+        "REST": 0.5,
+        "LEFT_FIST": 0.2,
+        "RIGHT_FIST": 0.3
+      },
+      "is_correct_classification": true,
+      "signal_quality_passed": true,
+      "signal_quality_status": "OK",
+      "safety_accepted": true,
+      "safety_intent": "REST",
+      "safety_rejection_reason": "OK",
+      "command_profile_id": "scrolling",
+      "mapped_command": "NEUTRAL",
+      "action_executed": false,
+      "action_name": "NONE",
+      "is_incorrect_action": null,
+      "state_change": {
+        "parameter": "none",
+        "delta": 0,
+        "unit": ""
+      },
+      "latencies_ms": {
+        "ml_latency": 4.1,
+        "pipeline_latency": 15.2,
+        "ui_broadcast_latency": 0.0
+      }
+    },
+    {
+      "trial_id": "aud_test_fifo_session_8",
+      "session_id": "test_fifo_session",
+      "timestamp": 1007.0,
+      "iso_time": "05:46:47",
+      "subject_id": "S001",
+      "run_id": "R11",
+      "trial_idx": 7,
+      "data_source": "SIMULATED_EDF",
+      "model_version": "Step 62 Ensemble",
+      "ground_truth_label": "REST",
+      "predicted_label": "RIGHT_FIST",
+      "confidence": 0.85,
+      "probabilities": {
+        "REST": 0.5,
+        "LEFT_FIST": 0.2,
+        "RIGHT_FIST": 0.3
+      },
+      "is_correct_classification": false,
+      "signal_quality_passed": true,
+      "signal_quality_status": "OK",
+      "safety_accepted": true,
+      "safety_intent": "REST",
+      "safety_rejection_reason": "OK",
+      "command_profile_id": "scrolling",
+      "mapped_command": "NEUTRAL",
+      "action_executed": false,
+      "action_name": "NONE",
+      "is_incorrect_action": null,
+      "state_change": {
+        "parameter": "none",
+        "delta": 0,
+        "unit": ""
+      },
+      "latencies_ms": {
+        "ml_latency": 4.1,
+        "pipeline_latency": 15.2,
+        "ui_broadcast_latency": 0.0
+      }
+    },
+    {
+      "trial_id": "aud_test_fifo_session_9",
+      "session_id": "test_fifo_session",
+      "timestamp": 1008.0,
+      "iso_time": "05:46:48",
+      "subject_id": "S001",
+      "run_id": "R11",
+      "trial_idx": 8,
+      "data_source": "SIMULATED_EDF",
+      "model_version": "Step 62 Ensemble",
+      "ground_truth_label": "REST",
+      "predicted_label": "REST",
+      "confidence": 0.85,
+      "probabilities": {
+        "REST": 0.5,
+        "LEFT_FIST": 0.2,
+        "RIGHT_FIST": 0.3
+      },
+      "is_correct_classification": true,
+      "signal_quality_passed": true,
+      "signal_quality_status": "OK",
+      "safety_accepted": true,
+      "safety_intent": "REST",
+      "safety_rejection_reason": "OK",
+      "command_profile_id": "scrolling",
+      "mapped_command": "NEUTRAL",
+      "action_executed": false,
+      "action_name": "NONE",
+      "is_incorrect_action": null,
+      "state_change": {
+        "parameter": "none",
+        "delta": 0,
+        "unit": ""
+      },
+      "latencies_ms": {
+        "ml_latency": 4.1,
+        "pipeline_latency": 15.2,
+        "ui_broadcast_latency": 0.0
+      }
+    },
+    {
+      "trial_id": "aud_test_fifo_session_10",
+      "session_id": "test_fifo_session",
+      "timestamp": 1009.0,
+      "iso_time": "05:46:49",
+      "subject_id": "S001",
+      "run_id": "R11",
+      "trial_idx": 9,
+      "data_source": "SIMULATED_EDF",
+      "model_version": "Step 62 Ensemble",
+      "ground_truth_label": "REST",
+      "predicted_label": "RIGHT_FIST",
+      "confidence": 0.85,
+      "probabilities": {
+        "REST": 0.5,
+        "LEFT_FIST": 0.2,
+        "RIGHT_FIST": 0.3
+      },
+      "is_correct_classification": false,
+      "signal_quality_passed": true,
+      "signal_quality_status": "OK",
+      "safety_accepted": true,
+      "safety_intent": "REST",
+      "safety_rejection_reason": "OK",
+      "command_profile_id": "scrolling",
+      "mapped_command": "NEUTRAL",
+      "action_executed": false,
+      "action_name": "NONE",
+      "is_incorrect_action": null,
+      "state_change": {
+        "parameter": "none",
+        "delta": 0,
+        "unit": ""
+      },
+      "latencies_ms": {
+        "ml_latency": 4.1,
+        "pipeline_latency": 15.2,
+        "ui_broadcast_latency": 0.0
+      }
+    },
+    {
+      "trial_id": "aud_test_fifo_session_11",
+      "session_id": "test_fifo_session",
+      "timestamp": 1010.0,
+      "iso_time": "05:46:50",
+      "subject_id": "S001",
+      "run_id": "R11",
+      "trial_idx": 10,
+      "data_source": "SIMULATED_EDF",
+      "model_version": "Step 62 Ensemble",
+      "ground_truth_label": "REST",
+      "predicted_label": "REST",
+      "confidence": 0.85,
+      "probabilities": {
+        "REST": 0.5,
+        "LEFT_FIST": 0.2,
+        "RIGHT_FIST": 0.3
+      },
+      "is_correct_classification": true,
+      "signal_quality_passed": true,
+      "signal_quality_status": "OK",
+      "safety_accepted": true,
+      "safety_intent": "REST",
+      "safety_rejection_reason": "OK",
+      "command_profile_id": "scrolling",
+      "mapped_command": "NEUTRAL",
+      "action_executed": false,
+      "action_name": "NONE",
+      "is_incorrect_action": null,
+      "state_change": {
+        "parameter": "none",
+        "delta": 0,
+        "unit": ""
+      },
+      "latencies_ms": {
+        "ml_latency": 4.1,
+        "pipeline_latency": 15.2,
+        "ui_broadcast_latency": 0.0
+      }
+    },
+    {
+      "trial_id": "aud_test_fifo_session_12",
+      "session_id": "test_fifo_session",
+      "timestamp": 1011.0,
+      "iso_time": "05:46:51",
+      "subject_id": "S001",
+      "run_id": "R11",
+      "trial_idx": 11,
+      "data_source": "SIMULATED_EDF",
+      "model_version": "Step 62 Ensemble",
+      "ground_truth_label": "REST",
+      "predicted_label": "RIGHT_FIST",
+      "confidence": 0.85,
+      "probabilities": {
+        "REST": 0.5,
+        "LEFT_FIST": 0.2,
+        "RIGHT_FIST": 0.3
+      },
+      "is_correct_classification": false,
+      "signal_quality_passed": true,
+      "signal_quality_status": "OK",
+      "safety_accepted": true,
+      "safety_intent": "REST",
+      "safety_rejection_reason": "OK",
+      "command_profile_id": "scrolling",
+      "mapped_command": "NEUTRAL",
+      "action_executed": false,
+      "action_name": "NONE",
+      "is_incorrect_action": null,
+      "state_change": {
+        "parameter": "none",
+        "delta": 0,
+        "unit": ""
+      },
+      "latencies_ms": {
+        "ml_latency": 4.1,
+        "pipeline_latency": 15.2,
+        "ui_broadcast_latency": 0.0
+      }
+    },
+    {
+      "trial_id": "aud_test_fifo_session_13",
+      "session_id": "test_fifo_session",
+      "timestamp": 1012.0,
+      "iso_time": "05:46:52",
+      "subject_id": "S001",
+      "run_id": "R11",
+      "trial_idx": 12,
+      "data_source": "SIMULATED_EDF",
+      "model_version": "Step 62 Ensemble",
+      "ground_truth_label": "REST",
+      "predicted_label": "REST",
+      "confidence": 0.85,
+      "probabilities": {
+        "REST": 0.5,
+        "LEFT_FIST": 0.2,
+        "RIGHT_FIST": 0.3
+      },
+      "is_correct_classification": true,
+      "signal_quality_passed": true,
+      "signal_quality_status": "OK",
+      "safety_accepted": true,
+      "safety_intent": "REST",
+      "safety_rejection_reason": "OK",
+      "command_profile_id": "scrolling",
+      "mapped_command": "NEUTRAL",
+      "action_executed": false,
+      "action_name": "NONE",
+      "is_incorrect_action": null,
+      "state_change": {
+        "parameter": "none",
+        "delta": 0,
+        "unit": ""
+      },
+      "latencies_ms": {
+        "ml_latency": 4.1,
+        "pipeline_latency": 15.2,
+        "ui_broadcast_latency": 0.0
+      }
+    },
+    {
+      "trial_id": "aud_test_fifo_session_14",
+      "session_id": "test_fifo_session",
+      "timestamp": 1013.0,
+      "iso_time": "05:46:53",
+      "subject_id": "S001",
+      "run_id": "R11",
+      "trial_idx": 13,
+      "data_source": "SIMULATED_EDF",
+      "model_version": "Step 62 Ensemble",
+      "ground_truth_label": "REST",
+      "predicted_label": "RIGHT_FIST",
+      "confidence": 0.85,
+      "probabilities": {
+        "REST": 0.5,
+        "LEFT_FIST": 0.2,
+        "RIGHT_FIST": 0.3
+      },
+      "is_correct_classification": false,
+      "signal_quality_passed": true,
+      "signal_quality_status": "OK",
+      "safety_accepted": true,
+      "safety_intent": "REST",
+      "safety_rejection_reason": "OK",
+      "command_profile_id": "scrolling",
+      "mapped_command": "NEUTRAL",
+      "action_executed": false,
+      "action_name": "NONE",
+      "is_incorrect_action": null,
+      "state_change": {
+        "parameter": "none",
+        "delta": 0,
+        "unit": ""
+      },
+      "latencies_ms": {
+        "ml_latency": 4.1,
+        "pipeline_latency": 15.2,
+        "ui_broadcast_latency": 0.0
+      }
+    },
+    {
+      "trial_id": "aud_test_fifo_session_15",
+      "session_id": "test_fifo_session",
+      "timestamp": 1014.0,
+      "iso_time": "05:46:54",
+      "subject_id": "S001",
+      "run_id": "R11",
+      "trial_idx": 14,
+      "data_source": "SIMULATED_EDF",
+      "model_version": "Step 62 Ensemble",
+      "ground_truth_label": "REST",
+      "predicted_label": "REST",
+      "confidence": 0.85,
+      "probabilities": {
+        "REST": 0.5,
+        "LEFT_FIST": 0.2,
+        "RIGHT_FIST": 0.3
+      },
+      "is_correct_classification": true,
+      "signal_quality_passed": true,
+      "signal_quality_status": "OK",
+      "safety_accepted": true,
+      "safety_intent": "REST",
+      "safety_rejection_reason": "OK",
+      "command_profile_id": "scrolling",
+      "mapped_command": "NEUTRAL",
+      "action_executed": false,
+      "action_name": "NONE",
+      "is_incorrect_action": null,
+      "state_change": {
+        "parameter": "none",
+        "delta": 0,
+        "unit": ""
+      },
+      "latencies_ms": {
+        "ml_latency": 4.1,
+        "pipeline_latency": 15.2,
+        "ui_broadcast_latency": 0.0
+      }
+    }
+  ]
+}

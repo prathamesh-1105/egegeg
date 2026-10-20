@@ -1,0 +1,3 @@
+Strategy,CVAccuracy,CVMacroF1,R11Accuracy,R11MacroF1,Latency,Status
+Step 51 PhysioNet Expansion Stacker,77.8,72.0,74.67,69.11,26.5,CANDIDATE
+Step 34 Baseline Champion Ensemble,77.2,71.5,74.67,69.11,26.5,CHAMPION

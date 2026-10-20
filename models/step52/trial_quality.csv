@@ -1,0 +1,3 @@
+trial_category,mean_RMS,SNR_dB,Mu_ERD_dB,quality
+Correctly Classified Motor Trials,14.2,18.5,-4.8,HIGH
+Misclassified Motor Trials (-> REST),12.1,12.2,-1.2,LOW ERD AMPLITUDE

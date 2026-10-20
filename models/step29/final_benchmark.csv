@@ -1,0 +1,2 @@
+candidate_id,holdout_accuracy,holdout_macro_f1,rest_recall,left_fist_recall,right_fist_recall,false_activation_rate,false_switch_rate,command_f1,command_stability
+STEP 24 FBCSP,63.0,55.8,87.33,32.89,44.59,4.0,100.0,35.97,55.76

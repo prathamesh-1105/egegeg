@@ -1,0 +1,5 @@
+representation,accuracy,macro_f1
+Step 24 FBCSP,70.66666666666667,64.32539682539684
+Multi-Band PSD + ERD/ERS,17.42,21.65
+Contralateral Motor Asymmetry,16.87,20.73
+Step 33 Multi-Model Soft Fusion,18.33,23.04

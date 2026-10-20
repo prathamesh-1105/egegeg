@@ -1,0 +1,36 @@
+{
+  "timestamp": "2026-08-17 21:20:17",
+  "final_decision": "KEEP STEP 34",
+  "available_subjects": 10,
+  "training_subjects": 7,
+  "validation_subjects": 2,
+  "test_subjects": 1,
+  "total_real_eeg_windows": 600,
+  "step34_baseline": {
+    "accuracy": 68.66666666666667,
+    "macro_f1": 60.571511683580766,
+    "rest_recall": 93.33,
+    "left_fist_recall": 64.47,
+    "right_fist_recall": 47.3
+  },
+  "step36_candidate": {
+    "accuracy": 68.67,
+    "macro_f1": 60.57,
+    "accuracy_difference": 0.0,
+    "macro_f1_difference": 0.0,
+    "rest_recall": 91.33,
+    "left_fist_recall": 63.16,
+    "right_fist_recall": 28.38
+  },
+  "best_training_subject_count": 7,
+  "best_model": "Step 36 Scaled Global FBCSP Ensemble",
+  "augmentation_used": false,
+  "personalization_used": false,
+  "inference_latency_ms": 27.5,
+  "data_leakage_verified": true,
+  "synthetic_data_used": false,
+  "targets": {
+    "target_80_pct": "NOT ACHIEVED",
+    "target_85_pct": "NOT ACHIEVED"
+  }
+}

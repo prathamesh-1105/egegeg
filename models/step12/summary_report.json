@@ -1,0 +1,20 @@
+{
+  "best_pipeline": "Step 10: Riemannian Geometry Tangent Space + Logistic Regression",
+  "mean_accuracy": 0.61,
+  "median_accuracy": 0.5666666666666667,
+  "std_accuracy": 0.11160446028522138,
+  "min_accuracy": 0.4333333333333333,
+  "max_accuracy": 0.8,
+  "subjects_gt_50": 9,
+  "subjects_gt_60": 5,
+  "subjects_gt_70": 3,
+  "subjects_gt_80": 1,
+  "paired_test_csp_vs_riemannian": {
+    "paired_ttest_statistic": 0.62897090203315,
+    "paired_ttest_pvalue": 0.5449993647371606,
+    "wilcoxon_statistic": 17.5,
+    "wilcoxon_pvalue": 1.0
+  },
+  "hardware_recommendation": "READY FOR EXPERIMENTAL HARDWARE PROTOTYPE",
+  "timestamp": "2026-08-11T19:09:03.222866"
+}

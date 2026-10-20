@@ -1,0 +1,48 @@
+{
+  "step19_hardware_compatibility_report": {
+    "timestamp": "2026-08-14T20:35:00",
+    "fbcsp_model_requirements": {
+      "model_architecture": "Step 17B Filter Bank Common Spatial Pattern (FBCSP)",
+      "target_accuracy": 71.33,
+      "target_macro_f1": 66.02,
+      "channel_count": 15,
+      "required_channels": [
+        "FC3", "FC1", "FCz", "FC2", "FC4",
+        "C3",  "C1",  "Cz",  "C2",  "C4",
+        "CP3", "CP1", "CPz", "CP2", "CP4"
+      ],
+      "sampling_rate_hz": 160.0,
+      "window_length_sec": 3.0,
+      "window_samples": 480,
+      "step_advance_sec": 1.5
+    },
+    "lsl_stream_discovery_status": {
+      "lsl_library_available": true,
+      "physical_streams_detected": 0,
+      "hardware_status": "DISCONNECTED (No physical LSL device plugged in)"
+    },
+    "hardware_compatibility_layer": {
+      "channel_normalizer": "EXPLICIT_EXACT_MAPPER",
+      "fuzzy_matching": "DISABLED (Unsafe mapping prevented)",
+      "resampling_layer": "Polyphase SciPy resample_poly (Supported: 125, 250, 500, 1000 Hz → 160 Hz)",
+      "rolling_buffer": "15x480 samples EEGBuffer",
+      "safety_state_machine": "DISCONNECTED | SEARCHING | CONNECTED | BUFFERING | READY | SIGNAL_WARNING | INCOMPATIBLE | ERROR",
+      "inference_policy": "ALLOWED_ONLY_IN_READY_STATE"
+    },
+    "recommended_hardware_purchasing_checklist": {
+      "minimum_channels": 16,
+      "required_electrode_coverage": "Motor Strip (FC3..CP4 covering C3, Cz, C4)",
+      "minimum_sampling_rate_hz": 160,
+      "recommended_sampling_rate_hz": 250,
+      "protocol_support": "Lab Streaming Layer (LSL) or Native C++ SDK",
+      "signal_quality": "High SNR, active/dry electrode with impedance measurement",
+      "os_compatibility": "Windows 10/11 x64",
+      "compatible_device_families": [
+        "OpenBCI Cyton + Daisy (16 Channels)",
+        "g.tec g.Nautilus / g.USBamp",
+        "ANT Neuro eego sports",
+        "Brain Products LiveAmp / actiCHamp"
+      ]
+    }
+  }
+}

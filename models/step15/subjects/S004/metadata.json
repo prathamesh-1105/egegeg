@@ -1,0 +1,15 @@
+{
+  "subject": "S004",
+  "pipeline": "Step 15 Adaptive Personalized Riemannian Classifier",
+  "adaptation_strategy": "Strategy 2: Warm-Start Classifier Update",
+  "adaptation_percentage": 50,
+  "adaptation_windows_used": 15,
+  "base_calibration": "R03",
+  "adaptation_run": "R07",
+  "holdout_run": "R11",
+  "classes": [
+    "LEFT_FIST",
+    "REST",
+    "RIGHT_FIST"
+  ]
+}

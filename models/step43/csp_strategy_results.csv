@@ -1,0 +1,5 @@
+strategy,cv_accuracy,cv_macro_f1
+A. Global CSP (4 Pairs),76.5,70.8
+B. Subject-Specific CSP,77.2,71.5
+C. Regularized Shrinkage CSP,77.5,71.8
+D. Subject CSP with Fallback to Global,77.8,72.0

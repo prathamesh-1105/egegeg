@@ -1,0 +1,3 @@
+subject_pair,spectral_distance,domain_shift
+S001 vs S002,0.42,HIGH
+S001 vs S003,0.18,LOW

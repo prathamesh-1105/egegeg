@@ -1,0 +1,12 @@
+{
+  "total_edf_files": 61,
+  "total_subjects": 10,
+  "total_trials": 450,
+  "class_distribution": {
+    "REST": 150,
+    "LEFT_FIST": 150,
+    "RIGHT_FIST": 150
+  },
+  "sampling_rate": 160,
+  "window_samples": 480
+}

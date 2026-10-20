@@ -1,0 +1,2 @@
+fbcsp_inference_ms,confidence_calc_ms,temporal_smoothing_ms,state_machine_ms,total_latency_ms
+0.11,0.024,0.016,0.008,0.157

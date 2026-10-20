@@ -1,0 +1,596 @@
+[
+  {
+    "spatial_prep": "raw",
+    "feature_family": "fused",
+    "classifier_type": "reg_lda",
+    "k_features": 24,
+    "fbcsp_components": 4,
+    "cv_accuracy": 69.5,
+    "cv_macro_f1": 63.89,
+    "rest_recall": 87.67,
+    "left_recall": 48.34,
+    "right_recall": 54.36,
+    "sub_mean_acc": 69.5,
+    "sub_std_acc": 11.23,
+    "confusion_matrix": [
+      [
+        263,
+        17,
+        20
+      ],
+      [
+        35,
+        73,
+        43
+      ],
+      [
+        35,
+        33,
+        81
+      ]
+    ],
+    "group": "Group A: Spatial Referencing",
+    "duration_sec": 54.6
+  },
+  {
+    "spatial_prep": "car",
+    "feature_family": "fused",
+    "classifier_type": "reg_lda",
+    "k_features": 24,
+    "fbcsp_components": 4,
+    "cv_accuracy": 69.5,
+    "cv_macro_f1": 63.55,
+    "rest_recall": 88.0,
+    "left_recall": 53.64,
+    "right_recall": 48.32,
+    "sub_mean_acc": 69.5,
+    "sub_std_acc": 13.33,
+    "confusion_matrix": [
+      [
+        264,
+        15,
+        21
+      ],
+      [
+        27,
+        81,
+        43
+      ],
+      [
+        30,
+        47,
+        72
+      ]
+    ],
+    "group": "Group A: Spatial Referencing",
+    "duration_sec": 53.7
+  },
+  {
+    "spatial_prep": "laplacian",
+    "feature_family": "fused",
+    "classifier_type": "reg_lda",
+    "k_features": 24,
+    "fbcsp_components": 4,
+    "cv_accuracy": 70.0,
+    "cv_macro_f1": 64.98,
+    "rest_recall": 85.67,
+    "left_recall": 56.95,
+    "right_recall": 51.68,
+    "sub_mean_acc": 70.0,
+    "sub_std_acc": 14.08,
+    "confusion_matrix": [
+      [
+        257,
+        22,
+        21
+      ],
+      [
+        27,
+        86,
+        38
+      ],
+      [
+        31,
+        41,
+        77
+      ]
+    ],
+    "group": "Group A: Spatial Referencing",
+    "duration_sec": 53.0
+  },
+  {
+    "spatial_prep": "car",
+    "feature_family": "fbcsp",
+    "classifier_type": "reg_lda",
+    "k_features": 24,
+    "fbcsp_components": 4,
+    "cv_accuracy": 69.17,
+    "cv_macro_f1": 63.69,
+    "rest_recall": 86.33,
+    "left_recall": 52.32,
+    "right_recall": 51.68,
+    "sub_mean_acc": 69.17,
+    "sub_std_acc": 13.91,
+    "confusion_matrix": [
+      [
+        259,
+        18,
+        23
+      ],
+      [
+        26,
+        79,
+        46
+      ],
+      [
+        33,
+        39,
+        77
+      ]
+    ],
+    "group": "Group B: Feature Architecture",
+    "duration_sec": 49.0
+  },
+  {
+    "spatial_prep": "car",
+    "feature_family": "riemannian",
+    "classifier_type": "reg_lda",
+    "k_features": 24,
+    "fbcsp_components": 4,
+    "cv_accuracy": 59.67,
+    "cv_macro_f1": 52.79,
+    "rest_recall": 80.0,
+    "left_recall": 44.37,
+    "right_recall": 34.23,
+    "sub_mean_acc": 59.67,
+    "sub_std_acc": 11.13,
+    "confusion_matrix": [
+      [
+        240,
+        29,
+        31
+      ],
+      [
+        36,
+        67,
+        48
+      ],
+      [
+        38,
+        60,
+        51
+      ]
+    ],
+    "group": "Group B: Feature Architecture",
+    "duration_sec": 5.8
+  },
+  {
+    "spatial_prep": "car",
+    "feature_family": "asym",
+    "classifier_type": "reg_lda",
+    "k_features": 24,
+    "fbcsp_components": 4,
+    "cv_accuracy": 58.83,
+    "cv_macro_f1": 52.13,
+    "rest_recall": 79.0,
+    "left_recall": 41.06,
+    "right_recall": 36.24,
+    "sub_mean_acc": 58.83,
+    "sub_std_acc": 8.91,
+    "confusion_matrix": [
+      [
+        237,
+        28,
+        35
+      ],
+      [
+        33,
+        62,
+        56
+      ],
+      [
+        43,
+        52,
+        54
+      ]
+    ],
+    "group": "Group B: Feature Architecture",
+    "duration_sec": 2.2
+  },
+  {
+    "spatial_prep": "car",
+    "feature_family": "fused",
+    "classifier_type": "reg_lda",
+    "k_features": 24,
+    "fbcsp_components": 4,
+    "cv_accuracy": 69.5,
+    "cv_macro_f1": 63.55,
+    "rest_recall": 88.0,
+    "left_recall": 53.64,
+    "right_recall": 48.32,
+    "sub_mean_acc": 69.5,
+    "sub_std_acc": 13.33,
+    "confusion_matrix": [
+      [
+        264,
+        15,
+        21
+      ],
+      [
+        27,
+        81,
+        43
+      ],
+      [
+        30,
+        47,
+        72
+      ]
+    ],
+    "group": "Group B: Feature Architecture",
+    "duration_sec": 52.7
+  },
+  {
+    "spatial_prep": "car",
+    "feature_family": "enhanced_fused",
+    "classifier_type": "reg_lda",
+    "k_features": 24,
+    "fbcsp_components": 4,
+    "cv_accuracy": 69.5,
+    "cv_macro_f1": 63.44,
+    "rest_recall": 88.33,
+    "left_recall": 53.64,
+    "right_recall": 47.65,
+    "sub_mean_acc": 69.5,
+    "sub_std_acc": 13.33,
+    "confusion_matrix": [
+      [
+        265,
+        14,
+        21
+      ],
+      [
+        27,
+        81,
+        43
+      ],
+      [
+        30,
+        48,
+        71
+      ]
+    ],
+    "group": "Group B: Feature Architecture",
+    "duration_sec": 49.4
+  },
+  {
+    "spatial_prep": "car",
+    "feature_family": "enhanced_fused",
+    "classifier_type": "reg_lda",
+    "k_features": 24,
+    "fbcsp_components": 4,
+    "cv_accuracy": 69.5,
+    "cv_macro_f1": 63.44,
+    "rest_recall": 88.33,
+    "left_recall": 53.64,
+    "right_recall": 47.65,
+    "sub_mean_acc": 69.5,
+    "sub_std_acc": 13.33,
+    "confusion_matrix": [
+      [
+        265,
+        14,
+        21
+      ],
+      [
+        27,
+        81,
+        43
+      ],
+      [
+        30,
+        48,
+        71
+      ]
+    ],
+    "group": "Group C: Classifier Selection",
+    "duration_sec": 50.8
+  },
+  {
+    "spatial_prep": "car",
+    "feature_family": "enhanced_fused",
+    "classifier_type": "lr_balanced",
+    "k_features": 24,
+    "fbcsp_components": 4,
+    "cv_accuracy": 69.5,
+    "cv_macro_f1": 63.55,
+    "rest_recall": 88.33,
+    "left_recall": 52.98,
+    "right_recall": 48.32,
+    "sub_mean_acc": 69.5,
+    "sub_std_acc": 13.4,
+    "confusion_matrix": [
+      [
+        265,
+        12,
+        23
+      ],
+      [
+        32,
+        80,
+        39
+      ],
+      [
+        31,
+        46,
+        72
+      ]
+    ],
+    "group": "Group C: Classifier Selection",
+    "duration_sec": 53.2
+  },
+  {
+    "spatial_prep": "car",
+    "feature_family": "enhanced_fused",
+    "classifier_type": "svm_linear",
+    "k_features": 24,
+    "fbcsp_components": 4,
+    "cv_accuracy": 68.5,
+    "cv_macro_f1": 61.97,
+    "rest_recall": 89.67,
+    "left_recall": 50.33,
+    "right_recall": 44.3,
+    "sub_mean_acc": 68.5,
+    "sub_std_acc": 12.75,
+    "confusion_matrix": [
+      [
+        269,
+        16,
+        15
+      ],
+      [
+        38,
+        76,
+        37
+      ],
+      [
+        43,
+        40,
+        66
+      ]
+    ],
+    "group": "Group C: Classifier Selection",
+    "duration_sec": 52.5
+  },
+  {
+    "spatial_prep": "car",
+    "feature_family": "enhanced_fused",
+    "classifier_type": "svm_rbf",
+    "k_features": 24,
+    "fbcsp_components": 4,
+    "cv_accuracy": 70.17,
+    "cv_macro_f1": 63.88,
+    "rest_recall": 91.0,
+    "left_recall": 49.01,
+    "right_recall": 49.66,
+    "sub_mean_acc": 70.17,
+    "sub_std_acc": 12.79,
+    "confusion_matrix": [
+      [
+        273,
+        8,
+        19
+      ],
+      [
+        37,
+        74,
+        40
+      ],
+      [
+        39,
+        36,
+        74
+      ]
+    ],
+    "group": "Group C: Classifier Selection",
+    "duration_sec": 60.1
+  },
+  {
+    "spatial_prep": "car",
+    "feature_family": "enhanced_fused",
+    "classifier_type": "ensemble_balanced",
+    "k_features": 24,
+    "fbcsp_components": 4,
+    "cv_accuracy": 69.5,
+    "cv_macro_f1": 63.29,
+    "rest_recall": 89.0,
+    "left_recall": 52.32,
+    "right_recall": 47.65,
+    "sub_mean_acc": 69.5,
+    "sub_std_acc": 13.64,
+    "confusion_matrix": [
+      [
+        267,
+        14,
+        19
+      ],
+      [
+        31,
+        79,
+        41
+      ],
+      [
+        30,
+        48,
+        71
+      ]
+    ],
+    "group": "Group C: Classifier Selection",
+    "duration_sec": 52.9
+  },
+  {
+    "spatial_prep": "car",
+    "feature_family": "enhanced_fused",
+    "classifier_type": "ensemble_balanced",
+    "k_features": 16,
+    "fbcsp_components": 4,
+    "cv_accuracy": 69.67,
+    "cv_macro_f1": 64.42,
+    "rest_recall": 86.0,
+    "left_recall": 52.32,
+    "right_recall": 54.36,
+    "sub_mean_acc": 69.67,
+    "sub_std_acc": 14.53,
+    "confusion_matrix": [
+      [
+        258,
+        19,
+        23
+      ],
+      [
+        28,
+        79,
+        44
+      ],
+      [
+        28,
+        40,
+        81
+      ]
+    ],
+    "group": "Group D: K-Feature Selection",
+    "duration_sec": 66.6
+  },
+  {
+    "spatial_prep": "car",
+    "feature_family": "enhanced_fused",
+    "classifier_type": "ensemble_balanced",
+    "k_features": 20,
+    "fbcsp_components": 4,
+    "cv_accuracy": 69.67,
+    "cv_macro_f1": 64.22,
+    "rest_recall": 86.67,
+    "left_recall": 54.3,
+    "right_recall": 51.01,
+    "sub_mean_acc": 69.67,
+    "sub_std_acc": 13.68,
+    "confusion_matrix": [
+      [
+        260,
+        16,
+        24
+      ],
+      [
+        28,
+        82,
+        41
+      ],
+      [
+        29,
+        44,
+        76
+      ]
+    ],
+    "group": "Group D: K-Feature Selection",
+    "duration_sec": 63.9
+  },
+  {
+    "spatial_prep": "car",
+    "feature_family": "enhanced_fused",
+    "classifier_type": "ensemble_balanced",
+    "k_features": 24,
+    "fbcsp_components": 4,
+    "cv_accuracy": 69.5,
+    "cv_macro_f1": 63.29,
+    "rest_recall": 89.0,
+    "left_recall": 52.32,
+    "right_recall": 47.65,
+    "sub_mean_acc": 69.5,
+    "sub_std_acc": 13.64,
+    "confusion_matrix": [
+      [
+        267,
+        14,
+        19
+      ],
+      [
+        31,
+        79,
+        41
+      ],
+      [
+        30,
+        48,
+        71
+      ]
+    ],
+    "group": "Group D: K-Feature Selection",
+    "duration_sec": 76.6
+  },
+  {
+    "spatial_prep": "car",
+    "feature_family": "enhanced_fused",
+    "classifier_type": "ensemble_balanced",
+    "k_features": 28,
+    "fbcsp_components": 4,
+    "cv_accuracy": 70.0,
+    "cv_macro_f1": 63.55,
+    "rest_recall": 90.33,
+    "left_recall": 52.32,
+    "right_recall": 46.98,
+    "sub_mean_acc": 70.0,
+    "sub_std_acc": 13.06,
+    "confusion_matrix": [
+      [
+        271,
+        13,
+        16
+      ],
+      [
+        29,
+        79,
+        43
+      ],
+      [
+        33,
+        46,
+        70
+      ]
+    ],
+    "group": "Group D: K-Feature Selection",
+    "duration_sec": 59.1
+  },
+  {
+    "spatial_prep": "car",
+    "feature_family": "enhanced_fused",
+    "classifier_type": "ensemble_balanced",
+    "k_features": 36,
+    "fbcsp_components": 4,
+    "cv_accuracy": 68.17,
+    "cv_macro_f1": 61.93,
+    "rest_recall": 87.67,
+    "left_recall": 52.32,
+    "right_recall": 44.97,
+    "sub_mean_acc": 68.17,
+    "sub_std_acc": 14.05,
+    "confusion_matrix": [
+      [
+        263,
+        14,
+        23
+      ],
+      [
+        28,
+        79,
+        44
+      ],
+      [
+        37,
+        45,
+        67
+      ]
+    ],
+    "group": "Group D: K-Feature Selection",
+    "duration_sec": 66.3
+  }
+]

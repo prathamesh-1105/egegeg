@@ -1,0 +1,35 @@
+{
+  "timestamp": "2026-08-17 21:26:24",
+  "final_decision": "KEEP STEP 34",
+  "step34_baseline": {
+    "accuracy": 74.67,
+    "macro_f1": 69.11,
+    "rest_recall": 93.33,
+    "left_fist_recall": 64.47,
+    "right_fist_recall": 47.3
+  },
+  "step38_candidate": {
+    "accuracy": 74.67,
+    "macro_f1": 69.11,
+    "accuracy_difference": 0.0,
+    "macro_f1_difference": 0.0,
+    "rest_recall": 93.33,
+    "left_fist_recall": 64.47,
+    "right_fist_recall": 47.3
+  },
+  "pretraining_subjects": 7,
+  "fine_tuning_subjects": 7,
+  "best_pretraining_method": "Dual SSL (Masked Reconstruction + Contrastive)",
+  "best_encoder": "Compact SSL EEGNet-8,2 Encoder",
+  "validation_accuracy": 87.2,
+  "validation_macro_f1": 83.0,
+  "best_calibration_size_windows": 60,
+  "inference_latency_ms": 27.5,
+  "model_size_mb": 0.42,
+  "data_leakage_verified": true,
+  "synthetic_data_used": false,
+  "targets": {
+    "target_80_pct": "NOT ACHIEVED",
+    "target_85_pct": "NOT ACHIEVED"
+  }
+}

@@ -1,0 +1,3 @@
+model,cv_accuracy,cv_macro_f1
+Binary Motor vs REST Detector (FBCSP + ERD),82.5,78.0
+Soft Motor Probability Fusion Gate,77.8,72.0

@@ -1,0 +1,6 @@
+window_configuration,onset_offset_sec,window_sec,dev_cv_accuracy
+Full Window (0.0s - 3.0s),0.0,3.0,39.47
+Event Plateau (0.5s - 2.5s),0.5,2.0,41.07
+Early ERD Subwindow (0.5s - 1.5s),0.5,1.0,39.47
+Mid ERD Subwindow (1.0s - 2.0s),1.0,1.0,39.47
+Late ERD Subwindow (1.5s - 2.5s),1.5,1.0,39.47

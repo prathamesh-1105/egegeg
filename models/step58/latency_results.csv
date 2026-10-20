@@ -1,0 +1,5 @@
+component,latency_ms
+Subject-Adaptive Filter Bank Extraction,14.26
+FBCSP + Riemannian Feature Extraction,11.09
+Stage 1/2 Classifier Cascade Inference,6.34
+Total Step 58 Pipeline Latency,31.69

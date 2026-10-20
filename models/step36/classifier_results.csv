@@ -1,0 +1,4 @@
+classifier,val_accuracy,val_macro_f1
+FBCSP + LogisticRegression,40.0,34.34
+FBCSP + Linear SVM,39.5,33.94
+FBCSP + LinearDiscriminantAnalysis,38.8,33.34

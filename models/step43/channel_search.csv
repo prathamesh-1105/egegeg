@@ -1,0 +1,5 @@
+channel_set,cv_accuracy,cv_macro_f1
+Full 15 Group B Channels,77.2,71.5
+"Central 3 Channels (C3, Cz, C4)",75.0,69.2
+"Expanded Central (C1, C3, Cz, C4, C6)",76.8,71.0
+Motor Cortex Contralateral Subsets,77.5,71.8

@@ -1,0 +1,5 @@
+Protocol,Accuracy,Macro_F1,REST,LEFT,RIGHT
+Protocol A: Step 34 Zero-Shot Champion,74.67,69.11,93.33,64.47,47.3
+Protocol B: Ultra-Low-Shot (3 trials/class = 9 trials),81.0,75.8,92.0,70.5,60.0
+Protocol B: Ultra-Low-Shot (6 trials/class = 18 trials),85.2,81.0,92.0,75.0,73.3
+Protocol B: Step 54 Optimized (15 trials Asymmetric),85.8,82.0,92.5,76.0,76.5

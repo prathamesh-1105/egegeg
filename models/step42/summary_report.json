@@ -1,0 +1,38 @@
+{
+  "timestamp": "2026-08-17 21:40:14",
+  "final_decision": "KEEP STEP 34",
+  "step34_baseline": {
+    "accuracy": 74.67,
+    "macro_f1": 69.11,
+    "rest_recall": 93.33,
+    "left_fist_recall": 64.47,
+    "right_fist_recall": 47.3
+  },
+  "step41_benchmark": {
+    "accuracy": 74.67,
+    "macro_f1": 69.11
+  },
+  "best_outer_cv": {
+    "accuracy": 77.2,
+    "macro_f1": 71.5,
+    "outer_cv_std": 0.85,
+    "worst_subject_accuracy": 66.67
+  },
+  "best_temporal_strategy": "Confidence-Weighted Temporal Evidence Fusion",
+  "best_deployment_mode": "GLOBAL UNCALIBRATED",
+  "left_recall": 64.47,
+  "right_recall": 47.3,
+  "rest_recall": 93.33,
+  "final_r11_accuracy": 74.67,
+  "final_r11_macro_f1": 69.11,
+  "delta_vs_step34_accuracy": 0.0,
+  "delta_vs_step34_macro_f1": 0.0,
+  "cv_r11_gap_points": 2.53,
+  "inference_latency_ms": 26.5,
+  "data_leakage_verified": true,
+  "r11_tuning": "NONE",
+  "targets": {
+    "target_80_pct": "NOT ACHIEVED",
+    "target_85_pct": "NOT ACHIEVED"
+  }
+}

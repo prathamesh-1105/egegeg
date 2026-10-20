@@ -1,0 +1,20 @@
+{
+  "timestamp": "2026-08-28 16:30:44",
+  "final_decision": "KEEP AUTHENTIC BASELINE",
+  "authentic_baseline_r11": {
+    "accuracy": 60.33,
+    "macro_f1": 56.53
+  },
+  "step58_genuine_r11_metrics": {
+    "accuracy": 67.67,
+    "macro_f1": 62.04,
+    "rest_recall": 86.67,
+    "left_fist_recall": 47.37,
+    "right_fist_recall": 50.0,
+    "calibration_trials_required": 15,
+    "calibration_time_sec": 45
+  },
+  "latency_ms": 31.69,
+  "mathematical_consistency_verified": true,
+  "r11_zero_leakage_verified": true
+}

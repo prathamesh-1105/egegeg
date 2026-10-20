@@ -1,0 +1,4 @@
+objective,val_accuracy,val_macro_f1
+Single-Task 3-Class Cross-Entropy,84.8,80.2
+Multi-Task (3-Class + REST vs MOTOR Auxiliary),85.5,81.0
+Multi-Task (3-Class + LEFT vs RIGHT Auxiliary),85.8,81.4

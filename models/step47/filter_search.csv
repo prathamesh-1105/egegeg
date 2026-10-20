@@ -1,0 +1,4 @@
+filter_range,cv_accuracy,cv_macro_f1
+8 - 30 Hz (Standard Motor Band),77.2,71.5
+4 - 40 Hz (Broadband Motor Band),77.5,71.8
+7 - 35 Hz (Mu + Beta Extended Band),77.8,72.0

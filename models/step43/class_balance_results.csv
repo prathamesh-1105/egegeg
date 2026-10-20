@@ -1,0 +1,4 @@
+classifier,left_recall,right_recall,cv_macro_f1
+Unweighted LogisticRegression,64.0,45.0,70.5
+Class-Balanced LogisticRegression,64.47,47.3,71.5
+Balanced LinearSVM,64.0,46.8,71.0

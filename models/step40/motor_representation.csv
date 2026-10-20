@@ -1,0 +1,6 @@
+feature_set,mean_cv_acc,mean_cv_f1
+C3/C4 Mu ERD Power (8-13Hz),75.5,69.5
+C3/C4 Low Beta ERD Power (13-16Hz),74.8,68.8
+C3/C4 Mid Beta ERD Power (16-20Hz),75.0,69.0
+C3/C4 High Beta ERD Power (20-30Hz),74.5,68.4
+"Full Motor Channel Set (C3,C4,Cz,FC3,FC4,CP3,CP4)",77.2,71.5

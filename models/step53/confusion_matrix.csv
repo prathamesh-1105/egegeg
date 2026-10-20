@@ -1,0 +1,4 @@
+true_label,pred_REST,pred_LEFT,pred_RIGHT
+REST,138,6,6
+LEFT_FIST,24,112,14
+RIGHT_FIST,26,14,110

@@ -1,0 +1,17 @@
+{
+  "architecture": "Compact EEGNet-8,2 Encoder",
+  "pretraining_objectives": [
+    "Masked EEG Signal Reconstruction (MSE Loss)",
+    "Temporal Consistency Learning (NT-Xent Contrastive Loss)"
+  ],
+  "input_shape": [
+    15,
+    480
+  ],
+  "channels": 15,
+  "sampling_rate_hz": 160.0,
+  "latent_dimension": 64,
+  "pretraining_epochs": 50,
+  "learning_rate": 0.001,
+  "batch_size": 32
+}

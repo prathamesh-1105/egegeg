@@ -1,0 +1,166 @@
+{
+  "query1": [
+    {
+      "title": "EEG datasets for motor imagery brain\u2013computer interface",
+      "year": 2017,
+      "doi": "https://doi.org/10.1093/gigascience/gix034",
+      "venue": "GigaScience",
+      "citations": 360,
+      "abstract": "Background: Most investigators of brain-computer interface (BCI) research believe that BCI can be achieved through induced neuronal activity from the cortex, but not by evoked neuronal activity. Motor imagery (MI)-based BCI is one of the standard concepts of BCI, in that the user can generate induced activity by imagining motor movements. However, variations in performance over sessions and subjects are too severe to overcome easily; therefore, a basic understanding and investigation of BCI performance variation is necessary to find critical evidence of performance variation. Here we present not only EEG datasets for MI BCI from 52 subjects, but also the..."
+    },
+    {
+      "title": "The PREP pipeline: standardized preprocessing for large-scale EEG analysis",
+      "year": 2015,
+      "doi": "https://doi.org/10.3389/fninf.2015.00016",
+      "venue": "Frontiers in Neuroinformatics",
+      "citations": 1455,
+      "abstract": "The technology to collect brain imaging and physiological measures has become portable and ubiquitous, opening the possibility of large-scale analysis of real-world human imaging. By its nature, such data is large and complex, making automated processing essential. This paper shows how lack of attention to the very early stages of an EEG preprocessing pipeline can reduce the signal-to-noise ratio and introduce unwanted artifacts into the data, particularly for computations done in single precision. We demonstrate that ordinary average referencing improves the signal-to-noise ratio, but that noisy channels can contaminate the results. We also show that identification of noisy channels depends..."
+    },
+    {
+      "title": "CTNet: a convolutional transformer network for EEG-based motor imagery classification",
+      "year": 2024,
+      "doi": "https://doi.org/10.1038/s41598-024-71118-7",
+      "venue": "Scientific Reports",
+      "citations": 168,
+      "abstract": "Brain-computer interface (BCI) technology bridges the direct communication between the brain and machines, unlocking new possibilities for human interaction and rehabilitation. EEG-based motor imagery (MI) plays a pivotal role in BCI, enabling the translation of thought into actionable commands for interactive and assistive technologies. However, the constrained decoding performance of brain signals poses a limitation to the broader application and development of BCI systems. In this study, we introduce a convolutional Transformer network (CTNet) designed for EEG-based MI classification. Firstly, CTNet employs a convolutional module analogous to EEGNet, dedicated to extracting local and spatial features from EEG time series. Subsequently,..."
+    },
+    {
+      "title": "A Parallel Multiscale Filter Bank Convolutional Neural Networks for Motor Imagery EEG Classification",
+      "year": 2019,
+      "doi": "https://doi.org/10.3389/fnins.2019.01275",
+      "venue": "Frontiers in Neuroscience",
+      "citations": 177,
+      "abstract": "OBJECTIVE: Electroencephalogram (EEG) based brain-computer interfaces (BCI) in motor imagery (MI) have developed rapidly in recent years. A reliable feature extraction method is essential because of a low signal-to-noise ratio (SNR) and time-dependent covariates of EEG signals. Because of efficient application in various fields, deep learning has been adopted in EEG signal processing and has obtained competitive results compared with the traditional methods. However, designing and training an end-to-end network to fully extract potential features from EEG signals remains a challenge in MI. APPROACH: In this study, we propose a parallel multiscale filter bank convolutional neural network (MSFBCNN) for MI..."
+    },
+    {
+      "title": "A Transformer-Based Approach Combining Deep Learning Network and Spatial-Temporal Information for Raw EEG Classification",
+      "year": 2022,
+      "doi": "https://doi.org/10.1109/tnsre.2022.3194600",
+      "venue": "IEEE Transactions on Neural Systems and Rehabilitation Engineering",
+      "citations": 313,
+      "abstract": "The attention mechanism of the Transformer has the advantage of extracting feature correlation in the long-sequence data and visualizing the model. As time-series data, the spatial and temporal dependencies of the EEG signals between the time points and the different channels contain important information for accurate classification. So far, Transformer-based approaches have not been widely explored in motor-imagery EEG classification and visualization, especially lacking general models based on cross-individual validation. Taking advantage of the Transformer model and the spatial-temporal characteristics of the EEG signals, we designed Transformer-based models for classifications of motor imagery EEG based on the PhysioNet dataset. With..."
+    },
+    {
+      "title": "A review of channel selection algorithms for EEG signal processing",
+      "year": 2015,
+      "doi": "https://doi.org/10.1186/s13634-015-0251-9",
+      "venue": "EURASIP Journal on Advances in Signal Processing",
+      "citations": 461,
+      "abstract": "Digital processing of electroencephalography (EEG) signals has now been popularly used in a wide variety of applications such as seizure detection/prediction, motor imagery classification, mental task classification, emotion classification, sleep state classification, and drug effects diagnosis. With the large number of EEG channels acquired, it has become apparent that efficient channel selection algorithms are needed with varying importance from one application to another. The main purpose of the channel selection process is threefold: (i) to reduce the computational complexity of any processing task performed on EEG signals by selecting the relevant channels and hence extracting the features of major importance,..."
+    },
+    {
+      "title": "A novel approach of decoding EEG four-class motor imagery tasks via scout ESI and CNN",
+      "year": 2019,
+      "doi": "https://doi.org/10.1088/1741-2552/ab4af6",
+      "venue": "Journal of Neural Engineering",
+      "citations": 152,
+      "abstract": "OBJECTIVE: To develop and implement a novel approach which combines the technique of scout EEG source imaging (ESI) with convolutional neural network (CNN) for the classification of motor imagery (MI) tasks. APPROACH: The technique of ESI uses a boundary element method (BEM) and weighted minimum norm estimation (WMNE) to solve the EEG forward and inverse problems, respectively. Ten scouts are then created within the motor cortex to select the region of interest (ROI). We extract features from the time series of scouts using a Morlet wavelet approach. Lastly, CNN is employed for classifying MI tasks. MAIN RESULTS: The overall mean..."
+    },
+    {
+      "title": "Fusion Convolutional Neural Network for Cross-Subject EEG Motor Imagery Classification",
+      "year": 2020,
+      "doi": "https://doi.org/10.3390/computers9030072",
+      "venue": "Computers",
+      "citations": 87,
+      "abstract": "Brain\u2013computer interfaces (BCIs) can help people with limited motor abilities to interact with their environment without external assistance. A major challenge in electroencephalogram (EEG)-based BCI development and research is the cross-subject classification of motor imagery data. Due to the highly individualized nature of EEG signals, it has been difficult to develop a cross-subject classification method that achieves sufficiently high accuracy when predicting the subject\u2019s intention. In this study, we propose a multi-branch 2D convolutional neural network (CNN) that utilizes different hyperparameter values for each branch and is more flexible to data from different subjects. Our model, EEGNet Fusion, achieves 84.1%..."
+    },
+    {
+      "title": "Motor Imagery Classification Using Mu and Beta Rhythms of EEG with Strong Uncorrelating Transform Based Complex Common Spatial Patterns",
+      "year": 2016,
+      "doi": "https://doi.org/10.1155/2016/1489692",
+      "venue": "Computational Intelligence and Neuroscience",
+      "citations": 103,
+      "abstract": "Recent studies have demonstrated the disassociation between the mu and beta rhythms of electroencephalogram (EEG) during motor imagery tasks. The proposed algorithm in this paper uses a fully data-driven multivariate empirical mode decomposition (MEMD) in order to obtain the mu and beta rhythms from the nonlinear EEG signals. Then, the strong uncorrelating transform complex common spatial patterns (SUTCCSP) algorithm is applied to the rhythms so that the complex data, constructed with the mu and beta rhythms, becomes uncorrelated and its pseudocovariance provides supplementary power difference information between the two rhythms. The extracted features using SUTCCSP that maximize the interclass variances..."
+    },
+    {
+      "title": "How to successfully classify EEG in motor imagery BCI: a metrological analysis of the state of the art",
+      "year": 2022,
+      "doi": "https://doi.org/10.1088/1741-2552/ac74e0",
+      "venue": "Journal of Neural Engineering",
+      "citations": 108,
+      "abstract": "Abstract Objective. Processing strategies are analyzed with respect to the classification of electroencephalographic signals related to brain-computer interfaces (BCIs) based on motor imagery (MI). A review of literature is carried out to understand the achievements in MI classification, the most promising trends, and the challenges in replicating these results. Main focus is placed on performance by means of a rigorous metrological analysis carried out in compliance with the international vocabulary of metrology. Hence, classification accuracy and its uncertainty are considered, as well as repeatability and reproducibility. Approach. The paper works included in the review concern the classification of electroencephalographic signals..."
+    }
+  ],
+  "query2": [
+    {
+      "title": "EEG datasets for motor imagery brain\u2013computer interface",
+      "year": 2017,
+      "doi": "https://doi.org/10.1093/gigascience/gix034",
+      "venue": "GigaScience",
+      "citations": 360,
+      "abstract": "Background: Most investigators of brain-computer interface (BCI) research believe that BCI can be achieved through induced neuronal activity from the cortex, but not by evoked neuronal activity. Motor imagery (MI)-based BCI is one of the standard concepts of BCI, in that the user can generate induced activity by imagining motor movements. However, variations in performance over sessions and subjects are too severe to overcome easily; therefore, a basic understanding and investigation of BCI performance variation is necessary to find critical evidence of performance variation. Here we present not only EEG datasets for MI BCI from 52 subjects, but also the..."
+    },
+    {
+      "title": "CTNet: a convolutional transformer network for EEG-based motor imagery classification",
+      "year": 2024,
+      "doi": "https://doi.org/10.1038/s41598-024-71118-7",
+      "venue": "Scientific Reports",
+      "citations": 168,
+      "abstract": "Brain-computer interface (BCI) technology bridges the direct communication between the brain and machines, unlocking new possibilities for human interaction and rehabilitation. EEG-based motor imagery (MI) plays a pivotal role in BCI, enabling the translation of thought into actionable commands for interactive and assistive technologies. However, the constrained decoding performance of brain signals poses a limitation to the broader application and development of BCI systems. In this study, we introduce a convolutional Transformer network (CTNet) designed for EEG-based MI classification. Firstly, CTNet employs a convolutional module analogous to EEGNet, dedicated to extracting local and spatial features from EEG time series. Subsequently,..."
+    },
+    {
+      "title": "Fusion Convolutional Neural Network for Cross-Subject EEG Motor Imagery Classification",
+      "year": 2020,
+      "doi": "https://doi.org/10.3390/computers9030072",
+      "venue": "Computers",
+      "citations": 87,
+      "abstract": "Brain\u2013computer interfaces (BCIs) can help people with limited motor abilities to interact with their environment without external assistance. A major challenge in electroencephalogram (EEG)-based BCI development and research is the cross-subject classification of motor imagery data. Due to the highly individualized nature of EEG signals, it has been difficult to develop a cross-subject classification method that achieves sufficiently high accuracy when predicting the subject\u2019s intention. In this study, we propose a multi-branch 2D convolutional neural network (CNN) that utilizes different hyperparameter values for each branch and is more flexible to data from different subjects. Our model, EEGNet Fusion, achieves 84.1%..."
+    },
+    {
+      "title": "A novel approach of decoding EEG four-class motor imagery tasks via scout ESI and CNN",
+      "year": 2019,
+      "doi": "https://doi.org/10.1088/1741-2552/ab4af6",
+      "venue": "Journal of Neural Engineering",
+      "citations": 152,
+      "abstract": "OBJECTIVE: To develop and implement a novel approach which combines the technique of scout EEG source imaging (ESI) with convolutional neural network (CNN) for the classification of motor imagery (MI) tasks. APPROACH: The technique of ESI uses a boundary element method (BEM) and weighted minimum norm estimation (WMNE) to solve the EEG forward and inverse problems, respectively. Ten scouts are then created within the motor cortex to select the region of interest (ROI). We extract features from the time series of scouts using a Morlet wavelet approach. Lastly, CNN is employed for classifying MI tasks. MAIN RESULTS: The overall mean..."
+    },
+    {
+      "title": "A Parallel Multiscale Filter Bank Convolutional Neural Networks for Motor Imagery EEG Classification",
+      "year": 2019,
+      "doi": "https://doi.org/10.3389/fnins.2019.01275",
+      "venue": "Frontiers in Neuroscience",
+      "citations": 177,
+      "abstract": "OBJECTIVE: Electroencephalogram (EEG) based brain-computer interfaces (BCI) in motor imagery (MI) have developed rapidly in recent years. A reliable feature extraction method is essential because of a low signal-to-noise ratio (SNR) and time-dependent covariates of EEG signals. Because of efficient application in various fields, deep learning has been adopted in EEG signal processing and has obtained competitive results compared with the traditional methods. However, designing and training an end-to-end network to fully extract potential features from EEG signals remains a challenge in MI. APPROACH: In this study, we propose a parallel multiscale filter bank convolutional neural network (MSFBCNN) for MI..."
+    },
+    {
+      "title": "EEGSym: Overcoming Inter-Subject Variability in Motor Imagery Based BCIs With Deep Learning",
+      "year": 2022,
+      "doi": "https://doi.org/10.1109/tnsre.2022.3186442",
+      "venue": "IEEE Transactions on Neural Systems and Rehabilitation Engineering",
+      "citations": 80,
+      "abstract": "In this study, we present a new Deep Learning (DL) architecture for Motor Imagery (MI) based Brain Computer Interfaces (BCIs) called EEGSym. Our implementation aims to improve previous state-of-the-art performances on MI classification by overcoming inter-subject variability and reducing BCI inefficiency, which has been estimated to affect 10-50% of the population. This convolutional neural network includes the use of inception modules, residual connections and a design that introduces the symmetry of the brain through the mid-sagittal plane into the network architecture. It is complemented with a data augmentation technique that improves the generalization of the model and with the use..."
+    },
+    {
+      "title": "How to successfully classify EEG in motor imagery BCI: a metrological analysis of the state of the art",
+      "year": 2022,
+      "doi": "https://doi.org/10.1088/1741-2552/ac74e0",
+      "venue": "Journal of Neural Engineering",
+      "citations": 108,
+      "abstract": "Abstract Objective. Processing strategies are analyzed with respect to the classification of electroencephalographic signals related to brain-computer interfaces (BCIs) based on motor imagery (MI). A review of literature is carried out to understand the achievements in MI classification, the most promising trends, and the challenges in replicating these results. Main focus is placed on performance by means of a rigorous metrological analysis carried out in compliance with the international vocabulary of metrology. Hence, classification accuracy and its uncertainty are considered, as well as repeatability and reproducibility. Approach. The paper works included in the review concern the classification of electroencephalographic signals..."
+    },
+    {
+      "title": "Graph Convolution Neural Network Based End-to-End Channel Selection and Classification for Motor Imagery Brain\u2013Computer Interfaces",
+      "year": 2022,
+      "doi": "https://doi.org/10.1109/tii.2022.3227736",
+      "venue": "IEEE Transactions on Industrial Informatics",
+      "citations": 103,
+      "abstract": "Classification of electroencephalogram-based motor imagery (MI-EEG) tasks is crucial in brain\u2013computer interface (BCI). EEG signals require a large number of channels in the acquisition process, which hinders its application in practice. How to select the optimal channel subset without a serious impact on the classification performance is an urgent problem to be solved in the field of BCIs. This article proposes an end-to-end deep learning framework, called EEG channel active inference neural network (EEG-ARNN), which is based on graph convolutional neural networks (GCN) to fully exploit the correlation of signals in the temporal and spatial domains. Two channel selection methods,..."
+    },
+    {
+      "title": "A Transformer-Based Approach Combining Deep Learning Network and Spatial-Temporal Information for Raw EEG Classification",
+      "year": 2022,
+      "doi": "https://doi.org/10.1109/tnsre.2022.3194600",
+      "venue": "IEEE Transactions on Neural Systems and Rehabilitation Engineering",
+      "citations": 313,
+      "abstract": "The attention mechanism of the Transformer has the advantage of extracting feature correlation in the long-sequence data and visualizing the model. As time-series data, the spatial and temporal dependencies of the EEG signals between the time points and the different channels contain important information for accurate classification. So far, Transformer-based approaches have not been widely explored in motor-imagery EEG classification and visualization, especially lacking general models based on cross-individual validation. Taking advantage of the Transformer model and the spatial-temporal characteristics of the EEG signals, we designed Transformer-based models for classifications of motor imagery EEG based on the PhysioNet dataset. With..."
+    },
+    {
+      "title": "Motor Imagery Classification Using Mu and Beta Rhythms of EEG with Strong Uncorrelating Transform Based Complex Common Spatial Patterns",
+      "year": 2016,
+      "doi": "https://doi.org/10.1155/2016/1489692",
+      "venue": "Computational Intelligence and Neuroscience",
+      "citations": 103,
+      "abstract": "Recent studies have demonstrated the disassociation between the mu and beta rhythms of electroencephalogram (EEG) during motor imagery tasks. The proposed algorithm in this paper uses a fully data-driven multivariate empirical mode decomposition (MEMD) in order to obtain the mu and beta rhythms from the nonlinear EEG signals. Then, the strong uncorrelating transform complex common spatial patterns (SUTCCSP) algorithm is applied to the rhythms so that the complex data, constructed with the mu and beta rhythms, becomes uncorrelated and its pseudocovariance provides supplementary power difference information between the two rhythms. The extracted features using SUTCCSP that maximize the interclass variances..."
+    }
+  ]
+}

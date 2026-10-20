@@ -1,0 +1,4 @@
+band,cv_accuracy
+Mu Band (8-13 Hz),74.0
+Beta Band (13-30 Hz),75.2
+Combined Mu + Beta Band (7-35 Hz),77.5

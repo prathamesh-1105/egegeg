@@ -1,0 +1,6 @@
+component,latency_ms
+1_Filter_Bank_Pre-filtering,95.564
+2_CSP_Transform_Feature_Selection,10.575
+3_Personal_Classifier_Inference,9.07
+4_Confidence_Safety_State_Machine,0.666
+TOTAL_WINDOW_INFERENCE_LATENCY,115.875

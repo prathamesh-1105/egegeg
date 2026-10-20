@@ -1,0 +1,5 @@
+asymmetry_feature,mean_cv_acc,mean_cv_f1
+LEFT_FIST C4 Suppression Ratio,76.2,70.4
+RIGHT_FIST C3 Suppression Ratio,76.5,70.8
+Contralateral / Ipsilateral Ratio,77.0,71.2
+Contralateral-minus-Ipsilateral ERD,77.4,71.6

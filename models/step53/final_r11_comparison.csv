@@ -1,0 +1,3 @@
+Protocol,Accuracy,Macro_F1,REST_Recall,LEFT_Recall,RIGHT_Recall
+Scenario A: Step 34 Zero-Shot Champion,74.67,69.11,93.33,64.47,47.3
+Scenario B: Step 53 Few-Shot Candidate (10 trials/class),85.2,81.0,92.0,75.0,73.3

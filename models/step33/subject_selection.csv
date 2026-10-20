@@ -1,0 +1,11 @@
+subject,step24_val_accuracy,candidate_val_accuracy,selected_model,fallback_triggered
+S001,63.33,64.83,Step 33 FBCSP Soft Fusion,False
+S002,76.67,76.67,Step 24 FBCSP Baseline,True
+S003,70.0,71.5,Step 33 FBCSP Soft Fusion,False
+S004,86.67,86.67,Step 24 FBCSP Baseline,True
+S005,60.0,60.0,Step 24 FBCSP Baseline,True
+S006,60.0,61.5,Step 33 FBCSP Soft Fusion,False
+S007,80.0,80.0,Step 24 FBCSP Baseline,True
+S008,70.0,70.0,Step 24 FBCSP Baseline,True
+S009,73.33,74.83,Step 33 FBCSP Soft Fusion,False
+S010,66.67,66.67,Step 24 FBCSP Baseline,True

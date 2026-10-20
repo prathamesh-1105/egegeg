@@ -1,0 +1,4 @@
+classifier,val_accuracy,val_macro_f1
+Binary LogisticRegression (Motor vs REST),82.5,78.0
+Binary LinearSVM,81.8,77.2
+Binary LDA,82.0,77.5

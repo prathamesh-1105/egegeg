@@ -1,0 +1,45 @@
+{
+  "timestamp": "2026-09-12 12:51:27",
+  "model_name": "Step 63 Multi-Band Riemannian-FBCSP & Dynamic Threshold Engine",
+  "step61_baseline_r11_accuracy": 72.0,
+  "step63_authentic_r11_accuracy": 71.33,
+  "step63_authentic_r11_macro_f1": 65.54,
+  "rest_recall": 92.67,
+  "left_fist_recall": 51.32,
+  "right_fist_recall": 48.65,
+  "inference_latency_ms": 3.8,
+  "confusion_matrix": [
+    [
+      139,
+      3,
+      8
+    ],
+    [
+      19,
+      39,
+      18
+    ],
+    [
+      28,
+      10,
+      36
+    ]
+  ],
+  "per_subject_thresholds": {
+    "S001": 0.45,
+    "S002": 0.45,
+    "S003": 0.45,
+    "S004": 0.45,
+    "S005": 0.45,
+    "S006": 0.45,
+    "S007": 0.45,
+    "S008": 0.45,
+    "S009": 0.45,
+    "S010": 0.45
+  },
+  "classes": [
+    "REST",
+    "LEFT_FIST",
+    "RIGHT_FIST"
+  ]
+}

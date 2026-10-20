@@ -1,0 +1,8 @@
+{
+  "architecture": "Step 50 Data Expansion Verification Engine",
+  "dataset_boundary": "Audited S001-S010 (61 EDF files)",
+  "filter_bands": [
+    "7-35Hz"
+  ],
+  "decision": "KEEP STEP 34"
+}

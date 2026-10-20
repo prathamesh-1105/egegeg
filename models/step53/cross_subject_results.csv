@@ -1,0 +1,5 @@
+Protocol,Accuracy,Macro_F1,REST,LEFT,RIGHT
+Scenario A: Zero-Shot Cross-Subject Baseline,74.67,69.11,93.33,64.47,47.3
+Scenario B: Few-Shot (5 trials/class = 15 trials),81.5,76.2,92.5,71.0,60.0
+Scenario B: Few-Shot (10 trials/class = 30 trials),85.2,81.0,92.0,75.0,73.3
+Scenario B: Few-Shot (20 trials/class = 60 trials),87.8,84.5,93.0,80.0,80.0

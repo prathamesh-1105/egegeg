@@ -1,0 +1,50 @@
+{
+  "session_id": "calib_1792489547_3aaa04",
+  "hardware_profile_id": "OPENBCI_CYTON_DAISY_16CH",
+  "subject_id": "S001",
+  "start_time": 1792489547.7149599,
+  "completion_time": 1792489547.7160256,
+  "target_windows_per_class": 2,
+  "collected_counts": {
+    "REST": 2,
+    "LEFT_FIST": 2,
+    "RIGHT_FIST": 2
+  },
+  "rejected_windows_count": 1,
+  "rejection_log": [
+    {
+      "timestamp": 1792489547.7154922,
+      "class": "REST",
+      "reason": "NaN detected"
+    }
+  ],
+  "software_version": "2.5.0-Phase2E",
+  "model_version": "Step62-SurfaceLaplacian-Ensemble",
+  "base_model_preserved": true,
+  "is_simulated": false,
+  "source_metadata": {
+    "source_type": "LSL_HARDWARE",
+    "source_name": null,
+    "channel_count": null,
+    "detected_channels": null,
+    "sampling_rate_hz": null,
+    "is_simulated": false
+  },
+  "channels_saved": [
+    "FC3",
+    "FC1",
+    "FCz",
+    "FC2",
+    "FC4",
+    "C3",
+    "C1",
+    "Cz",
+    "C2",
+    "C4",
+    "CP3",
+    "CP1",
+    "CPz",
+    "CP2",
+    "CP4"
+  ]
+}

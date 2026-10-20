@@ -1,0 +1,45 @@
+{
+  "timestamp": "2026-09-12 12:51:56",
+  "model_name": "Step 64 Surface Laplacian & Quad-Ensemble Engine",
+  "step61_baseline_r11_accuracy": 72.0,
+  "step64_authentic_r11_accuracy": 71.67,
+  "step64_authentic_r11_macro_f1": 66.08,
+  "rest_recall": 92.0,
+  "left_fist_recall": 55.26,
+  "right_fist_recall": 47.3,
+  "inference_latency_ms": 4.21,
+  "confusion_matrix": [
+    [
+      138,
+      2,
+      10
+    ],
+    [
+      17,
+      42,
+      17
+    ],
+    [
+      27,
+      12,
+      35
+    ]
+  ],
+  "per_subject_thresholds": {
+    "S001": 0.45,
+    "S002": 0.45,
+    "S003": 0.45,
+    "S004": 0.45,
+    "S005": 0.45,
+    "S006": 0.45,
+    "S007": 0.45,
+    "S008": 0.45,
+    "S009": 0.45,
+    "S010": 0.45
+  },
+  "classes": [
+    "REST",
+    "LEFT_FIST",
+    "RIGHT_FIST"
+  ]
+}

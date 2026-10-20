@@ -1,0 +1,115 @@
+{
+  "model_name": "Phase 4 Champion: Anatomical Surface Laplacian Balanced Tri-Ensemble (k=24)",
+  "candidate_id": "exp_07_correct_laplacian_tri_ensemble",
+  "timestamp": "2026-10-20 15:55:01",
+  "spatial_montage": [
+    "FC3",
+    "FC1",
+    "FCz",
+    "FC2",
+    "FC4",
+    "C3",
+    "C1",
+    "Cz",
+    "C2",
+    "C4",
+    "CP3",
+    "CP1",
+    "CPz",
+    "CP2",
+    "CP4"
+  ],
+  "k_features": 24,
+  "r11_holdout_metrics": {
+    "n_total": 300,
+    "accuracy": 71.67,
+    "balanced_accuracy": 65.54,
+    "macro_f1": 66.21,
+    "weighted_f1": 70.91,
+    "rest_recall": 90.0,
+    "left_recall": 55.26,
+    "right_recall": 51.35,
+    "rest_precision": 80.36,
+    "left_precision": 68.85,
+    "right_precision": 53.52,
+    "rest_false_actuation_rate": 10.0,
+    "motor_lateralization_error_rate": 24.67,
+    "confusion_matrix": [
+      [
+        135,
+        4,
+        11
+      ],
+      [
+        12,
+        42,
+        22
+      ],
+      [
+        21,
+        15,
+        38
+      ]
+    ],
+    "classes": [
+      "REST",
+      "LEFT_FIST",
+      "RIGHT_FIST"
+    ],
+    "mean_latency_ms": 0.75,
+    "sub_mean_acc": 71.67,
+    "sub_std_acc": 10.88,
+    "per_subject": [
+      {
+        "subject": "S001",
+        "accuracy": 56.67,
+        "macro_f1": 49.15
+      },
+      {
+        "subject": "S002",
+        "accuracy": 76.67,
+        "macro_f1": 70.51
+      },
+      {
+        "subject": "S003",
+        "accuracy": 53.33,
+        "macro_f1": 51.39
+      },
+      {
+        "subject": "S004",
+        "accuracy": 76.67,
+        "macro_f1": 69.32
+      },
+      {
+        "subject": "S005",
+        "accuracy": 73.33,
+        "macro_f1": 65.4
+      },
+      {
+        "subject": "S006",
+        "accuracy": 60.0,
+        "macro_f1": 47.18
+      },
+      {
+        "subject": "S007",
+        "accuracy": 83.33,
+        "macro_f1": 79.11
+      },
+      {
+        "subject": "S008",
+        "accuracy": 80.0,
+        "macro_f1": 75.24
+      },
+      {
+        "subject": "S009",
+        "accuracy": 70.0,
+        "macro_f1": 56.81
+      },
+      {
+        "subject": "S010",
+        "accuracy": 86.67,
+        "macro_f1": 82.96
+      }
+    ]
+  }
+}

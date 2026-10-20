@@ -1,0 +1,4 @@
+model_capacity,cv_accuracy
+Small (10k params),76.5
+Medium (50k params),77.8
+Large (250k params),77.2

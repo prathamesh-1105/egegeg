@@ -1,0 +1,5 @@
+representation,mean_cv_macro_f1
+Representation A: Riemannian Tangent Space (Step 14 Baseline),53.46
+Representation B: Multiclass CSP,48.18
+Representation C: Filter Bank CSP (FBCSP),63.92
+Representation D: Riemannian + FBCSP Hybrid Fusion,61.12

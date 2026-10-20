@@ -1,0 +1,4 @@
+model_config,val_accuracy,val_macro_f1,notes
+Single 3-Class FBCSP (Baseline),70.67,64.33,Step 24 Champion
+Step 33 Soft Fusion Ensemble,74.0,68.12,Step 33 Champion
+Dedicated Left vs Right Specialist (Asymmetry PSD),49.58,33.15,Motor trials only

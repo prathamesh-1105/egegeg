@@ -1,0 +1,4 @@
+trial_class,expected_direction,mean_direction_score,direction_accuracy
+LEFT_FIST,D < 0,-0.42,78.5
+RIGHT_FIST,D > 0,0.38,76.0
+REST,D ~ 0,0.02,94.0

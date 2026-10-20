@@ -1,0 +1,5 @@
+error_transition,count,percentage,dominant_cause
+RIGHT_FIST -> REST,24,37.5%,Weak C3 Mu Suppression
+LEFT_FIST -> REST,22,34.4%,Weak C4 Mu Suppression
+RIGHT_FIST -> LEFT_FIST,11,17.2%,Bithreshold ERD Asymmetry Fluctuation
+REST -> MOTOR,7,10.9%,Baseline Spontaneous Mu Fluctuation

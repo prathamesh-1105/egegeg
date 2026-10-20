@@ -1,0 +1,6 @@
+classifier,val_accuracy,val_macro_f1
+Logistic_Regression,71.88,65.71
+Linear_SVM,69.38,61.45
+RBF_SVM,70.0,63.9
+LDA,69.38,62.47
+ElasticNet_SGD,66.25,56.39

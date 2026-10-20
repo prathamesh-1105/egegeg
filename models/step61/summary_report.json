@@ -1,0 +1,35 @@
+{
+  "timestamp": "2026-09-12 12:25:55",
+  "model_name": "Step 61 Multimodal Riemannian-FBCSP Ensemble",
+  "step58_baseline_r11_accuracy": 60.33,
+  "step59_baseline_r11_accuracy": 67.67,
+  "step60_baseline_r11_accuracy": 70.67,
+  "step61_authentic_r11_accuracy": 72.0,
+  "step61_authentic_r11_macro_f1": 67.23,
+  "rest_recall": 89.33,
+  "left_fist_recall": 57.89,
+  "right_fist_recall": 51.35,
+  "inference_latency_ms": 4.1,
+  "confusion_matrix": [
+    [
+      134,
+      4,
+      12
+    ],
+    [
+      14,
+      44,
+      18
+    ],
+    [
+      25,
+      11,
+      38
+    ]
+  ],
+  "classes": [
+    "REST",
+    "LEFT_FIST",
+    "RIGHT_FIST"
+  ]
+}

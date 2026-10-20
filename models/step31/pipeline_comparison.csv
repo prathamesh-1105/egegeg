@@ -1,0 +1,9 @@
+component,step24,step29,step30,discrepancy
+Datasets / Subjects,S001-S010 PhysioNet EDF,S001-S010 PhysioNet EDF,S001-S010 PhysioNet EDF,None
+Holdout Run,R11 (30 windows/subject),R11 (30 windows/subject),R11 (30 windows/subject),None
+Channel Montage,Group B (15 motor channels),Group B (15 motor channels),Group B (15 motor channels),None
+Sampling Rate,160 Hz,160 Hz,160 Hz,None
+Window Size,3.0s (480 samples),3.0s (480 samples),3.0s (480 samples),None
+Event Alignment,0.5s post-onset offset,0.5s post-onset offset,0.5s post-onset offset,None
+Model Artifacts Used,Subject-specific trained models (S001-S010),Global generic fit on val_tr_X (30 wins),Global generic fit on val_tr_X (30 wins),CRITICAL: Step 29/30 used a sub-sampled global fit rather than loaded Step 24 subject artifacts!
+Evaluation Layer,Level 1 Raw Window Model Output,Level 3 Confidence Filtered,Level 5 Command State Machine,CRITICAL: Step 29/30 evaluated confidence-filtered and command-state predictions!

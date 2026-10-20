@@ -1,0 +1,5 @@
+error_transition,error_count,potential_accuracy_gain,priority
+RIGHT_FIST -> REST,24,+5.33%,CRITICAL (P1)
+LEFT_FIST -> REST,22,+4.88%,HIGH (P2)
+RIGHT_FIST -> LEFT_FIST,11,+2.44%,MEDIUM (P3)
+REST -> MOTOR,11,+2.44%,LOW (P4)

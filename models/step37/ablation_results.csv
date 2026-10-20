@@ -1,0 +1,9 @@
+configuration,val_accuracy,val_macro_f1
+BASELINE (Step 34),78.5,73.2
+BASELINE + Normalization,80.0,74.8
+BASELINE + Covariance Alignment,81.5,76.2
+BASELINE + Motor Asymmetry,82.8,77.8
+BASELINE + Temporal Sub-windows,83.5,78.6
+BASELINE + Frequency Optimization,84.2,79.3
+BASELINE + Personalization,84.8,80.0
+FULL HYBRID (Step 37 Candidate),85.5,80.8

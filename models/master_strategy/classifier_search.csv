@@ -1,0 +1,4 @@
+classifier,cv_accuracy
+LogisticRegression (L2),77.5
+Linear SVM,77.2
+LDA,77.8

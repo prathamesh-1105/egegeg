@@ -1,0 +1,4 @@
+target_accuracy,trials,seconds,minutes,status
+>= 80% Accuracy,9,27,0.45 min,ACHIEVED IN 27s
+>= 85% Accuracy,15,45,0.75 min,ACHIEVED IN 45s
+>= 90% Accuracy,60,180,3.00 min,ACHIEVED IN 3.0m

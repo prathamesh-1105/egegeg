@@ -1,0 +1,4 @@
+classifier,val_accuracy,val_macro_f1
+LogisticRegression Meta-Learner,77.8,72.0
+LinearSVM Meta-Learner,77.5,71.8
+MLP Meta-Learner (64 hidden),77.2,71.5

@@ -1,0 +1,3 @@
+model_id,filter_bank,csp_components,k_features,classifier,validation_accuracy,validation_macro_f1,left_recall,right_recall,rest_recall,latency_ms
+Candidate_Opt_FBCSP,Bank_A,2,12,Logistic_Regression,72.5,66.2,59.21,44.59,90.0,0.41
+Step_24_Champion,Bank_A,2,12,LogisticRegression,70.67,64.26,59.21,39.19,92.0,0.41

@@ -1,0 +1,5 @@
+temporal_strategy,causal_window_buffer,val_accuracy,val_macro_f1
+Raw_Single_Window,1,60.56,50.03
+3_Window_Causal_Prob_Average,3,50.0,32.28
+3_Window_Majority_Vote,3,47.78,32.27
+5_Window_Causal_Prob_Average,5,53.33,32.2

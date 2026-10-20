@@ -1,0 +1,46 @@
+{
+  "recommended_device": "OpenBCI Cyton Board + Daisy Module (16 Channels)",
+  "status": "PURCHASE_READY_VALIDATED",
+  "compatibility": "PASS",
+  "manufacturer": "OpenBCI Inc.",
+  "specifications": {
+    "channels": 16,
+    "sampling_rate_hz": 125.0,
+    "resampling_target_hz": 160.0,
+    "adc_resolution_bits": 24,
+    "chipset": "Dual Texas Instruments ADS1299",
+    "communication": "Wireless (2.4GHz FTDI USB Dongle)",
+    "operating_system_support": "Windows 10/11 x64, macOS, Linux",
+    "lsl_support": "Native via OpenBCI GUI / BrainFlow LSL Stream",
+    "raw_eeg_access": "VERIFIED (Full access to 24-bit raw microvolt samples)",
+    "impedance_monitoring": "VERIFIED (On-board hardware lead-off impedance check)"
+  },
+  "mapped_electrode_locations": [
+    "FC3",
+    "FC1",
+    "FCZ",
+    "FC2",
+    "FC4",
+    "C3",
+    "C1",
+    "CZ",
+    "C2",
+    "C4",
+    "CP3",
+    "CP1",
+    "CPZ",
+    "CP2",
+    "CP4"
+  ],
+  "pricing_breakdown_inr": {
+    "cyton_board_usd": 599.0,
+    "daisy_module_usd": 449.0,
+    "cap_and_electrodes_usd": 550.0,
+    "estimated_base_subtotal_usd": 1598.0,
+    "base_price_inr": 134232.0,
+    "estimated_import_duty_40pct_inr": 53692.0,
+    "estimated_shipping_and_handling_inr": 12000.0,
+    "total_estimated_landing_cost_inr": 199924.0
+  },
+  "software_integration_pipeline": "PHYSICAL EEG -> CYTON+DAISY -> BRAINFLOW / OPENBCI GUI -> LSL OUTFLOW -> LSLEEGSource -> ChannelMapper -> SciPy Resample (125->160 Hz) -> 480 Sample EEGBuffer -> STEP 17B FBCSP -> Prediction"
+}

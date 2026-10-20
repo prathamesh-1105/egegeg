@@ -1,0 +1,74 @@
+{
+  "timestamp": "2026-08-12T23:02:18.589377",
+  "final_decision": "ADOPT CLASS-BALANCED MODEL",
+  "baseline_r11_metrics": {
+    "accuracy": 59.0,
+    "macro_f1": 52.2,
+    "rest_prediction_pct": 63.0,
+    "left_fist_recall": 44.74,
+    "right_fist_recall": 29.73,
+    "rest_recall": 80.67
+  },
+  "new_class_balanced_r11_metrics": {
+    "accuracy": 59.33,
+    "macro_f1": 53.04,
+    "rest_prediction_pct": 61.0,
+    "left_fist_recall": 47.37,
+    "right_fist_recall": 31.08,
+    "rest_recall": 79.33
+  },
+  "improvements": {
+    "accuracy_change": 0.33,
+    "macro_f1_change": 0.84,
+    "left_fist_recall_change": 2.63,
+    "right_fist_recall_change": 1.35,
+    "rest_bias_reduction_pct": 2.0
+  },
+  "raw_prediction_distribution": {
+    "REST": 61.0,
+    "LEFT_FIST": 21.33,
+    "RIGHT_FIST": 17.67
+  },
+  "smoothed_prediction_distribution_3win": {
+    "REST": 64.67,
+    "LEFT_FIST": 18.67,
+    "RIGHT_FIST": 16.67
+  },
+  "subject_statistics": {
+    "accuracy": {
+      "mean": 59.33,
+      "median": 58.33,
+      "min": 43.33,
+      "max": 80.0,
+      "std": 12.63
+    },
+    "macro_f1": {
+      "mean": 49.55,
+      "median": 48.6,
+      "min": 30.04,
+      "max": 75.75,
+      "std": 13.51
+    },
+    "left_recall": {
+      "mean": 47.14,
+      "median": 40.18,
+      "min": 12.5,
+      "max": 87.5,
+      "std": 25.33
+    },
+    "right_recall": {
+      "mean": 31.43,
+      "median": 25.0,
+      "min": 0.0,
+      "max": 100.0,
+      "std": 31.61
+    },
+    "rest_recall": {
+      "mean": 79.33,
+      "median": 86.66,
+      "min": 33.33,
+      "max": 100.0,
+      "std": 20.97
+    }
+  }
+}

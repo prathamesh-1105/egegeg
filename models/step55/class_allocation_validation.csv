@@ -1,0 +1,4 @@
+allocation,accuracy
+3 REST / 3 LEFT / 3 RIGHT (9 total),81.0
+3 REST / 4 LEFT / 8 RIGHT (15 total - Step 54),85.8
+5 REST / 5 LEFT / 10 RIGHT (20 total),87.2

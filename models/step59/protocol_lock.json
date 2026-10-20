@@ -1,0 +1,36 @@
+{
+  "step": 59,
+  "protocol": "Strict Independent Unseen-Run Protocol",
+  "data": {
+    "calibration_runs": [
+      "R03",
+      "R07"
+    ],
+    "calibration_trials": 600,
+    "test_run": "R11",
+    "test_trials": 300,
+    "subjects": [
+      "S001",
+      "S002",
+      "S003",
+      "S004",
+      "S005",
+      "S006",
+      "S007",
+      "S008",
+      "S009",
+      "S010"
+    ],
+    "channels": 15,
+    "sampling_rate_hz": 160.0,
+    "epoch_length_sec": 3.0,
+    "onset_offset_sec": 0.5
+  },
+  "rules": [
+    "ZERO synthetic data",
+    "ZERO R11 leakage during development",
+    "No hardcoded metrics or results",
+    "R11 evaluated exactly once after freeze"
+  ],
+  "status": "LOCKED"
+}

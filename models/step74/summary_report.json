@@ -1,0 +1,35 @@
+{
+  "timestamp": "2026-09-12 13:18:31",
+  "model_name": "Step 74 Doubled-Calibration Riemannian Engine",
+  "num_subjects": 10,
+  "total_test_trials": 600,
+  "step61_baseline_r11_accuracy": 72.0,
+  "step74_authentic_holdout_accuracy": 62.83,
+  "step74_authentic_holdout_macro_f1": 55.95,
+  "rest_recall": 84.67,
+  "left_fist_recall": 38.56,
+  "right_fist_recall": 43.54,
+  "inference_latency_ms": 3.14,
+  "confusion_matrix": [
+    [
+      254,
+      22,
+      24
+    ],
+    [
+      49,
+      59,
+      45
+    ],
+    [
+      53,
+      30,
+      64
+    ]
+  ],
+  "classes": [
+    "REST",
+    "LEFT_FIST",
+    "RIGHT_FIST"
+  ]
+}

@@ -1,0 +1,4 @@
+milestone,acc_gain,gain_per_sec
+0 -> 9 trials (27s),+6.33%,+0.23%/s
+9 -> 15 trials (45s),+4.80%,+0.27%/s
+15 -> 60 trials (180s),+4.20%,+0.03%/s

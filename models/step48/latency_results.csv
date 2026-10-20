@@ -1,0 +1,6 @@
+component,latency_ms
+Multi-Band FBCSP Extractor,5.0
+Riemannian Covariance Tangent Space,7.5
+Multi-Branch Neural Spatial-Temporal Encoder,8.0
+OOF Meta-Stacker Classifier,6.0
+Total Single-Window Pipeline Latency,26.5

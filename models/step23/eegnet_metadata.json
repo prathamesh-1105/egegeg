@@ -1,0 +1,15 @@
+{
+  "architecture": "EEGNet-8,2 (Lawhern et al., 2018)",
+  "input_shape": [
+    1,
+    15,
+    480
+  ],
+  "n_channels": 15,
+  "sampling_rate_hz": 160.0,
+  "window_duration_sec": 3.0,
+  "best_val_macro_f1": 39.92,
+  "test_accuracy": 23.17,
+  "test_macro_f1": 21.43,
+  "inference_latency_ms": 0.193
+}

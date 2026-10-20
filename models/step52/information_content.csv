@@ -1,0 +1,5 @@
+feature_subset,cv_accuracy
+Mu Power (8-13 Hz),74.0
+Beta Power (13-30 Hz),75.2
+C3/C4 Log Ratio,76.5
+Combined Physiological Features,77.2

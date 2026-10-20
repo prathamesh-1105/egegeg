@@ -1,0 +1,4 @@
+exp_id,strategy,val_acc,status
+EXP-001,Multi-Band FBCSP + ERD%,77.8,BEST CANDIDATE
+EXP-002,Riemannian Tangent Space,76.8,BENCHMARKED
+EXP-003,OOF Meta-Stacking Fusion,77.8,OPTIMAL

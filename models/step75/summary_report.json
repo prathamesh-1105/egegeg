@@ -1,0 +1,35 @@
+{
+  "timestamp": "2026-09-12 13:23:15",
+  "model_name": "Step 75 Causal Temporal Probability Smoothing Engine",
+  "raw_accuracy": 72.0,
+  "smoothed_accuracy": 69.67,
+  "voted_accuracy": 65.0,
+  "step75_authentic_r11_accuracy": 65.0,
+  "step75_authentic_r11_macro_f1": 58.46,
+  "rest_recall": 88.67,
+  "left_fist_recall": 44.74,
+  "right_fist_recall": 37.84,
+  "inference_latency_ms": 3.35,
+  "confusion_matrix": [
+    [
+      133,
+      4,
+      13
+    ],
+    [
+      28,
+      34,
+      14
+    ],
+    [
+      38,
+      8,
+      28
+    ]
+  ],
+  "classes": [
+    "REST",
+    "LEFT_FIST",
+    "RIGHT_FIST"
+  ]
+}

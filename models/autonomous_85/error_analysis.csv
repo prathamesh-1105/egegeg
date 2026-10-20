@@ -1,0 +1,2 @@
+residual_model,cv_accuracy
+LogisticRegression OOF Residual Corrector,77.8

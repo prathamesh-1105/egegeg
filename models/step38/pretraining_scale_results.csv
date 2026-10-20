@@ -1,0 +1,5 @@
+pretraining_data_pct,unlabeled_windows,val_accuracy,val_macro_f1
+25,150,76.5,71.2
+50,300,79.2,74.5
+75,450,82.5,77.8
+100,600,84.8,80.2

@@ -1,0 +1,7 @@
+metric,value
+Mean GroupKFold Accuracy,77.2
+Mean GroupKFold Macro F1,71.5
+Accuracy Standard Deviation Across Folds,0.85
+25th Percentile Subject Accuracy,66.67
+Worst-Subject Accuracy (S002/S004/S007),66.67
+Composite Robust Score (Selection F Formula),76.5

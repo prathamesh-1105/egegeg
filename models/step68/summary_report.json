@@ -1,0 +1,33 @@
+{
+  "timestamp": "2026-09-12 12:54:04",
+  "model_name": "Step 68 Fine-Grained Multi-Band & Tri-Kernel Engine",
+  "step61_baseline_r11_accuracy": 72.0,
+  "step68_authentic_r11_accuracy": 66.67,
+  "step68_authentic_r11_macro_f1": 60.0,
+  "rest_recall": 88.67,
+  "left_fist_recall": 46.05,
+  "right_fist_recall": 43.24,
+  "inference_latency_ms": 2.92,
+  "confusion_matrix": [
+    [
+      133,
+      7,
+      10
+    ],
+    [
+      22,
+      35,
+      19
+    ],
+    [
+      26,
+      16,
+      32
+    ]
+  ],
+  "classes": [
+    "REST",
+    "LEFT_FIST",
+    "RIGHT_FIST"
+  ]
+}

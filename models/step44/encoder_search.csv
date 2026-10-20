@@ -1,0 +1,5 @@
+architecture,parameters,model_size_mb,val_accuracy,val_macro_f1,latency_ms
+Compact EEGNet,2645,0.42,77.2,71.5,26.5
+Shallow ConvNet,4520,0.65,76.5,70.8,28.0
+Temporal CNN,6800,0.88,76.8,71.0,29.5
+Lightweight Conformer,12500,1.45,77.0,71.2,32.0

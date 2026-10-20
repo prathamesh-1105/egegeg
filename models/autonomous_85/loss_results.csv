@@ -1,0 +1,3 @@
+loss_function,cv_accuracy
+Weighted Cross-Entropy,77.5
+Focal Loss (gamma=2.0),77.8

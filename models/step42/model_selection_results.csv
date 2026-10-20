@@ -1,0 +1,5 @@
+metric,value
+Primary Ranking Metric,Mean Outer Trial-CV Accuracy
+Secondary Metric,Mean Outer Trial-CV Macro F1
+Selected Architecture,Step 34 Two-Pass Motor Specialist Ensemble
+Selection Rationale,Highest mean trial-level cross-subject CV score (77.20%) and zero holdout leakage

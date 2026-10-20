@@ -1,0 +1,55 @@
+{
+  "phase": "Phase 7",
+  "timestamp": "2026-10-20 18:29:09",
+  "training_task": "PhysioNet EEGMMIDB Task 2 Pure Motor Imagery (Runs R04 + R08, 600 trials)",
+  "holdout_task": "PhysioNet EEGMMIDB Task 2 Pure Motor Imagery (Run R12, 300 trials)",
+  "cohort_inventory": {
+    "total_volunteers_physionet": 109,
+    "verified_local_subjects": 10,
+    "verified_pure_imagery_trials": 900,
+    "verified_execution_trials": 900,
+    "total_verified_trials": 1800
+  },
+  "montage": [
+    "FC3",
+    "FC1",
+    "FCz",
+    "FC2",
+    "FC4",
+    "C3",
+    "C1",
+    "Cz",
+    "C2",
+    "C4",
+    "CP3",
+    "CP1",
+    "CPz",
+    "CP2",
+    "CP4"
+  ],
+  "sampling_rate_hz": 160.0,
+  "window_duration_sec": 3.0,
+  "models": {
+    "p7_pure_imagery_calibrated": {
+      "id": "Phase7-PureImagery-Calibrated",
+      "name": "Phase 7 Champion: Pure Motor Imagery Calibrated Ensemble",
+      "dir": "models/research_phase7/p7_pure_imagery_calibrated",
+      "mean_holdout_accuracy": 55.67,
+      "mean_macro_f1": 46.93,
+      "mean_left_recall": 40.36,
+      "mean_right_recall": 33.39,
+      "mean_rest_recall": 74.0,
+      "mean_rest_false_actuation_rate": 0.26,
+      "description": "Optimized pure motor imagery calibrated ensemble with contralateral hemispheric differencing, Riemannian tangent space, and multiclass CSP (k=32)"
+    },
+    "p7_hierarchical_loso": {
+      "id": "Phase7-Hierarchical-LOSO",
+      "name": "Phase 7 Generalization Model: Two-Stage Hierarchical BCI",
+      "dir": "models/research_phase7/p7_hierarchical_loso",
+      "cross_subject_loso_accuracy": 48.0,
+      "cross_subject_loso_macro_f1": 40.5,
+      "cross_subject_rest_far": 0.3,
+      "description": "Cross-subject Leave-One-Subject-Out hierarchical decoder with calibrated REST gating and pure lateralization"
+    }
+  }
+}

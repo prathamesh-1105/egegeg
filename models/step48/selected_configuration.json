@@ -1,0 +1,15 @@
+{
+  "architecture": "Step 48 Multi-Branch Meta-Ensemble Stacker",
+  "filter_banks": [
+    "4-8Hz",
+    "8-12Hz",
+    "12-16Hz",
+    "16-20Hz",
+    "20-24Hz",
+    "24-28Hz",
+    "28-32Hz",
+    "32-40Hz"
+  ],
+  "riemannian_tangent_space": true,
+  "decision": "KEEP STEP 34"
+}

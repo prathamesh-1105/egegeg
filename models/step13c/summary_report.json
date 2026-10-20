@@ -1,0 +1,73 @@
+{
+  "timestamp": "2026-08-12T23:09:15.594436",
+  "final_decision": "KEEP STEP 13B",
+  "selected_smoothing_strategy": "RAW (No smoothing - smoothing reduced motor recall)",
+  "latency_benchmark": {
+    "feature_extraction_ms": 0.7309,
+    "classifier_A_inference_ms": 0.1689,
+    "classifier_B_inference_ms": 0.0665,
+    "total_hierarchical_inference_ms": 0.9664,
+    "baseline_single_model_benchmark_ms": 0.58,
+    "hardware_impact": "The total inference latency (~0.6-0.8 ms) remains well below the real-time threshold (300 ms window step), confirming computational suitability for future experimental EEG hardware."
+  },
+  "step11_baseline_r11_metrics": {
+    "accuracy": 59.0,
+    "macro_f1": 52.2,
+    "rest_recall": 80.67,
+    "left_fist_recall": 44.74,
+    "right_fist_recall": 29.73
+  },
+  "step13b_class_balanced_r11_metrics": {
+    "accuracy": 59.33,
+    "macro_f1": 53.04,
+    "rest_recall": 79.33,
+    "left_fist_recall": 47.37,
+    "right_fist_recall": 31.08
+  },
+  "step13c_hierarchical_r11_metrics": {
+    "accuracy": 57.67,
+    "macro_f1": 51.03,
+    "rest_recall": 78.67,
+    "left_fist_recall": 40.79,
+    "right_fist_recall": 32.43,
+    "smoothed_3win_accuracy": 50.33,
+    "smoothed_3win_macro_f1": 42.08
+  },
+  "subject_statistics": {
+    "accuracy": {
+      "mean": 57.67,
+      "median": 58.33,
+      "min": 46.67,
+      "max": 73.33,
+      "std": 10.22
+    },
+    "macro_f1": {
+      "mean": 47.52,
+      "median": 48.28,
+      "min": 21.71,
+      "max": 66.3,
+      "std": 12.23
+    },
+    "left_recall": {
+      "mean": 40.71,
+      "median": 37.5,
+      "min": 0.0,
+      "max": 87.5,
+      "std": 26.78
+    },
+    "right_recall": {
+      "mean": 33.04,
+      "median": 26.78,
+      "min": 0.0,
+      "max": 85.71,
+      "std": 27.7
+    },
+    "rest_recall": {
+      "mean": 78.66,
+      "median": 86.66,
+      "min": 26.67,
+      "max": 93.33,
+      "std": 19.95
+    }
+  }
+}

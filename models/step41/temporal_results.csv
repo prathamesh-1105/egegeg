@@ -1,0 +1,4 @@
+sub_window,outer_cv_acc,outer_cv_f1
+0.5 - 2.5s Standard Window,77.2,71.5
+1.0 - 3.0s Causal Window,76.8,71.0
+0.5 - 3.0s Full Trial Window,77.0,71.2

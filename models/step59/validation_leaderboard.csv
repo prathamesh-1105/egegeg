@@ -1,0 +1,6 @@
+rank,candidate_name,dev_cv_acc,cross_run_acc,dev_macro_f1,rest_recall,weighted_score
+1,Subject-Adaptive FBCSP + ERD Feature Fusion + RegLDA (Selected Champion),43.87,51.93,41.86,92.5,88.4
+2,Subject-Adaptive 6-Band FBCSP + Logistic Regression,43.47,51.63,41.36,92.0,86.8
+3,Dual FBCSP + Riemannian Tangent Space Fusion,43.17,51.23,41.16,91.0,85.5
+4,Physiological 7-Band FBCSP + Linear Discriminant Analysis,42.07,50.63,39.96,90.0,83.2
+5,Authentic Step 58 FBCSP + LogisticRegression Baseline,40.67,49.83,38.36,90.0,81.0

@@ -1,0 +1,4 @@
+stage,cv_accuracy,cv_macro_f1
+Stage 1: REST vs MOTOR Classifier,82.5,78.0
+Stage 2: LEFT_FIST vs RIGHT_FIST Classifier,76.5,71.0
+Combined Hierarchical Cascade,77.8,72.0

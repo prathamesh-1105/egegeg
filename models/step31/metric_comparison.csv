@@ -1,0 +1,6 @@
+decision_level,accuracy,macro_f1,coverage,abstention,description
+Level_1_Raw_Model_Prediction,70.67,64.33,100.0,0.0,Raw model output without smoothing or filtering
+Level_2_Probability_Adjusted,18.67,23.28,100.0,0.0,REST probability bias adjustment applied
+Level_3_Confidence_Aware,16.67,21.63,78.0,22.0,"Step 26 confidence layer (Pmax >= 0.70, Margin >= 0.05)"
+Level_4_Temporal_Smoothed,22.33,23.01,100.0,0.0,3-window causal probability moving average
+Level_5_Command_State_Machine,16.67,21.63,78.0,22.0,Step 28 Hysteresis Command State Machine output

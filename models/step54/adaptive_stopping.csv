@@ -1,0 +1,2 @@
+rule,early_stop_trial,accuracy_at_stop,trials_saved
+Entropy Stability Stopping,6,85.2,4

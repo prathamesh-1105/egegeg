@@ -1,0 +1,7 @@
+strategy,selected_model,val_score,cv_mean,cv_std,r11_performance
+Selection A: Highest Peak Single-Validation Accuracy,Step 38 Deep Latent Hybrid,87.2,76.4,1.25,74.67
+Selection B: Highest Mean Cross-Subject CV Accuracy,Step 34 Two-Pass Motor Specialist,78.5,77.2,0.85,74.67
+Selection C: Highest Mean Cross-Subject CV Macro F1,Step 34 Two-Pass Motor Specialist,73.2,71.5,0.92,69.11
+Selection D: Best Mean CV + Lowest Variance,Step 34 Two-Pass Motor Specialist,78.5,77.2,0.85,74.67
+Selection E: Best Worst-Subject Performance,Step 34 Two-Pass Motor Specialist,66.67,66.67,0.0,74.67
+Selection F: Composite Robust Score (0.4*Acc + 0.3*F1 + 0.2*Worst + 0.1*Stab),Step 34 Two-Pass Motor Specialist,76.5,75.8,0.8,74.67

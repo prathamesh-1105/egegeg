@@ -1,0 +1,3 @@
+candidate_id,subject,features,filter_bank,CSP_components,feature_count,window,classifier,class_weights,validation_accuracy,validation_macro_f1,LEFT_recall,RIGHT_recall,REST_recall,latency_ms
+Candidate_Step32_SubjectOpt,All_S001_S010,FBCSP + Contralateral Asymmetry,Bank_A,2,12,3.0s (0.5s offset),LogisticRegression,Custom_1.0_1.25_1.35,72.5,66.2,59.21,44.59,90.0,0.41
+Step_24_Champion_Baseline,All_S001_S010,FBCSP Only,Bank_A,2,12,3.0s (0.5s offset),LogisticRegression,Custom_1.0_1.25_1.35,70.67,64.33,59.21,39.19,92.0,0.41

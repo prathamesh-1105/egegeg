@@ -1,0 +1,24 @@
+{
+  "total_edf_files": 61,
+  "subjects": 10,
+  "pretraining_runs": [
+    "R01",
+    "R02",
+    "R04",
+    "R05",
+    "R06",
+    "R08",
+    "R09",
+    "R10",
+    "R12",
+    "R13",
+    "R14"
+  ],
+  "supervised_train_runs": [
+    "R03",
+    "R07"
+  ],
+  "final_holdout_runs": [
+    "R11"
+  ]
+}

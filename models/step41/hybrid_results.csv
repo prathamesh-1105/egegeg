@@ -1,0 +1,5 @@
+model_architecture,outer_cv_acc,outer_cv_f1
+Model A: Step 34 FBCSP Specialist Baseline,77.2,71.5
+Model B: Subject-Invariant Neural Encoder,76.8,71.0
+Model C: FBCSP + Neural Encoder Probability Fusion,77.5,71.8
+Model D: FBCSP + Neural Encoder + Motor Specialist (Full Hybrid),78.0,72.2

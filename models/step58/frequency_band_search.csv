@@ -1,0 +1,2 @@
+frequency_search_range,mu_search_window,beta_search_window,subjects_evaluated,mean_mu_peak,mean_beta_peak
+8.0 Hz to 30.0 Hz,8.0 Hz - 13.0 Hz,13.0 Hz - 30.0 Hz,10,9.46,17.88

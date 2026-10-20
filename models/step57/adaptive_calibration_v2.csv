@@ -1,0 +1,3 @@
+trials,allocation,unseen_acc
+15,3 REST / 4 LEFT / 8 RIGHT (45s),85.8
+18,4 REST / 5 LEFT / 9 RIGHT (54s),86.4

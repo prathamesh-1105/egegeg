@@ -1,0 +1,155 @@
+{
+  "subject": "S007",
+  "best_model": "Support Vector Machine (RBF)",
+  "calibration_runs": [
+    "R03",
+    "R07"
+  ],
+  "evaluation_runs": [
+    "R11"
+  ],
+  "training_windows": 60,
+  "evaluation_windows": 30,
+  "metrics": {
+    "accuracy": 0.6,
+    "precision": 0.5555555555555555,
+    "recall": 0.4896825396825397,
+    "f1": 0.48303548303548305,
+    "cross_subject_accuracy": null,
+    "improvement_over_cross": null,
+    "confusion_matrix": [
+      [
+        14,
+        1,
+        0
+      ],
+      [
+        2,
+        2,
+        4
+      ],
+      [
+        5,
+        0,
+        2
+      ]
+    ],
+    "report": {
+      "REST": {
+        "precision": 0.6666666666666666,
+        "recall": 0.9333333333333333,
+        "f1-score": 0.7777777777777778,
+        "support": 15.0
+      },
+      "LEFT_FIST": {
+        "precision": 0.6666666666666666,
+        "recall": 0.25,
+        "f1-score": 0.36363636363636365,
+        "support": 8.0
+      },
+      "RIGHT_FIST": {
+        "precision": 0.3333333333333333,
+        "recall": 0.2857142857142857,
+        "f1-score": 0.3076923076923077,
+        "support": 7.0
+      },
+      "accuracy": 0.6,
+      "macro avg": {
+        "precision": 0.5555555555555555,
+        "recall": 0.4896825396825397,
+        "f1-score": 0.48303548303548305,
+        "support": 30.0
+      },
+      "weighted avg": {
+        "precision": 0.5888888888888888,
+        "recall": 0.6,
+        "f1-score": 0.5576534576534576,
+        "support": 30.0
+      }
+    }
+  },
+  "feature_importances": {},
+  "sample_predictions": [
+    {
+      "subject": "S007",
+      "run": "R11",
+      "window_time": "0.0\u20133.0 sec",
+      "actual_label": "REST",
+      "predicted_label": "REST",
+      "status": "CORRECT"
+    },
+    {
+      "subject": "S007",
+      "run": "R11",
+      "window_time": "4.2\u20137.2 sec",
+      "actual_label": "LEFT_FIST",
+      "predicted_label": "RIGHT_FIST",
+      "status": "INCORRECT"
+    },
+    {
+      "subject": "S007",
+      "run": "R11",
+      "window_time": "8.3\u201311.3 sec",
+      "actual_label": "REST",
+      "predicted_label": "REST",
+      "status": "CORRECT"
+    },
+    {
+      "subject": "S007",
+      "run": "R11",
+      "window_time": "12.5\u201315.5 sec",
+      "actual_label": "RIGHT_FIST",
+      "predicted_label": "RIGHT_FIST",
+      "status": "CORRECT"
+    },
+    {
+      "subject": "S007",
+      "run": "R11",
+      "window_time": "16.6\u201319.6 sec",
+      "actual_label": "REST",
+      "predicted_label": "REST",
+      "status": "CORRECT"
+    },
+    {
+      "subject": "S007",
+      "run": "R11",
+      "window_time": "20.8\u201323.8 sec",
+      "actual_label": "LEFT_FIST",
+      "predicted_label": "REST",
+      "status": "INCORRECT"
+    },
+    {
+      "subject": "S007",
+      "run": "R11",
+      "window_time": "24.9\u201327.9 sec",
+      "actual_label": "REST",
+      "predicted_label": "REST",
+      "status": "CORRECT"
+    },
+    {
+      "subject": "S007",
+      "run": "R11",
+      "window_time": "29.1\u201332.1 sec",
+      "actual_label": "RIGHT_FIST",
+      "predicted_label": "REST",
+      "status": "INCORRECT"
+    },
+    {
+      "subject": "S007",
+      "run": "R11",
+      "window_time": "33.2\u201336.2 sec",
+      "actual_label": "REST",
+      "predicted_label": "REST",
+      "status": "CORRECT"
+    },
+    {
+      "subject": "S007",
+      "run": "R11",
+      "window_time": "37.4\u201340.4 sec",
+      "actual_label": "LEFT_FIST",
+      "predicted_label": "LEFT_FIST",
+      "status": "CORRECT"
+    }
+  ],
+  "timestamp": "2026-08-11T18:51:05.498534"
+}

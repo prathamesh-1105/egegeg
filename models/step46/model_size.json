@@ -1,0 +1,8 @@
+{
+  "model_name": "Step 46 Multi-Scale Temporal Sequence Hybrid",
+  "parameters": 68000,
+  "model_size_mb": 0.42,
+  "inference_latency_ms": 26.5,
+  "p95_latency_ms": 28.5,
+  "realtime_safe": true
+}

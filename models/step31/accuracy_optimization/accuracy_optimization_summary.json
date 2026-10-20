@@ -1,0 +1,15 @@
+{
+  "timestamp": "2026-08-16T17:08:04.668885",
+  "baseline_accuracy": 70.67,
+  "best_validation_accuracy": 72.5,
+  "best_validation_macro_f1": 66.2,
+  "best_candidate": "Candidate_Opt_FBCSP",
+  "r11_holdout_accuracy": 70.67,
+  "r11_holdout_macro_f1": 64.33,
+  "target_accuracy": 85.0,
+  "target_reached_validation": false,
+  "target_reached_holdout": false,
+  "final_decision": "KEEP STEP 24 CHAMPION",
+  "leakage_verification": "PASS",
+  "synthetic_eeg": "NONE"
+}

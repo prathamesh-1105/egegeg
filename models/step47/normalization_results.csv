@@ -1,0 +1,4 @@
+normalization,cv_accuracy
+Per-Channel Standard Z-Score,77.2
+Robust Median/IQR Scaling,77.5
+Subject-Adaptive Target Normalization,77.8

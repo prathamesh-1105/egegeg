@@ -1,0 +1,4 @@
+covariance_metric,cv_accuracy,cv_macro_f1
+Log-Euclidean Tangent Space,76.8,71.0
+Affine-Invariant Riemannian Distance,77.0,71.2
+Riemannian Minimum Distance to Mean (MDM),75.5,69.8

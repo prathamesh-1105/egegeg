@@ -1,0 +1,115 @@
+{
+  "model_name": "Phase 5 Research Model: Calibrated Hierarchical Intent-Lateralization Decoder",
+  "candidate_id": "p5_cand_05_calibrated_hierarchical",
+  "timestamp": "2026-10-20 16:32:48",
+  "spatial_montage": [
+    "FC3",
+    "FC1",
+    "FCz",
+    "FC2",
+    "FC4",
+    "C3",
+    "C1",
+    "Cz",
+    "C2",
+    "C4",
+    "CP3",
+    "CP1",
+    "CPz",
+    "CP2",
+    "CP4"
+  ],
+  "k_features": 32,
+  "r11_holdout_metrics": {
+    "n_total": 300,
+    "accuracy": 71.33,
+    "balanced_accuracy": 65.29,
+    "macro_f1": 66.14,
+    "weighted_f1": 70.31,
+    "rest_recall": 89.33,
+    "left_recall": 57.89,
+    "right_recall": 48.65,
+    "rest_precision": 77.01,
+    "left_precision": 66.67,
+    "right_precision": 60.0,
+    "rest_false_actuation_rate": 10.67,
+    "motor_lateralization_error_rate": 20.0,
+    "confusion_matrix": [
+      [
+        134,
+        7,
+        9
+      ],
+      [
+        17,
+        44,
+        15
+      ],
+      [
+        23,
+        15,
+        36
+      ]
+    ],
+    "classes": [
+      "REST",
+      "LEFT_FIST",
+      "RIGHT_FIST"
+    ],
+    "mean_latency_ms": 1.64,
+    "sub_mean_acc": 71.33,
+    "sub_std_acc": 13.18,
+    "per_subject": [
+      {
+        "subject": "S001",
+        "accuracy": 46.67,
+        "macro_f1": 33.33
+      },
+      {
+        "subject": "S002",
+        "accuracy": 83.33,
+        "macro_f1": 83.2
+      },
+      {
+        "subject": "S003",
+        "accuracy": 60.0,
+        "macro_f1": 54.93
+      },
+      {
+        "subject": "S004",
+        "accuracy": 83.33,
+        "macro_f1": 79.75
+      },
+      {
+        "subject": "S005",
+        "accuracy": 76.67,
+        "macro_f1": 67.75
+      },
+      {
+        "subject": "S006",
+        "accuracy": 53.33,
+        "macro_f1": 37.16
+      },
+      {
+        "subject": "S007",
+        "accuracy": 86.67,
+        "macro_f1": 84.92
+      },
+      {
+        "subject": "S008",
+        "accuracy": 80.0,
+        "macro_f1": 75.24
+      },
+      {
+        "subject": "S009",
+        "accuracy": 66.67,
+        "macro_f1": 54.47
+      },
+      {
+        "subject": "S010",
+        "accuracy": 76.67,
+        "macro_f1": 71.2
+      }
+    ]
+  }
+}

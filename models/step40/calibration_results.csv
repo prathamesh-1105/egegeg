@@ -1,0 +1,5 @@
+calibration_method,mean_cv_acc,mean_cv_f1,ece
+Raw Model Probabilities,77.2,71.5,0.085
+Platt Scaling (Sigmoid),77.5,71.8,0.042
+Temperature Scaling,77.4,71.6,0.048
+Isotonic Regression,77.0,71.2,0.055

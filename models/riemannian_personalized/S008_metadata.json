@@ -1,0 +1,159 @@
+{
+  "subject": "S008",
+  "covariance_estimator": "Ledoit-Wolf Shrinkage (lw)",
+  "manifold_metric": "Riemannian Frechet Mean (riemann)",
+  "tangent_space": "TangentSpace Log-Euclidean projection",
+  "model_name": "SVM (RBF)",
+  "calibration_runs": [
+    "R03",
+    "R07"
+  ],
+  "evaluation_runs": [
+    "R11"
+  ],
+  "training_windows": 60,
+  "evaluation_windows": 30,
+  "step8_accuracy": 0.4666666666666667,
+  "step9_accuracy": 0.5333333333333333,
+  "metrics": {
+    "accuracy": 0.5333333333333333,
+    "precision": 0.5057471264367815,
+    "recall": 0.38095238095238093,
+    "f1": 0.3106060606060606,
+    "difference_vs_step8": 0.06666666666666665,
+    "difference_vs_step9": 0.0,
+    "confusion_matrix": [
+      [
+        15,
+        0,
+        0
+      ],
+      [
+        8,
+        0,
+        0
+      ],
+      [
+        6,
+        0,
+        1
+      ]
+    ],
+    "report": {
+      "REST": {
+        "precision": 0.5172413793103449,
+        "recall": 1.0,
+        "f1-score": 0.6818181818181818,
+        "support": 15.0
+      },
+      "LEFT_FIST": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1-score": 0.0,
+        "support": 8.0
+      },
+      "RIGHT_FIST": {
+        "precision": 1.0,
+        "recall": 0.14285714285714285,
+        "f1-score": 0.25,
+        "support": 7.0
+      },
+      "accuracy": 0.5333333333333333,
+      "macro avg": {
+        "precision": 0.5057471264367815,
+        "recall": 0.38095238095238093,
+        "f1-score": 0.3106060606060606,
+        "support": 30.0
+      },
+      "weighted avg": {
+        "precision": 0.49195402298850577,
+        "recall": 0.5333333333333333,
+        "f1-score": 0.39924242424242423,
+        "support": 30.0
+      }
+    }
+  },
+  "sample_predictions": [
+    {
+      "subject": "S008",
+      "run": "R11",
+      "window_time": "0.0\u20133.0 sec",
+      "actual_label": "REST",
+      "predicted_label": "REST",
+      "status": "CORRECT"
+    },
+    {
+      "subject": "S008",
+      "run": "R11",
+      "window_time": "4.1\u20137.1 sec",
+      "actual_label": "LEFT_FIST",
+      "predicted_label": "REST",
+      "status": "INCORRECT"
+    },
+    {
+      "subject": "S008",
+      "run": "R11",
+      "window_time": "8.2\u201311.2 sec",
+      "actual_label": "REST",
+      "predicted_label": "REST",
+      "status": "CORRECT"
+    },
+    {
+      "subject": "S008",
+      "run": "R11",
+      "window_time": "12.3\u201315.3 sec",
+      "actual_label": "RIGHT_FIST",
+      "predicted_label": "REST",
+      "status": "INCORRECT"
+    },
+    {
+      "subject": "S008",
+      "run": "R11",
+      "window_time": "16.4\u201319.4 sec",
+      "actual_label": "REST",
+      "predicted_label": "REST",
+      "status": "CORRECT"
+    },
+    {
+      "subject": "S008",
+      "run": "R11",
+      "window_time": "20.5\u201323.5 sec",
+      "actual_label": "RIGHT_FIST",
+      "predicted_label": "REST",
+      "status": "INCORRECT"
+    },
+    {
+      "subject": "S008",
+      "run": "R11",
+      "window_time": "24.6\u201327.6 sec",
+      "actual_label": "REST",
+      "predicted_label": "REST",
+      "status": "CORRECT"
+    },
+    {
+      "subject": "S008",
+      "run": "R11",
+      "window_time": "28.7\u201331.7 sec",
+      "actual_label": "LEFT_FIST",
+      "predicted_label": "REST",
+      "status": "INCORRECT"
+    },
+    {
+      "subject": "S008",
+      "run": "R11",
+      "window_time": "32.8\u201335.8 sec",
+      "actual_label": "REST",
+      "predicted_label": "REST",
+      "status": "CORRECT"
+    },
+    {
+      "subject": "S008",
+      "run": "R11",
+      "window_time": "36.9\u201339.9 sec",
+      "actual_label": "LEFT_FIST",
+      "predicted_label": "REST",
+      "status": "INCORRECT"
+    }
+  ],
+  "timestamp": "2026-08-11T18:59:47.578131"
+}

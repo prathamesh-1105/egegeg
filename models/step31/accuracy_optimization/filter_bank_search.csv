@@ -1,0 +1,5 @@
+filter_bank,n_bands,val_accuracy,val_macro_f1
+Bank_A,6,69.58,62.07
+Bank_B,6,69.79,61.22
+Bank_D,7,68.12,60.79
+Bank_E_FineMotor,6,69.17,60.68

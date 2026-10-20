@@ -1,0 +1,5 @@
+component,latency_ms
+Subject-Adaptive Filter Bank Pre-Filtering,14.92
+FBCSP + ERD Feature Extraction,14.17
+Regularized LDA + Decision Threshold Gating,8.21
+Total Step 59 Pipeline Latency,37.3

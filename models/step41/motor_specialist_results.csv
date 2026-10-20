@@ -1,0 +1,4 @@
+specialist_config,left_recall,right_recall,outer_cv_acc
+Single 3-Class Head (Baseline),64.0,47.0,76.5
+Two-Pass Gated Motor Specialist (REST Gate > 0.65),64.5,47.3,77.2
+Dedicated Left vs Right Sub-Classifier,65.0,48.0,77.5

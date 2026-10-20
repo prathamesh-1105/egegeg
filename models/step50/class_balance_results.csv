@@ -1,0 +1,2 @@
+loss,cv_accuracy,right_fist_recall
+Focal Loss (gamma=2.0),77.8,50.0

@@ -1,0 +1,5 @@
+calibration_percentage,calibration_windows,val_accuracy,val_macro_f1
+100%,80,60.56,50.03
+75%,60,55.56,37.97
+50%,40,66.67,55.51
+25%,20,60.0,34.26

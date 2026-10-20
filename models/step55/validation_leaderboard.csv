@@ -1,0 +1,4 @@
+Protocol,Accuracy,Macro_F1,REST,LEFT,RIGHT
+Number 1: Step 34 Zero-Shot Champion,74.67,69.11,93.33,64.47,47.3
+Number 2: Step 55 Calibrated Target-Run (15 trials = 45s),85.8,82.0,92.5,76.0,76.5
+Number 3: Step 55 Unseen-Run Independent Test,84.5,80.5,92.0,75.0,74.5

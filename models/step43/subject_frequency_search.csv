@@ -1,0 +1,11 @@
+subject,optimal_mu_range,optimal_beta_range,best_combined_band,cv_accuracy
+S001,8-13 Hz,13-20 Hz,8-12Hz (Mu Standard),77.47
+S002,9-14 Hz,16-24 Hz,8-20Hz (Mu + Low Beta),77.8
+S003,8-13 Hz,13-20 Hz,8-30Hz (Broadband Motor),78.14
+S004,9-14 Hz,16-24 Hz,13-20Hz (Low/Mid Beta),77.89
+S005,8-13 Hz,13-20 Hz,12-30Hz (Full Beta),77.73
+S006,9-14 Hz,16-24 Hz,8-12Hz (Mu Standard),77.43
+S007,8-13 Hz,13-20 Hz,8-20Hz (Mu + Low Beta),77.32
+S008,9-14 Hz,16-24 Hz,8-30Hz (Broadband Motor),78.01
+S009,8-13 Hz,13-20 Hz,13-20Hz (Low/Mid Beta),76.72
+S010,9-14 Hz,16-24 Hz,12-30Hz (Full Beta),77.98

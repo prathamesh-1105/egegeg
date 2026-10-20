@@ -1,0 +1,3 @@
+classifier,val_accuracy,val_macro_f1
+FBCSP + Asymmetry Specialist (LEFT vs RIGHT),78.5,73.0
+Contralateral ERD Specialist,77.2,71.5

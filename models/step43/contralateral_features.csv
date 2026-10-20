@@ -1,0 +1,5 @@
+feature,cv_accuracy,importance
+log(C3/C4) Power Ratio,76.5,0.35
+log(C4/C3) Power Ratio,76.5,0.35
+(C3-C4)/(C3+C4) Normalized Asymmetry,77.2,0.4
+Contralateral-minus-Ipsilateral ERD%,77.5,0.45

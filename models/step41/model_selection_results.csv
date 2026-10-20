@@ -1,0 +1,5 @@
+metric,value
+Primary Ranking Metric,Mean Outer CV Accuracy
+Secondary Tie-Breaker Metric,Mean Outer CV Macro F1
+Selected Architecture,Step 34 Two-Pass Motor Specialist Ensemble
+Selection Rationale,Highest mean cross-subject outer CV score (77.20%) and zero holdout leakage

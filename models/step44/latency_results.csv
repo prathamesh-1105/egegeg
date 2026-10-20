@@ -1,0 +1,5 @@
+component,latency_ms
+Multi-Branch Frequency Bandpass Filtering,4.0
+SSL Pretrained Encoder & Spatial Attention,12.5
+OOF Meta-Stacking & Classification Head,10.0
+Total Single-Window Pipeline Latency,26.5

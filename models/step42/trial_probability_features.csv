@@ -1,0 +1,5 @@
+aggregation_statistic,cv_accuracy,cv_macro_f1
+Mean Probability Across Windows,77.5,71.8
+Confidence-Weighted Temporal Fusion,77.8,72.0
+Causal Exponential Moving Average (EMA),77.4,71.6
+Causal Voting Majority,76.8,71.0

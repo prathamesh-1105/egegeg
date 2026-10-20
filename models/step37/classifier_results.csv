@@ -1,0 +1,5 @@
+classifier,val_accuracy,val_macro_f1
+LogisticRegression (Class-Weighted),84.5,79.8
+Linear SVM,83.8,79.0
+LinearDiscriminantAnalysis (LDA),82.5,77.5
+Calibrated Linear SVM,84.2,79.5

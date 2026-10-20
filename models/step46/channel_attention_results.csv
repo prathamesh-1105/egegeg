@@ -1,0 +1,4 @@
+channel_group,learned_weight
+"Motor Core (C3, C4, Cz)",0.42
+"Frontocentral (FC3, FC4, FCz)",0.35
+"Centroparietal (CP3, CP4, CPz)",0.23

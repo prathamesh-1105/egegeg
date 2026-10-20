@@ -1,0 +1,70 @@
+{
+  "timestamp": "2026-08-16T15:43:31.904326",
+  "final_decision": "KEEP STEP 17B AS OFFICIAL CHAMPION",
+  "decision_rationale": "CASE 3: Step 24 does not exhibit consistent generalization advantages.",
+  "step17b_baseline": {
+    "accuracy": 71.33,
+    "macro_f1": 66.02,
+    "rest_recall": 90.0,
+    "left_fist_recall": 51.32,
+    "right_fist_recall": 54.05
+  },
+  "step24_candidate": {
+    "accuracy": 57.33,
+    "macro_f1": 44.1,
+    "accuracy_difference": -14.0,
+    "macro_f1_difference": -21.92,
+    "rest_recall": 93.33,
+    "left_fist_recall": 19.11,
+    "right_fist_recall": 23.57
+  },
+  "subject_level_outcomes": {
+    "step24_wins": 0,
+    "step17b_wins": 8,
+    "ties": 2,
+    "largest_improvement": {
+      "subject": "S002",
+      "delta": 0.0
+    },
+    "smallest_improvement": {
+      "subject": "S003",
+      "delta": -30.0
+    }
+  },
+  "cross_run_outcomes": {
+    "task1_execution_diff": -14.0,
+    "task2_imagery_diff": -16.33
+  },
+  "seed_robustness": {
+    "mean_val_f1": 49.66,
+    "std_val_f1": 2.54
+  },
+  "latency_ms": {
+    "mean": 11.225,
+    "median": 10.167,
+    "p95": 13.415,
+    "p99": 40.277,
+    "max": 48.483
+  },
+  "qualitative_robustness_scores": {
+    "cross_subject_consistency": "MODERATE",
+    "cross_run_consistency": "MODERATE",
+    "seed_consistency": "MODERATE",
+    "window_consistency": "STRONG",
+    "class_balance_robustness": "STRONG",
+    "latency_consistency": "STRONG"
+  },
+  "reproducibility": {
+    "python_version": "3.11.9",
+    "scikit_learn_version": "pandas",
+    "numpy_version": "2.4.6",
+    "mne_version": "1.12.1",
+    "pyriemann_version": "0.12",
+    "pipeline_code_hash": "b445994999cf"
+  },
+  "data_leakage_verified": true,
+  "synthetic_data_used": false,
+  "r11_used_for_tuning": false,
+  "step17b_artifacts_preserved": true,
+  "step24_artifacts_preserved": true
+}

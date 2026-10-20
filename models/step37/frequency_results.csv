@@ -1,0 +1,5 @@
+band,val_accuracy,val_macro_f1
+Standard Bank_A (Broadband FBCSP),78.5,73.2
+Mu Band Only (8 - 13 Hz),76.5,70.8
+Beta Band Only (13 - 30 Hz),75.2,69.5
+Mu + Beta Specific Motor Bands,83.2,78.1

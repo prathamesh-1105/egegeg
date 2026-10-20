@@ -1,0 +1,5 @@
+ensemble,mean_cv_acc,mean_cv_f1
+FBCSP Only (Baseline),76.5,70.8
+FBCSP + Motor Asymmetry,77.2,71.5
+FBCSP + Motor Asymmetry + Riemannian,77.5,71.8
+FBCSP + Motor Asymmetry + Riemannian + PSD (Fold-Isolated Weights),77.8,72.0

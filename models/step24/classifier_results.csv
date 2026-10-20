@@ -1,0 +1,6 @@
+classifier,val_accuracy,val_macro_f1,rest_recall,left_fist_recall,right_fist_recall
+Logistic_Regression,71.88,65.71,87.08,57.5,56.04
+Linear_SVM,69.38,61.45,87.92,53.33,49.17
+RBF_SVM,70.0,63.9,85.83,54.17,54.79
+LDA,69.38,62.47,85.0,55.0,53.12
+Random_Forest,71.04,64.53,87.08,55.42,54.79

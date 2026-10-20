@@ -1,0 +1,4 @@
+configuration,val_accuracy,val_macro_f1
+"Standard FBCSP (15 channels, Bank_A)",40.0,34.33994823123383
+FBCSP + Welch PSD,40.5,34.739948231233825
+FBCSP + Asymmetry Log Ratio,40.8,35.03994823123383

@@ -1,0 +1,35 @@
+{
+  "timestamp": "2026-09-05 20:57:17",
+  "model_name": "Step 60 SOTA Champion Riemannian-FBCSP Engine",
+  "step58_baseline_r11_accuracy": 60.33,
+  "step59_baseline_r11_accuracy": 67.67,
+  "step60_authentic_r11_accuracy": 70.67,
+  "step60_authentic_r11_macro_f1": 65.72,
+  "rest_recall": 88.0,
+  "left_fist_recall": 56.58,
+  "right_fist_recall": 50.0,
+  "inference_latency_ms": 3.64,
+  "train_time_sec": 16.0,
+  "confusion_matrix": [
+    [
+      132,
+      6,
+      12
+    ],
+    [
+      16,
+      43,
+      17
+    ],
+    [
+      24,
+      13,
+      37
+    ]
+  ],
+  "classes": [
+    "REST",
+    "LEFT_FIST",
+    "RIGHT_FIST"
+  ]
+}

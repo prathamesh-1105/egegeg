@@ -1,0 +1,236 @@
+[
+  {
+    "name": "Candidate 1: CAR + Enhanced Fused + Balanced Ensemble (k=24)",
+    "spatial": "car",
+    "feature": "enhanced_fused",
+    "clf_type": "ensemble_balanced",
+    "k": 24,
+    "test_acc_raw": 67.0,
+    "test_f1_raw": 59.65,
+    "test_acc_th": 65.33,
+    "test_f1_th": 58.92,
+    "rest_recall": 86.0,
+    "left_recall": 46.05,
+    "right_recall": 43.24,
+    "sub_mean_acc": 65.33,
+    "sub_std_acc": 13.1,
+    "safety_coverage": 89.0,
+    "selective_accuracy": 69.66,
+    "rejected_accuracy": 30.3,
+    "mean_latency_ms": 16.27,
+    "p95_latency_ms": 20.45,
+    "confusion_matrix": [
+      [
+        129,
+        5,
+        16
+      ],
+      [
+        15,
+        35,
+        26
+      ],
+      [
+        25,
+        17,
+        32
+      ]
+    ],
+    "duration_sec": 22.3
+  },
+  {
+    "name": "Candidate 2: CAR + Enhanced Fused + Balanced Ensemble (k=20)",
+    "spatial": "car",
+    "feature": "enhanced_fused",
+    "clf_type": "ensemble_balanced",
+    "k": 20,
+    "test_acc_raw": 67.33,
+    "test_f1_raw": 60.78,
+    "test_acc_th": 66.67,
+    "test_f1_th": 60.8,
+    "rest_recall": 86.0,
+    "left_recall": 46.05,
+    "right_recall": 48.65,
+    "sub_mean_acc": 66.67,
+    "sub_std_acc": 12.56,
+    "safety_coverage": 89.67,
+    "selective_accuracy": 70.26,
+    "rejected_accuracy": 35.48,
+    "mean_latency_ms": 21.55,
+    "p95_latency_ms": 38.84,
+    "confusion_matrix": [
+      [
+        129,
+        3,
+        18
+      ],
+      [
+        15,
+        35,
+        26
+      ],
+      [
+        23,
+        15,
+        36
+      ]
+    ],
+    "duration_sec": 31.4
+  },
+  {
+    "name": "Candidate 3: Surface Laplacian + Enhanced Fused + Balanced Ensemble (k=20)",
+    "spatial": "laplacian",
+    "feature": "enhanced_fused",
+    "clf_type": "ensemble_balanced",
+    "k": 20,
+    "test_acc_raw": 71.33,
+    "test_f1_raw": 65.23,
+    "test_acc_th": 72.0,
+    "test_f1_th": 66.26,
+    "rest_recall": 91.33,
+    "left_recall": 55.26,
+    "right_recall": 50.0,
+    "sub_mean_acc": 72.0,
+    "sub_std_acc": 12.04,
+    "safety_coverage": 89.0,
+    "selective_accuracy": 76.4,
+    "rejected_accuracy": 36.36,
+    "mean_latency_ms": 14.67,
+    "p95_latency_ms": 18.11,
+    "confusion_matrix": [
+      [
+        137,
+        4,
+        9
+      ],
+      [
+        12,
+        42,
+        22
+      ],
+      [
+        22,
+        15,
+        37
+      ]
+    ],
+    "duration_sec": 20.5
+  },
+  {
+    "name": "Candidate 4: Surface Laplacian + Enhanced Fused + Regularized LDA (k=24)",
+    "spatial": "laplacian",
+    "feature": "enhanced_fused",
+    "clf_type": "reg_lda",
+    "k": 24,
+    "test_acc_raw": 72.0,
+    "test_f1_raw": 66.21,
+    "test_acc_th": 71.67,
+    "test_f1_th": 66.07,
+    "rest_recall": 90.67,
+    "left_recall": 55.26,
+    "right_recall": 50.0,
+    "sub_mean_acc": 71.67,
+    "sub_std_acc": 12.85,
+    "safety_coverage": 95.67,
+    "selective_accuracy": 73.52,
+    "rejected_accuracy": 30.77,
+    "mean_latency_ms": 13.24,
+    "p95_latency_ms": 15.49,
+    "confusion_matrix": [
+      [
+        136,
+        5,
+        9
+      ],
+      [
+        14,
+        42,
+        20
+      ],
+      [
+        22,
+        15,
+        37
+      ]
+    ],
+    "duration_sec": 18.3
+  },
+  {
+    "name": "Candidate 5: Surface Laplacian + Enhanced Fused + Balanced Ensemble (k=24)",
+    "spatial": "laplacian",
+    "feature": "enhanced_fused",
+    "clf_type": "ensemble_balanced",
+    "k": 24,
+    "test_acc_raw": 72.0,
+    "test_f1_raw": 65.64,
+    "test_acc_th": 72.67,
+    "test_f1_th": 67.31,
+    "rest_recall": 90.67,
+    "left_recall": 56.58,
+    "right_recall": 52.7,
+    "sub_mean_acc": 72.67,
+    "sub_std_acc": 10.41,
+    "safety_coverage": 88.67,
+    "selective_accuracy": 76.32,
+    "rejected_accuracy": 44.12,
+    "mean_latency_ms": 15.57,
+    "p95_latency_ms": 19.29,
+    "confusion_matrix": [
+      [
+        136,
+        3,
+        11
+      ],
+      [
+        12,
+        43,
+        21
+      ],
+      [
+        19,
+        16,
+        39
+      ]
+    ],
+    "duration_sec": 21.0
+  },
+  {
+    "name": "Candidate 6: Surface Laplacian + Enhanced Fused + RBF SVM (k=20)",
+    "spatial": "laplacian",
+    "feature": "enhanced_fused",
+    "clf_type": "svm_rbf",
+    "k": 20,
+    "test_acc_raw": 69.0,
+    "test_f1_raw": 61.63,
+    "test_acc_th": 70.33,
+    "test_f1_th": 64.41,
+    "rest_recall": 90.67,
+    "left_recall": 51.32,
+    "right_recall": 48.65,
+    "sub_mean_acc": 70.33,
+    "sub_std_acc": 11.0,
+    "safety_coverage": 75.0,
+    "selective_accuracy": 77.33,
+    "rejected_accuracy": 49.33,
+    "mean_latency_ms": 14.66,
+    "p95_latency_ms": 18.16,
+    "confusion_matrix": [
+      [
+        136,
+        2,
+        12
+      ],
+      [
+        15,
+        39,
+        22
+      ],
+      [
+        24,
+        14,
+        36
+      ]
+    ],
+    "duration_sec": 19.7
+  }
+]

@@ -1,0 +1,3 @@
+allocation,unseen_acc
+Equal: 5 REST / 5 LEFT / 5 RIGHT (15 total),84.8
+Asymmetric: 3 REST / 4 LEFT / 8 RIGHT (15 total - Step 56),85.8

@@ -1,0 +1,4 @@
+class_hypothesis,cv_accuracy,left_recall,right_recall,macro_f1
+LEFT_FIST C4 Mu/Beta Suppression,76.8,64.5,,
+RIGHT_FIST C3 Mu/Beta Suppression,76.2,,47.3,
+Combined Asymmetric Class Models,77.5,,,71.8

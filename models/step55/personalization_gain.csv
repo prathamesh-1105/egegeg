@@ -1,0 +1,5 @@
+metric,value
+Zero-Shot Accuracy,74.67
+Calibrated Few-Shot Accuracy,85.8
+Personalization Accuracy Gain,+11.13%
+Generalization Gap (Calibrated vs Unseen-Run),1.30%

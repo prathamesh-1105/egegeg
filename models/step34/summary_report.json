@@ -1,0 +1,45 @@
+{
+  "timestamp": "2026-08-17T21:08:40.097390",
+  "final_decision": "KEEP STEP 33",
+  "step33_baseline": {
+    "accuracy": 70.67,
+    "macro_f1": 64.33,
+    "rest_recall": 93.33,
+    "left_fist_recall": 63.16,
+    "right_fist_recall": 45.95
+  },
+  "step34_candidate": {
+    "accuracy": 70.0,
+    "macro_f1": 63.17,
+    "accuracy_difference": -0.67,
+    "macro_f1_difference": -1.16,
+    "rest_recall": 91.33,
+    "left_fist_recall": 61.84,
+    "right_fist_recall": 35.14
+  },
+  "subject_counts": {
+    "improved": 1,
+    "degraded": 2,
+    "same": 7
+  },
+  "statistical_tests": {
+    "paired_ttest": {
+      "t_statistic": -0.8018,
+      "p_value": 0.4433
+    },
+    "wilcoxon_signed_rank": {
+      "w_statistic": 16.5,
+      "p_value": 0.8828
+    },
+    "is_statistically_significant": false
+  },
+  "latency_ms": 33.52,
+  "targets": {
+    "target_80_pct": "NOT ACHIEVED",
+    "target_85_pct": "NOT ACHIEVED"
+  },
+  "data_leakage_verified": true,
+  "synthetic_data_used": false,
+  "r11_used_for_tuning": false,
+  "step33_artifacts_preserved": true
+}

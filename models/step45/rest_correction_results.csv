@@ -1,0 +1,4 @@
+strategy,rest_recall,left_recall,right_recall
+Uncalibrated Step 34 Baseline,93.33,64.47,47.3
+Validation Temperature Scaling (T=1.2),92.5,65.0,48.0
+Targeted Motor Evidence Overrides,91.8,66.2,50.0

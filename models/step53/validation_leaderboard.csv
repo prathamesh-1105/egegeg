@@ -1,0 +1,3 @@
+Protocol,CVAccuracy,CVMacroF1,R11Accuracy,R11MacroF1,Latency,Status
+Scenario B: Few-Shot (10 trials/class = 30 trials),85.2,81.0,85.2,81.0,26.5,PROMOTED FEW-SHOT CHAMPION
+Scenario A: Step 34 Zero-Shot Champion,77.2,71.5,74.67,69.11,26.5,PROMOTED ZERO-SHOT CHAMPION

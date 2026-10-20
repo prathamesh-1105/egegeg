@@ -1,0 +1,6 @@
+rank,strategy,meta_score,cv_accuracy,cv_macro_f1
+1,Feature Fusion (FBCSP + Contralateral ERD + Asymmetry),0.88,77.8,72.0
+2,Step 34 Two-Pass Motor Specialist Ensemble,0.87,77.2,71.5
+3,Pretrained Neural Encoder + Spatial Attention,0.85,77.2,71.5
+4,LogisticRegression Residual Error Corrector,0.84,77.5,71.8
+5,Rule-Based Subject Difficulty Router,0.83,77.5,71.8

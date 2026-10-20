@@ -1,0 +1,4 @@
+preprocessing,cv_accuracy
+Common Average Reference (CAR),77.2
+Surface Laplacian Spatial Filter,77.5
+Robust Median/IQR Scaling,77.8

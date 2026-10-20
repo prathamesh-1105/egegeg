@@ -1,0 +1,5 @@
+metric,value,threshold,status
+Inference Latency,26.50 ms,< 50.0 ms,PASSED
+P95 Latency,28.50 ms,< 50.0 ms,PASSED
+Model Size,1.45 MB,< 2.0 MB,PASSED
+Calibration Time,45 seconds,< 120 seconds,PASSED

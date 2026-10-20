@@ -1,0 +1,6 @@
+components,accuracy,gain
+Baseline Zero-Shot,74.67,+0.00%
++ Baseline ERD Normalization,79.0,+4.33%
++ Contralateral Asymmetry Thresholds,82.7,+3.70%
++ Personalized Spatial CSP Filter,84.5,+1.80%
++ Adaptive Classifier Fine-Tuning (All),85.2,+0.70%

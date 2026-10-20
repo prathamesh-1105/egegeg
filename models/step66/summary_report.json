@@ -1,0 +1,95 @@
+{
+  "timestamp": "2026-09-12 12:53:13",
+  "model_name": "Step 66 Hyper-Tuned Per-Subject Ensemble Engine",
+  "step61_baseline_r11_accuracy": 72.0,
+  "step66_authentic_r11_accuracy": 70.33,
+  "step66_authentic_r11_macro_f1": 65.2,
+  "rest_recall": 88.67,
+  "left_fist_recall": 55.26,
+  "right_fist_recall": 48.65,
+  "inference_latency_ms": 2.78,
+  "confusion_matrix": [
+    [
+      133,
+      4,
+      13
+    ],
+    [
+      16,
+      42,
+      18
+    ],
+    [
+      26,
+      12,
+      36
+    ]
+  ],
+  "subject_hyperparameters": {
+    "S001": {
+      "k_features": 28,
+      "svm_c": 1.5,
+      "lda_shrinkage": "auto",
+      "rest_threshold": 0.6
+    },
+    "S002": {
+      "k_features": 28,
+      "svm_c": 1.5,
+      "lda_shrinkage": "auto",
+      "rest_threshold": 0.6
+    },
+    "S003": {
+      "k_features": 28,
+      "svm_c": 1.5,
+      "lda_shrinkage": "auto",
+      "rest_threshold": 0.6
+    },
+    "S004": {
+      "k_features": 28,
+      "svm_c": 1.5,
+      "lda_shrinkage": "auto",
+      "rest_threshold": 0.6
+    },
+    "S005": {
+      "k_features": 20,
+      "svm_c": 1.5,
+      "lda_shrinkage": "auto",
+      "rest_threshold": 0.6
+    },
+    "S006": {
+      "k_features": 28,
+      "svm_c": 2.2,
+      "lda_shrinkage": "auto",
+      "rest_threshold": 0.6
+    },
+    "S007": {
+      "k_features": 24,
+      "svm_c": 1.5,
+      "lda_shrinkage": "auto",
+      "rest_threshold": 0.6
+    },
+    "S008": {
+      "k_features": 20,
+      "svm_c": 1.5,
+      "lda_shrinkage": "auto",
+      "rest_threshold": 0.6
+    },
+    "S009": {
+      "k_features": 20,
+      "svm_c": 1.5,
+      "lda_shrinkage": "auto",
+      "rest_threshold": 0.6
+    },
+    "S010": {
+      "k_features": 24,
+      "svm_c": 1.5,
+      "lda_shrinkage": "auto",
+      "rest_threshold": 0.6
+    }
+  },
+  "classes": [
+    "REST",
+    "LEFT_FIST",
+    "RIGHT_FIST"
+  ]
+}

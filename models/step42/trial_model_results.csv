@@ -1,0 +1,5 @@
+classifier,cv_accuracy,cv_macro_f1
+Logistic Regression (L2 Regularized),77.5,71.8
+Linear SVM,77.2,71.5
+Linear Discriminant Analysis (LDA),77.8,72.0
+Random Forest (Depth 4),76.5,70.8

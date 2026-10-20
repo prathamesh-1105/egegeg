@@ -1,0 +1,4 @@
+spatial_mode,val_accuracy,val_macro_f1
+Standard 15 Channels (Unweighted),77.2,71.5
+Learnable Spatial Channel Attention,77.8,72.0
+Manually Emphasized C3/C4,76.8,71.0

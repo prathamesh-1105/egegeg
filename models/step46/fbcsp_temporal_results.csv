@@ -1,0 +1,4 @@
+fusion_model,val_accuracy
+FBCSP Only Baseline,77.2
+Temporal CNN Only,76.5
+FBCSP + Temporal CNN Probability Fusion,77.8

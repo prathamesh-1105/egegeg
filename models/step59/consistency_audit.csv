@@ -1,0 +1,8 @@
+check,expected,actual,status
+Prediction Count Equals 300,300.0,300.0,VERIFIED MATCH
+Confusion Matrix Total Equals 300,300.0,300.0,VERIFIED MATCH
+Accuracy Trace Calculation Consistency,67.67,67.67,VERIFIED MATCH
+Macro F1 Calculation Consistency,62.24,62.24,VERIFIED MATCH
+REST Recall Consistency,85.33,85.33,VERIFIED MATCH
+LEFT_FIST Recall Consistency,57.89,57.89,VERIFIED MATCH
+RIGHT_FIST Recall Consistency,41.89,41.89,VERIFIED MATCH

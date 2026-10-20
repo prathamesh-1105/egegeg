@@ -1,0 +1,33 @@
+{
+  "timestamp": "2026-09-12 12:53:39",
+  "model_name": "Step 67 Bipolar Differencing & Class-Balanced Engine",
+  "step61_baseline_r11_accuracy": 72.0,
+  "step67_authentic_r11_accuracy": 70.67,
+  "step67_authentic_r11_macro_f1": 65.68,
+  "rest_recall": 88.67,
+  "left_fist_recall": 59.21,
+  "right_fist_recall": 45.95,
+  "inference_latency_ms": 3.21,
+  "confusion_matrix": [
+    [
+      133,
+      4,
+      13
+    ],
+    [
+      14,
+      45,
+      17
+    ],
+    [
+      29,
+      11,
+      34
+    ]
+  ],
+  "classes": [
+    "REST",
+    "LEFT_FIST",
+    "RIGHT_FIST"
+  ]
+}

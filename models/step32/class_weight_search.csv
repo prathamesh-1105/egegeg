@@ -1,0 +1,4 @@
+class_weight_config,val_accuracy,val_macro_f1
+balanced,71.88,65.71
+Custom_1.0_1.2_1.2,71.25,64.37
+Custom_1.0_1.25_1.35,72.29,65.72

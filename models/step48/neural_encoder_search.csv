@@ -1,0 +1,4 @@
+encoder,cv_accuracy,cv_macro_f1
+Multi-Branch 1D Temporal CNN,77.2,71.5
+EEGNet Spatial-Temporal Separable CNN,76.5,70.8
+Hybrid FBCSP + Deep Neural Encoder,77.8,72.0

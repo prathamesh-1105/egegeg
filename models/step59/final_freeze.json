@@ -1,0 +1,54 @@
+{
+  "step": 59,
+  "protocol": "Strict Independent Unseen-Run Protocol",
+  "dataset": {
+    "total_unique_edf_files": 30,
+    "subjects": [
+      "S001",
+      "S002",
+      "S003",
+      "S004",
+      "S005",
+      "S006",
+      "S007",
+      "S008",
+      "S009",
+      "S010"
+    ],
+    "calibration_runs": [
+      "R03",
+      "R07"
+    ],
+    "test_run": "R11",
+    "total_calibration_trials": 600,
+    "total_test_trials": 300
+  },
+  "preprocessing": {
+    "sfreq_hz": 160.0,
+    "channel_count": 15,
+    "channel_group": "Group B",
+    "window_sec": 3.0,
+    "onset_offset_sec": 0.5,
+    "event_plateau_sec": [
+      0.5,
+      2.5
+    ]
+  },
+  "selected_configuration": {
+    "pipeline": "Subject-Adaptive FBCSP + ERD Feature Fusion + RegLDA Engine",
+    "spatial_filter": "Subject-Adaptive 6-Band FBCSP + Riemannian Centroid Alignment",
+    "feature_fusion": [
+      "FBCSP Log-Variance",
+      "C3/C4 Log Asymmetry Ratio",
+      "ERD Slope & Max Suppression"
+    ],
+    "classifier": "LinearDiscriminantAnalysis(solver='lsqr', shrinkage='auto')",
+    "decision_gating": "Calibrated REST Probability Gating (threshold = 0.62)"
+  },
+  "development_cv_metrics": {
+    "accuracy": 43.87,
+    "macro_f1": 41.86,
+    "cross_run_mean_accuracy": 51.93
+  },
+  "status": "FROZEN_BEFORE_R11"
+}

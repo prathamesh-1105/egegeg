@@ -1,0 +1,5 @@
+spatial_config,channels_count,method,val_accuracy,val_macro_f1
+Step 24 FBCSP (15 Channels),15,FBCSP,55.21,51.65
+Standard CSP (15 Channels),15,Standard_CSP,55.21,51.65
+Central Motor Subset (7 Channels),7,FBCSP,58.12,55.23
+C3/C4 Specialist Pair (2 Channels),2,Asymmetry_PSD,55.21,51.65

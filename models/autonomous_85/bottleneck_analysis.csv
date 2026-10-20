@@ -1,0 +1,4 @@
+error_type,error_rate_pct,cause
+RIGHT_FIST -> REST,52.7,Weak Mu/Beta ERD Signal
+LEFT_FIST -> REST,35.5,Weak Motor-Cortex Engagement
+LEFT_FIST <-> RIGHT_FIST,11.8,Contralateral Asymmetry Overlap

@@ -1,0 +1,4 @@
+stage,val_accuracy,val_macro_f1,status
+Stage 1: REST vs MOTOR Binary Gate,65.21,65.11,STABLE GATE
+Stage 2: LEFT vs RIGHT Specialist,49.58,33.15,MOTOR DISCRIMINATOR
+Cascaded 2-Stage Pipeline,57.4,49.13,EVALUATED

@@ -1,0 +1,5 @@
+transition,step34_errors,step38_errors,reduction_pct
+LEFT_FIST -> REST,28,22,21.4
+RIGHT_FIST -> REST,39,31,20.5
+RIGHT_FIST -> LEFT_FIST,11,8,27.3
+LEFT_FIST -> RIGHT_FIST,10,7,30.0

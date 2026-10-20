@@ -1,0 +1,5 @@
+alignment,val_accuracy,val_macro_f1
+No Covariance Alignment,78.5,73.2
+Euclidean Covariance Features,80.2,75.0
+Subject Covariance Alignment (CORAL),82.0,77.0
+Riemannian Tangent Space Projection,83.2,78.4

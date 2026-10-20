@@ -1,0 +1,4 @@
+Protocol,Accuracy,Macro_F1,REST_Recall,LEFT_Recall,RIGHT_Recall
+Step 34 Zero-Shot Champion,74.67,69.11,93.33,64.47,47.3
+Step 56 Champion Baseline,85.8,82.0,92.5,76.0,76.5
+Step 57 Error-Recovery Champion (15 trials = 45s),86.4,82.8,92.5,76.5,77.5

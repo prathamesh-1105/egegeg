@@ -1,0 +1,5 @@
+branch,val_accuracy
+Short Temporal Branch (Kernel=5),75.8
+Medium Temporal Branch (Kernel=11),76.5
+Long Temporal Branch (Kernel=25),76.0
+Fused Multi-Scale Concatenation,77.2

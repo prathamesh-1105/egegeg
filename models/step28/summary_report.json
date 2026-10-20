@@ -1,0 +1,22 @@
+{
+  "timestamp": "2026-08-16T16:15:40.153031",
+  "final_decision": "SELECT GLOBAL STEP 24",
+  "best_model": "GLOBAL STEP 24",
+  "window_accuracy": 56.0,
+  "macro_f1": 39.26,
+  "command_f1": 39.26,
+  "false_activation_rate": 2.67,
+  "false_switch_rate": 0.0,
+  "command_stability": 59.84,
+  "coverage": 63.67,
+  "abstention": 36.33,
+  "average_command_duration": 3.0,
+  "best_temporal_strategy": "NO_SMOOTHING",
+  "total_computation_latency_ms": 0.733,
+  "p95_latency_ms": 1.665,
+  "data_leakage": "PASS",
+  "synthetic_eeg": "NO",
+  "ground_truth_controls_avatar": "NO",
+  "previous_artifacts": "PRESERVED",
+  "final_decision_model": "GLOBAL STEP 24"
+}

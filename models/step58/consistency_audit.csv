@@ -1,0 +1,7 @@
+check,matrix_total,actual_count,status,matrix_accuracy,reported_accuracy,matrix_macro_f1,reported_macro_f1,matrix_rest_recall,matrix_left_recall,matrix_right_recall
+Confusion Matrix Total Equals Prediction Count,300.0,300.0,VERIFIED MATCH,,,,,,,
+Accuracy Calculation Consistency,,,VERIFIED MATCH,60.33,60.33,,,,,
+Macro F1 Calculation Consistency,,,VERIFIED MATCH,,,56.53,56.53,,,
+REST Recall Consistency,,,VERIFIED MATCH,,,,,73.33,,
+LEFT_FIST Recall Consistency,,,VERIFIED MATCH,,,,,,44.74,
+RIGHT_FIST Recall Consistency,,,VERIFIED MATCH,,,,,,,50.0

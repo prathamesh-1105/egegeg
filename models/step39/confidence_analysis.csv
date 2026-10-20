@@ -1,0 +1,5 @@
+subset,mean_pmax,entropy,overconfidence_status
+Validation Correct Predictions,0.88,0.25,
+Validation Incorrect Predictions,0.62,0.72,
+R11 Correct Predictions,0.84,0.31,
+R11 Incorrect Predictions,0.74,0.52,OVERCONFIDENT

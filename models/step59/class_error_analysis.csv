@@ -1,0 +1,4 @@
+class,total_trials,correct,recall,error_count
+REST,300,122,40.67,178
+LEFT_FIST,151,66,43.71,85
+RIGHT_FIST,149,56,37.58,93

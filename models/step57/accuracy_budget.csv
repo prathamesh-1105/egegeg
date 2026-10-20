@@ -1,0 +1,6 @@
+target_accuracy,required_correct_trials,additional_correct_trials_needed
+86.00%,387,1
+87.00%,392,6
+88.00%,396,10
+89.00%,401,15
+90.00%,405,19

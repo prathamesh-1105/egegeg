@@ -1,0 +1,5 @@
+transition,validation_errors,r11_errors,increase_pct
+LEFT_FIST -> REST,12,27,125.0
+RIGHT_FIST -> REST,15,39,160.0
+RIGHT_FIST -> LEFT_FIST,4,11,175.0
+LEFT_FIST -> RIGHT_FIST,3,10,233.3

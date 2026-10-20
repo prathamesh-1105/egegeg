@@ -1,0 +1,8 @@
+metric,step13b_class_balanced,step14_motor_rhythm,change
+Overall Accuracy,62.33,62.33,0.0
+Macro Precision,58.34,58.34,0.0
+Macro Recall,55.28,55.28,0.0
+Macro F1,55.99,55.99,0.0
+REST Recall,83.33,83.33,0.0
+LEFT_FIST Recall,47.37,47.37,0.0
+RIGHT_FIST Recall,35.14,35.14,0.0

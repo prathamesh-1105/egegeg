@@ -1,0 +1,4 @@
+method,outer_cv_acc,outer_cv_f1
+Global StandardScaler,76.0,70.0
+Baseline-Relative ERD Normalization,77.5,71.8
+Target-Subject Channel Z-Score,77.2,71.5

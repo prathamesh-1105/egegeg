@@ -1,0 +1,5 @@
+filter_bank,n_bands,val_accuracy,val_macro_f1,search_time_sec
+Bank_A,6,69.58,62.07,65.75
+Bank_B,6,69.79,61.22,53.34
+Bank_C,7,68.12,59.44,85.19
+Bank_D_Step17B,7,68.12,60.79,71.65

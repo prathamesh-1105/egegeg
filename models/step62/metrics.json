@@ -1,0 +1,100 @@
+{
+  "model_name": "Step 62 Surface Laplacian Multimodal Balanced Ensemble",
+  "timestamp": "2026-10-19 22:37:13",
+  "architecture": {
+    "spatial_referencing": "surface_laplacian_approx",
+    "feature_family": "enhanced_fused (Adaptive FBCSP + Riemannian Tangent Space + Enhanced ERD Asymmetry)",
+    "k_features": 24,
+    "classifier": "VotingClassifier (Reg-LDA, Balanced-LR, Balanced-RBF-SVM)",
+    "weights": [
+      1.5,
+      1.2,
+      1.0
+    ]
+  },
+  "holdout_results_r11": {
+    "accuracy": 72.67,
+    "macro_f1": 67.31,
+    "rest_recall": 90.67,
+    "left_fist_recall": 56.58,
+    "right_fist_recall": 52.7,
+    "subject_mean_acc": 72.67,
+    "subject_std_acc": 10.41,
+    "mean_inference_latency_ms": 13.32,
+    "p95_inference_latency_ms": 15.99,
+    "confusion_matrix": [
+      [
+        136,
+        3,
+        11
+      ],
+      [
+        12,
+        43,
+        21
+      ],
+      [
+        19,
+        16,
+        39
+      ]
+    ]
+  },
+  "per_subject": [
+    {
+      "subject": "S001",
+      "accuracy": 56.67,
+      "macro_f1": 48.86
+    },
+    {
+      "subject": "S002",
+      "accuracy": 83.33,
+      "macro_f1": 81.55
+    },
+    {
+      "subject": "S003",
+      "accuracy": 63.33,
+      "macro_f1": 54.01
+    },
+    {
+      "subject": "S004",
+      "accuracy": 83.33,
+      "macro_f1": 78.47
+    },
+    {
+      "subject": "S005",
+      "accuracy": 70.0,
+      "macro_f1": 62.5
+    },
+    {
+      "subject": "S006",
+      "accuracy": 56.67,
+      "macro_f1": 41.18
+    },
+    {
+      "subject": "S007",
+      "accuracy": 83.33,
+      "macro_f1": 80.56
+    },
+    {
+      "subject": "S008",
+      "accuracy": 76.67,
+      "macro_f1": 63.0
+    },
+    {
+      "subject": "S009",
+      "accuracy": 70.0,
+      "macro_f1": 56.81
+    },
+    {
+      "subject": "S010",
+      "accuracy": 83.33,
+      "macro_f1": 80.56
+    }
+  ],
+  "classes": [
+    "REST",
+    "LEFT_FIST",
+    "RIGHT_FIST"
+  ]
+}

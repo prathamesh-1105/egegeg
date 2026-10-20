@@ -1,0 +1,6 @@
+metric,latency_ms
+mean_ms,0.733
+median_ms,0.666
+p95_ms,1.665
+maximum_ms,1.758
+eeg_window_duration_sec,3000.0

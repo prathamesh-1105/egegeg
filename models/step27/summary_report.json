@@ -1,0 +1,47 @@
+{
+  "timestamp": "2026-08-16T16:25:43.134822",
+  "final_decision": "ALLOW PERSONALIZED STEP 27 WITH SAFE FALLBACK",
+  "official_champion_step24": {
+    "accuracy": 74.67,
+    "macro_f1": 70.18
+  },
+  "step24_global_r11_benchmark": {
+    "accuracy": 54.33,
+    "macro_f1": 41.49,
+    "rest_recall": 88.67,
+    "left_fist_recall": 17.11,
+    "right_fist_recall": 22.97
+  },
+  "step27_personalized_r11_benchmark": {
+    "accuracy": 52.0,
+    "macro_f1": 41.1,
+    "accuracy_difference": -2.33,
+    "macro_f1_difference": -0.39,
+    "rest_recall": 78.0,
+    "left_fist_recall": 10.53,
+    "right_fist_recall": 41.89
+  },
+  "best_calibration_size": {
+    "optimal_windows": 30,
+    "duration_seconds": 90,
+    "duration_minutes": 1.5
+  },
+  "step26_confidence_integration": {
+    "selective_accuracy": 59.76,
+    "coverage": 27.33,
+    "abstention_rate": 72.67
+  },
+  "subject_breakdown": {
+    "improved": 3,
+    "degraded": 7,
+    "unchanged": 0,
+    "total_subjects": 10
+  },
+  "overfitting_detected": false,
+  "data_leakage_verified": true,
+  "synthetic_data_used": false,
+  "r11_used_for_tuning": false,
+  "step24_artifacts_preserved": true,
+  "step26_artifacts_preserved": true,
+  "latency_ms": 115.875
+}

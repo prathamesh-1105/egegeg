@@ -1,0 +1,5 @@
+spectral_band,val_accuracy
+Theta (4-8 Hz) + Raw Temporal,76.0
+Mu (8-13 Hz) + Raw Temporal,76.8
+Beta (13-30 Hz) + Raw Temporal,77.0
+Multi-Band Fused Spectral Hybrid,77.5

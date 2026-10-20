@@ -1,0 +1,3 @@
+difficulty_tier,sample_percent,val_accuracy,primary_bottleneck
+"EASY (S001, S003, S006, S008, S009)",50,85.0,LOW (Strong ERD)
+"HARD (S002, S004, S005, S007, S010)",50,66.67,HIGH (Physiological ERD Absence)

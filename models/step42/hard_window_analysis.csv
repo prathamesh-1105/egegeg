@@ -1,0 +1,4 @@
+hard_window_condition,rescue_rate_pct
+Low FBCSP Confidence (Pmax < 0.50),42.5
+REST Prediction During Active Motor Trial,35.0
+LEFT vs RIGHT Indecision Margin (< 0.10),50.0

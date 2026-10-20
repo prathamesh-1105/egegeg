@@ -1,0 +1,6 @@
+feature_statistic,training_set,validation_set,r11_holdout_set,shift_magnitude
+RMS Amplitude (uV),12.4,12.1,14.8,MODERATE
+Signal Variance,153.8,146.4,219.0,HIGH
+Mu ERD Power (8-13Hz),0.42,0.4,0.28,HIGH
+Beta ERD Power (13-30Hz),0.35,0.33,0.22,HIGH
+C3/C4 Asymmetry Power Ratio,0.08,0.07,0.03,HIGH

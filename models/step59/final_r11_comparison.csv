@@ -1,0 +1,6 @@
+metric,step58_baseline,step58_candidate,step59_authentic,delta
+R11 Accuracy,60.33,67.67,67.67,-0.0
+R11 Macro F1,56.53,62.04,62.24,0.2
+REST Recall,85.33,86.67,85.33,-1.34
+LEFT_FIST Recall,47.37,47.37,57.89,10.52
+RIGHT_FIST Recall,50.0,50.0,41.89,-8.11

@@ -1,0 +1,6 @@
+strategy,calibration_windows,val_accuracy,val_macro_f1
+GLOBAL ONLY,0,78.5,73.2
+GLOBAL + 10 WINDOWS,10,80.2,75.0
+GLOBAL + 20 WINDOWS,20,82.0,77.2
+GLOBAL + 30 WINDOWS,30,83.5,78.8
+GLOBAL + 60 WINDOWS,60,85.0,80.5

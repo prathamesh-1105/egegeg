@@ -1,0 +1,6 @@
+metric,value
+Primary Ranking Metric,Mean GroupKFold Accuracy
+Secondary Tie-Breaker Metric,Mean Macro F1
+Third Tie-Breaker Metric,Worst Subject Accuracy
+Selected Representation Architecture,Step 34 Two-Pass Motor Specialist Ensemble
+Selection Rationale,Highest mean cross-subject CV score (77.20%) and zero holdout leakage

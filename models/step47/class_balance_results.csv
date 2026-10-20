@@ -1,0 +1,3 @@
+loss,cv_accuracy
+Standard Cross-Entropy,77.2
+Balanced Class Weighting,77.5

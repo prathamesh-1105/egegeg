@@ -1,0 +1,10 @@
+{
+  "total_subjects": 10,
+  "total_recordings": 61,
+  "total_calibration_windows": 600,
+  "rest_windows": 300,
+  "left_fist_windows": 151,
+  "right_fist_windows": 149,
+  "channels": 15,
+  "sampling_rate_hz": 160.0
+}

@@ -1,0 +1,3 @@
+protocol,trials_for_85_pct,calibration_time_sec
+Random Calibration,10,90
+Active Uncertainty Calibration,5,45

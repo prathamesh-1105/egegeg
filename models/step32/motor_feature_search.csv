@@ -1,0 +1,3 @@
+feature_set,val_accuracy,val_macro_f1
+FBCSP_Only,71.88,65.71
+FBCSP_Plus_C3_C4_Asymmetry,71.25,64.79

@@ -1,0 +1,3 @@
+subject_strategy,cv_accuracy,cv_macro_f1
+Global Step 34 Baseline,77.2,71.5
+Personalized Motor Specialist with Fallback,77.8,72.0

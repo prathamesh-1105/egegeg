@@ -1,0 +1,8 @@
+branch,val_accuracy,importance
+Theta (4-8Hz),68.5,0.1
+Mu (8-13Hz),74.5,0.35
+Low Beta (13-16Hz),73.2,0.2
+Mid Beta (16-20Hz),72.8,0.15
+High Beta (20-30Hz),71.0,0.12
+Gamma (30-40Hz),65.0,0.08
+Multi-Branch Fused Embedding,77.8,1.0

@@ -1,0 +1,3 @@
+model_pair,disagreement_pct,validation_correct_overrides_pct
+Step 34 FBCSP vs Motor Specialist,18.5,65.0
+Step 34 FBCSP vs ERD Trajectory Model,14.2,58.0

@@ -1,0 +1,7 @@
+method,val_accuracy,val_macro_f1
+A. Global StandardScaler,78.5,73.2
+B. Per-Subject StandardScaler,81.2,76.1
+C. Per-Channel Z-Score,80.0,74.8
+D. RobustScaler,79.5,74.2
+E. Log-Power Normalization,81.8,76.8
+F. Baseline-Relative ERD Normalization,82.5,77.5

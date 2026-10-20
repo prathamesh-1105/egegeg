@@ -1,0 +1,4 @@
+tangent_space_config,mean_cv_acc,mean_cv_f1
+Euclidean Covariance Features,74.0,67.8
+Riemannian Mean Tangent Projection,76.2,70.5
+CORAL Aligned Tangent Projection,77.0,71.2

@@ -1,0 +1,6 @@
+{
+  "architecture": "Step 47 High Accuracy Trial-Structure Recovery Engine",
+  "filter_band": "7-35 Hz",
+  "erd_baseline_relative": true,
+  "decision": "KEEP STEP 34"
+}

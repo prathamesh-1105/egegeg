@@ -1,0 +1,3 @@
+transition,error_pct,mitigated_by_recovery
+RIGHT_FIST -> REST,52.7,True
+LEFT_FIST -> REST,35.5,True

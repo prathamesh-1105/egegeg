@@ -1,0 +1,3 @@
+Model,Accuracy,Macro F1,Rest Recall,Left Fist Recall,Right Fist Recall,Status
+Step 24 FBCSP Baseline,70.67,64.33,92.0,59.21,39.19,OFFICIAL BASELINE
+Step 33 Multi-Model Soft Fusion Champion,18.33,23.04,4.0,26.32,39.19,CANDIDATE

@@ -1,0 +1,3 @@
+model,val_accuracy,val_macro_f1
+Supervised EEGNet (Random Init),72.0,65.5
+Pretrained SSL EEGNet (Fine-Tuned),84.8,80.2

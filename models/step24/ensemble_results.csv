@@ -1,0 +1,4 @@
+ensemble_config,val_accuracy,val_macro_f1
+Single_Best_FBCSP,72.29,65.72
+Ensemble_BankA_BankB_Step17B_SimpleAvg,70.21,62.34
+Ensemble_BankA_BankB_Step17B_WeightedAvg,71.25,63.77

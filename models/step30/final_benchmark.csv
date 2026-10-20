@@ -1,0 +1,2 @@
+champion_model,best_window,best_channels,best_bands,holdout_accuracy,holdout_macro_f1,rest_recall,left_recall,right_recall,false_activation_rate,command_stability
+STEP 24 FBCSP,Baseline_3.0s_0.5s,Group_B_15_Channels,Bank_A_Full_Bank,63.0,55.8,87.33,32.89,44.59,4.0,55.76

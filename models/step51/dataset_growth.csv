@@ -1,0 +1,7 @@
+Step,EDF_count,subject_count,trial_count,dataset_status
+Step 24 FBCSP Champion,61,10,450,
+Step 34 Two-Pass Motor Specialist,61,10,450,
+Step 44 SSL Representation Lab,61,10,450,
+Step 49 Full PhysioNet Expansion,61,10,450,
+Step 50 Data Expansion Audit,61,10,450,
+Step 51 PhysioNet Expansion Engine,61,10,450,OLD DATASET: 61 EDF / 10 subjects / 450 trials | NEW DATASET: AUDITED S001-S010

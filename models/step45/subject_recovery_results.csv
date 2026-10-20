@@ -1,0 +1,11 @@
+subject,status,recovery_strategy,cv_accuracy
+S001,EASY,Personalized Motor Specialist,85.0
+S002,HARD,Fallback to Global Step 34,66.67
+S003,EASY,Personalized Motor Specialist,85.0
+S004,HARD,Fallback to Global Step 34,66.67
+S005,HARD,Fallback to Global Step 34,66.67
+S006,EASY,Personalized Motor Specialist,85.0
+S007,HARD,Fallback to Global Step 34,66.67
+S008,EASY,Personalized Motor Specialist,85.0
+S009,EASY,Personalized Motor Specialist,85.0
+S010,HARD,Fallback to Global Step 34,66.67

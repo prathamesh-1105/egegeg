@@ -1,0 +1,19 @@
+{
+  "protocol_name": "STEP 21 \u2014 PERSONAL EEG CALIBRATION",
+  "target_classes": [
+    "REST",
+    "LEFT_FIST",
+    "RIGHT_FIST"
+  ],
+  "recommended_windows_per_class": 20,
+  "window_sec": 3.0,
+  "step_sec": 1.5,
+  "sample_rate_target_hz": 160.0,
+  "instructions": {
+    "REST": "Relax and remain still. Clear your mind and look straight ahead.",
+    "LEFT_FIST": "Imagine moving or squeezing your LEFT fist. Do not physically move.",
+    "RIGHT_FIST": "Imagine moving or squeezing your RIGHT fist. Do not physically move."
+  },
+  "event_label_tag": "USER-PROVIDED CALIBRATION LABEL",
+  "session_output_directory": "data/hardware_sessions/openbci"
+}

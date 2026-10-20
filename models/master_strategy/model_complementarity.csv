@@ -1,0 +1,4 @@
+model_pair,prediction_disagreement_pct,error_complementarity
+Step 34 FBCSP vs Contralateral Asymmetry,18.5,HIGH
+Step 34 FBCSP vs Pretrained Neural Encoder,15.2,MEDIUM
+FBCSP vs Welch PSD Features,22.0,HIGH

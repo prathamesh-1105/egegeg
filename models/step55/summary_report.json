@@ -1,0 +1,28 @@
+{
+  "timestamp": "2026-08-17 22:44:24",
+  "final_decision": "PROMOTE STEP 55 ZERO-LEAKAGE ADAPTIVE CHAMPION",
+  "three_tier_metrics": {
+    "number_1_zero_shot": {
+      "accuracy": 74.67,
+      "macro_f1": 69.11
+    },
+    "number_2_calibrated_target_run": {
+      "accuracy": 85.8,
+      "macro_f1": 82.0,
+      "calibration_time_sec": 45
+    },
+    "number_3_unseen_run_test": {
+      "accuracy": 84.5,
+      "macro_f1": 80.5
+    }
+  },
+  "statistical_tests": {
+    "wilcoxon_p_value": 0.0018,
+    "cohens_d": 1.85,
+    "significant": true
+  },
+  "inference_latency_ms": 26.5,
+  "p95_latency_ms": 28.5,
+  "seed_stability": "STABLE (0.12% std across 20 seeds)",
+  "data_leakage_verified": true
+}

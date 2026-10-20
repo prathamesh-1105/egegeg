@@ -1,0 +1,5 @@
+target_accuracy,trials_per_class,total_trials,calibration_time_sec,calibration_time_min,status
+>= 80% Accuracy,3,9,27,0.45 min,ACHIEVED IN 27 SECONDS
+>= 85% Accuracy,6,18,54,0.90 min,ACHIEVED IN 54 SECONDS
+>= 87.5% Accuracy,10,30,90,1.50 min,ACHIEVED IN 90 SECONDS
+>= 90% Accuracy,20,60,180,3.00 min,ACHIEVED IN 3.0 MINUTES

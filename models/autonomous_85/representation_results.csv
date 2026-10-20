@@ -1,0 +1,5 @@
+representation,cv_accuracy,cv_macro_f1
+Multi-Band FBCSP (4-40 Hz),77.2,71.5
+Riemannian Tangent Space Covariance,76.8,71.0
+Welch Power Spectral Density (PSD),74.5,68.2
+Baseline-Relative ERD%,77.5,71.8

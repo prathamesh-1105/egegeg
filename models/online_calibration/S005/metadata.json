@@ -1,0 +1,310 @@
+{
+  "subject": "S005",
+  "calibration_runs": [
+    "R03",
+    "R07"
+  ],
+  "evaluation_runs": [
+    "R11"
+  ],
+  "calibration_source": "Real PhysioNet EEG recording (Runs R03 & R07)",
+  "training_windows": 60,
+  "evaluation_windows": 30,
+  "raw_accuracy": 0.7333333333333333,
+  "smoothed_accuracy": 0.6333333333333333,
+  "precision": 0.3862433862433862,
+  "recall": 0.5238095238095238,
+  "f1_score": 0.4444444444444445,
+  "avg_latency_ms": 0.5175431569417317,
+  "temporal_smoothing": "3-window causal majority vote",
+  "confusion_matrix": [
+    [
+      15,
+      0,
+      0
+    ],
+    [
+      3,
+      0,
+      5
+    ],
+    [
+      3,
+      0,
+      4
+    ]
+  ],
+  "sample_predictions": [
+    {
+      "subject": "S005",
+      "run": "R11",
+      "window_time": "0.0\u20133.0 sec",
+      "actual_label": "REST",
+      "raw_predicted_label": "REST",
+      "smoothed_predicted_label": "REST",
+      "status": "CORRECT"
+    },
+    {
+      "subject": "S005",
+      "run": "R11",
+      "window_time": "4.1\u20137.1 sec",
+      "actual_label": "LEFT_FIST",
+      "raw_predicted_label": "RIGHT_FIST",
+      "smoothed_predicted_label": "RIGHT_FIST",
+      "status": "INCORRECT"
+    },
+    {
+      "subject": "S005",
+      "run": "R11",
+      "window_time": "8.2\u201311.2 sec",
+      "actual_label": "REST",
+      "raw_predicted_label": "REST",
+      "smoothed_predicted_label": "REST",
+      "status": "CORRECT"
+    },
+    {
+      "subject": "S005",
+      "run": "R11",
+      "window_time": "12.3\u201315.3 sec",
+      "actual_label": "RIGHT_FIST",
+      "raw_predicted_label": "RIGHT_FIST",
+      "smoothed_predicted_label": "RIGHT_FIST",
+      "status": "CORRECT"
+    },
+    {
+      "subject": "S005",
+      "run": "R11",
+      "window_time": "16.4\u201319.4 sec",
+      "actual_label": "REST",
+      "raw_predicted_label": "REST",
+      "smoothed_predicted_label": "REST",
+      "status": "CORRECT"
+    },
+    {
+      "subject": "S005",
+      "run": "R11",
+      "window_time": "20.5\u201323.5 sec",
+      "actual_label": "LEFT_FIST",
+      "raw_predicted_label": "RIGHT_FIST",
+      "smoothed_predicted_label": "RIGHT_FIST",
+      "status": "INCORRECT"
+    },
+    {
+      "subject": "S005",
+      "run": "R11",
+      "window_time": "24.6\u201327.6 sec",
+      "actual_label": "REST",
+      "raw_predicted_label": "REST",
+      "smoothed_predicted_label": "REST",
+      "status": "CORRECT"
+    },
+    {
+      "subject": "S005",
+      "run": "R11",
+      "window_time": "28.7\u201331.7 sec",
+      "actual_label": "RIGHT_FIST",
+      "raw_predicted_label": "RIGHT_FIST",
+      "smoothed_predicted_label": "RIGHT_FIST",
+      "status": "CORRECT"
+    },
+    {
+      "subject": "S005",
+      "run": "R11",
+      "window_time": "32.8\u201335.8 sec",
+      "actual_label": "REST",
+      "raw_predicted_label": "REST",
+      "smoothed_predicted_label": "REST",
+      "status": "CORRECT"
+    },
+    {
+      "subject": "S005",
+      "run": "R11",
+      "window_time": "36.9\u201339.9 sec",
+      "actual_label": "RIGHT_FIST",
+      "raw_predicted_label": "RIGHT_FIST",
+      "smoothed_predicted_label": "RIGHT_FIST",
+      "status": "CORRECT"
+    },
+    {
+      "subject": "S005",
+      "run": "R11",
+      "window_time": "41.0\u201344.0 sec",
+      "actual_label": "REST",
+      "raw_predicted_label": "REST",
+      "smoothed_predicted_label": "REST",
+      "status": "CORRECT"
+    },
+    {
+      "subject": "S005",
+      "run": "R11",
+      "window_time": "45.1\u201348.1 sec",
+      "actual_label": "LEFT_FIST",
+      "raw_predicted_label": "RIGHT_FIST",
+      "smoothed_predicted_label": "RIGHT_FIST",
+      "status": "INCORRECT"
+    },
+    {
+      "subject": "S005",
+      "run": "R11",
+      "window_time": "49.2\u201352.2 sec",
+      "actual_label": "REST",
+      "raw_predicted_label": "REST",
+      "smoothed_predicted_label": "REST",
+      "status": "CORRECT"
+    },
+    {
+      "subject": "S005",
+      "run": "R11",
+      "window_time": "53.3\u201356.3 sec",
+      "actual_label": "RIGHT_FIST",
+      "raw_predicted_label": "RIGHT_FIST",
+      "smoothed_predicted_label": "RIGHT_FIST",
+      "status": "CORRECT"
+    },
+    {
+      "subject": "S005",
+      "run": "R11",
+      "window_time": "57.4\u201360.4 sec",
+      "actual_label": "REST",
+      "raw_predicted_label": "REST",
+      "smoothed_predicted_label": "REST",
+      "status": "CORRECT"
+    },
+    {
+      "subject": "S005",
+      "run": "R11",
+      "window_time": "61.5\u201364.5 sec",
+      "actual_label": "LEFT_FIST",
+      "raw_predicted_label": "RIGHT_FIST",
+      "smoothed_predicted_label": "RIGHT_FIST",
+      "status": "INCORRECT"
+    },
+    {
+      "subject": "S005",
+      "run": "R11",
+      "window_time": "65.6\u201368.6 sec",
+      "actual_label": "REST",
+      "raw_predicted_label": "REST",
+      "smoothed_predicted_label": "REST",
+      "status": "CORRECT"
+    },
+    {
+      "subject": "S005",
+      "run": "R11",
+      "window_time": "69.7\u201372.7 sec",
+      "actual_label": "LEFT_FIST",
+      "raw_predicted_label": "REST",
+      "smoothed_predicted_label": "REST",
+      "status": "INCORRECT"
+    },
+    {
+      "subject": "S005",
+      "run": "R11",
+      "window_time": "73.8\u201376.8 sec",
+      "actual_label": "REST",
+      "raw_predicted_label": "REST",
+      "smoothed_predicted_label": "REST",
+      "status": "CORRECT"
+    },
+    {
+      "subject": "S005",
+      "run": "R11",
+      "window_time": "77.9\u201380.9 sec",
+      "actual_label": "RIGHT_FIST",
+      "raw_predicted_label": "RIGHT_FIST",
+      "smoothed_predicted_label": "REST",
+      "status": "INCORRECT"
+    },
+    {
+      "subject": "S005",
+      "run": "R11",
+      "window_time": "82.0\u201385.0 sec",
+      "actual_label": "REST",
+      "raw_predicted_label": "REST",
+      "smoothed_predicted_label": "REST",
+      "status": "CORRECT"
+    },
+    {
+      "subject": "S005",
+      "run": "R11",
+      "window_time": "86.1\u201389.1 sec",
+      "actual_label": "LEFT_FIST",
+      "raw_predicted_label": "REST",
+      "smoothed_predicted_label": "REST",
+      "status": "INCORRECT"
+    },
+    {
+      "subject": "S005",
+      "run": "R11",
+      "window_time": "90.2\u201393.2 sec",
+      "actual_label": "REST",
+      "raw_predicted_label": "REST",
+      "smoothed_predicted_label": "REST",
+      "status": "CORRECT"
+    },
+    {
+      "subject": "S005",
+      "run": "R11",
+      "window_time": "94.3\u201397.3 sec",
+      "actual_label": "RIGHT_FIST",
+      "raw_predicted_label": "RIGHT_FIST",
+      "smoothed_predicted_label": "REST",
+      "status": "INCORRECT"
+    },
+    {
+      "subject": "S005",
+      "run": "R11",
+      "window_time": "98.4\u2013101.4 sec",
+      "actual_label": "REST",
+      "raw_predicted_label": "REST",
+      "smoothed_predicted_label": "REST",
+      "status": "CORRECT"
+    },
+    {
+      "subject": "S005",
+      "run": "R11",
+      "window_time": "102.5\u2013105.5 sec",
+      "actual_label": "RIGHT_FIST",
+      "raw_predicted_label": "REST",
+      "smoothed_predicted_label": "REST",
+      "status": "INCORRECT"
+    },
+    {
+      "subject": "S005",
+      "run": "R11",
+      "window_time": "106.6\u2013109.6 sec",
+      "actual_label": "REST",
+      "raw_predicted_label": "REST",
+      "smoothed_predicted_label": "REST",
+      "status": "CORRECT"
+    },
+    {
+      "subject": "S005",
+      "run": "R11",
+      "window_time": "110.7\u2013113.7 sec",
+      "actual_label": "LEFT_FIST",
+      "raw_predicted_label": "LEFT_FIST",
+      "smoothed_predicted_label": "REST",
+      "status": "INCORRECT"
+    },
+    {
+      "subject": "S005",
+      "run": "R11",
+      "window_time": "114.8\u2013117.8 sec",
+      "actual_label": "REST",
+      "raw_predicted_label": "REST",
+      "smoothed_predicted_label": "REST",
+      "status": "CORRECT"
+    },
+    {
+      "subject": "S005",
+      "run": "R11",
+      "window_time": "118.9\u2013121.9 sec",
+      "actual_label": "LEFT_FIST",
+      "raw_predicted_label": "RIGHT_FIST",
+      "smoothed_predicted_label": "RIGHT_FIST",
+      "status": "INCORRECT"
+    }
+  ],
+  "timestamp": "2026-08-11T19:03:24.207173"
+}

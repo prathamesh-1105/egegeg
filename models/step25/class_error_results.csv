@@ -1,0 +1,7 @@
+error_transition,step17b_error_count,step24_error_count,reduction_count,pct_reduction
+REST_to_LEFT,1,2,-1,-100.0
+REST_to_RIGHT,6,8,-2,-33.33
+LEFT_to_REST,19,45,-26,-136.84
+LEFT_to_RIGHT,22,16,6,27.27
+RIGHT_to_REST,26,50,-24,-92.31
+RIGHT_to_LEFT,10,7,3,30.0

@@ -1,0 +1,3 @@
+mode,recovered_trials,cv_accuracy
+Single-Window Baseline,0,77.2
+Causal Motor Evidence Recovery (Late Window Rescue),3,77.8

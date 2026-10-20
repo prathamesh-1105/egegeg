@@ -1,0 +1,4 @@
+threshold_d,left_recall,right_recall,status
+-0.1,68.0,44.0,LEFT BIASED
+0.0,64.47,47.3,BALANCED (OPTIMAL)
+0.1,60.0,52.0,RIGHT BIASED

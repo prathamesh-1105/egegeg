@@ -1,0 +1,2 @@
+architecture,val_accuracy,val_macro_f1,parameters,latency_ms
+"Lightweight Temporal Transformer (2 Layers, 4 Heads)",76.2,70.5,140000,28.5

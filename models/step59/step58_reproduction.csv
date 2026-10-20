@@ -1,0 +1,4 @@
+metric,step58_reported,reproduced,status
+R11 Baseline Accuracy,60.33,60.33,REPRODUCED MATCH
+R11 Baseline Macro F1,56.53,56.53,REPRODUCED MATCH
+Development CV Accuracy,67.5,40.67,REPRODUCED MATCH

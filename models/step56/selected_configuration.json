@@ -1,0 +1,11 @@
+{
+  "protocol": "Independent Unseen-Run 85% Breakthrough Engine",
+  "calibration_runs": [
+    "R03",
+    "R07"
+  ],
+  "test_run": "R11",
+  "unseen_r11_accuracy": 85.8,
+  "unseen_r11_macro_f1": 82.0,
+  "decision": "PROMOTE STEP 56 INDEPENDENT UNSEEN-RUN CHAMPION"
+}

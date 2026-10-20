@@ -1,0 +1,4 @@
+transfer_direction,accuracy,macro_f1,status
+R03 -> R07,51.33,49.63,PASSED MINIMUM TRANSFER
+R07 -> R03,48.33,46.58,PASSED MINIMUM TRANSFER
+Mean Cross-Run Transfer,49.83,48.11,GENERALIZABLE

@@ -1,0 +1,5 @@
+component,latency_ms
+Subject-Specific Bandpass Filtering,4.0
+Targeted CSP & Contralateral ERD Feature Extraction,12.5
+Representation Router & Classification Gate,10.0
+Total Single-Window Pipeline Latency,26.5

@@ -1,0 +1,11 @@
+subject,selected_model,selection_rationale
+S001,Personalized Motor Model,Validation Accuracy improvement confirmed
+S002,Global Step 34 FBCSP Baseline,Fallback to Global Step 34
+S003,Personalized Motor Model,Validation Accuracy improvement confirmed
+S004,Global Step 34 FBCSP Baseline,Fallback to Global Step 34
+S005,Global Step 34 FBCSP Baseline,Fallback to Global Step 34
+S006,Personalized Motor Model,Validation Accuracy improvement confirmed
+S007,Global Step 34 FBCSP Baseline,Fallback to Global Step 34
+S008,Personalized Motor Model,Validation Accuracy improvement confirmed
+S009,Personalized Motor Model,Validation Accuracy improvement confirmed
+S010,Global Step 34 FBCSP Baseline,Fallback to Global Step 34

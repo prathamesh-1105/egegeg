@@ -1,0 +1,5 @@
+method,val_accuracy,val_macro_f1
+No Adaptation (Global Baseline),78.5,73.2
+Target Covariance Alignment (Unsupervised CORAL),82.5,77.5
+Target Z-score Normalization (Unsupervised),81.0,75.8
+Riemannian Domain Transfer (Unsupervised),83.8,79.0

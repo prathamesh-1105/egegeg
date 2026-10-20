@@ -1,0 +1,2 @@
+rule,selected_model_ratio
+Router: Use Personalized Cascade if Validation Gain > 2.0% else Fallback Global,80% Personalized / 20% Global

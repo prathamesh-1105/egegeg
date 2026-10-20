@@ -1,0 +1,3 @@
+fusion_scheme,cv_accuracy,cv_macro_f1
+Probability Fusion Only,77.2,71.5
+Feature Fusion (FBCSP + ERD + Asymmetry),77.8,72.0

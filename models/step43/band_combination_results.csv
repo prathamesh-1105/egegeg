@@ -1,0 +1,6 @@
+band_combination,cv_accuracy,cv_macro_f1
+Mu Only (8-13Hz),74.5,68.2
+Beta Only (13-30Hz),73.8,67.5
+Mu + Low Beta (8-20Hz),76.8,71.0
+Mu + Beta (8-30Hz Bank_A),77.2,71.5
+Subject-Optimal Adaptive Bands,77.8,72.0

@@ -1,0 +1,4 @@
+model_type,val_accuracy,val_macro_f1,notes
+Single 3-Class FBCSP,70.67,64.33,Baseline 3-class model
+Motor Specialist (Left vs Right),49.58,33.15,Trained exclusively on motor trials
+Hierarchical REST Gate + Specialist,42.15,27.18,Cascaded classification

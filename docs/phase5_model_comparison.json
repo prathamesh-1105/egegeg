@@ -1,0 +1,987 @@
+{
+  "timestamp": "2026-10-20 16:36:19",
+  "dataset": "PhysioNet EEGMMIDB (S001-S010, Runs R03, R07, R11)",
+  "evaluation_protocol": {
+    "development_set": "R03 + R07 (600 trials, 50-fold within-subject stratified CV)",
+    "holdout_test_set": "R11 (300 trials, single-pass frozen evaluation)",
+    "loso_cross_subject": "Leave-One-Subject-Out across 10 subjects (900 trials total)",
+    "classes": [
+      "REST",
+      "LEFT_FIST",
+      "RIGHT_FIST"
+    ]
+  },
+  "baseline_reproduction": {
+    "n_total": 300,
+    "accuracy": 74.0,
+    "balanced_accuracy": 68.42,
+    "macro_f1": 69.51,
+    "weighted_f1": 73.15,
+    "rest_recall": 90.67,
+    "left_recall": 60.53,
+    "right_recall": 54.05,
+    "rest_precision": 78.16,
+    "left_precision": 73.02,
+    "right_precision": 63.49,
+    "rest_false_actuation_rate": 9.33,
+    "motor_lateralization_error_rate": 17.33,
+    "confusion_matrix": [
+      [
+        136,
+        5,
+        9
+      ],
+      [
+        16,
+        46,
+        14
+      ],
+      [
+        22,
+        12,
+        40
+      ]
+    ],
+    "classes": [
+      "REST",
+      "LEFT_FIST",
+      "RIGHT_FIST"
+    ],
+    "mean_latency_ms": 0.84,
+    "sub_mean_acc": 74.0,
+    "sub_std_acc": 13.4
+  },
+  "development_cv_results": {
+    "p5_cand_01_exp08_base": {
+      "n_total": 600,
+      "accuracy": 71.67,
+      "balanced_accuracy": 67.09,
+      "macro_f1": 66.93,
+      "weighted_f1": 71.84,
+      "rest_recall": 85.33,
+      "left_recall": 63.58,
+      "right_recall": 52.35,
+      "rest_precision": 87.67,
+      "left_precision": 60.76,
+      "right_precision": 52.0,
+      "rest_false_actuation_rate": 14.67,
+      "motor_lateralization_error_rate": 30.0,
+      "confusion_matrix": [
+        [
+          256,
+          15,
+          29
+        ],
+        [
+          12,
+          96,
+          43
+        ],
+        [
+          24,
+          47,
+          78
+        ]
+      ],
+      "classes": [
+        "REST",
+        "LEFT_FIST",
+        "RIGHT_FIST"
+      ],
+      "mean_latency_ms": 0.0,
+      "sub_mean_acc": 71.67,
+      "sub_std_acc": 13.96,
+      "fold_std_acc": 15.99
+    },
+    "p5_cand_02_dense_subbands": {
+      "n_total": 600,
+      "accuracy": 71.83,
+      "balanced_accuracy": 66.54,
+      "macro_f1": 66.81,
+      "weighted_f1": 71.43,
+      "rest_recall": 87.67,
+      "left_recall": 59.6,
+      "right_recall": 52.35,
+      "rest_precision": 82.97,
+      "left_precision": 62.5,
+      "right_precision": 56.12,
+      "rest_false_actuation_rate": 12.33,
+      "motor_lateralization_error_rate": 26.0,
+      "confusion_matrix": [
+        [
+          263,
+          14,
+          23
+        ],
+        [
+          23,
+          90,
+          38
+        ],
+        [
+          31,
+          40,
+          78
+        ]
+      ],
+      "classes": [
+        "REST",
+        "LEFT_FIST",
+        "RIGHT_FIST"
+      ],
+      "mean_latency_ms": 0.0,
+      "sub_mean_acc": 71.83,
+      "sub_std_acc": 10.07,
+      "fold_std_acc": 14.13
+    },
+    "p5_cand_03_bipolar_derivation": {
+      "n_total": 600,
+      "accuracy": 71.67,
+      "balanced_accuracy": 67.32,
+      "macro_f1": 67.23,
+      "weighted_f1": 71.74,
+      "rest_recall": 84.67,
+      "left_recall": 62.25,
+      "right_recall": 55.03,
+      "rest_precision": 85.81,
+      "left_precision": 59.87,
+      "right_precision": 55.78,
+      "rest_false_actuation_rate": 15.33,
+      "motor_lateralization_error_rate": 27.33,
+      "confusion_matrix": [
+        [
+          254,
+          19,
+          27
+        ],
+        [
+          19,
+          94,
+          38
+        ],
+        [
+          23,
+          44,
+          82
+        ]
+      ],
+      "classes": [
+        "REST",
+        "LEFT_FIST",
+        "RIGHT_FIST"
+      ],
+      "mean_latency_ms": 0.0,
+      "sub_mean_acc": 71.67,
+      "sub_std_acc": 13.21,
+      "fold_std_acc": 16.75
+    },
+    "p5_cand_04_advanced_motor_features": {
+      "n_total": 600,
+      "accuracy": 72.17,
+      "balanced_accuracy": 67.75,
+      "macro_f1": 67.52,
+      "weighted_f1": 72.31,
+      "rest_recall": 85.33,
+      "left_recall": 64.9,
+      "right_recall": 53.02,
+      "rest_precision": 87.97,
+      "left_precision": 59.04,
+      "right_precision": 55.24,
+      "rest_false_actuation_rate": 14.67,
+      "motor_lateralization_error_rate": 29.33,
+      "confusion_matrix": [
+        [
+          256,
+          20,
+          24
+        ],
+        [
+          13,
+          98,
+          40
+        ],
+        [
+          22,
+          48,
+          79
+        ]
+      ],
+      "classes": [
+        "REST",
+        "LEFT_FIST",
+        "RIGHT_FIST"
+      ],
+      "mean_latency_ms": 0.0,
+      "sub_mean_acc": 72.17,
+      "sub_std_acc": 12.32,
+      "fold_std_acc": 14.3
+    },
+    "p5_cand_05_calibrated_hierarchical": {
+      "n_total": 600,
+      "accuracy": 72.67,
+      "balanced_accuracy": 68.64,
+      "macro_f1": 68.34,
+      "weighted_f1": 72.9,
+      "rest_recall": 84.67,
+      "left_recall": 66.23,
+      "right_recall": 55.03,
+      "rest_precision": 88.5,
+      "left_precision": 59.88,
+      "right_precision": 56.16,
+      "rest_false_actuation_rate": 15.33,
+      "motor_lateralization_error_rate": 28.33,
+      "confusion_matrix": [
+        [
+          254,
+          19,
+          27
+        ],
+        [
+          14,
+          100,
+          37
+        ],
+        [
+          19,
+          48,
+          82
+        ]
+      ],
+      "classes": [
+        "REST",
+        "LEFT_FIST",
+        "RIGHT_FIST"
+      ],
+      "mean_latency_ms": 0.0,
+      "sub_mean_acc": 72.67,
+      "sub_std_acc": 12.85,
+      "fold_std_acc": 15.19
+    },
+    "p5_cand_06_elasticnet_svm_ensemble": {
+      "n_total": 600,
+      "accuracy": 72.0,
+      "balanced_accuracy": 67.42,
+      "macro_f1": 67.26,
+      "weighted_f1": 72.17,
+      "rest_recall": 85.67,
+      "left_recall": 62.91,
+      "right_recall": 53.69,
+      "rest_precision": 88.01,
+      "left_precision": 59.38,
+      "right_precision": 54.05,
+      "rest_false_actuation_rate": 14.33,
+      "motor_lateralization_error_rate": 30.0,
+      "confusion_matrix": [
+        [
+          257,
+          19,
+          24
+        ],
+        [
+          12,
+          95,
+          44
+        ],
+        [
+          23,
+          46,
+          80
+        ]
+      ],
+      "classes": [
+        "REST",
+        "LEFT_FIST",
+        "RIGHT_FIST"
+      ],
+      "mean_latency_ms": 0.0,
+      "sub_mean_acc": 72.0,
+      "sub_std_acc": 14.31,
+      "fold_std_acc": 16.48
+    }
+  },
+  "r11_holdout_results": {
+    "p5_cand_01_exp08_base": {
+      "n_total": 300,
+      "accuracy": 74.0,
+      "balanced_accuracy": 68.42,
+      "macro_f1": 69.51,
+      "weighted_f1": 73.15,
+      "rest_recall": 90.67,
+      "left_recall": 60.53,
+      "right_recall": 54.05,
+      "rest_precision": 78.16,
+      "left_precision": 73.02,
+      "right_precision": 63.49,
+      "rest_false_actuation_rate": 9.33,
+      "motor_lateralization_error_rate": 17.33,
+      "confusion_matrix": [
+        [
+          136,
+          5,
+          9
+        ],
+        [
+          16,
+          46,
+          14
+        ],
+        [
+          22,
+          12,
+          40
+        ]
+      ],
+      "classes": [
+        "REST",
+        "LEFT_FIST",
+        "RIGHT_FIST"
+      ],
+      "mean_latency_ms": 0.64,
+      "sub_mean_acc": 74.0,
+      "sub_std_acc": 13.4,
+      "per_subject": [
+        {
+          "subject": "S001",
+          "accuracy": 50.0,
+          "macro_f1": 38.54
+        },
+        {
+          "subject": "S002",
+          "accuracy": 86.67,
+          "macro_f1": 86.63
+        },
+        {
+          "subject": "S003",
+          "accuracy": 70.0,
+          "macro_f1": 66.19
+        },
+        {
+          "subject": "S004",
+          "accuracy": 76.67,
+          "macro_f1": 69.32
+        },
+        {
+          "subject": "S005",
+          "accuracy": 76.67,
+          "macro_f1": 63.67
+        },
+        {
+          "subject": "S006",
+          "accuracy": 53.33,
+          "macro_f1": 40.66
+        },
+        {
+          "subject": "S007",
+          "accuracy": 96.67,
+          "macro_f1": 96.36
+        },
+        {
+          "subject": "S008",
+          "accuracy": 80.0,
+          "macro_f1": 74.76
+        },
+        {
+          "subject": "S009",
+          "accuracy": 70.0,
+          "macro_f1": 56.81
+        },
+        {
+          "subject": "S010",
+          "accuracy": 80.0,
+          "macro_f1": 75.14
+        }
+      ]
+    },
+    "p5_cand_02_dense_subbands": {
+      "n_total": 300,
+      "accuracy": 69.67,
+      "balanced_accuracy": 62.62,
+      "macro_f1": 63.77,
+      "weighted_f1": 68.1,
+      "rest_recall": 90.67,
+      "left_recall": 53.95,
+      "right_recall": 43.24,
+      "rest_precision": 73.12,
+      "left_precision": 69.49,
+      "right_precision": 58.18,
+      "rest_false_actuation_rate": 9.33,
+      "motor_lateralization_error_rate": 18.0,
+      "confusion_matrix": [
+        [
+          136,
+          9,
+          5
+        ],
+        [
+          17,
+          41,
+          18
+        ],
+        [
+          33,
+          9,
+          32
+        ]
+      ],
+      "classes": [
+        "REST",
+        "LEFT_FIST",
+        "RIGHT_FIST"
+      ],
+      "mean_latency_ms": 1.57,
+      "sub_mean_acc": 69.67,
+      "sub_std_acc": 9.83,
+      "per_subject": [
+        {
+          "subject": "S001",
+          "accuracy": 53.33,
+          "macro_f1": 38.89
+        },
+        {
+          "subject": "S002",
+          "accuracy": 80.0,
+          "macro_f1": 78.43
+        },
+        {
+          "subject": "S003",
+          "accuracy": 60.0,
+          "macro_f1": 55.79
+        },
+        {
+          "subject": "S004",
+          "accuracy": 76.67,
+          "macro_f1": 69.86
+        },
+        {
+          "subject": "S005",
+          "accuracy": 70.0,
+          "macro_f1": 56.91
+        },
+        {
+          "subject": "S006",
+          "accuracy": 53.33,
+          "macro_f1": 36.84
+        },
+        {
+          "subject": "S007",
+          "accuracy": 80.0,
+          "macro_f1": 76.58
+        },
+        {
+          "subject": "S008",
+          "accuracy": 76.67,
+          "macro_f1": 62.96
+        },
+        {
+          "subject": "S009",
+          "accuracy": 73.33,
+          "macro_f1": 68.66
+        },
+        {
+          "subject": "S010",
+          "accuracy": 73.33,
+          "macro_f1": 68.81
+        }
+      ]
+    },
+    "p5_cand_03_bipolar_derivation": {
+      "n_total": 300,
+      "accuracy": 73.0,
+      "balanced_accuracy": 67.53,
+      "macro_f1": 68.27,
+      "weighted_f1": 72.29,
+      "rest_recall": 89.33,
+      "left_recall": 59.21,
+      "right_recall": 54.05,
+      "rest_precision": 79.76,
+      "left_precision": 68.18,
+      "right_precision": 60.61,
+      "rest_false_actuation_rate": 10.67,
+      "motor_lateralization_error_rate": 20.67,
+      "confusion_matrix": [
+        [
+          134,
+          8,
+          8
+        ],
+        [
+          13,
+          45,
+          18
+        ],
+        [
+          21,
+          13,
+          40
+        ]
+      ],
+      "classes": [
+        "REST",
+        "LEFT_FIST",
+        "RIGHT_FIST"
+      ],
+      "mean_latency_ms": 0.66,
+      "sub_mean_acc": 73.0,
+      "sub_std_acc": 11.69,
+      "per_subject": [
+        {
+          "subject": "S001",
+          "accuracy": 56.67,
+          "macro_f1": 46.45
+        },
+        {
+          "subject": "S002",
+          "accuracy": 83.33,
+          "macro_f1": 81.55
+        },
+        {
+          "subject": "S003",
+          "accuracy": 63.33,
+          "macro_f1": 60.49
+        },
+        {
+          "subject": "S004",
+          "accuracy": 83.33,
+          "macro_f1": 79.75
+        },
+        {
+          "subject": "S005",
+          "accuracy": 76.67,
+          "macro_f1": 67.75
+        },
+        {
+          "subject": "S006",
+          "accuracy": 53.33,
+          "macro_f1": 36.57
+        },
+        {
+          "subject": "S007",
+          "accuracy": 90.0,
+          "macro_f1": 88.85
+        },
+        {
+          "subject": "S008",
+          "accuracy": 80.0,
+          "macro_f1": 73.41
+        },
+        {
+          "subject": "S009",
+          "accuracy": 66.67,
+          "macro_f1": 54.47
+        },
+        {
+          "subject": "S010",
+          "accuracy": 76.67,
+          "macro_f1": 69.44
+        }
+      ]
+    },
+    "p5_cand_04_advanced_motor_features": {
+      "n_total": 300,
+      "accuracy": 74.67,
+      "balanced_accuracy": 69.08,
+      "macro_f1": 70.22,
+      "weighted_f1": 73.76,
+      "rest_recall": 91.33,
+      "left_recall": 61.84,
+      "right_recall": 54.05,
+      "rest_precision": 78.29,
+      "left_precision": 71.21,
+      "right_precision": 67.8,
+      "rest_false_actuation_rate": 8.67,
+      "motor_lateralization_error_rate": 16.67,
+      "confusion_matrix": [
+        [
+          137,
+          7,
+          6
+        ],
+        [
+          16,
+          47,
+          13
+        ],
+        [
+          22,
+          12,
+          40
+        ]
+      ],
+      "classes": [
+        "REST",
+        "LEFT_FIST",
+        "RIGHT_FIST"
+      ],
+      "mean_latency_ms": 0.62,
+      "sub_mean_acc": 74.67,
+      "sub_std_acc": 14.16,
+      "per_subject": [
+        {
+          "subject": "S001",
+          "accuracy": 53.33,
+          "macro_f1": 44.22
+        },
+        {
+          "subject": "S002",
+          "accuracy": 86.67,
+          "macro_f1": 86.67
+        },
+        {
+          "subject": "S003",
+          "accuracy": 66.67,
+          "macro_f1": 60.63
+        },
+        {
+          "subject": "S004",
+          "accuracy": 76.67,
+          "macro_f1": 69.32
+        },
+        {
+          "subject": "S005",
+          "accuracy": 76.67,
+          "macro_f1": 63.67
+        },
+        {
+          "subject": "S006",
+          "accuracy": 50.0,
+          "macro_f1": 31.75
+        },
+        {
+          "subject": "S007",
+          "accuracy": 96.67,
+          "macro_f1": 96.36
+        },
+        {
+          "subject": "S008",
+          "accuracy": 86.67,
+          "macro_f1": 83.85
+        },
+        {
+          "subject": "S009",
+          "accuracy": 70.0,
+          "macro_f1": 56.81
+        },
+        {
+          "subject": "S010",
+          "accuracy": 83.33,
+          "macro_f1": 77.92
+        }
+      ]
+    },
+    "p5_cand_05_calibrated_hierarchical": {
+      "n_total": 300,
+      "accuracy": 71.33,
+      "balanced_accuracy": 65.29,
+      "macro_f1": 66.14,
+      "weighted_f1": 70.31,
+      "rest_recall": 89.33,
+      "left_recall": 57.89,
+      "right_recall": 48.65,
+      "rest_precision": 77.01,
+      "left_precision": 66.67,
+      "right_precision": 60.0,
+      "rest_false_actuation_rate": 10.67,
+      "motor_lateralization_error_rate": 20.0,
+      "confusion_matrix": [
+        [
+          134,
+          7,
+          9
+        ],
+        [
+          17,
+          44,
+          15
+        ],
+        [
+          23,
+          15,
+          36
+        ]
+      ],
+      "classes": [
+        "REST",
+        "LEFT_FIST",
+        "RIGHT_FIST"
+      ],
+      "mean_latency_ms": 1.19,
+      "sub_mean_acc": 71.33,
+      "sub_std_acc": 13.18,
+      "per_subject": [
+        {
+          "subject": "S001",
+          "accuracy": 46.67,
+          "macro_f1": 33.33
+        },
+        {
+          "subject": "S002",
+          "accuracy": 83.33,
+          "macro_f1": 83.2
+        },
+        {
+          "subject": "S003",
+          "accuracy": 60.0,
+          "macro_f1": 54.93
+        },
+        {
+          "subject": "S004",
+          "accuracy": 83.33,
+          "macro_f1": 79.75
+        },
+        {
+          "subject": "S005",
+          "accuracy": 76.67,
+          "macro_f1": 67.75
+        },
+        {
+          "subject": "S006",
+          "accuracy": 53.33,
+          "macro_f1": 37.16
+        },
+        {
+          "subject": "S007",
+          "accuracy": 86.67,
+          "macro_f1": 84.92
+        },
+        {
+          "subject": "S008",
+          "accuracy": 80.0,
+          "macro_f1": 75.24
+        },
+        {
+          "subject": "S009",
+          "accuracy": 66.67,
+          "macro_f1": 54.47
+        },
+        {
+          "subject": "S010",
+          "accuracy": 76.67,
+          "macro_f1": 71.2
+        }
+      ]
+    },
+    "p5_cand_06_elasticnet_svm_ensemble": {
+      "n_total": 300,
+      "accuracy": 72.67,
+      "balanced_accuracy": 67.32,
+      "macro_f1": 68.08,
+      "weighted_f1": 71.99,
+      "rest_recall": 88.67,
+      "left_recall": 57.89,
+      "right_recall": 55.41,
+      "rest_precision": 79.17,
+      "left_precision": 68.75,
+      "right_precision": 60.29,
+      "rest_false_actuation_rate": 11.33,
+      "motor_lateralization_error_rate": 20.0,
+      "confusion_matrix": [
+        [
+          133,
+          7,
+          10
+        ],
+        [
+          15,
+          44,
+          17
+        ],
+        [
+          20,
+          13,
+          41
+        ]
+      ],
+      "classes": [
+        "REST",
+        "LEFT_FIST",
+        "RIGHT_FIST"
+      ],
+      "mean_latency_ms": 0.56,
+      "sub_mean_acc": 72.67,
+      "sub_std_acc": 11.33,
+      "per_subject": [
+        {
+          "subject": "S001",
+          "accuracy": 56.67,
+          "macro_f1": 48.93
+        },
+        {
+          "subject": "S002",
+          "accuracy": 76.67,
+          "macro_f1": 74.81
+        },
+        {
+          "subject": "S003",
+          "accuracy": 66.67,
+          "macro_f1": 63.58
+        },
+        {
+          "subject": "S004",
+          "accuracy": 76.67,
+          "macro_f1": 69.32
+        },
+        {
+          "subject": "S005",
+          "accuracy": 76.67,
+          "macro_f1": 63.67
+        },
+        {
+          "subject": "S006",
+          "accuracy": 53.33,
+          "macro_f1": 35.92
+        },
+        {
+          "subject": "S007",
+          "accuracy": 93.33,
+          "macro_f1": 91.94
+        },
+        {
+          "subject": "S008",
+          "accuracy": 80.0,
+          "macro_f1": 74.76
+        },
+        {
+          "subject": "S009",
+          "accuracy": 66.67,
+          "macro_f1": 54.47
+        },
+        {
+          "subject": "S010",
+          "accuracy": 80.0,
+          "macro_f1": 75.14
+        }
+      ]
+    }
+  },
+  "loso_cross_subject_results": {
+    "unaligned": {
+      "n_total": 300,
+      "accuracy": 46.0,
+      "balanced_accuracy": 43.58,
+      "macro_f1": 43.21,
+      "weighted_f1": 47.06,
+      "rest_recall": 53.33,
+      "left_recall": 35.53,
+      "right_recall": 41.89,
+      "rest_precision": 65.04,
+      "left_precision": 36.49,
+      "right_precision": 30.1,
+      "rest_false_actuation_rate": 46.67,
+      "motor_lateralization_error_rate": 32.67,
+      "confusion_matrix": [
+        [
+          80,
+          30,
+          40
+        ],
+        [
+          17,
+          27,
+          32
+        ],
+        [
+          26,
+          17,
+          31
+        ]
+      ],
+      "classes": [
+        "REST",
+        "LEFT_FIST",
+        "RIGHT_FIST"
+      ],
+      "mean_latency_ms": 0.0
+    },
+    "euclidean_aligned": {
+      "n_total": 300,
+      "accuracy": 44.33,
+      "balanced_accuracy": 44.76,
+      "macro_f1": 43.04,
+      "weighted_f1": 45.22,
+      "rest_recall": 43.33,
+      "left_recall": 35.53,
+      "right_recall": 55.41,
+      "rest_precision": 64.36,
+      "left_precision": 38.03,
+      "right_precision": 32.03,
+      "rest_false_actuation_rate": 56.67,
+      "motor_lateralization_error_rate": 30.67,
+      "confusion_matrix": [
+        [
+          65,
+          32,
+          53
+        ],
+        [
+          15,
+          27,
+          34
+        ],
+        [
+          21,
+          12,
+          41
+        ]
+      ],
+      "classes": [
+        "REST",
+        "LEFT_FIST",
+        "RIGHT_FIST"
+      ],
+      "mean_latency_ms": 0.0
+    }
+  },
+  "calibration_budget_curve": [
+    {
+      "budget_trials_per_class": 5,
+      "total_calibration_trials": 15,
+      "calibration_time_min": 1.0,
+      "accuracy": 56.0,
+      "macro_f1": 49.52,
+      "rest_recall": 74.0,
+      "left_recall": 26.32,
+      "right_recall": 50.0
+    },
+    {
+      "budget_trials_per_class": 10,
+      "total_calibration_trials": 30,
+      "calibration_time_min": 2.0,
+      "accuracy": 61.67,
+      "macro_f1": 56.82,
+      "rest_recall": 74.67,
+      "left_recall": 57.89,
+      "right_recall": 39.19
+    },
+    {
+      "budget_trials_per_class": 15,
+      "total_calibration_trials": 45,
+      "calibration_time_min": 3.0,
+      "accuracy": 63.33,
+      "macro_f1": 60.85,
+      "rest_recall": 66.67,
+      "left_recall": 69.74,
+      "right_recall": 50.0
+    },
+    {
+      "budget_trials_per_class": 20,
+      "total_calibration_trials": 60,
+      "calibration_time_min": 4.0,
+      "accuracy": 68.33,
+      "macro_f1": 64.41,
+      "rest_recall": 80.67,
+      "left_recall": 59.21,
+      "right_recall": 52.7
+    }
+  ],
+  "top_development_candidate": {
+    "id": "p5_cand_05_calibrated_hierarchical",
+    "name": "Hypothesis 4: Calibrated Two-Stage Hierarchical Intent-Lateralization Decoder",
+    "dev_cv_accuracy": 72.67,
+    "dev_cv_macro_f1": 68.34,
+    "r11_accuracy": 71.33,
+    "r11_macro_f1": 66.14,
+    "r11_rest_recall": 89.33,
+    "r11_left_recall": 57.89,
+    "r11_right_recall": 48.65
+  }
+}

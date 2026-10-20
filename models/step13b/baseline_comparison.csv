@@ -1,0 +1,9 @@
+metric,baseline_r11,class_balanced_r11,change
+Overall Accuracy,59.0,59.33,0.33
+Macro Precision,54.61,54.89,0.28
+Macro Recall,51.71,52.59,0.88
+Macro F1,52.2,53.04,0.84
+REST Recall,80.67,79.33,-1.33
+LEFT_FIST Recall,44.74,47.37,2.63
+RIGHT_FIST Recall,29.73,31.08,1.35
+REST Prediction Rate,63.0,61.0,-2.0

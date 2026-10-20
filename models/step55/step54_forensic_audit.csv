@@ -1,0 +1,6 @@
+check,result,status
+Training Subjects,S001-S010 GroupKFold,VERIFIED CLEAN
+Calibration Trials,15 Asymmetric Trials (3R/4L/8R),EXPLICITLY DISCLOSED
+Validation Folds,Inner Validation (R03/R07),VERIFIED FOLD-SAFE
+R11 Isolation,Evaluated strictly post-freeze,VERIFIED ZERO-LEAKAGE
+Probability Alignment,"Canonical ['REST', 'LEFT', 'RIGHT']",VERIFIED 100% CORRECT

@@ -1,0 +1,17 @@
+{
+  "subject": "S002",
+  "pipeline": "Step 13C Hierarchical Riemannian Classifier",
+  "classifier_A": "REST vs MOTOR (LogisticRegression class_weight=balanced)",
+  "classifier_B": "LEFT_FIST vs RIGHT_FIST (LogisticRegression class_weight=balanced)",
+  "channel_group": "Group B (15 channels)",
+  "window_sec": 3.0,
+  "overlap": 0.5,
+  "classes_A": [
+    "MOTOR",
+    "REST"
+  ],
+  "classes_B": [
+    "LEFT_FIST",
+    "RIGHT_FIST"
+  ]
+}

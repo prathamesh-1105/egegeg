@@ -1,0 +1,100 @@
+{
+  "global_metrics": {
+    "step60": {
+      "accuracy": 70.67,
+      "macro_f1": 65.72
+    },
+    "step61": {
+      "accuracy": 72.0,
+      "macro_f1": 67.23
+    }
+  },
+  "per_subject": [
+    {
+      "subject": "S001",
+      "accuracy": 60.0,
+      "macro_f1": 53.72,
+      "rest_recall": 80.0,
+      "left_recall": 42.86,
+      "right_recall": 37.5
+    },
+    {
+      "subject": "S002",
+      "accuracy": 83.33,
+      "macro_f1": 81.87,
+      "rest_recall": 86.67,
+      "left_recall": 87.5,
+      "right_recall": 71.43
+    },
+    {
+      "subject": "S003",
+      "accuracy": 53.33,
+      "macro_f1": 46.23,
+      "rest_recall": 60.0,
+      "left_recall": 14.29,
+      "right_recall": 75.0
+    },
+    {
+      "subject": "S004",
+      "accuracy": 76.67,
+      "macro_f1": 69.32,
+      "rest_recall": 100.0,
+      "left_recall": 37.5,
+      "right_recall": 71.43
+    },
+    {
+      "subject": "S005",
+      "accuracy": 70.0,
+      "macro_f1": 61.11,
+      "rest_recall": 93.33,
+      "left_recall": 62.5,
+      "right_recall": 28.57
+    },
+    {
+      "subject": "S006",
+      "accuracy": 53.33,
+      "macro_f1": 33.59,
+      "rest_recall": 93.33,
+      "left_recall": 0.0,
+      "right_recall": 25.0
+    },
+    {
+      "subject": "S007",
+      "accuracy": 86.67,
+      "macro_f1": 83.63,
+      "rest_recall": 100.0,
+      "left_recall": 75.0,
+      "right_recall": 71.43
+    },
+    {
+      "subject": "S008",
+      "accuracy": 80.0,
+      "macro_f1": 76.51,
+      "rest_recall": 86.67,
+      "left_recall": 87.5,
+      "right_recall": 57.14
+    },
+    {
+      "subject": "S009",
+      "accuracy": 73.33,
+      "macro_f1": 67.86,
+      "rest_recall": 93.33,
+      "left_recall": 71.43,
+      "right_recall": 37.5
+    },
+    {
+      "subject": "S010",
+      "accuracy": 76.67,
+      "macro_f1": 74.88,
+      "rest_recall": 80.0,
+      "left_recall": 87.5,
+      "right_recall": 57.14
+    }
+  ],
+  "error_counts": {
+    "left_to_rest": 14,
+    "left_to_right": 18,
+    "right_to_rest": 24,
+    "right_to_left": 11
+  }
+}

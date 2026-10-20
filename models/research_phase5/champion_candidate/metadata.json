@@ -1,0 +1,30 @@
+{
+  "candidate_id": "p5_cand_04_advanced_motor_features",
+  "name": "Phase 5 Champion: Anatomical Laplacian Advanced Motor Ensemble (k=32)",
+  "timestamp": "2026-10-20 16:32:48",
+  "spatial_montage": [
+    "FC3",
+    "FC1",
+    "FCz",
+    "FC2",
+    "FC4",
+    "C3",
+    "C1",
+    "Cz",
+    "C2",
+    "C4",
+    "CP3",
+    "CP1",
+    "CPz",
+    "CP2",
+    "CP4"
+  ],
+  "dev_cv_accuracy": 72.17,
+  "dev_cv_macro_f1": 67.52,
+  "r11_accuracy": 74.67,
+  "r11_macro_f1": 70.22,
+  "r11_rest_recall": 91.33,
+  "r11_left_recall": 61.84,
+  "r11_right_recall": 54.05,
+  "r11_false_actuation": 8.67
+}

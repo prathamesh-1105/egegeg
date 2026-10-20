@@ -1,0 +1,50 @@
+{
+  "phase": "Phase 6",
+  "timestamp": "2026-10-20 17:21:31",
+  "training_task": "Task 2 Pure Motor Imagery (Runs R04 + R08, 600 trials)",
+  "holdout_task": "Task 2 Pure Motor Imagery (Run R12, 300 trials)",
+  "total_corpus_trials": 1800,
+  "montage": [
+    "FC3",
+    "FC1",
+    "FCz",
+    "FC2",
+    "FC4",
+    "C3",
+    "C1",
+    "Cz",
+    "C2",
+    "C4",
+    "CP3",
+    "CP1",
+    "CPz",
+    "CP2",
+    "CP4"
+  ],
+  "sampling_rate_hz": 160.0,
+  "window_duration_sec": 3.0,
+  "models": {
+    "p6_pure_imagery_calibrated": {
+      "id": "Phase6-PureImagery-Calibrated",
+      "name": "Phase 6 Champion: Pure Motor Imagery Calibrated Ensemble",
+      "dir": "models/research_phase6/p6_pure_imagery_calibrated",
+      "mean_holdout_accuracy": 57.0,
+      "mean_macro_f1": 47.87,
+      "mean_left_recall": 38.93,
+      "mean_right_recall": 34.64,
+      "mean_rest_recall": 76.67,
+      "best_subject_acc": 80.0,
+      "best_subject_f1": 78.01,
+      "description": "Top Pure Motor Imagery calibrated model trained on uncontaminated R04+R08 runs with contralateral spectral differencing"
+    },
+    "p6_hierarchical_imagery": {
+      "id": "Phase6-Hierarchical-Imagery",
+      "name": "Phase 6 Safety Model: Pure Motor Imagery Two-Stage Hierarchical Decoder",
+      "dir": "models/research_phase6/p6_hierarchical_imagery",
+      "mean_holdout_accuracy": 57.0,
+      "mean_macro_f1": 47.38,
+      "mean_rest_false_actuation_rate": 0.2067,
+      "description": "Two-stage intent gating + pure lateralization with out-of-fold threshold tuning for safe REST rejection"
+    }
+  }
+}

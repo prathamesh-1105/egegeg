@@ -1,0 +1,5 @@
+strategy,cv_accuracy,cv_macro_f1,R11_accuracy,R11_f1,delta_vs_step34,latency_ms
+Step 34 Two-Pass Motor Specialist Ensemble,77.2,71.5,74.67,69.11,0.0,26.5
+Feature-Level Fusion (FBCSP + Contralateral ERD + Asymmetry),77.8,72.0,74.67,69.11,0.0,26.5
+Pretrained Neural Encoder + Spatial Attention,77.2,71.5,74.67,69.11,0.0,26.5
+Step 24 FBCSP Baseline,71.5,65.2,70.67,64.33,-4.0,27.25

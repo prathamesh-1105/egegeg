@@ -1,0 +1,11 @@
+subject,validation_accuracy_global,validation_accuracy_personalized,validation_f1_global,validation_f1_personalized,class_collapse_detected,collapsed_classes,selected_model,reason
+S001,50.0,53.33,28.37,46.8,False,NONE,PERSONALIZED,Personalized superior on validation
+S002,36.67,50.0,29.41,46.52,False,NONE,PERSONALIZED,Personalized superior on validation
+S003,50.0,46.67,22.22,31.75,True,LEFT_FIST,GLOBAL_FALLBACK,Class collapse detected
+S004,70.0,70.0,67.77,59.36,False,NONE,GLOBAL_FALLBACK,Global equal/better on validation
+S005,53.33,56.67,34.19,45.12,False,NONE,PERSONALIZED,Personalized superior on validation
+S006,46.67,50.0,36.67,22.73,True,"LEFT_FIST, RIGHT_FIST",GLOBAL_FALLBACK,Class collapse detected
+S007,66.67,53.33,59.22,30.56,True,LEFT_FIST,GLOBAL_FALLBACK,Class collapse detected
+S008,56.67,53.33,35.9,43.46,False,NONE,PERSONALIZED,Personalized superior on validation
+S009,50.0,30.0,22.22,21.57,True,LEFT_FIST,GLOBAL_FALLBACK,Class collapse detected
+S010,53.33,36.67,40.35,32.36,False,NONE,GLOBAL_FALLBACK,Global equal/better on validation

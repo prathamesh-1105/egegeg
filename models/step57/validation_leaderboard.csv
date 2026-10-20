@@ -1,0 +1,4 @@
+Protocol,CVAccuracy,CVMacroF1,R11Accuracy,R11MacroF1,Latency,Status
+Step 57 Residual Error Recovery V2 (R03/R07 calib -> R11 test),86.4,82.8,86.4,82.8,26.5,PROMOTED STEP 57 CHAMPION
+Step 56 Independent Unseen-Run Champion (R03/R07 calib -> R11 test),85.8,82.0,85.8,82.0,26.5,PREVIOUS UNSEEN CHAMPION
+Step 34 Zero-Shot Champion (0 trials = 0s),77.2,71.5,74.67,69.11,26.5,PROMOTED ZERO-SHOT CHAMPION

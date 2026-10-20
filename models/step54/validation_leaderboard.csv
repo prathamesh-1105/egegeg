@@ -1,0 +1,4 @@
+Protocol,CVAccuracy,CVMacroF1,R11Accuracy,R11MacroF1,Latency,Status
+Protocol B: Step 54 Optimized Asymmetric (15 trials = 45s),85.8,82.0,85.8,82.0,26.5,PROMOTED STEP 54 CHAMPION
+Protocol B: Step 53 Few-Shot Champion (30 trials = 90s),85.2,81.0,85.2,81.0,26.5,PREVIOUS FEW-SHOT CHAMPION
+Protocol A: Step 34 Zero-Shot Champion (0 trials = 0s),77.2,71.5,74.67,69.11,26.5,PROMOTED ZERO-SHOT CHAMPION

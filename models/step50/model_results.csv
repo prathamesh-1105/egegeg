@@ -1,0 +1,4 @@
+model,cv_accuracy
+Logistic Regression Stacker,77.8
+Linear SVM Classifier,77.0
+EEGNet Deep Learning Encoder,76.5

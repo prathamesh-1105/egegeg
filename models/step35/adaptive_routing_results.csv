@@ -1,0 +1,4 @@
+subject_group,strategy,val_accuracy,val_macro_f1
+"Hard Motor Subjects (S006, S009)",Motor Specialist Override,77.5,72.3
+Weak REST Subjects,FBCSP + PSD Soft Gate,82.0,77.1
+Asymmetry Dominant,Contralateral Log Ratio Gate,79.5,74.6

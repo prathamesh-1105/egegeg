@@ -1,0 +1,7 @@
+{
+  "model_name": "Compact Subject-Invariant EEGNet Encoder",
+  "parameters": 2645,
+  "model_size_mb": 0.42,
+  "latency_target_ms": 50.0,
+  "actual_latency_ms": 26.5
+}

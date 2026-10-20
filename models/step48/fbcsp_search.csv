@@ -1,0 +1,4 @@
+filter_bank,cv_accuracy,cv_macro_f1
+"Bank A (4-40 Hz, 8 Bands)",77.2,71.5
+"Bank B (7-30 Hz, 6 Bands)",77.8,72.0
+Adaptive Mu/Beta Dynamic Sub-Bands,77.5,71.8

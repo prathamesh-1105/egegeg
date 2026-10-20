@@ -1,0 +1,12 @@
+{
+  "subject": "S001",
+  "pipeline": "Step 24 Advanced FBCSP Candidate",
+  "filter_bank": "Bank_A",
+  "n_components": 2,
+  "k_features": 12,
+  "classes": [
+    "LEFT_FIST",
+    "REST",
+    "RIGHT_FIST"
+  ]
+}

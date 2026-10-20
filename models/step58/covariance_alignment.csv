@@ -1,0 +1,4 @@
+alignment_strategy,dev_cv_accuracy
+Raw Covariance,38.38
+Subject-Wise Scaler Normalization,40.83
+Calibration Covariance Centroid Alignment,41.65

@@ -1,0 +1,4 @@
+subject_count,cv_accuracy,cv_macro_f1
+2,68.5,61.2
+5,74.2,68.0
+10,77.2,71.5

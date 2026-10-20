@@ -1,0 +1,5 @@
+training_subjects,val_accuracy,val_macro_f1
+2,42.5,32.29
+4,40.0,31.56
+6,40.83,35.83
+7,40.0,34.34

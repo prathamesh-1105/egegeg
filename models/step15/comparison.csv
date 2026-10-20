@@ -1,0 +1,8 @@
+metric,step14_baseline,step15_adaptive,change
+Overall Accuracy,62.33,61.33,-1.0
+Macro Precision,58.34,59.1,0.76
+Macro Recall,55.28,52.86,-2.42
+Macro F1,55.99,53.81,-2.18
+REST Recall,83.33,86.67,3.33
+LEFT_FIST Recall,47.37,39.47,-7.89
+RIGHT_FIST Recall,35.14,32.43,-2.7

@@ -1,0 +1,2 @@
+ensemble_name,val_accuracy,val_macro_f1
+FBCSP_BankA_BankB_Ensemble,71.5,65.1

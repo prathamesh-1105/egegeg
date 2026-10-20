@@ -1,0 +1,3 @@
+model,stability_score,total_transitions,switching_frequency_per_min,short_command_count,short_command_rate,avg_duration_sec
+GLOBAL_STEP_24,59.84,193,12.87,31,100.0,3.0
+PERSONALIZED_STEP_27,54.21,209,13.93,46,92.0,3.48

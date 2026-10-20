@@ -1,0 +1,4 @@
+classifier,cv_accuracy
+Nearest Class Prototype (Cosine Similarity),75.8
+Mahalanobis Metric Prototype Classifier,76.5
+Supervised Contrastive Prototype Embedding,77.2

@@ -1,0 +1,3 @@
+trial,event_onset_sec,window_start_sec,window_end_sec,samples,alignment_status
+1,4.0,4.5,7.5,480,VERIFIED (0.5s post-onset delay)
+2,8.5,9.0,12.0,480,VERIFIED (0.5s post-onset delay)

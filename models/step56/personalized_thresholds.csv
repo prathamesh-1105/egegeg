@@ -1,0 +1,3 @@
+threshold_type,unseen_acc
+Global Static Thresholds (0.65 REST / 0.50 Motor),84.5
+Subject-Personalized Baseline ERD Thresholds,85.8

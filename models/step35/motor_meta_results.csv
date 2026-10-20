@@ -1,0 +1,4 @@
+model,motor_accuracy,left_recall,right_recall,motor_macro_f1
+Step 34 Motor Specialist,78.5,64.5,47.3,66.8
+Feature-Fused Motor Specialist,80.2,66.0,49.5,68.5
+Meta-Classifier Motor Specialist,81.0,67.2,50.8,70.1

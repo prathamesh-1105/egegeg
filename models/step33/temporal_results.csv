@@ -1,0 +1,5 @@
+strategy,window_history,method,val_accuracy,val_macro_f1,false_activations,command_stability,latency_ms
+1-Window (No Smoothing),1,None,70.67,64.33,10,87%,26.5
+2-Window Average,2,Probability Averaging,71.17,64.73,8,89%,27.0
+3-Window Causal EMA (alpha=0.4),3,Exponential Moving Average,71.17,64.73,6,91%,27.5
+5-Window Majority Vote,5,Majority Voting,71.17,64.73,2,95%,28.5

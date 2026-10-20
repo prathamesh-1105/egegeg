@@ -1,0 +1,33 @@
+{
+  "timestamp": "2026-09-12 13:00:42",
+  "model_name": "Step 72 Gradient Boosting & Riemannian Hybrid Engine",
+  "step61_baseline_r11_accuracy": 72.0,
+  "step72_authentic_r11_accuracy": 70.33,
+  "step72_authentic_r11_macro_f1": 64.31,
+  "rest_recall": 92.0,
+  "left_fist_recall": 52.63,
+  "right_fist_recall": 44.59,
+  "inference_latency_ms": 2.63,
+  "confusion_matrix": [
+    [
+      138,
+      2,
+      10
+    ],
+    [
+      19,
+      40,
+      17
+    ],
+    [
+      29,
+      12,
+      33
+    ]
+  ],
+  "classes": [
+    "REST",
+    "LEFT_FIST",
+    "RIGHT_FIST"
+  ]
+}

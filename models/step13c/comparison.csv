@@ -1,0 +1,8 @@
+metric,step11_baseline,step13b_class_balanced,step13c_hierarchical,change_vs_13b
+Overall Accuracy,59.0,59.33,57.67,-1.67
+Macro Precision,54.61,54.89,52.57,-2.32
+Macro Recall,51.71,52.59,50.63,-1.96
+Macro F1,52.2,53.04,51.03,-2.01
+REST Recall,80.67,79.33,78.67,-0.67
+LEFT_FIST Recall,44.74,47.37,40.79,-6.58
+RIGHT_FIST Recall,29.73,31.08,32.43,1.35

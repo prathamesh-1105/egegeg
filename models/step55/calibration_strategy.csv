@@ -1,0 +1,5 @@
+strategy,accuracy,calibration_time_sec
+Random Selection,83.2,45
+Class-Balanced Random,84.5,45
+ERD Diversity Prototype Selection,85.8,45
+Active Uncertainty Calibration,86.5,45

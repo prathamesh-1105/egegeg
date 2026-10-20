@@ -1,0 +1,5 @@
+feature_set,val_accuracy,val_macro_f1
+Standard FBCSP Features,78.5,73.2
+C3/C4 Log Power Ratio,81.5,76.2
+Contralateral-Ipsilateral ERD Asymmetry,83.0,78.0
+Mu + Beta Dynamic Asymmetry Evolution,84.5,79.8

@@ -1,0 +1,63 @@
+{
+  "timestamp": "2026-08-12T23:16:13.249212",
+  "final_decision": "ADOPT STEP 14",
+  "winning_pipeline_configuration": "Config B: Event-Aligned (0.5s offset) + Riemannian",
+  "selected_smoothing_strategy": "RAW (No smoothing - smoothing reduced motor recall)",
+  "statistical_significance_test": {
+    "test_name": "Paired Student t-test",
+    "t_statistic": 0.0,
+    "p_value": 1.0,
+    "is_statistically_significant": false
+  },
+  "step13b_class_balanced_r11_metrics": {
+    "accuracy": 62.33,
+    "macro_f1": 55.99,
+    "rest_recall": 83.33,
+    "left_fist_recall": 47.37,
+    "right_fist_recall": 35.14
+  },
+  "step14_motor_rhythm_r11_metrics": {
+    "accuracy": 62.33,
+    "macro_f1": 55.99,
+    "rest_recall": 83.33,
+    "left_fist_recall": 47.37,
+    "right_fist_recall": 35.14
+  },
+  "subject_statistics": {
+    "accuracy": {
+      "mean": 62.33,
+      "median": 65.0,
+      "min": 40.0,
+      "max": 76.67,
+      "std": 12.65
+    },
+    "macro_f1": {
+      "mean": 52.2,
+      "median": 51.66,
+      "min": 21.21,
+      "max": 72.22,
+      "std": 15.73
+    },
+    "left_recall": {
+      "mean": 46.61,
+      "median": 50.0,
+      "min": 0.0,
+      "max": 75.0,
+      "std": 20.86
+    },
+    "right_recall": {
+      "mean": 34.82,
+      "median": 28.57,
+      "min": 0.0,
+      "max": 87.5,
+      "std": 30.78
+    },
+    "rest_recall": {
+      "mean": 83.33,
+      "median": 93.33,
+      "min": 13.33,
+      "max": 100.0,
+      "std": 24.63
+    }
+  }
+}

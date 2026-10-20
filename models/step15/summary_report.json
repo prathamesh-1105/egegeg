@@ -1,0 +1,69 @@
+{
+  "timestamp": "2026-08-12T23:23:30.029252",
+  "final_decision": "KEEP STEP 14",
+  "best_adaptation_strategy": "Strategy 2: Warm-Start Classifier Update",
+  "best_calibration_percentage": 50,
+  "selected_smoothing_strategy": "RAW (No smoothing - smoothing reduced motor recall)",
+  "subject_adaptation_counts": {
+    "improved": 4,
+    "unchanged": 0,
+    "degraded": 6
+  },
+  "latency_benchmark": {
+    "preprocessing_cov_ts_scale_ms": 0.7787,
+    "classifier_inference_ms": 0.008,
+    "total_inference_ms": 0.7867,
+    "average_adaptation_update_time_sec": 0.0588
+  },
+  "step14_baseline_r11_metrics": {
+    "accuracy": 62.33,
+    "macro_f1": 55.99,
+    "rest_recall": 83.33,
+    "left_fist_recall": 47.37,
+    "right_fist_recall": 35.14
+  },
+  "step15_adaptive_r11_metrics": {
+    "accuracy": 61.33,
+    "macro_f1": 53.81,
+    "rest_recall": 86.67,
+    "left_fist_recall": 39.47,
+    "right_fist_recall": 32.43
+  },
+  "subject_statistics": {
+    "accuracy": {
+      "mean": 61.33,
+      "median": 60.0,
+      "min": 33.33,
+      "max": 80.0,
+      "std": 12.49
+    },
+    "macro_f1": {
+      "mean": 49.87,
+      "median": 46.6,
+      "min": 30.13,
+      "max": 75.86,
+      "std": 14.68
+    },
+    "left_recall": {
+      "mean": 39.11,
+      "median": 40.18,
+      "min": 12.5,
+      "max": 62.5,
+      "std": 16.37
+    },
+    "right_recall": {
+      "mean": 31.79,
+      "median": 21.43,
+      "min": 0.0,
+      "max": 87.5,
+      "std": 31.67
+    },
+    "rest_recall": {
+      "mean": 86.67,
+      "median": 93.33,
+      "min": 6.67,
+      "max": 100.0,
+      "std": 27.0
+    }
+  }
+}

@@ -1,0 +1,4 @@
+erd_feature,cv_accuracy,cv_macro_f1
+Pre-Event Baseline Normalized Mu ERD%,77.0,71.2
+Pre-Event Baseline Normalized Beta ERD%,76.8,71.0
+C3/C4 ERD% Asymmetry Ratio,77.5,71.8

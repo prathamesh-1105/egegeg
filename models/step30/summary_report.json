@@ -1,0 +1,35 @@
+{
+  "timestamp": "2026-08-16T16:26:50.073129",
+  "final_decision": "KEEP STEP 24",
+  "best_representation": "STEP 24 FBCSP",
+  "baseline_step24_accuracy": 74.67,
+  "candidate_accuracy": 63.0,
+  "baseline_macro_f1": 70.18,
+  "candidate_macro_f1": 55.8,
+  "rest_recall": 87.33,
+  "left_recall": 32.89,
+  "right_recall": 44.59,
+  "best_temporal_window": "3.0s window, 0.5s offset",
+  "best_frequency_bands": "Mu (8-12Hz) + Beta (12-30Hz)",
+  "best_channel_subset": "Group B (15 motor cortex channels)",
+  "erd_ers_evidence": "MEASURABLE_MU_BETA_DESYNCHRONIZATION",
+  "left_right_asymmetry_evidence": "CONTRALATERAL_C3_C4_SUPPRESSION_VERIFIED",
+  "command_stability": 55.76,
+  "false_activation_rate": 4.0,
+  "latency_ms": 0.407,
+  "p95_latency_ms": 0.47,
+  "statistical_tests": {
+    "paired_ttest": {
+      "t_statistic": 0.0,
+      "p_value": 1.0
+    },
+    "wilcoxon": {
+      "w_statistic": 0.0,
+      "p_value": 1.0
+    }
+  },
+  "data_leakage": "PASS",
+  "synthetic_eeg": "NO",
+  "r11_used_for_tuning": false,
+  "previous_artifacts_preserved": true
+}

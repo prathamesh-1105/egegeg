@@ -1,0 +1,14 @@
+{
+  "subject": "S004",
+  "pipeline": "Class-Balanced Riemannian Tangent Space LogisticRegression",
+  "class_weight": "balanced",
+  "channel_group": "Group B (15 channels)",
+  "window_sec": 3.0,
+  "r11_raw_accuracy": 80.0,
+  "r11_macro_f1": 75.75,
+  "classes": [
+    "LEFT_FIST",
+    "REST",
+    "RIGHT_FIST"
+  ]
+}

@@ -1,0 +1,4 @@
+configuration,mean_cv_acc,mean_cv_f1
+"Bank_A (Broadband 4-38Hz, 4 CSP pairs)",76.5,70.8
+"Bank_B (Mu/Beta Specific Bands, 6 CSP pairs)",77.2,71.5
+Regularized FBCSP (Shrinkage Covariance),77.5,71.8

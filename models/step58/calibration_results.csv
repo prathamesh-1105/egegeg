@@ -1,0 +1,5 @@
+protocol,trials_required,calibration_sec,dev_cv_accuracy
+0 Trials (Zero-Shot Cross-Subject),0,0,29.67
+9 Trials Equal (3 REST / 3 LEFT / 3 RIGHT),9,27,36.17
+15 Trials Equal (5 REST / 5 LEFT / 5 RIGHT),15,45,39.67
+15 Trials Asymmetric (3 REST / 4 LEFT / 8 RIGHT),15,45,40.67

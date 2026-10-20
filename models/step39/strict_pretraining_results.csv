@@ -1,0 +1,3 @@
+protocol,val_accuracy,val_macro_f1
+Step 38 Standard SSL (Unsupervised Target Domain Exposure),87.2,83.0
+"Strict SSL (Train Subjects Only, Zero Validation Exposure)",78.5,73.2

@@ -1,0 +1,26 @@
+{
+  "timestamp": "2026-08-12T23:48:35.844194",
+  "final_decision": "ADOPT STEP 17B",
+  "winning_representation": "Representation C: Filter Bank CSP (FBCSP)",
+  "physionet_run_audit": "VERIFIED (R03, R07, R11 share consistent Task 1 left/right fist labels)",
+  "statistical_test": {
+    "test_name": "Paired Student t-test",
+    "t_statistic": 2.3367,
+    "p_value": 0.0443,
+    "is_statistically_significant": true
+  },
+  "step14_baseline_r11_metrics": {
+    "accuracy": 62.33,
+    "macro_f1": 55.99,
+    "rest_recall": 83.33,
+    "left_fist_recall": 47.37,
+    "right_fist_recall": 35.14
+  },
+  "step17b_candidate_r11_metrics": {
+    "accuracy": 71.33,
+    "macro_f1": 66.02,
+    "rest_recall": 90.0,
+    "left_fist_recall": 51.32,
+    "right_fist_recall": 54.05
+  }
+}

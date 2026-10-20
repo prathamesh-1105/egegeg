@@ -1,0 +1,4 @@
+transform,cv_accuracy,cv_macro_f1
+Continuous Wavelet Transform (Morlet),76.5,70.8
+Short-Time Fourier Transform (STFT),75.8,70.0
+Hilbert Amplitude Envelope,76.2,70.5

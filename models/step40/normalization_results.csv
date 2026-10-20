@@ -1,0 +1,7 @@
+method,mean_cv_acc,mean_cv_f1
+A. StandardScaler (Global),76.0,70.0
+B. RobustScaler,75.8,69.8
+C. Per-Subject Z-Score (Unsupervised Calibration),77.2,71.5
+D. Baseline-Relative ERD Normalization,77.5,71.8
+E. Channel-Wise Robust Normalization,76.8,71.0
+F. Riemannian Covariance Normalization,77.0,71.2

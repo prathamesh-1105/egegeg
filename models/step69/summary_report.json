@@ -1,0 +1,33 @@
+{
+  "timestamp": "2026-09-12 12:54:30",
+  "model_name": "Step 69 Comprehensive Fusion Engine",
+  "step61_baseline_r11_accuracy": 72.0,
+  "step69_authentic_r11_accuracy": 71.0,
+  "step69_authentic_r11_macro_f1": 65.96,
+  "rest_recall": 89.33,
+  "left_fist_recall": 57.89,
+  "right_fist_recall": 47.3,
+  "inference_latency_ms": 4.57,
+  "confusion_matrix": [
+    [
+      134,
+      5,
+      11
+    ],
+    [
+      16,
+      44,
+      16
+    ],
+    [
+      28,
+      11,
+      35
+    ]
+  ],
+  "classes": [
+    "REST",
+    "LEFT_FIST",
+    "RIGHT_FIST"
+  ]
+}

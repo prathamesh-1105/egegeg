@@ -1,0 +1,6 @@
+Step,number_of_EDF_files,number_of_subjects,number_of_trials,expansion_status
+Step 24 FBCSP Champion,61,10,450,
+Step 34 Two-Pass Motor Specialist,61,10,450,
+Step 44 SSL Representation Lab,61,10,450,
+Step 49 Full PhysioNet Expansion,61,10,450,
+Step 50 Data Expansion Audit,61,10,450,DATASET BOUNDARY AUDITED: S001-S010 (61 EDF files)

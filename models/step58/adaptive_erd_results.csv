@@ -1,0 +1,3 @@
+strategy,mean_dev_cv_accuracy,status
+Fixed Filter Bank A (8-32 Hz),71.17,BASELINE
+Subject-Adaptive Peak Frequency ERD Bank,67.67,COMPARABLE

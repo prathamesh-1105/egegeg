@@ -1,0 +1,4 @@
+class_name,mean_probability_correct,mean_probability_incorrect,underconfidence_detected
+REST,0.8129,0.2745,False
+LEFT_FIST,0.592,0.1583,True
+RIGHT_FIST,0.5622,0.2016,True

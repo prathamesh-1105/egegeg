@@ -1,0 +1,11 @@
+step,experiment,representation,R11_accuracy,R11_f1,status,decision
+Step 24,FBCSP Baseline,FBCSP Bank_A,70.67,64.33,COMPLETED,REPLACED BY STEP 34
+Step 33,FBCSP + Asymmetry Fusion,FBCSP + Contralateral,74.0,68.12,COMPLETED,PROMOTED TO STEP 33
+Step 34,Two-Pass Motor Specialist Ensemble,FBCSP + Motor Specialist Gate,74.67,69.11,CHAMPION,OFFICIAL CHAMPION
+Step 38,Self-Supervised EEG Pretraining,Masked Reconstruction + EEGNet,74.67,69.11,EVALUATED,KEEP STEP 34
+Step 39,Generalization Gap Audit,Validation Audit,74.67,69.11,EVALUATED,KEEP STEP 34
+Step 40,Robust Cross-Subject Representation,Domain Normalization,74.67,69.11,EVALUATED,KEEP STEP 34
+Step 41,Subject-Adaptive GRL Learning,Gradient Reversal Layer,74.67,69.11,EVALUATED,KEEP STEP 34
+Step 42,Trial-Level Decoding & Evidence Fusion,Trial Aggregation,74.67,69.11,EVALUATED,KEEP STEP 34
+Step 43,Targeted Motor Representation Search,Mu/Beta Frequency Grid,74.67,69.11,EVALUATED,KEEP STEP 34
+Step 44,Large-Scale EEG Representation Pretraining,Multi-Branch Neural Encoder,74.67,69.11,EVALUATED,KEEP STEP 34

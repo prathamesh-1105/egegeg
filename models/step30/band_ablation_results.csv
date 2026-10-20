@@ -1,0 +1,8 @@
+experiment,removed_band,validation_macro_f1,status
+Full_Filter_Bank,NONE,65.4,BASELINE
+Leave_Out_Theta,Theta,61.24,SECONDARY
+Leave_Out_Mu,Mu,64.15,ESSENTIAL
+Leave_Out_Beta_Lower,Beta_Lower,61.69,ESSENTIAL
+Leave_Out_Beta_Mid,Beta_Mid,61.68,SECONDARY
+Leave_Out_Beta_High,Beta_High,64.32,SECONDARY
+Leave_Out_Gamma,Gamma,60.56,SECONDARY

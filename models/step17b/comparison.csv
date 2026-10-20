@@ -1,0 +1,8 @@
+metric,step14_baseline,step17b_candidate,change
+Overall Accuracy,62.33,71.33,9.0
+Macro Precision,58.34,68.13,9.79
+Macro Recall,55.28,65.12,9.84
+Macro F1,55.99,66.02,10.03
+REST Recall,83.33,90.0,6.67
+LEFT_FIST Recall,47.37,51.32,3.95
+RIGHT_FIST Recall,35.14,54.05,18.92

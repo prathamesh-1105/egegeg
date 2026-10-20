@@ -1,0 +1,7 @@
+category,count,count_desc
+Base Model Architectures Tested,6.0,
+Hyperparameter Combinations Evaluated,48.0,
+Probability Fusion Configurations Tested,12.0,
+Augmentation Variations Evaluated,8.0,
+Validation Iterations Performed,120.0,
+Validation Selection Bias Assessment,,DETECTED (Repeated validation iteration led to overoptimistic peak validation selection)

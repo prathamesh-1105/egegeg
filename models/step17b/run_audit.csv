@@ -1,0 +1,15 @@
+run,task_type,description,T0,T1,T2,compatible_for_left_right
+R01,Baseline,"Baseline, eyes open",REST,N/A,N/A,False
+R02,Baseline,"Baseline, eyes closed",REST,N/A,N/A,False
+R03,Task 1 (Real),Open/close left or right fist (Real Movement),REST,LEFT_FIST,RIGHT_FIST,True
+R04,Task 2 (Imagery),Imagine open/close left or right fist (Motor Imagery),REST,LEFT_FIST,RIGHT_FIST,True
+R05,Task 3 (Real),Open/close both fists or both feet (Real Movement),REST,BOTH_FISTS,BOTH_FEET,False
+R06,Task 4 (Imagery),Imagine open/close both fists or both feet (Motor Imagery),REST,BOTH_FISTS,BOTH_FEET,False
+R07,Task 1 (Real),Open/close left or right fist (Real Movement),REST,LEFT_FIST,RIGHT_FIST,True
+R08,Task 2 (Imagery),Imagine open/close left or right fist (Motor Imagery),REST,LEFT_FIST,RIGHT_FIST,True
+R09,Task 3 (Real),Open/close both fists or both feet (Real Movement),REST,BOTH_FISTS,BOTH_FEET,False
+R10,Task 4 (Imagery),Imagine open/close both fists or both feet (Motor Imagery),REST,BOTH_FISTS,BOTH_FEET,False
+R11,Task 1 (Real),Open/close left or right fist (Real Movement),REST,LEFT_FIST,RIGHT_FIST,True
+R12,Task 2 (Imagery),Imagine open/close left or right fist (Motor Imagery),REST,LEFT_FIST,RIGHT_FIST,True
+R13,Task 3 (Real),Open/close both fists or both feet (Real Movement),REST,BOTH_FISTS,BOTH_FEET,False
+R14,Task 4 (Imagery),Imagine open/close both fists or both feet (Motor Imagery),REST,BOTH_FISTS,BOTH_FEET,False

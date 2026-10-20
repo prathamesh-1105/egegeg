@@ -1,0 +1,3 @@
+split_method,accuracy,macro_f1
+GroupKFold (5-Fold Cross-Subject),40.67,38.36
+Leave-One-Subject-Out (LOSO),40.27,37.86

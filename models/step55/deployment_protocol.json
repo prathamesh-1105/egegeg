@@ -1,0 +1,14 @@
+{
+  "mode_a_zero_shot": {
+    "trials": 0,
+    "time_sec": 0,
+    "expected_accuracy": 74.67,
+    "latency_ms": 26.5
+  },
+  "mode_b_adaptive_personalized": {
+    "trials": 15,
+    "time_sec": 45,
+    "expected_accuracy": 85.8,
+    "latency_ms": 26.5
+  }
+}

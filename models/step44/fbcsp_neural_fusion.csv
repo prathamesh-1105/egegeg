@@ -1,0 +1,4 @@
+fbcsp_weight,neural_weight,val_accuracy,val_macro_f1
+0.5,0.5,77.8,72.0
+0.7,0.3,77.5,71.8
+0.3,0.7,77.2,71.5

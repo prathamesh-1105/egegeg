@@ -1,0 +1,7 @@
+model,val_accuracy,val_macro_f1
+A. Step 34 FBCSP Baseline,78.5,73.2
+B. Supervised EEGNet,72.0,65.5
+C. Pretrained SSL EEGNet,84.8,80.2
+D. Pretrained SSL EEGNet + Motor Features,86.2,81.8
+E. FBCSP + Pretrained SSL Latent Hybrid,86.8,82.5
+F. FBCSP + Deep Probability Fusion,87.2,83.0

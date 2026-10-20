@@ -1,0 +1,2 @@
+metric_name,accuracy,macro_f1,macro_precision,macro_recall,rest_recall,left_fist_recall,right_fist_recall
+Official_Step24_Reproduction,70.67,64.33,67.8,63.47,92.0,59.21,39.19

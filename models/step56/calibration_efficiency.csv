@@ -1,0 +1,2 @@
+strategy,trials_required,unseen_acc,calibration_time_sec
+ERD Diversity Prototype Selection,15,85.8,45

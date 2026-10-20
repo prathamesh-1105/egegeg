@@ -1,0 +1,5 @@
+configuration,outer_cv_acc,outer_cv_f1
+Single-Task Classification (REST/LEFT/RIGHT),76.5,70.8
+Multi-Task (Classification + LEFT/RIGHT Specialist),77.2,71.4
+Multi-Task + Domain Adversarial (GRL lambda=0.05),77.8,72.0
+Multi-Task + Domain Adversarial + Contrastive Loss,78.0,72.2

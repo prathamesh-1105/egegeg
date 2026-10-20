@@ -1,0 +1,5 @@
+augmentation,ssl_val_loss,status
+Amplitude Scaling (0.8-1.2x),0.18,BENEFICIAL
+Temporal Crop (0.5-2.5s),0.2,BENEFICIAL
+Channel Dropout (10% channels),0.22,BENEFICIAL
+Gaussian Noise (std=0.01),0.25,NEUTRAL

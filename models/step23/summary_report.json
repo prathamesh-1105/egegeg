@@ -1,0 +1,43 @@
+{
+  "timestamp": "2026-08-15T20:10:00",
+  "step23_status": "COMPLETE",
+  "research_question": "Can EEGNet learn a better representation of real EEG signal than FBCSP while maintaining strict subject/run separation?",
+  "fbcsp_baseline": {
+    "accuracy": 71.33,
+    "macro_f1": 66.02
+  },
+  "eegnet_metrics": {
+    "accuracy": 26.59,
+    "macro_f1": 21.43,
+    "accuracy_difference": -44.74,
+    "macro_f1_difference": -44.59
+  },
+  "statistical_tests": {
+    "n_subjects": 10,
+    "mean_fbcsp": 71.33,
+    "mean_eegnet": 26.59,
+    "mean_difference": -44.75,
+    "median_difference": -45.28,
+    "std_difference": 6.64,
+    "subjects_improved": 0,
+    "subjects_degraded": 10,
+    "subjects_unchanged": 0,
+    "paired_t_test": {
+      "t_statistic": -20.2173,
+      "p_value": 0.0,
+      "is_statistically_significant": true
+    },
+    "wilcoxon_test": {
+      "statistic": 0.0,
+      "p_value": 0.002,
+      "is_statistically_significant": true
+    }
+  },
+  "final_decision": "KEEP STEP 17B FBCSP",
+  "best_model": "FBCSP",
+  "leakage_controls_verified": true,
+  "synthetic_data_used": false,
+  "fake_labels_used": false,
+  "r11_used_for_tuning": false,
+  "fbcsp_artifacts_preserved": true
+}

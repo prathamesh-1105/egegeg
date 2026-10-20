@@ -1,0 +1,7 @@
+{
+  "architecture": "Step 49 Full PhysioNet Expansion Meta-Stacker",
+  "filter_bands": [
+    "7-35Hz"
+  ],
+  "decision": "KEEP STEP 34"
+}

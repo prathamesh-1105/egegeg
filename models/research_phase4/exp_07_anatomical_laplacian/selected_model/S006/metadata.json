@@ -1,0 +1,26 @@
+{
+  "subject_id": "S006",
+  "candidate_id": "exp_07_correct_laplacian_tri_ensemble",
+  "k_features": 24,
+  "peak_frequencies": {
+    "mu_peak_hz": 9.67,
+    "beta_peak_hz": 20.76
+  },
+  "channels": [
+    "FC3",
+    "FC1",
+    "FCz",
+    "FC2",
+    "FC4",
+    "C3",
+    "C1",
+    "Cz",
+    "C2",
+    "C4",
+    "CP3",
+    "CP1",
+    "CPz",
+    "CP2",
+    "CP4"
+  ]
+}

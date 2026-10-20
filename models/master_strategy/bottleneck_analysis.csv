@@ -1,0 +1,4 @@
+transition,error_percentage,primary_cause,subject_distribution
+RIGHT_FIST -> REST,52.7,Mu/Beta ERD Attenuation Weakness,"S002, S004, S005, S007, S010"
+LEFT_FIST -> REST,35.5,Moderate Ipsilateral Contralateral Confusion,"S002, S004, S007"
+LEFT_FIST -> RIGHT_FIST,11.8,Spatial Filter Symmetry Blurring,"S007, S010"

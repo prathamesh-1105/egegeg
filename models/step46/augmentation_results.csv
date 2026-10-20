@@ -1,0 +1,4 @@
+augmentation,val_accuracy
+Amplitude Scaling (0.8-1.2x),77.2
+Gaussian Noise (std=0.01),76.8
+Channel Dropout (p=0.1),76.5

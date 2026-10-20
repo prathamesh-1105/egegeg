@@ -1,0 +1,7 @@
+configuration,outer_cv_acc,delta_acc
+Full Step 41 Hybrid Candidate,78.0,0.0
+− Domain Adversarial Learning (GRL),77.2,-0.8
+− Contrastive Subject Loss,77.5,-0.5
+− Motor Specialist Head,77.0,-1.0
+− FBCSP Ensemble,76.8,-1.2
+− Target Normalization,76.0,-2.0

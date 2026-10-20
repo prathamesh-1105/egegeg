@@ -1,0 +1,3 @@
+detector,right_recall,rest_recall
+Global RIGHT_FIST Detector,47.3,93.3
+Personalized RIGHT_FIST Specialist (10 trials/class),73.3,92.5

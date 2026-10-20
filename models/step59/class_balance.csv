@@ -1,0 +1,5 @@
+strategy,dev_cv_accuracy,dev_cv_macro_f1,rest_recall,left_recall,right_recall
+Unweighted Standard Loss,38.87,35.86,95.0,44.0,42.0
+Inverse Class-Frequency Weights,40.67,38.36,90.0,56.0,54.0
+Balanced Random Oversampling,40.27,38.16,88.5,57.0,55.0
+Calibrated Decision Threshold Gating (REST th=0.62),42.77,40.76,92.0,59.0,57.5

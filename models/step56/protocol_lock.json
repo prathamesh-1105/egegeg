@@ -1,0 +1,10 @@
+{
+  "protocol": "Independent Unseen-Run Validation",
+  "calibration_runs": [
+    "R03",
+    "R07"
+  ],
+  "test_run": "R11",
+  "r11_status": "PROHIBITED FROM ALL FEATURE/THRESHOLD TUNING",
+  "target_accuracy": ">= 85.00% on Unseen R11"
+}

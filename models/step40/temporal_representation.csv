@@ -1,0 +1,7 @@
+sub_window,mean_cv_acc,mean_cv_f1
+0.5 - 1.5s Causal Sub-window,75.2,69.0
+1.0 - 2.0s Causal Sub-window,76.5,70.8
+1.5 - 2.5s Causal Sub-window,77.0,71.2
+2.0 - 3.0s Causal Sub-window,75.8,69.8
+0.5 - 2.5s Standard Window,77.2,71.5
+1.0 - 3.0s Causal Window,76.8,71.0

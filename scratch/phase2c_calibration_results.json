@@ -1,0 +1,1982 @@
+[
+  {
+    "calibration_budget": 5,
+    "method": "1_frozen_step62_no_calib",
+    "accuracy": 98.44,
+    "macro_f1": 98.28,
+    "rest_recall": 97.6,
+    "left_recall": 100.0,
+    "right_recall": 98.99,
+    "rest_precision": 100.0,
+    "left_precision": 98.06,
+    "right_precision": 95.15,
+    "sub_mean_acc": 98.44,
+    "sub_std_acc": 2.23,
+    "coverage": 97.33,
+    "selective_accuracy": 99.77,
+    "rejected_accuracy": 50.0,
+    "incorrect_command_rate": 0.22,
+    "mean_latency_ms": 0.04,
+    "confusion_matrix": [
+      [
+        244,
+        1,
+        5
+      ],
+      [
+        0,
+        101,
+        0
+      ],
+      [
+        0,
+        1,
+        98
+      ]
+    ],
+    "duration_sec": 2.5,
+    "per_subject": [
+      {
+        "subject": "S001",
+        "accuracy": 93.33,
+        "macro_f1": 93.11,
+        "eval_trials": 45
+      },
+      {
+        "subject": "S002",
+        "accuracy": 95.56,
+        "macro_f1": 95.44,
+        "eval_trials": 45
+      },
+      {
+        "subject": "S003",
+        "accuracy": 100.0,
+        "macro_f1": 100.0,
+        "eval_trials": 45
+      },
+      {
+        "subject": "S004",
+        "accuracy": 97.78,
+        "macro_f1": 96.66,
+        "eval_trials": 45
+      },
+      {
+        "subject": "S005",
+        "accuracy": 100.0,
+        "macro_f1": 100.0,
+        "eval_trials": 45
+      },
+      {
+        "subject": "S006",
+        "accuracy": 97.78,
+        "macro_f1": 97.73,
+        "eval_trials": 45
+      },
+      {
+        "subject": "S007",
+        "accuracy": 100.0,
+        "macro_f1": 100.0,
+        "eval_trials": 45
+      },
+      {
+        "subject": "S008",
+        "accuracy": 100.0,
+        "macro_f1": 100.0,
+        "eval_trials": 45
+      },
+      {
+        "subject": "S009",
+        "accuracy": 100.0,
+        "macro_f1": 100.0,
+        "eval_trials": 45
+      },
+      {
+        "subject": "S010",
+        "accuracy": 100.0,
+        "macro_f1": 100.0,
+        "eval_trials": 45
+      }
+    ]
+  },
+  {
+    "calibration_budget": 5,
+    "method": "2_subject_specific_normalization",
+    "accuracy": 96.89,
+    "macro_f1": 96.38,
+    "rest_recall": 99.6,
+    "left_recall": 93.07,
+    "right_recall": 93.94,
+    "rest_precision": 96.14,
+    "left_precision": 100.0,
+    "right_precision": 95.88,
+    "sub_mean_acc": 96.89,
+    "sub_std_acc": 4.68,
+    "coverage": 96.0,
+    "selective_accuracy": 97.45,
+    "rejected_accuracy": 83.33,
+    "incorrect_command_rate": 0.22,
+    "mean_latency_ms": 0.03,
+    "confusion_matrix": [
+      [
+        249,
+        0,
+        1
+      ],
+      [
+        4,
+        94,
+        3
+      ],
+      [
+        6,
+        0,
+        93
+      ]
+    ],
+    "duration_sec": 2.3,
+    "per_subject": [
+      {
+        "subject": "S001",
+        "accuracy": 97.78,
+        "macro_f1": 97.57,
+        "eval_trials": 45
+      },
+      {
+        "subject": "S002",
+        "accuracy": 97.78,
+        "macro_f1": 97.59,
+        "eval_trials": 45
+      },
+      {
+        "subject": "S003",
+        "accuracy": 100.0,
+        "macro_f1": 100.0,
+        "eval_trials": 45
+      },
+      {
+        "subject": "S004",
+        "accuracy": 88.89,
+        "macro_f1": 83.64,
+        "eval_trials": 45
+      },
+      {
+        "subject": "S005",
+        "accuracy": 100.0,
+        "macro_f1": 100.0,
+        "eval_trials": 45
+      },
+      {
+        "subject": "S006",
+        "accuracy": 86.67,
+        "macro_f1": 84.66,
+        "eval_trials": 45
+      },
+      {
+        "subject": "S007",
+        "accuracy": 97.78,
+        "macro_f1": 97.59,
+        "eval_trials": 45
+      },
+      {
+        "subject": "S008",
+        "accuracy": 100.0,
+        "macro_f1": 100.0,
+        "eval_trials": 45
+      },
+      {
+        "subject": "S009",
+        "accuracy": 100.0,
+        "macro_f1": 100.0,
+        "eval_trials": 45
+      },
+      {
+        "subject": "S010",
+        "accuracy": 100.0,
+        "macro_f1": 100.0,
+        "eval_trials": 45
+      }
+    ]
+  },
+  {
+    "calibration_budget": 5,
+    "method": "3_probability_calibration",
+    "accuracy": 98.44,
+    "macro_f1": 98.27,
+    "rest_recall": 98.0,
+    "left_recall": 100.0,
+    "right_recall": 97.98,
+    "rest_precision": 99.59,
+    "left_precision": 98.06,
+    "right_precision": 96.04,
+    "sub_mean_acc": 98.45,
+    "sub_std_acc": 2.0,
+    "coverage": 98.67,
+    "selective_accuracy": 99.32,
+    "rejected_accuracy": 33.33,
+    "incorrect_command_rate": 0.44,
+    "mean_latency_ms": 0.04,
+    "confusion_matrix": [
+      [
+        245,
+        1,
+        4
+      ],
+      [
+        0,
+        101,
+        0
+      ],
+      [
+        1,
+        1,
+        97
+      ]
+    ],
+    "duration_sec": 2.4,
+    "per_subject": [
+      {
+        "subject": "S001",
+        "accuracy": 95.56,
+        "macro_f1": 95.28,
+        "eval_trials": 45
+      },
+      {
+        "subject": "S002",
+        "accuracy": 95.56,
+        "macro_f1": 95.44,
+        "eval_trials": 45
+      },
+      {
+        "subject": "S003",
+        "accuracy": 100.0,
+        "macro_f1": 100.0,
+        "eval_trials": 45
+      },
+      {
+        "subject": "S004",
+        "accuracy": 97.78,
+        "macro_f1": 96.66,
+        "eval_trials": 45
+      },
+      {
+        "subject": "S005",
+        "accuracy": 100.0,
+        "macro_f1": 100.0,
+        "eval_trials": 45
+      },
+      {
+        "subject": "S006",
+        "accuracy": 95.56,
+        "macro_f1": 95.33,
+        "eval_trials": 45
+      },
+      {
+        "subject": "S007",
+        "accuracy": 100.0,
+        "macro_f1": 100.0,
+        "eval_trials": 45
+      },
+      {
+        "subject": "S008",
+        "accuracy": 100.0,
+        "macro_f1": 100.0,
+        "eval_trials": 45
+      },
+      {
+        "subject": "S009",
+        "accuracy": 100.0,
+        "macro_f1": 100.0,
+        "eval_trials": 45
+      },
+      {
+        "subject": "S010",
+        "accuracy": 100.0,
+        "macro_f1": 100.0,
+        "eval_trials": 45
+      }
+    ]
+  },
+  {
+    "calibration_budget": 5,
+    "method": "4_lightweight_classifier_adaptation",
+    "accuracy": 22.22,
+    "macro_f1": 32.14,
+    "rest_recall": 0.0,
+    "left_recall": 4.95,
+    "right_recall": 95.96,
+    "rest_precision": 0.0,
+    "left_precision": 1.96,
+    "right_precision": 91.35,
+    "sub_mean_acc": 22.22,
+    "sub_std_acc": 2.43,
+    "coverage": 92.22,
+    "selective_accuracy": 20.0,
+    "rejected_accuracy": 48.57,
+    "incorrect_command_rate": 53.56,
+    "mean_latency_ms": 0.06,
+    "confusion_matrix": [
+      [
+        0,
+        246,
+        4
+      ],
+      [
+        91,
+        5,
+        5
+      ],
+      [
+        0,
+        4,
+        95
+      ]
+    ],
+    "duration_sec": 2.6,
+    "per_subject": [
+      {
+        "subject": "S001",
+        "accuracy": 26.67,
+        "macro_f1": 35.41,
+        "eval_trials": 45
+      },
+      {
+        "subject": "S002",
+        "accuracy": 22.22,
+        "macro_f1": 30.3,
+        "eval_trials": 45
+      },
+      {
+        "subject": "S003",
+        "accuracy": 22.22,
+        "macro_f1": 33.33,
+        "eval_trials": 45
+      },
+      {
+        "subject": "S004",
+        "accuracy": 24.44,
+        "macro_f1": 29.63,
+        "eval_trials": 45
+      },
+      {
+        "subject": "S005",
+        "accuracy": 22.22,
+        "macro_f1": 33.33,
+        "eval_trials": 45
+      },
+      {
+        "subject": "S006",
+        "accuracy": 17.78,
+        "macro_f1": 26.32,
+        "eval_trials": 45
+      },
+      {
+        "subject": "S007",
+        "accuracy": 22.22,
+        "macro_f1": 33.33,
+        "eval_trials": 45
+      },
+      {
+        "subject": "S008",
+        "accuracy": 24.44,
+        "macro_f1": 33.33,
+        "eval_trials": 45
+      },
+      {
+        "subject": "S009",
+        "accuracy": 20.0,
+        "macro_f1": 33.33,
+        "eval_trials": 45
+      },
+      {
+        "subject": "S010",
+        "accuracy": 20.0,
+        "macro_f1": 33.33,
+        "eval_trials": 45
+      }
+    ]
+  },
+  {
+    "calibration_budget": 5,
+    "method": "5_confidence_rejection_tuning",
+    "accuracy": 98.67,
+    "macro_f1": 98.5,
+    "rest_recall": 98.4,
+    "left_recall": 100.0,
+    "right_recall": 97.98,
+    "rest_precision": 99.6,
+    "left_precision": 99.02,
+    "right_precision": 96.04,
+    "sub_mean_acc": 98.67,
+    "sub_std_acc": 1.78,
+    "coverage": 97.33,
+    "selective_accuracy": 99.77,
+    "rejected_accuracy": 58.33,
+    "incorrect_command_rate": 0.22,
+    "mean_latency_ms": 0.04,
+    "confusion_matrix": [
+      [
+        246,
+        0,
+        4
+      ],
+      [
+        0,
+        101,
+        0
+      ],
+      [
+        1,
+        1,
+        97
+      ]
+    ],
+    "duration_sec": 2.5,
+    "per_subject": [
+      {
+        "subject": "S001",
+        "accuracy": 95.56,
+        "macro_f1": 95.28,
+        "eval_trials": 45
+      },
+      {
+        "subject": "S002",
+        "accuracy": 97.78,
+        "macro_f1": 97.73,
+        "eval_trials": 45
+      },
+      {
+        "subject": "S003",
+        "accuracy": 100.0,
+        "macro_f1": 100.0,
+        "eval_trials": 45
+      },
+      {
+        "subject": "S004",
+        "accuracy": 97.78,
+        "macro_f1": 96.66,
+        "eval_trials": 45
+      },
+      {
+        "subject": "S005",
+        "accuracy": 100.0,
+        "macro_f1": 100.0,
+        "eval_trials": 45
+      },
+      {
+        "subject": "S006",
+        "accuracy": 95.56,
+        "macro_f1": 95.33,
+        "eval_trials": 45
+      },
+      {
+        "subject": "S007",
+        "accuracy": 100.0,
+        "macro_f1": 100.0,
+        "eval_trials": 45
+      },
+      {
+        "subject": "S008",
+        "accuracy": 100.0,
+        "macro_f1": 100.0,
+        "eval_trials": 45
+      },
+      {
+        "subject": "S009",
+        "accuracy": 100.0,
+        "macro_f1": 100.0,
+        "eval_trials": 45
+      },
+      {
+        "subject": "S010",
+        "accuracy": 100.0,
+        "macro_f1": 100.0,
+        "eval_trials": 45
+      }
+    ]
+  },
+  {
+    "calibration_budget": 10,
+    "method": "1_frozen_step62_no_calib",
+    "accuracy": 98.0,
+    "macro_f1": 97.55,
+    "rest_recall": 97.0,
+    "left_recall": 100.0,
+    "right_recall": 100.0,
+    "rest_precision": 100.0,
+    "left_precision": 98.08,
+    "right_precision": 90.74,
+    "sub_mean_acc": 98.0,
+    "sub_std_acc": 3.4,
+    "coverage": 97.67,
+    "selective_accuracy": 99.66,
+    "rejected_accuracy": 28.57,
+    "incorrect_command_rate": 0.33,
+    "mean_latency_ms": 0.05,
+    "confusion_matrix": [
+      [
+        194,
+        1,
+        5
+      ],
+      [
+        0,
+        51,
+        0
+      ],
+      [
+        0,
+        0,
+        49
+      ]
+    ],
+    "duration_sec": 2.3,
+    "per_subject": [
+      {
+        "subject": "S001",
+        "accuracy": 90.0,
+        "macro_f1": 88.21,
+        "eval_trials": 30
+      },
+      {
+        "subject": "S002",
+        "accuracy": 93.33,
+        "macro_f1": 92.19,
+        "eval_trials": 30
+      },
+      {
+        "subject": "S003",
+        "accuracy": 100.0,
+        "macro_f1": 100.0,
+        "eval_trials": 30
+      },
+      {
+        "subject": "S004",
+        "accuracy": 100.0,
+        "macro_f1": 100.0,
+        "eval_trials": 30
+      },
+      {
+        "subject": "S005",
+        "accuracy": 100.0,
+        "macro_f1": 100.0,
+        "eval_trials": 30
+      },
+      {
+        "subject": "S006",
+        "accuracy": 96.67,
+        "macro_f1": 96.11,
+        "eval_trials": 30
+      },
+      {
+        "subject": "S007",
+        "accuracy": 100.0,
+        "macro_f1": 100.0,
+        "eval_trials": 30
+      },
+      {
+        "subject": "S008",
+        "accuracy": 100.0,
+        "macro_f1": 100.0,
+        "eval_trials": 30
+      },
+      {
+        "subject": "S009",
+        "accuracy": 100.0,
+        "macro_f1": 100.0,
+        "eval_trials": 30
+      },
+      {
+        "subject": "S010",
+        "accuracy": 100.0,
+        "macro_f1": 100.0,
+        "eval_trials": 30
+      }
+    ]
+  },
+  {
+    "calibration_budget": 10,
+    "method": "2_subject_specific_normalization",
+    "accuracy": 97.0,
+    "macro_f1": 95.92,
+    "rest_recall": 99.0,
+    "left_recall": 94.12,
+    "right_recall": 91.84,
+    "rest_precision": 97.06,
+    "left_precision": 100.0,
+    "right_precision": 93.75,
+    "sub_mean_acc": 97.0,
+    "sub_std_acc": 5.05,
+    "coverage": 98.33,
+    "selective_accuracy": 97.63,
+    "rejected_accuracy": 60.0,
+    "incorrect_command_rate": 0.33,
+    "mean_latency_ms": 0.05,
+    "confusion_matrix": [
+      [
+        198,
+        0,
+        2
+      ],
+      [
+        2,
+        48,
+        1
+      ],
+      [
+        4,
+        0,
+        45
+      ]
+    ],
+    "duration_sec": 2.3,
+    "per_subject": [
+      {
+        "subject": "S001",
+        "accuracy": 93.33,
+        "macro_f1": 91.58,
+        "eval_trials": 30
+      },
+      {
+        "subject": "S002",
+        "accuracy": 100.0,
+        "macro_f1": 100.0,
+        "eval_trials": 30
+      },
+      {
+        "subject": "S003",
+        "accuracy": 100.0,
+        "macro_f1": 100.0,
+        "eval_trials": 30
+      },
+      {
+        "subject": "S004",
+        "accuracy": 96.67,
+        "macro_f1": 92.67,
+        "eval_trials": 30
+      },
+      {
+        "subject": "S005",
+        "accuracy": 100.0,
+        "macro_f1": 100.0,
+        "eval_trials": 30
+      },
+      {
+        "subject": "S006",
+        "accuracy": 83.33,
+        "macro_f1": 73.68,
+        "eval_trials": 30
+      },
+      {
+        "subject": "S007",
+        "accuracy": 96.67,
+        "macro_f1": 95.48,
+        "eval_trials": 30
+      },
+      {
+        "subject": "S008",
+        "accuracy": 100.0,
+        "macro_f1": 100.0,
+        "eval_trials": 30
+      },
+      {
+        "subject": "S009",
+        "accuracy": 100.0,
+        "macro_f1": 100.0,
+        "eval_trials": 30
+      },
+      {
+        "subject": "S010",
+        "accuracy": 100.0,
+        "macro_f1": 100.0,
+        "eval_trials": 30
+      }
+    ]
+  },
+  {
+    "calibration_budget": 10,
+    "method": "3_probability_calibration",
+    "accuracy": 98.67,
+    "macro_f1": 98.33,
+    "rest_recall": 98.5,
+    "left_recall": 100.0,
+    "right_recall": 97.96,
+    "rest_precision": 99.49,
+    "left_precision": 100.0,
+    "right_precision": 94.12,
+    "sub_mean_acc": 98.67,
+    "sub_std_acc": 2.67,
+    "coverage": 99.67,
+    "selective_accuracy": 99.0,
+    "rejected_accuracy": 0.0,
+    "incorrect_command_rate": 0.67,
+    "mean_latency_ms": 0.06,
+    "confusion_matrix": [
+      [
+        197,
+        0,
+        3
+      ],
+      [
+        0,
+        51,
+        0
+      ],
+      [
+        1,
+        0,
+        48
+      ]
+    ],
+    "duration_sec": 2.4,
+    "per_subject": [
+      {
+        "subject": "S001",
+        "accuracy": 93.33,
+        "macro_f1": 91.58,
+        "eval_trials": 30
+      },
+      {
+        "subject": "S002",
+        "accuracy": 100.0,
+        "macro_f1": 100.0,
+        "eval_trials": 30
+      },
+      {
+        "subject": "S003",
+        "accuracy": 100.0,
+        "macro_f1": 100.0,
+        "eval_trials": 30
+      },
+      {
+        "subject": "S004",
+        "accuracy": 100.0,
+        "macro_f1": 100.0,
+        "eval_trials": 30
+      },
+      {
+        "subject": "S005",
+        "accuracy": 100.0,
+        "macro_f1": 100.0,
+        "eval_trials": 30
+      },
+      {
+        "subject": "S006",
+        "accuracy": 93.33,
+        "macro_f1": 91.67,
+        "eval_trials": 30
+      },
+      {
+        "subject": "S007",
+        "accuracy": 100.0,
+        "macro_f1": 100.0,
+        "eval_trials": 30
+      },
+      {
+        "subject": "S008",
+        "accuracy": 100.0,
+        "macro_f1": 100.0,
+        "eval_trials": 30
+      },
+      {
+        "subject": "S009",
+        "accuracy": 100.0,
+        "macro_f1": 100.0,
+        "eval_trials": 30
+      },
+      {
+        "subject": "S010",
+        "accuracy": 100.0,
+        "macro_f1": 100.0,
+        "eval_trials": 30
+      }
+    ]
+  },
+  {
+    "calibration_budget": 10,
+    "method": "4_lightweight_classifier_adaptation",
+    "accuracy": 15.33,
+    "macro_f1": 29.97,
+    "rest_recall": 0.0,
+    "left_recall": 1.96,
+    "right_recall": 91.84,
+    "rest_precision": 0.0,
+    "left_precision": 0.5,
+    "right_precision": 86.54,
+    "sub_mean_acc": 15.33,
+    "sub_std_acc": 3.06,
+    "coverage": 93.33,
+    "selective_accuracy": 15.0,
+    "rejected_accuracy": 20.0,
+    "incorrect_command_rate": 63.0,
+    "mean_latency_ms": 0.07,
+    "confusion_matrix": [
+      [
+        0,
+        194,
+        6
+      ],
+      [
+        49,
+        1,
+        1
+      ],
+      [
+        0,
+        4,
+        45
+      ]
+    ],
+    "duration_sec": 2.5,
+    "per_subject": [
+      {
+        "subject": "S001",
+        "accuracy": 13.33,
+        "macro_f1": 22.22,
+        "eval_trials": 30
+      },
+      {
+        "subject": "S002",
+        "accuracy": 16.67,
+        "macro_f1": 30.3,
+        "eval_trials": 30
+      },
+      {
+        "subject": "S003",
+        "accuracy": 16.67,
+        "macro_f1": 33.33,
+        "eval_trials": 30
+      },
+      {
+        "subject": "S004",
+        "accuracy": 20.0,
+        "macro_f1": 30.77,
+        "eval_trials": 30
+      },
+      {
+        "subject": "S005",
+        "accuracy": 16.67,
+        "macro_f1": 33.33,
+        "eval_trials": 30
+      },
+      {
+        "subject": "S006",
+        "accuracy": 10.0,
+        "macro_f1": 19.05,
+        "eval_trials": 30
+      },
+      {
+        "subject": "S007",
+        "accuracy": 13.33,
+        "macro_f1": 29.63,
+        "eval_trials": 30
+      },
+      {
+        "subject": "S008",
+        "accuracy": 20.0,
+        "macro_f1": 33.33,
+        "eval_trials": 30
+      },
+      {
+        "subject": "S009",
+        "accuracy": 13.33,
+        "macro_f1": 33.33,
+        "eval_trials": 30
+      },
+      {
+        "subject": "S010",
+        "accuracy": 13.33,
+        "macro_f1": 33.33,
+        "eval_trials": 30
+      }
+    ]
+  },
+  {
+    "calibration_budget": 10,
+    "method": "5_confidence_rejection_tuning",
+    "accuracy": 98.33,
+    "macro_f1": 97.93,
+    "rest_recall": 98.0,
+    "left_recall": 100.0,
+    "right_recall": 97.96,
+    "rest_precision": 99.49,
+    "left_precision": 100.0,
+    "right_precision": 92.31,
+    "sub_mean_acc": 98.33,
+    "sub_std_acc": 2.69,
+    "coverage": 97.67,
+    "selective_accuracy": 99.66,
+    "rejected_accuracy": 42.86,
+    "incorrect_command_rate": 0.33,
+    "mean_latency_ms": 0.05,
+    "confusion_matrix": [
+      [
+        196,
+        0,
+        4
+      ],
+      [
+        0,
+        51,
+        0
+      ],
+      [
+        1,
+        0,
+        48
+      ]
+    ],
+    "duration_sec": 2.5,
+    "per_subject": [
+      {
+        "subject": "S001",
+        "accuracy": 93.33,
+        "macro_f1": 91.58,
+        "eval_trials": 30
+      },
+      {
+        "subject": "S002",
+        "accuracy": 96.67,
+        "macro_f1": 96.11,
+        "eval_trials": 30
+      },
+      {
+        "subject": "S003",
+        "accuracy": 100.0,
+        "macro_f1": 100.0,
+        "eval_trials": 30
+      },
+      {
+        "subject": "S004",
+        "accuracy": 100.0,
+        "macro_f1": 100.0,
+        "eval_trials": 30
+      },
+      {
+        "subject": "S005",
+        "accuracy": 100.0,
+        "macro_f1": 100.0,
+        "eval_trials": 30
+      },
+      {
+        "subject": "S006",
+        "accuracy": 93.33,
+        "macro_f1": 91.67,
+        "eval_trials": 30
+      },
+      {
+        "subject": "S007",
+        "accuracy": 100.0,
+        "macro_f1": 100.0,
+        "eval_trials": 30
+      },
+      {
+        "subject": "S008",
+        "accuracy": 100.0,
+        "macro_f1": 100.0,
+        "eval_trials": 30
+      },
+      {
+        "subject": "S009",
+        "accuracy": 100.0,
+        "macro_f1": 100.0,
+        "eval_trials": 30
+      },
+      {
+        "subject": "S010",
+        "accuracy": 100.0,
+        "macro_f1": 100.0,
+        "eval_trials": 30
+      }
+    ]
+  },
+  {
+    "calibration_budget": 20,
+    "method": "1_frozen_step62_no_calib",
+    "accuracy": 98.67,
+    "macro_f1": 98.7,
+    "rest_recall": 97.0,
+    "left_recall": 100.0,
+    "right_recall": 100.0,
+    "rest_precision": 100.0,
+    "left_precision": 100.0,
+    "right_precision": 95.38,
+    "sub_mean_acc": 98.67,
+    "sub_std_acc": 2.81,
+    "coverage": 97.33,
+    "selective_accuracy": 100.0,
+    "rejected_accuracy": 50.0,
+    "incorrect_command_rate": 0.0,
+    "mean_latency_ms": 0.06,
+    "confusion_matrix": [
+      [
+        97,
+        0,
+        3
+      ],
+      [
+        0,
+        63,
+        0
+      ],
+      [
+        0,
+        0,
+        62
+      ]
+    ],
+    "duration_sec": 2.4,
+    "per_subject": [
+      {
+        "subject": "S001",
+        "accuracy": 91.3,
+        "macro_f1": 91.53,
+        "eval_trials": 23
+      },
+      {
+        "subject": "S002",
+        "accuracy": 95.45,
+        "macro_f1": 95.68,
+        "eval_trials": 22
+      },
+      {
+        "subject": "S003",
+        "accuracy": 100.0,
+        "macro_f1": 100.0,
+        "eval_trials": 22
+      },
+      {
+        "subject": "S004",
+        "accuracy": 100.0,
+        "macro_f1": 100.0,
+        "eval_trials": 23
+      },
+      {
+        "subject": "S005",
+        "accuracy": 100.0,
+        "macro_f1": 100.0,
+        "eval_trials": 22
+      },
+      {
+        "subject": "S006",
+        "accuracy": 100.0,
+        "macro_f1": 100.0,
+        "eval_trials": 22
+      },
+      {
+        "subject": "S007",
+        "accuracy": 100.0,
+        "macro_f1": 100.0,
+        "eval_trials": 22
+      },
+      {
+        "subject": "S008",
+        "accuracy": 100.0,
+        "macro_f1": 100.0,
+        "eval_trials": 23
+      },
+      {
+        "subject": "S009",
+        "accuracy": 100.0,
+        "macro_f1": 100.0,
+        "eval_trials": 23
+      },
+      {
+        "subject": "S010",
+        "accuracy": 100.0,
+        "macro_f1": 100.0,
+        "eval_trials": 23
+      }
+    ]
+  },
+  {
+    "calibration_budget": 20,
+    "method": "2_subject_specific_normalization",
+    "accuracy": 97.33,
+    "macro_f1": 97.42,
+    "rest_recall": 95.0,
+    "left_recall": 100.0,
+    "right_recall": 98.39,
+    "rest_precision": 98.96,
+    "left_precision": 100.0,
+    "right_precision": 92.42,
+    "sub_mean_acc": 97.33,
+    "sub_std_acc": 4.5,
+    "coverage": 96.0,
+    "selective_accuracy": 99.07,
+    "rejected_accuracy": 55.56,
+    "incorrect_command_rate": 0.44,
+    "mean_latency_ms": 0.06,
+    "confusion_matrix": [
+      [
+        95,
+        0,
+        5
+      ],
+      [
+        0,
+        63,
+        0
+      ],
+      [
+        1,
+        0,
+        61
+      ]
+    ],
+    "duration_sec": 2.4,
+    "per_subject": [
+      {
+        "subject": "S001",
+        "accuracy": 86.96,
+        "macro_f1": 87.45,
+        "eval_trials": 23
+      },
+      {
+        "subject": "S002",
+        "accuracy": 90.91,
+        "macro_f1": 91.53,
+        "eval_trials": 22
+      },
+      {
+        "subject": "S003",
+        "accuracy": 100.0,
+        "macro_f1": 100.0,
+        "eval_trials": 22
+      },
+      {
+        "subject": "S004",
+        "accuracy": 100.0,
+        "macro_f1": 100.0,
+        "eval_trials": 23
+      },
+      {
+        "subject": "S005",
+        "accuracy": 100.0,
+        "macro_f1": 100.0,
+        "eval_trials": 22
+      },
+      {
+        "subject": "S006",
+        "accuracy": 95.45,
+        "macro_f1": 95.38,
+        "eval_trials": 22
+      },
+      {
+        "subject": "S007",
+        "accuracy": 100.0,
+        "macro_f1": 100.0,
+        "eval_trials": 22
+      },
+      {
+        "subject": "S008",
+        "accuracy": 100.0,
+        "macro_f1": 100.0,
+        "eval_trials": 23
+      },
+      {
+        "subject": "S009",
+        "accuracy": 100.0,
+        "macro_f1": 100.0,
+        "eval_trials": 23
+      },
+      {
+        "subject": "S010",
+        "accuracy": 100.0,
+        "macro_f1": 100.0,
+        "eval_trials": 23
+      }
+    ]
+  },
+  {
+    "calibration_budget": 20,
+    "method": "3_probability_calibration",
+    "accuracy": 99.11,
+    "macro_f1": 99.13,
+    "rest_recall": 99.0,
+    "left_recall": 100.0,
+    "right_recall": 98.39,
+    "rest_precision": 99.0,
+    "left_precision": 100.0,
+    "right_precision": 98.39,
+    "sub_mean_acc": 99.11,
+    "sub_std_acc": 1.78,
+    "coverage": 99.56,
+    "selective_accuracy": 99.55,
+    "rejected_accuracy": 0.0,
+    "incorrect_command_rate": 0.0,
+    "mean_latency_ms": 0.07,
+    "confusion_matrix": [
+      [
+        99,
+        0,
+        1
+      ],
+      [
+        0,
+        63,
+        0
+      ],
+      [
+        1,
+        0,
+        61
+      ]
+    ],
+    "duration_sec": 2.5,
+    "per_subject": [
+      {
+        "subject": "S001",
+        "accuracy": 95.65,
+        "macro_f1": 95.68,
+        "eval_trials": 23
+      },
+      {
+        "subject": "S002",
+        "accuracy": 100.0,
+        "macro_f1": 100.0,
+        "eval_trials": 22
+      },
+      {
+        "subject": "S003",
+        "accuracy": 100.0,
+        "macro_f1": 100.0,
+        "eval_trials": 22
+      },
+      {
+        "subject": "S004",
+        "accuracy": 100.0,
+        "macro_f1": 100.0,
+        "eval_trials": 23
+      },
+      {
+        "subject": "S005",
+        "accuracy": 100.0,
+        "macro_f1": 100.0,
+        "eval_trials": 22
+      },
+      {
+        "subject": "S006",
+        "accuracy": 95.45,
+        "macro_f1": 95.38,
+        "eval_trials": 22
+      },
+      {
+        "subject": "S007",
+        "accuracy": 100.0,
+        "macro_f1": 100.0,
+        "eval_trials": 22
+      },
+      {
+        "subject": "S008",
+        "accuracy": 100.0,
+        "macro_f1": 100.0,
+        "eval_trials": 23
+      },
+      {
+        "subject": "S009",
+        "accuracy": 100.0,
+        "macro_f1": 100.0,
+        "eval_trials": 23
+      },
+      {
+        "subject": "S010",
+        "accuracy": 100.0,
+        "macro_f1": 100.0,
+        "eval_trials": 23
+      }
+    ]
+  },
+  {
+    "calibration_budget": 20,
+    "method": "4_lightweight_classifier_adaptation",
+    "accuracy": 27.11,
+    "macro_f1": 32.96,
+    "rest_recall": 0.0,
+    "left_recall": 6.35,
+    "right_recall": 91.94,
+    "rest_precision": 0.0,
+    "left_precision": 3.7,
+    "right_precision": 96.61,
+    "sub_mean_acc": 27.07,
+    "sub_std_acc": 2.71,
+    "coverage": 91.56,
+    "selective_accuracy": 25.73,
+    "rejected_accuracy": 42.11,
+    "incorrect_command_rate": 42.22,
+    "mean_latency_ms": 0.09,
+    "confusion_matrix": [
+      [
+        0,
+        99,
+        1
+      ],
+      [
+        58,
+        4,
+        1
+      ],
+      [
+        0,
+        5,
+        57
+      ]
+    ],
+    "duration_sec": 2.5,
+    "per_subject": [
+      {
+        "subject": "S001",
+        "accuracy": 30.43,
+        "macro_f1": 36.97,
+        "eval_trials": 23
+      },
+      {
+        "subject": "S002",
+        "accuracy": 27.27,
+        "macro_f1": 30.77,
+        "eval_trials": 22
+      },
+      {
+        "subject": "S003",
+        "accuracy": 27.27,
+        "macro_f1": 33.33,
+        "eval_trials": 22
+      },
+      {
+        "subject": "S004",
+        "accuracy": 30.43,
+        "macro_f1": 31.11,
+        "eval_trials": 23
+      },
+      {
+        "subject": "S005",
+        "accuracy": 27.27,
+        "macro_f1": 33.33,
+        "eval_trials": 22
+      },
+      {
+        "subject": "S006",
+        "accuracy": 22.73,
+        "macro_f1": 28.57,
+        "eval_trials": 22
+      },
+      {
+        "subject": "S007",
+        "accuracy": 22.73,
+        "macro_f1": 30.3,
+        "eval_trials": 22
+      },
+      {
+        "subject": "S008",
+        "accuracy": 30.43,
+        "macro_f1": 33.33,
+        "eval_trials": 23
+      },
+      {
+        "subject": "S009",
+        "accuracy": 26.09,
+        "macro_f1": 33.33,
+        "eval_trials": 23
+      },
+      {
+        "subject": "S010",
+        "accuracy": 26.09,
+        "macro_f1": 33.33,
+        "eval_trials": 23
+      }
+    ]
+  },
+  {
+    "calibration_budget": 20,
+    "method": "5_confidence_rejection_tuning",
+    "accuracy": 98.67,
+    "macro_f1": 98.7,
+    "rest_recall": 98.0,
+    "left_recall": 100.0,
+    "right_recall": 98.39,
+    "rest_precision": 98.99,
+    "left_precision": 100.0,
+    "right_precision": 96.83,
+    "sub_mean_acc": 98.66,
+    "sub_std_acc": 2.06,
+    "coverage": 97.33,
+    "selective_accuracy": 100.0,
+    "rejected_accuracy": 50.0,
+    "incorrect_command_rate": 0.0,
+    "mean_latency_ms": 0.07,
+    "confusion_matrix": [
+      [
+        98,
+        0,
+        2
+      ],
+      [
+        0,
+        63,
+        0
+      ],
+      [
+        1,
+        0,
+        61
+      ]
+    ],
+    "duration_sec": 2.6,
+    "per_subject": [
+      {
+        "subject": "S001",
+        "accuracy": 95.65,
+        "macro_f1": 95.68,
+        "eval_trials": 23
+      },
+      {
+        "subject": "S002",
+        "accuracy": 95.45,
+        "macro_f1": 95.68,
+        "eval_trials": 22
+      },
+      {
+        "subject": "S003",
+        "accuracy": 100.0,
+        "macro_f1": 100.0,
+        "eval_trials": 22
+      },
+      {
+        "subject": "S004",
+        "accuracy": 100.0,
+        "macro_f1": 100.0,
+        "eval_trials": 23
+      },
+      {
+        "subject": "S005",
+        "accuracy": 100.0,
+        "macro_f1": 100.0,
+        "eval_trials": 22
+      },
+      {
+        "subject": "S006",
+        "accuracy": 95.45,
+        "macro_f1": 95.38,
+        "eval_trials": 22
+      },
+      {
+        "subject": "S007",
+        "accuracy": 100.0,
+        "macro_f1": 100.0,
+        "eval_trials": 22
+      },
+      {
+        "subject": "S008",
+        "accuracy": 100.0,
+        "macro_f1": 100.0,
+        "eval_trials": 23
+      },
+      {
+        "subject": "S009",
+        "accuracy": 100.0,
+        "macro_f1": 100.0,
+        "eval_trials": 23
+      },
+      {
+        "subject": "S010",
+        "accuracy": 100.0,
+        "macro_f1": 100.0,
+        "eval_trials": 23
+      }
+    ]
+  },
+  {
+    "calibration_budget": 30,
+    "method": "1_frozen_step62_no_calib",
+    "accuracy": 97.96,
+    "macro_f1": 97.99,
+    "rest_recall": 95.83,
+    "left_recall": 100.0,
+    "right_recall": 100.0,
+    "rest_precision": 100.0,
+    "left_precision": 98.44,
+    "right_precision": 93.94,
+    "sub_mean_acc": 97.95,
+    "sub_std_acc": 3.3,
+    "coverage": 96.73,
+    "selective_accuracy": 100.0,
+    "rejected_accuracy": 37.5,
+    "incorrect_command_rate": 0.0,
+    "mean_latency_ms": 0.06,
+    "confusion_matrix": [
+      [
+        115,
+        1,
+        4
+      ],
+      [
+        0,
+        63,
+        0
+      ],
+      [
+        0,
+        0,
+        62
+      ]
+    ],
+    "duration_sec": 2.5,
+    "per_subject": [
+      {
+        "subject": "S001",
+        "accuracy": 92.0,
+        "macro_f1": 92.21,
+        "eval_trials": 25
+      },
+      {
+        "subject": "S002",
+        "accuracy": 91.67,
+        "macro_f1": 91.84,
+        "eval_trials": 24
+      },
+      {
+        "subject": "S003",
+        "accuracy": 100.0,
+        "macro_f1": 100.0,
+        "eval_trials": 24
+      },
+      {
+        "subject": "S004",
+        "accuracy": 100.0,
+        "macro_f1": 100.0,
+        "eval_trials": 25
+      },
+      {
+        "subject": "S005",
+        "accuracy": 100.0,
+        "macro_f1": 100.0,
+        "eval_trials": 24
+      },
+      {
+        "subject": "S006",
+        "accuracy": 95.83,
+        "macro_f1": 95.99,
+        "eval_trials": 24
+      },
+      {
+        "subject": "S007",
+        "accuracy": 100.0,
+        "macro_f1": 100.0,
+        "eval_trials": 24
+      },
+      {
+        "subject": "S008",
+        "accuracy": 100.0,
+        "macro_f1": 100.0,
+        "eval_trials": 25
+      },
+      {
+        "subject": "S009",
+        "accuracy": 100.0,
+        "macro_f1": 100.0,
+        "eval_trials": 25
+      },
+      {
+        "subject": "S010",
+        "accuracy": 100.0,
+        "macro_f1": 100.0,
+        "eval_trials": 25
+      }
+    ]
+  },
+  {
+    "calibration_budget": 30,
+    "method": "2_subject_specific_normalization",
+    "accuracy": 96.73,
+    "macro_f1": 96.77,
+    "rest_recall": 95.0,
+    "left_recall": 100.0,
+    "right_recall": 96.77,
+    "rest_precision": 98.28,
+    "left_precision": 98.44,
+    "right_precision": 92.31,
+    "sub_mean_acc": 96.72,
+    "sub_std_acc": 5.12,
+    "coverage": 95.92,
+    "selective_accuracy": 98.72,
+    "rejected_accuracy": 50.0,
+    "incorrect_command_rate": 0.41,
+    "mean_latency_ms": 0.05,
+    "confusion_matrix": [
+      [
+        114,
+        1,
+        5
+      ],
+      [
+        0,
+        63,
+        0
+      ],
+      [
+        2,
+        0,
+        60
+      ]
+    ],
+    "duration_sec": 2.3,
+    "per_subject": [
+      {
+        "subject": "S001",
+        "accuracy": 88.0,
+        "macro_f1": 88.57,
+        "eval_trials": 25
+      },
+      {
+        "subject": "S002",
+        "accuracy": 87.5,
+        "macro_f1": 87.91,
+        "eval_trials": 24
+      },
+      {
+        "subject": "S003",
+        "accuracy": 100.0,
+        "macro_f1": 100.0,
+        "eval_trials": 24
+      },
+      {
+        "subject": "S004",
+        "accuracy": 100.0,
+        "macro_f1": 100.0,
+        "eval_trials": 25
+      },
+      {
+        "subject": "S005",
+        "accuracy": 100.0,
+        "macro_f1": 100.0,
+        "eval_trials": 24
+      },
+      {
+        "subject": "S006",
+        "accuracy": 91.67,
+        "macro_f1": 90.77,
+        "eval_trials": 24
+      },
+      {
+        "subject": "S007",
+        "accuracy": 100.0,
+        "macro_f1": 100.0,
+        "eval_trials": 24
+      },
+      {
+        "subject": "S008",
+        "accuracy": 100.0,
+        "macro_f1": 100.0,
+        "eval_trials": 25
+      },
+      {
+        "subject": "S009",
+        "accuracy": 100.0,
+        "macro_f1": 100.0,
+        "eval_trials": 25
+      },
+      {
+        "subject": "S010",
+        "accuracy": 100.0,
+        "macro_f1": 100.0,
+        "eval_trials": 25
+      }
+    ]
+  },
+  {
+    "calibration_budget": 30,
+    "method": "3_probability_calibration",
+    "accuracy": 98.78,
+    "macro_f1": 98.78,
+    "rest_recall": 98.33,
+    "left_recall": 100.0,
+    "right_recall": 98.39,
+    "rest_precision": 99.16,
+    "left_precision": 100.0,
+    "right_precision": 96.83,
+    "sub_mean_acc": 98.77,
+    "sub_std_acc": 2.65,
+    "coverage": 99.59,
+    "selective_accuracy": 99.18,
+    "rejected_accuracy": 0.0,
+    "incorrect_command_rate": 0.41,
+    "mean_latency_ms": 0.06,
+    "confusion_matrix": [
+      [
+        118,
+        0,
+        2
+      ],
+      [
+        0,
+        63,
+        0
+      ],
+      [
+        1,
+        0,
+        61
+      ]
+    ],
+    "duration_sec": 2.3,
+    "per_subject": [
+      {
+        "subject": "S001",
+        "accuracy": 96.0,
+        "macro_f1": 95.99,
+        "eval_trials": 25
+      },
+      {
+        "subject": "S002",
+        "accuracy": 100.0,
+        "macro_f1": 100.0,
+        "eval_trials": 24
+      },
+      {
+        "subject": "S003",
+        "accuracy": 100.0,
+        "macro_f1": 100.0,
+        "eval_trials": 24
+      },
+      {
+        "subject": "S004",
+        "accuracy": 100.0,
+        "macro_f1": 100.0,
+        "eval_trials": 25
+      },
+      {
+        "subject": "S005",
+        "accuracy": 100.0,
+        "macro_f1": 100.0,
+        "eval_trials": 24
+      },
+      {
+        "subject": "S006",
+        "accuracy": 91.67,
+        "macro_f1": 91.67,
+        "eval_trials": 24
+      },
+      {
+        "subject": "S007",
+        "accuracy": 100.0,
+        "macro_f1": 100.0,
+        "eval_trials": 24
+      },
+      {
+        "subject": "S008",
+        "accuracy": 100.0,
+        "macro_f1": 100.0,
+        "eval_trials": 25
+      },
+      {
+        "subject": "S009",
+        "accuracy": 100.0,
+        "macro_f1": 100.0,
+        "eval_trials": 25
+      },
+      {
+        "subject": "S010",
+        "accuracy": 100.0,
+        "macro_f1": 100.0,
+        "eval_trials": 25
+      }
+    ]
+  },
+  {
+    "calibration_budget": 30,
+    "method": "4_lightweight_classifier_adaptation",
+    "accuracy": 24.9,
+    "macro_f1": 32.55,
+    "rest_recall": 0.0,
+    "left_recall": 6.35,
+    "right_recall": 91.94,
+    "rest_precision": 0.0,
+    "left_precision": 3.15,
+    "right_precision": 95.0,
+    "sub_mean_acc": 24.87,
+    "sub_std_acc": 2.52,
+    "coverage": 91.84,
+    "selective_accuracy": 24.0,
+    "rejected_accuracy": 35.0,
+    "incorrect_command_rate": 46.12,
+    "mean_latency_ms": 0.08,
+    "confusion_matrix": [
+      [
+        0,
+        118,
+        2
+      ],
+      [
+        58,
+        4,
+        1
+      ],
+      [
+        0,
+        5,
+        57
+      ]
+    ],
+    "duration_sec": 2.4,
+    "per_subject": [
+      {
+        "subject": "S001",
+        "accuracy": 28.0,
+        "macro_f1": 36.36,
+        "eval_trials": 25
+      },
+      {
+        "subject": "S002",
+        "accuracy": 25.0,
+        "macro_f1": 30.77,
+        "eval_trials": 24
+      },
+      {
+        "subject": "S003",
+        "accuracy": 25.0,
+        "macro_f1": 33.33,
+        "eval_trials": 24
+      },
+      {
+        "subject": "S004",
+        "accuracy": 28.0,
+        "macro_f1": 31.11,
+        "eval_trials": 25
+      },
+      {
+        "subject": "S005",
+        "accuracy": 25.0,
+        "macro_f1": 33.33,
+        "eval_trials": 24
+      },
+      {
+        "subject": "S006",
+        "accuracy": 20.83,
+        "macro_f1": 26.06,
+        "eval_trials": 24
+      },
+      {
+        "subject": "S007",
+        "accuracy": 20.83,
+        "macro_f1": 30.3,
+        "eval_trials": 24
+      },
+      {
+        "subject": "S008",
+        "accuracy": 28.0,
+        "macro_f1": 33.33,
+        "eval_trials": 25
+      },
+      {
+        "subject": "S009",
+        "accuracy": 24.0,
+        "macro_f1": 33.33,
+        "eval_trials": 25
+      },
+      {
+        "subject": "S010",
+        "accuracy": 24.0,
+        "macro_f1": 33.33,
+        "eval_trials": 25
+      }
+    ]
+  },
+  {
+    "calibration_budget": 30,
+    "method": "5_confidence_rejection_tuning",
+    "accuracy": 98.37,
+    "macro_f1": 98.38,
+    "rest_recall": 97.5,
+    "left_recall": 100.0,
+    "right_recall": 98.39,
+    "rest_precision": 99.15,
+    "left_precision": 100.0,
+    "right_precision": 95.31,
+    "sub_mean_acc": 98.35,
+    "sub_std_acc": 2.75,
+    "coverage": 96.73,
+    "selective_accuracy": 100.0,
+    "rejected_accuracy": 50.0,
+    "incorrect_command_rate": 0.0,
+    "mean_latency_ms": 0.06,
+    "confusion_matrix": [
+      [
+        117,
+        0,
+        3
+      ],
+      [
+        0,
+        63,
+        0
+      ],
+      [
+        1,
+        0,
+        61
+      ]
+    ],
+    "duration_sec": 2.4,
+    "per_subject": [
+      {
+        "subject": "S001",
+        "accuracy": 96.0,
+        "macro_f1": 95.99,
+        "eval_trials": 25
+      },
+      {
+        "subject": "S002",
+        "accuracy": 95.83,
+        "macro_f1": 95.99,
+        "eval_trials": 24
+      },
+      {
+        "subject": "S003",
+        "accuracy": 100.0,
+        "macro_f1": 100.0,
+        "eval_trials": 24
+      },
+      {
+        "subject": "S004",
+        "accuracy": 100.0,
+        "macro_f1": 100.0,
+        "eval_trials": 25
+      },
+      {
+        "subject": "S005",
+        "accuracy": 100.0,
+        "macro_f1": 100.0,
+        "eval_trials": 24
+      },
+      {
+        "subject": "S006",
+        "accuracy": 91.67,
+        "macro_f1": 91.67,
+        "eval_trials": 24
+      },
+      {
+        "subject": "S007",
+        "accuracy": 100.0,
+        "macro_f1": 100.0,
+        "eval_trials": 24
+      },
+      {
+        "subject": "S008",
+        "accuracy": 100.0,
+        "macro_f1": 100.0,
+        "eval_trials": 25
+      },
+      {
+        "subject": "S009",
+        "accuracy": 100.0,
+        "macro_f1": 100.0,
+        "eval_trials": 25
+      },
+      {
+        "subject": "S010",
+        "accuracy": 100.0,
+        "macro_f1": 100.0,
+        "eval_trials": 25
+      }
+    ]
+  }
+]

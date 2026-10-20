@@ -1,0 +1,3 @@
+pretraining,cv_accuracy
+Masked Temporal Reconstruction SSL,77.2
+Temporal Contrastive SSL,77.5

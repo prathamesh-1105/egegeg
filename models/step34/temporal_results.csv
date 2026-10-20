@@ -1,0 +1,5 @@
+strategy,history_len,val_accuracy,val_macro_f1,false_activations,latency_ms
+1-Window (No Smoothing),1,74.0,68.12,12,26.5
+2-Window Causal Average,2,74.5,68.6,9,27.0
+3-Window Causal EMA (alpha=0.4),3,75.2,69.3,6,27.5
+5-Window Majority Voting,5,74.8,68.9,4,28.5

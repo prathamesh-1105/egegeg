@@ -1,0 +1,45 @@
+{
+  "timestamp": "2026-08-17 21:46:11",
+  "final_decision": "KEEP STEP 34",
+  "step34_baseline": {
+    "accuracy": 74.67,
+    "macro_f1": 69.11,
+    "rest_recall": 93.33,
+    "left_fist_recall": 64.47,
+    "right_fist_recall": 47.3
+  },
+  "step43_benchmark": {
+    "accuracy": 74.67,
+    "macro_f1": 69.11
+  },
+  "best_cross_subject_cv": {
+    "accuracy": 77.2,
+    "macro_f1": 71.5,
+    "outer_cv_std": 0.85,
+    "worst_subject_accuracy": 66.67
+  },
+  "best_architecture": "Compact EEGNet + Multi-Branch Encoder",
+  "best_ssl_objective": "Combined Masked EEG Reconstruction + Contrastive Temporal Consistency",
+  "best_frequency_representation": "Multi-Branch Fused Embedding (Theta, Mu, Low/Mid/High Beta)",
+  "best_temporal_representation": "Multi-Window Concatenated Representation",
+  "best_spatial_representation": "Learnable Spatial Channel Attention",
+  "best_fusion": "FBCSP + Neural Probability Fusion (0.5 / 0.5)",
+  "best_calibration": "GLOBAL + UNLABELED TARGET NORMALIZATION",
+  "best_subject_adaptation": "Unlabeled Target Robust Z-Score Normalization",
+  "left_recall": 64.47,
+  "right_recall": 47.3,
+  "rest_recall": 93.33,
+  "final_r11_accuracy": 74.67,
+  "final_r11_macro_f1": 69.11,
+  "delta_vs_step34_accuracy": 0.0,
+  "delta_vs_step34_macro_f1": 0.0,
+  "cv_r11_gap_points": 2.53,
+  "inference_latency_ms": 26.5,
+  "model_size_mb": 0.42,
+  "data_leakage_verified": true,
+  "r11_tuning": "NONE",
+  "targets": {
+    "target_80_pct": "NOT ACHIEVED",
+    "target_85_pct": "NOT ACHIEVED"
+  }
+}

@@ -1,0 +1,5 @@
+component,latency_ms
+Signal Preprocessing & Normalization,5.0
+Compact SSL EEGNet Encoder Forward Pass,14.5
+Classification Head & Decision Gate,8.0
+Total Single-Window Pipeline Latency,27.5

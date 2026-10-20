@@ -1,0 +1,4 @@
+objective,outer_cv_acc,outer_cv_f1
+Standard Cross-Entropy Loss,76.5,70.8
+Supervised Contrastive Loss (SupCon),77.2,71.4
+Subject-Invariant Contrastive Loss,77.8,72.0

@@ -1,0 +1,6 @@
+calib_windows,val_accuracy,val_macro_f1,fallback_triggered
+10,68.5,61.2,True
+20,70.8,64.1,False
+30,72.5,66.2,False
+40,72.5,66.2,False
+60,72.5,66.2,False

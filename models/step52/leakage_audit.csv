@@ -1,0 +1,5 @@
+check,status
+Subject Grouping,PASSED (Zero subject overlap between train/val folds)
+Window Overlap,PASSED (Zero window overlap across split boundaries)
+Preprocessing Leakage,PASSED (Scalers and CSP fit strictly inside train folds)
+R11 Isolation,PASSED (R11 held out 100% until post-freeze evaluation)

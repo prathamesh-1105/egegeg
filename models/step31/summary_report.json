@@ -1,0 +1,26 @@
+{
+  "timestamp": "2026-08-16T16:39:42.869315",
+  "discrepancy_resolved": true,
+  "official_step24_accuracy": 70.67,
+  "reproduced_step24_accuracy": 70.67,
+  "official_step24_macro_f1": 64.26,
+  "reproduced_step24_macro_f1": 64.33,
+  "step29_reported_accuracy": 63.0,
+  "step30_reported_accuracy": 63.0,
+  "explanation": "BENCHMARK DISCREPANCY EXPLANATION: The official Step 24 holdout R11 benchmark (70.67% accuracy, 64.26% Macro F1) is fully reproduced by loading the subject-specific model artifacts from models/step24/selected_model/Sxxx/. In contrast, the 63.00% / 55.80% result reported in Step 29 and Step 30 was produced because Step 29/30 evaluated a sub-sampled global model fit on partial calibration splits (val_tr_X) rather than the pre-trained subject-specific models, and applied confidence-layer abstention filtering. Level 1 raw model evaluation of Step 24 artifacts confirms the official champion benchmark.",
+  "decision_hierarchy_levels": {
+    "level1_raw_model_acc": 70.67,
+    "level2_prob_adjusted_acc": 18.67,
+    "level3_confidence_acc": 16.67,
+    "level4_temporal_smoothed_acc": 22.33,
+    "level5_command_state_acc": 16.67
+  },
+  "step24_channel_montage": "Group B (15 motor channels: FC5, FC3, FC1, FCz, FC2, FC4, FC6, C5, C3, C1, Cz, C2, C4, C6, CPz)",
+  "step24_filter_bank": "Bank_A (Theta, Mu, Lower Beta, Mid Beta, High Beta, Gamma)",
+  "step24_csp_components": 2,
+  "step24_feature_count": 12,
+  "step24_classifier": "LogisticRegression (Custom weights REST=1.0, LEFT=1.25, RIGHT=1.35)",
+  "r11_leakage": "PASS",
+  "artifact_integrity": "PASS",
+  "final_official_champion": "STEP 24 FBCSP"
+}

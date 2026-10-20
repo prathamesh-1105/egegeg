@@ -1,0 +1,43 @@
+{
+  "timestamp": "2026-08-17 21:29:24",
+  "final_decision": "KEEP STEP 34",
+  "step34_baseline": {
+    "accuracy": 74.67,
+    "macro_f1": 69.11,
+    "rest_recall": 93.33,
+    "left_fist_recall": 64.47,
+    "right_fist_recall": 47.3
+  },
+  "step38_validation": {
+    "accuracy": 87.2,
+    "macro_f1": 83.0
+  },
+  "step38_r11": {
+    "accuracy": 74.67,
+    "macro_f1": 69.11
+  },
+  "validation_holdout_gap_points": 12.53,
+  "best_robust_cv_model": "Step 34 Two-Pass Motor Specialist Ensemble",
+  "mean_cv_accuracy": 77.2,
+  "mean_cv_macro_f1": 71.5,
+  "cv_standard_deviation": 0.85,
+  "worst_subject_accuracy": 66.67,
+  "best_normalization": "Per-Subject Baseline-Relative Normalization",
+  "best_pretraining_protocol": "Strict SSL (Train-Only Subjects, Zero Target Exposure)",
+  "best_model_selection_strategy": "Selection F: Composite Robust Score",
+  "final_r11_accuracy": 74.67,
+  "final_r11_macro_f1": 69.11,
+  "delta_vs_step34_accuracy": 0.0,
+  "delta_vs_step34_macro_f1": 0.0,
+  "rest_recall": 93.33,
+  "left_fist_recall": 64.47,
+  "right_fist_recall": 47.3,
+  "inference_latency_ms": 26.5,
+  "data_leakage_verified": true,
+  "validation_selection_bias": "DETECTED",
+  "unsupervised_target_domain_exposure": "DETECTED",
+  "targets": {
+    "target_80_pct": "NOT ACHIEVED",
+    "target_85_pct": "NOT ACHIEVED"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "device_name": "OpenBCI Cyton + Daisy (16 Channels)",
+  "hardware_type": "Research EEG Amplifier",
+  "adc_resolution_bits": 24,
+  "chipset": "Dual Texas Instruments ADS1299",
+  "expected_channel_count": 16,
+  "default_sampling_rate_hz": 125.0,
+  "target_model_sampling_rate_hz": 160.0,
+  "requires_polyphase_resampling": true,
+  "lsl_stream_name": "OpenBCI_EEG",
+  "lsl_stream_type": "EEG",
+  "reference_electrode": "Ear Clips (A1/A2)",
+  "ground_electrode": "BIAS Pin",
+  "montage_system": "10-20 Standard Cap System",
+  "communication_protocol": "2.4GHz RF FTDI USB Dongle",
+  "supported_os": [
+    "Windows 10 x64",
+    "Windows 11 x64",
+    "macOS",
+    "Linux"
+  ]
+}

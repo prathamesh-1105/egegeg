@@ -1,0 +1,2 @@
+loss,cv_accuracy,right_fist_recall
+Class-Balanced Focal Loss,77.8,50.0

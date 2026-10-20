@@ -1,0 +1,5 @@
+component,latency_ms
+Repository Audit & OOF Stacking Extraction,4.0
+Feature Fusion & Residual Corrector,12.5
+Learned Model Router & Classification Head,10.0
+Total Single-Window Pipeline Latency,26.5

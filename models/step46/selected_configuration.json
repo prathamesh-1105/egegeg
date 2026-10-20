@@ -1,0 +1,10 @@
+{
+  "architecture": "Multi-Scale Temporal CNN + FBCSP Hybrid",
+  "temporal_kernels": [
+    5,
+    11,
+    25
+  ],
+  "channel_attention": true,
+  "decision": "KEEP STEP 34"
+}

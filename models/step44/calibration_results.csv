@@ -1,0 +1,5 @@
+calibration_windows,val_accuracy,val_macro_f1
+0,77.2,71.5
+10,78.0,72.2
+20,78.8,73.0
+30,79.5,73.8

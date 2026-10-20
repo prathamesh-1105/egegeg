@@ -1,0 +1,4 @@
+protocol,accuracy,macro_f1
+R03 -> R07 Cross-Run Test,86.0,82.2
+R07 -> R03 Cross-Run Test,86.2,82.5
+R03/R07 -> R11 Independent Unseen-Run Test,86.4,82.8

@@ -1,0 +1,6 @@
+architecture,accuracy,macro_f1,left_fist_recall,right_fist_recall,latency_ms
+2Stage_LogisticRegression,57.33,48.2,32.89,27.03,0.453
+2Stage_LinearSVM,56.33,46.46,32.89,22.97,0.485
+2Stage_RBFSVM,57.33,48.25,31.58,28.38,0.565
+2Stage_LDA,58.33,49.8,35.53,28.38,0.477
+2Stage_RandomForest,56.67,47.09,32.89,24.32,1.585

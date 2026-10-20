@@ -1,0 +1,11 @@
+{
+  "pipeline": "Subject-Adaptive FBCSP + ERD Feature Fusion + RegLDA Engine",
+  "spatial_filter": "Subject-Adaptive 6-Band FBCSP + Riemannian Centroid Alignment",
+  "feature_fusion": [
+    "FBCSP Log-Variance",
+    "C3/C4 Log Asymmetry Ratio",
+    "ERD Slope & Max Suppression"
+  ],
+  "classifier": "LinearDiscriminantAnalysis(solver='lsqr', shrinkage='auto')",
+  "decision_gating": "Calibrated REST Probability Gating (threshold = 0.62)"
+}

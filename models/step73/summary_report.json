@@ -1,0 +1,33 @@
+{
+  "timestamp": "2026-09-12 13:01:01",
+  "model_name": "Step 73 Dual-Window Riemannian Tri-Ensemble Engine",
+  "step61_baseline_r11_accuracy": 72.0,
+  "step73_authentic_r11_accuracy": 71.0,
+  "step73_authentic_r11_macro_f1": 65.53,
+  "rest_recall": 91.33,
+  "left_fist_recall": 57.89,
+  "right_fist_recall": 43.24,
+  "inference_latency_ms": 3.23,
+  "confusion_matrix": [
+    [
+      137,
+      2,
+      11
+    ],
+    [
+      16,
+      44,
+      16
+    ],
+    [
+      32,
+      10,
+      32
+    ]
+  ],
+  "classes": [
+    "REST",
+    "LEFT_FIST",
+    "RIGHT_FIST"
+  ]
+}

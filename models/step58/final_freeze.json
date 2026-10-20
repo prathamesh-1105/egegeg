@@ -1,0 +1,44 @@
+{
+  "step": 58,
+  "protocol": "Genuine EEG Rebuild & Subject-Adaptive ERD Engine",
+  "dataset": {
+    "total_unique_edf_files": 30,
+    "subjects": [
+      "S001",
+      "S002",
+      "S003",
+      "S004",
+      "S005",
+      "S006",
+      "S007",
+      "S008",
+      "S009",
+      "S010"
+    ],
+    "calibration_runs": [
+      "R03",
+      "R07"
+    ],
+    "test_run": "R11",
+    "total_calibration_trials": 600,
+    "total_test_trials": 300
+  },
+  "preprocessing": {
+    "sfreq_hz": 160.0,
+    "channel_count": 15,
+    "channel_group": "Group B",
+    "window_sec": 3.0,
+    "onset_offset_sec": 0.5
+  },
+  "selected_configuration": {
+    "pipeline": "Step 58 Subject-Adaptive FBCSP + Riemannian Dual-View Engine",
+    "spatial_filter": "FBCSP + Riemannian Tangent Space",
+    "classifier": "LogisticRegression(C=1.0, class_weight='balanced')",
+    "personalization": "Subject-Adaptive Peak Frequency ERD + 15 Calibration Trials (45s)"
+  },
+  "development_cv_metrics": {
+    "accuracy": 41.63,
+    "macro_f1": 39.36
+  },
+  "status": "FROZEN BEFORE R11 EVALUATION"
+}

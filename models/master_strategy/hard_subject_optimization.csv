@@ -1,0 +1,3 @@
+hard_strategy,cv_accuracy,cv_macro_f1
+Targeted Contralateral ERD Scaling,77.5,71.8
+Fallback to Global Step 34,77.2,71.5

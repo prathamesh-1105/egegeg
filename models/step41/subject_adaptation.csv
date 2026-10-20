@@ -1,0 +1,5 @@
+method,outer_cv_acc,outer_cv_f1
+A. Global Normalization (Train Subjects Only),76.0,70.0
+B. Target-Subject Channel Z-Score,77.2,71.5
+C. Target-Subject Robust Normalization,77.4,71.6
+D. Target-Subject Covariance Normalization,77.0,71.2

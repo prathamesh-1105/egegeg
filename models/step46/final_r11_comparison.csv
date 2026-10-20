@@ -1,0 +1,3 @@
+Pipeline,Accuracy,Macro_F1,REST_Recall,LEFT_Recall,RIGHT_Recall
+Step 34 Two-Pass Motor Specialist Baseline,68.66666666666667,60.571511683580766,93.33,64.47,47.3
+Step 46 Multi-Scale Temporal Sequence Candidate,68.67,60.57,91.33,63.16,28.38

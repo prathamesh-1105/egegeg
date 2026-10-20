@@ -1,0 +1,5 @@
+pyramid_level,val_accuracy
+Level 1: Global Window (3.0s),76.5
+Level 2: Dual Window (1.5s x 2),76.8
+Level 3: Quad Window (0.75s x 4),76.2
+Fused Multi-Level Temporal Pyramid,77.2

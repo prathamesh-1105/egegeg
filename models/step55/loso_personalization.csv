@@ -1,0 +1,5 @@
+trials_per_class,loso_accuracy,loso_macro_f1
+0,74.67,69.11
+3,81.0,75.8
+5,84.0,79.5
+10,87.8,84.5

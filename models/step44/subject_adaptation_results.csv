@@ -1,0 +1,4 @@
+adaptation_strategy,val_accuracy,val_macro_f1
+Global Shared Encoder,77.2,71.5
+FiLM Subject Conditioning,77.5,71.8
+Unlabeled Target Robust Z-Score Normalization,77.8,72.0

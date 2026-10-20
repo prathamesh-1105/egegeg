@@ -1,0 +1,10 @@
+{
+  "protocol": "Independent Unseen-Run Validation (Step 57 Error Recovery)",
+  "calibration_runs": [
+    "R03",
+    "R07"
+  ],
+  "test_run": "R11",
+  "r11_status": "PROHIBITED FROM ALL FEATURE/THRESHOLD TUNING",
+  "target_accuracy": "Search >= 87.00% and >= 90.00% on Unseen R11"
+}

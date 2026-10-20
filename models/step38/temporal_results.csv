@@ -1,0 +1,4 @@
+smoothing,val_accuracy,val_macro_f1
+Single-Window Prediction,84.8,80.2
+3-Window Causal Moving Average,86.0,81.5
+5-Window Causal Moving Average,86.5,82.0

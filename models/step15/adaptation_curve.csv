@@ -1,0 +1,141 @@
+subject,strategy,adaptation_percentage,adaptation_windows,validation_windows,validation_accuracy,validation_macro_f1,rest_recall,left_recall,right_recall
+S001,Strategy 1: Full Retraining (R03 + R07_adapt),0,0,30,50.0,44.36,66.67,37.5,28.57
+S001,Strategy 1: Full Retraining (R03 + R07_adapt),10,3,27,51.85,46.96,69.23,42.86,28.57
+S001,Strategy 1: Full Retraining (R03 + R07_adapt),20,6,24,58.33,51.09,66.67,83.33,16.67
+S001,Strategy 1: Full Retraining (R03 + R07_adapt),30,9,21,61.9,55.28,60.0,100.0,20.0
+S001,Strategy 1: Full Retraining (R03 + R07_adapt),40,12,18,61.11,55.56,66.67,80.0,25.0
+S001,Strategy 1: Full Retraining (R03 + R07_adapt),50,15,15,60.0,57.12,71.43,40.0,66.67
+S001,Strategy 1: Full Retraining (R03 + R07_adapt),60,18,12,66.67,61.11,83.33,66.67,33.33
+S001,Strategy 2: Warm-Start Classifier Update,0,0,30,50.0,44.36,66.67,37.5,28.57
+S001,Strategy 2: Warm-Start Classifier Update,10,3,27,48.15,42.52,69.23,28.57,28.57
+S001,Strategy 2: Warm-Start Classifier Update,20,6,24,54.17,47.34,66.67,66.67,16.67
+S001,Strategy 2: Warm-Start Classifier Update,30,9,21,61.9,55.58,60.0,100.0,20.0
+S001,Strategy 2: Warm-Start Classifier Update,40,12,18,61.11,55.04,66.67,80.0,25.0
+S001,Strategy 2: Warm-Start Classifier Update,50,15,15,73.33,71.07,71.43,80.0,66.67
+S001,Strategy 2: Warm-Start Classifier Update,60,18,12,75.0,71.57,83.33,66.67,66.67
+S002,Strategy 1: Full Retraining (R03 + R07_adapt),0,0,30,63.33,60.48,73.33,57.14,50.0
+S002,Strategy 1: Full Retraining (R03 + R07_adapt),10,3,27,59.26,59.15,46.15,57.14,85.71
+S002,Strategy 1: Full Retraining (R03 + R07_adapt),20,6,24,50.0,48.07,33.33,33.33,100.0
+S002,Strategy 1: Full Retraining (R03 + R07_adapt),30,9,21,47.62,47.41,40.0,40.0,66.67
+S002,Strategy 1: Full Retraining (R03 + R07_adapt),40,12,18,50.0,50.16,44.44,75.0,40.0
+S002,Strategy 1: Full Retraining (R03 + R07_adapt),50,15,15,66.67,64.69,71.43,66.67,60.0
+S002,Strategy 1: Full Retraining (R03 + R07_adapt),60,18,12,58.33,54.24,66.67,50.0,50.0
+S002,Strategy 2: Warm-Start Classifier Update,0,0,30,63.33,60.48,73.33,57.14,50.0
+S002,Strategy 2: Warm-Start Classifier Update,10,3,27,59.26,59.15,46.15,57.14,85.71
+S002,Strategy 2: Warm-Start Classifier Update,20,6,24,41.67,40.97,33.33,33.33,66.67
+S002,Strategy 2: Warm-Start Classifier Update,30,9,21,57.14,57.5,50.0,60.0,66.67
+S002,Strategy 2: Warm-Start Classifier Update,40,12,18,50.0,50.16,44.44,75.0,40.0
+S002,Strategy 2: Warm-Start Classifier Update,50,15,15,66.67,66.03,71.43,66.67,60.0
+S002,Strategy 2: Warm-Start Classifier Update,60,18,12,50.0,45.08,66.67,50.0,25.0
+S003,Strategy 1: Full Retraining (R03 + R07_adapt),0,0,30,50.0,34.95,86.67,12.5,14.29
+S003,Strategy 1: Full Retraining (R03 + R07_adapt),10,3,27,44.44,36.28,69.23,28.57,14.29
+S003,Strategy 1: Full Retraining (R03 + R07_adapt),20,6,24,41.67,30.04,66.67,33.33,0.0
+S003,Strategy 1: Full Retraining (R03 + R07_adapt),30,9,21,38.1,32.12,60.0,16.67,20.0
+S003,Strategy 1: Full Retraining (R03 + R07_adapt),40,12,18,27.78,26.51,33.33,20.0,25.0
+S003,Strategy 1: Full Retraining (R03 + R07_adapt),50,15,15,26.67,23.23,28.57,0.0,66.67
+S003,Strategy 1: Full Retraining (R03 + R07_adapt),60,18,12,41.67,40.74,33.33,66.67,33.33
+S003,Strategy 2: Warm-Start Classifier Update,0,0,30,50.0,34.95,86.67,12.5,14.29
+S003,Strategy 2: Warm-Start Classifier Update,10,3,27,44.44,36.28,69.23,28.57,14.29
+S003,Strategy 2: Warm-Start Classifier Update,20,6,24,37.5,27.47,58.33,33.33,0.0
+S003,Strategy 2: Warm-Start Classifier Update,30,9,21,38.1,34.48,50.0,33.33,20.0
+S003,Strategy 2: Warm-Start Classifier Update,40,12,18,38.89,36.57,44.44,40.0,25.0
+S003,Strategy 2: Warm-Start Classifier Update,50,15,15,40.0,38.92,42.86,20.0,66.67
+S003,Strategy 2: Warm-Start Classifier Update,60,18,12,33.33,32.76,16.67,66.67,33.33
+S004,Strategy 1: Full Retraining (R03 + R07_adapt),0,0,30,80.0,72.45,100.0,85.71,37.5
+S004,Strategy 1: Full Retraining (R03 + R07_adapt),10,3,27,77.78,65.0,100.0,14.29,100.0
+S004,Strategy 1: Full Retraining (R03 + R07_adapt),20,6,24,79.17,72.03,100.0,60.0,57.14
+S004,Strategy 1: Full Retraining (R03 + R07_adapt),30,9,21,76.19,69.7,100.0,60.0,50.0
+S004,Strategy 1: Full Retraining (R03 + R07_adapt),40,12,18,83.33,76.62,100.0,50.0,80.0
+S004,Strategy 1: Full Retraining (R03 + R07_adapt),50,15,15,80.0,74.6,100.0,50.0,75.0
+S004,Strategy 1: Full Retraining (R03 + R07_adapt),60,18,12,75.0,65.71,100.0,33.33,66.67
+S004,Strategy 2: Warm-Start Classifier Update,0,0,30,80.0,72.45,100.0,85.71,37.5
+S004,Strategy 2: Warm-Start Classifier Update,10,3,27,74.07,55.56,100.0,0.0,100.0
+S004,Strategy 2: Warm-Start Classifier Update,20,6,24,79.17,72.03,100.0,60.0,57.14
+S004,Strategy 2: Warm-Start Classifier Update,30,9,21,80.95,75.56,100.0,60.0,66.67
+S004,Strategy 2: Warm-Start Classifier Update,40,12,18,83.33,76.62,100.0,50.0,80.0
+S004,Strategy 2: Warm-Start Classifier Update,50,15,15,80.0,74.6,100.0,50.0,75.0
+S004,Strategy 2: Warm-Start Classifier Update,60,18,12,75.0,65.71,100.0,33.33,66.67
+S005,Strategy 1: Full Retraining (R03 + R07_adapt),0,0,30,63.33,48.81,100.0,12.5,42.86
+S005,Strategy 1: Full Retraining (R03 + R07_adapt),10,3,27,66.67,56.38,100.0,25.0,50.0
+S005,Strategy 1: Full Retraining (R03 + R07_adapt),20,6,24,66.67,54.16,100.0,16.67,50.0
+S005,Strategy 1: Full Retraining (R03 + R07_adapt),30,9,21,57.14,46.83,90.0,16.67,40.0
+S005,Strategy 1: Full Retraining (R03 + R07_adapt),40,12,18,55.56,35.61,100.0,0.0,25.0
+S005,Strategy 1: Full Retraining (R03 + R07_adapt),50,15,15,46.67,25.93,100.0,0.0,0.0
+S005,Strategy 1: Full Retraining (R03 + R07_adapt),60,18,12,58.33,40.0,100.0,25.0,0.0
+S005,Strategy 2: Warm-Start Classifier Update,0,0,30,63.33,48.81,100.0,12.5,42.86
+S005,Strategy 2: Warm-Start Classifier Update,10,3,27,66.67,56.67,100.0,25.0,50.0
+S005,Strategy 2: Warm-Start Classifier Update,20,6,24,66.67,54.16,100.0,16.67,50.0
+S005,Strategy 2: Warm-Start Classifier Update,30,9,21,57.14,46.83,90.0,16.67,40.0
+S005,Strategy 2: Warm-Start Classifier Update,40,12,18,55.56,35.61,100.0,0.0,25.0
+S005,Strategy 2: Warm-Start Classifier Update,50,15,15,53.33,35.45,100.0,20.0,0.0
+S005,Strategy 2: Warm-Start Classifier Update,60,18,12,58.33,40.0,100.0,25.0,0.0
+S006,Strategy 1: Full Retraining (R03 + R07_adapt),0,0,30,56.67,37.14,100.0,28.57,0.0
+S006,Strategy 1: Full Retraining (R03 + R07_adapt),10,3,27,51.85,31.14,100.0,16.67,0.0
+S006,Strategy 1: Full Retraining (R03 + R07_adapt),20,6,24,54.17,33.05,100.0,20.0,0.0
+S006,Strategy 1: Full Retraining (R03 + R07_adapt),30,9,21,52.38,32.51,100.0,20.0,0.0
+S006,Strategy 1: Full Retraining (R03 + R07_adapt),40,12,18,61.11,46.72,100.0,25.0,20.0
+S006,Strategy 1: Full Retraining (R03 + R07_adapt),50,15,15,60.0,46.78,100.0,66.67,0.0
+S006,Strategy 1: Full Retraining (R03 + R07_adapt),60,18,12,66.67,56.35,100.0,50.0,25.0
+S006,Strategy 2: Warm-Start Classifier Update,0,0,30,56.67,37.14,100.0,28.57,0.0
+S006,Strategy 2: Warm-Start Classifier Update,10,3,27,51.85,31.14,100.0,16.67,0.0
+S006,Strategy 2: Warm-Start Classifier Update,20,6,24,54.17,33.05,100.0,20.0,0.0
+S006,Strategy 2: Warm-Start Classifier Update,30,9,21,52.38,32.51,100.0,20.0,0.0
+S006,Strategy 2: Warm-Start Classifier Update,40,12,18,61.11,46.72,100.0,25.0,20.0
+S006,Strategy 2: Warm-Start Classifier Update,50,15,15,60.0,46.78,100.0,66.67,0.0
+S006,Strategy 2: Warm-Start Classifier Update,60,18,12,75.0,66.48,100.0,50.0,50.0
+S007,Strategy 1: Full Retraining (R03 + R07_adapt),0,0,30,60.0,43.1,93.33,0.0,57.14
+S007,Strategy 1: Full Retraining (R03 + R07_adapt),10,3,27,55.56,40.09,92.31,0.0,50.0
+S007,Strategy 1: Full Retraining (R03 + R07_adapt),20,6,24,70.83,63.18,91.67,57.14,40.0
+S007,Strategy 1: Full Retraining (R03 + R07_adapt),30,9,21,76.19,70.88,90.0,83.33,40.0
+S007,Strategy 1: Full Retraining (R03 + R07_adapt),40,12,18,83.33,79.63,88.89,100.0,50.0
+S007,Strategy 1: Full Retraining (R03 + R07_adapt),50,15,15,80.0,77.46,85.71,80.0,66.67
+S007,Strategy 1: Full Retraining (R03 + R07_adapt),60,18,12,66.67,62.58,66.67,75.0,50.0
+S007,Strategy 2: Warm-Start Classifier Update,0,0,30,60.0,43.1,93.33,0.0,57.14
+S007,Strategy 2: Warm-Start Classifier Update,10,3,27,55.56,40.09,92.31,0.0,50.0
+S007,Strategy 2: Warm-Start Classifier Update,20,6,24,66.67,58.51,91.67,42.86,40.0
+S007,Strategy 2: Warm-Start Classifier Update,30,9,21,76.19,70.88,90.0,83.33,40.0
+S007,Strategy 2: Warm-Start Classifier Update,40,12,18,83.33,79.63,88.89,100.0,50.0
+S007,Strategy 2: Warm-Start Classifier Update,50,15,15,80.0,77.46,85.71,80.0,66.67
+S007,Strategy 2: Warm-Start Classifier Update,60,18,12,66.67,62.58,66.67,75.0,50.0
+S008,Strategy 1: Full Retraining (R03 + R07_adapt),0,0,30,46.67,38.68,66.67,14.29,37.5
+S008,Strategy 1: Full Retraining (R03 + R07_adapt),10,3,27,55.56,50.88,76.92,50.0,25.0
+S008,Strategy 1: Full Retraining (R03 + R07_adapt),20,6,24,54.17,49.27,75.0,40.0,28.57
+S008,Strategy 1: Full Retraining (R03 + R07_adapt),30,9,21,47.62,37.52,80.0,20.0,16.67
+S008,Strategy 1: Full Retraining (R03 + R07_adapt),40,12,18,55.56,44.98,88.89,25.0,20.0
+S008,Strategy 1: Full Retraining (R03 + R07_adapt),50,15,15,40.0,32.94,71.43,25.0,0.0
+S008,Strategy 1: Full Retraining (R03 + R07_adapt),60,18,12,50.0,44.44,83.33,50.0,0.0
+S008,Strategy 2: Warm-Start Classifier Update,0,0,30,46.67,38.68,66.67,14.29,37.5
+S008,Strategy 2: Warm-Start Classifier Update,10,3,27,51.85,45.93,76.92,50.0,12.5
+S008,Strategy 2: Warm-Start Classifier Update,20,6,24,54.17,49.27,75.0,40.0,28.57
+S008,Strategy 2: Warm-Start Classifier Update,30,9,21,52.38,45.56,80.0,40.0,16.67
+S008,Strategy 2: Warm-Start Classifier Update,40,12,18,55.56,52.22,77.78,50.0,20.0
+S008,Strategy 2: Warm-Start Classifier Update,50,15,15,46.67,43.06,71.43,50.0,0.0
+S008,Strategy 2: Warm-Start Classifier Update,60,18,12,50.0,44.44,83.33,50.0,0.0
+S009,Strategy 1: Full Retraining (R03 + R07_adapt),0,0,30,86.67,85.88,93.33,75.0,85.71
+S009,Strategy 1: Full Retraining (R03 + R07_adapt),10,3,27,81.48,80.26,100.0,62.5,66.67
+S009,Strategy 1: Full Retraining (R03 + R07_adapt),20,6,24,87.5,87.04,100.0,71.43,80.0
+S009,Strategy 1: Full Retraining (R03 + R07_adapt),30,9,21,85.71,85.28,100.0,66.67,80.0
+S009,Strategy 1: Full Retraining (R03 + R07_adapt),40,12,18,83.33,77.29,100.0,40.0,100.0
+S009,Strategy 1: Full Retraining (R03 + R07_adapt),50,15,15,80.0,75.16,100.0,40.0,100.0
+S009,Strategy 1: Full Retraining (R03 + R07_adapt),60,18,12,83.33,79.66,100.0,66.67,66.67
+S009,Strategy 2: Warm-Start Classifier Update,0,0,30,86.67,85.88,93.33,75.0,85.71
+S009,Strategy 2: Warm-Start Classifier Update,10,3,27,66.67,58.84,100.0,12.5,66.67
+S009,Strategy 2: Warm-Start Classifier Update,20,6,24,79.17,75.24,100.0,42.86,80.0
+S009,Strategy 2: Warm-Start Classifier Update,30,9,21,80.95,79.63,100.0,50.0,80.0
+S009,Strategy 2: Warm-Start Classifier Update,40,12,18,77.78,71.67,100.0,40.0,75.0
+S009,Strategy 2: Warm-Start Classifier Update,50,15,15,73.33,65.28,100.0,20.0,100.0
+S009,Strategy 2: Warm-Start Classifier Update,60,18,12,83.33,79.66,100.0,66.67,66.67
+S010,Strategy 1: Full Retraining (R03 + R07_adapt),0,0,30,46.67,34.81,73.33,37.5,0.0
+S010,Strategy 1: Full Retraining (R03 + R07_adapt),10,3,27,48.15,36.89,76.92,0.0,50.0
+S010,Strategy 1: Full Retraining (R03 + R07_adapt),20,6,24,41.67,29.18,66.67,33.33,0.0
+S010,Strategy 1: Full Retraining (R03 + R07_adapt),30,9,21,33.33,22.15,60.0,16.67,0.0
+S010,Strategy 1: Full Retraining (R03 + R07_adapt),40,12,18,33.33,27.78,55.56,0.0,25.0
+S010,Strategy 1: Full Retraining (R03 + R07_adapt),50,15,15,46.67,41.83,71.43,0.0,66.67
+S010,Strategy 1: Full Retraining (R03 + R07_adapt),60,18,12,33.33,20.51,66.67,0.0,0.0
+S010,Strategy 2: Warm-Start Classifier Update,0,0,30,46.67,34.81,73.33,37.5,0.0
+S010,Strategy 2: Warm-Start Classifier Update,10,3,27,51.85,41.27,76.92,0.0,66.67
+S010,Strategy 2: Warm-Start Classifier Update,20,6,24,45.83,33.33,66.67,50.0,0.0
+S010,Strategy 2: Warm-Start Classifier Update,30,9,21,38.1,27.07,60.0,33.33,0.0
+S010,Strategy 2: Warm-Start Classifier Update,40,12,18,38.89,34.21,55.56,0.0,50.0
+S010,Strategy 2: Warm-Start Classifier Update,50,15,15,53.33,44.44,85.71,0.0,66.67
+S010,Strategy 2: Warm-Start Classifier Update,60,18,12,33.33,20.51,66.67,0.0,0.0

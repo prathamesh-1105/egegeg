@@ -1,0 +1,5 @@
+feature_set,dev_cv_accuracy,dev_cv_macro_f1
+Standard FBCSP Variance,40.67,38.36
+FBCSP + Welch PSD Power,41.17,38.96
+FBCSP + ERD Power Ratios + Asymmetry,41.87,39.76
+FBCSP + ERD Slope + Max Suppression + AUC,42.47,40.36

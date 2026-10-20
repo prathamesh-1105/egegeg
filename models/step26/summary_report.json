@@ -1,0 +1,27 @@
+{
+  "timestamp": "2026-08-16T15:46:35.635399",
+  "final_decision": "KEEP OPTIONAL",
+  "base_model": "STEP 24 FBCSP",
+  "step24_base_accuracy": 66.67,
+  "step24_base_macro_f1": 59.35,
+  "confidence_thresholds": {
+    "max_probability": 0.7,
+    "probability_margin": 0.05,
+    "entropy": 1.2
+  },
+  "full_data_accuracy": 66.67,
+  "selective_accuracy": 68.27,
+  "coverage": 34.67,
+  "abstention_rate": 65.33,
+  "rest_recall": 90.0,
+  "left_fist_recall": 35.53,
+  "right_fist_recall": 51.35,
+  "high_confidence_error_rate": 18.89,
+  "brier_score": 0.1648919072183076,
+  "ece": 0.1359722502485115,
+  "latency_overhead_ms": 0.047,
+  "data_leakage_verified": true,
+  "r11_used_for_threshold_tuning": false,
+  "synthetic_data_used": false,
+  "step24_artifacts_preserved": true
+}

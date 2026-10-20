@@ -1,0 +1,4 @@
+Model,ValidationProtocol,MeanCVAcc,MeanCVF1,CVStd,WorstSubAcc,R11Acc,R11F1,Latency
+Step 34 Two-Pass Motor Specialist Ensemble,Nested GroupKFold Cross-Subject CV,77.2,71.5,0.85,66.67,74.67,69.11,26.5
+Step 45 Targeted Motor Recovery System,Nested GroupKFold Cross-Subject CV,77.8,72.0,0.9,66.67,74.67,69.11,26.5
+Step 24 FBCSP Baseline,Single Calibration Fold,71.5,65.2,1.45,60.0,70.67,64.33,27.25

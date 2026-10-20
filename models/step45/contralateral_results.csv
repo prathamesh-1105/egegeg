@@ -1,0 +1,4 @@
+feature,expected_pattern,cv_accuracy
+log(C3/C4) Sensorimotor Ratio,"Positive for LEFT, Negative for RIGHT",76.5
+(C3-C4)/(C3+C4) Normalized Asymmetry,Bimodal distribution during active motor,77.2
+Contralateral-minus-Ipsilateral ERD%,Higher magnitude for motor trials,77.8

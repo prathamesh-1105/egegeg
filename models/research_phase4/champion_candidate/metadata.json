@@ -1,0 +1,36 @@
+{
+  "candidate_id": "exp_07_correct_laplacian_tri_ensemble",
+  "name": "Phase 4 Champion: Anatomical Surface Laplacian Balanced Tri-Ensemble (k=24)",
+  "timestamp": "2026-10-20 15:55:16",
+  "spatial_montage": [
+    "FC3",
+    "FC1",
+    "FCz",
+    "FC2",
+    "FC4",
+    "C3",
+    "C1",
+    "Cz",
+    "C2",
+    "C4",
+    "CP3",
+    "CP1",
+    "CPz",
+    "CP2",
+    "CP4"
+  ],
+  "sampling_rate_hz": 160.0,
+  "window_sec": 3.0,
+  "classes": [
+    "REST",
+    "LEFT_FIST",
+    "RIGHT_FIST"
+  ],
+  "dev_cv_macro_f1": 65.91,
+  "dev_cv_accuracy": 71.17,
+  "r11_accuracy": 71.67,
+  "r11_macro_f1": 66.21,
+  "r11_rest_recall": 90.0,
+  "r11_left_recall": 55.26,
+  "r11_right_recall": 51.35
+}

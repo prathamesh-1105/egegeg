@@ -1,0 +1,40 @@
+{
+  "n_total": 300,
+  "accuracy": 74.0,
+  "balanced_accuracy": 68.42,
+  "macro_f1": 69.51,
+  "weighted_f1": 73.15,
+  "rest_recall": 90.67,
+  "left_recall": 60.53,
+  "right_recall": 54.05,
+  "rest_precision": 78.16,
+  "left_precision": 73.02,
+  "right_precision": 63.49,
+  "rest_false_actuation_rate": 9.33,
+  "motor_lateralization_error_rate": 17.33,
+  "confusion_matrix": [
+    [
+      136,
+      5,
+      9
+    ],
+    [
+      16,
+      46,
+      14
+    ],
+    [
+      22,
+      12,
+      40
+    ]
+  ],
+  "classes": [
+    "REST",
+    "LEFT_FIST",
+    "RIGHT_FIST"
+  ],
+  "mean_latency_ms": 0.84,
+  "sub_mean_acc": 74.0,
+  "sub_std_acc": 13.4
+}

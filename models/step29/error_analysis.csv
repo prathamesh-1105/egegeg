@@ -1,0 +1,4 @@
+class_name,true_positives,false_positives,false_negatives,precision,recall,f1_score
+REST,128,76,22,62.75,85.33,72.32
+LEFT_FIST,24,24,52,50.0,31.58,38.71
+RIGHT_FIST,23,25,51,47.92,31.08,37.7

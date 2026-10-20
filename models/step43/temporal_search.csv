@@ -1,0 +1,6 @@
+temporal_window,cv_accuracy,cv_macro_f1
+0.5 - 1.5s Early Window,75.0,69.0
+1.0 - 2.0s Mid Window,76.5,70.8
+1.5 - 2.5s Late Window,77.0,71.2
+0.5 - 2.5s Standard Window,77.2,71.5
+Subject-Specific Optimal Window,77.8,72.0

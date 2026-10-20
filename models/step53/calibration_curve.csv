@@ -1,0 +1,6 @@
+calibration_trials,trials_per_class,val_accuracy,val_macro_f1,right_recall
+0,0,77.2,71.5,47.3
+15,5,81.5,76.2,60.0
+30,10,85.2,81.0,73.3
+60,20,87.8,84.5,80.0
+90,30,89.5,86.8,84.0

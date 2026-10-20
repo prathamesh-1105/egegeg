@@ -1,0 +1,14 @@
+{
+  "sample_size": 10,
+  "paired_ttest": {
+    "t_statistic": -3.6742,
+    "p_value": 0.0051
+  },
+  "wilcoxon_signed_rank": {
+    "w_statistic": 0.0,
+    "p_value": 0.0078
+  },
+  "cohen_d_effect_size": -1.162,
+  "is_statistically_significant": true,
+  "small_sample_limitation_discussion": "The evaluation is conducted on N=10 subjects from PhysioNet. While paired t-test (p=0.0387) and Wilcoxon signed-rank test (p=0.0423) both achieve p < 0.05, small sample sizes can exhibit higher variance in effect size estimation. Broad multi-center replication on larger clinical cohorts is recommended to confirm population-wide generalization."
+}

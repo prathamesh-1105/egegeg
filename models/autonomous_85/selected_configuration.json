@@ -1,0 +1,7 @@
+{
+  "architecture": "Autonomous 85% Multi-Representation Research Loop Stacker",
+  "filter_bands": [
+    "7-35Hz"
+  ],
+  "decision": "KEEP STEP 34"
+}

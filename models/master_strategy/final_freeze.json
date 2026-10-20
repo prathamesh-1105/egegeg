@@ -1,0 +1,6 @@
+{
+  "timestamp": "2026-08-17 21:50:14",
+  "status": "FROZEN",
+  "top_strategy": "Feature Fusion (FBCSP + Contralateral ERD + Asymmetry)",
+  "decision_rule": "R11 evaluated strictly ONCE post-freeze"
+}

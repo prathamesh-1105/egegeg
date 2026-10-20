@@ -1,0 +1,4 @@
+ensemble_name,weights,val_accuracy,val_macro_f1
+Step 33 Baseline Soft Fusion,0.6 FBCSP + 0.2 Asym + 0.2 PSD,78.5,73.2
+Error-Aware Motor-Weighted Soft Fusion,0.5 FBCSP + 0.3 Asym + 0.2 PSD,79.2,74.1
+Two-Pass Motor Specialist Fusion,Dynamic REST Gate + Asym Specialist,80.5,75.4

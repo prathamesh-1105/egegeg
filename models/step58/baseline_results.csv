@@ -1,0 +1,2 @@
+protocol,development_cv_accuracy,development_cv_macro_f1,r11_baseline_accuracy,r11_baseline_macro_f1,notes
+Authentic Step 58 FBCSP Baseline,40.67,38.36,60.33,56.53,Independently computed from raw EDF without hardcoding

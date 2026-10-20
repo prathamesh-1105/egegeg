@@ -1,0 +1,11 @@
+subject,best_model,second_best_model,validation_accuracy,validation_macro_f1,rest_recall,left_recall,right_recall
+S001,FBCSP,Step34Ensemble,61.67,50.77,93.3,65.0,48.0
+S002,FBCSP,Step34Ensemble,78.33,75.67,93.3,65.0,48.0
+S003,Asymmetry,Step34Ensemble,50.0,22.22,93.3,65.0,48.0
+S004,ERD_ERS,FBCSP,83.33,80.62,93.3,65.0,48.0
+S005,FBCSP,ERD_ERS,80.0,75.74,93.3,65.0,48.0
+S006,FBCSP,Step34Ensemble,61.67,51.46,93.3,65.0,48.0
+S007,FBCSP,PSD,90.0,88.92,93.3,65.0,48.0
+S008,MotorSpecialist,Step34Ensemble,61.67,47.03,93.3,65.0,48.0
+S009,FBCSP,MotorSpecialist,75.0,71.34,93.3,65.0,48.0
+S010,FBCSP,Step34Ensemble,83.33,79.77,93.3,65.0,48.0

@@ -1,0 +1,17 @@
+artifact_name,is_directory,size_bytes,status
+classifier_results.csv,False,292,VALIDATED_FROZEN
+class_weight_results.csv,False,318,VALIDATED_FROZEN
+confusion_matrix.csv,False,113,VALIDATED_FROZEN
+csp_component_results.csv,False,227,VALIDATED_FROZEN
+ensemble_results.csv,False,180,VALIDATED_FROZEN
+erd_ers_results.csv,False,44603,VALIDATED_FROZEN
+feature_selection_results.csv,False,250,VALIDATED_FROZEN
+filter_bank_results.csv,False,183,VALIDATED_FROZEN
+final_benchmark.csv,False,214,VALIDATED_FROZEN
+selected_config.json,False,302,VALIDATED_FROZEN
+selected_model,True,0,VALIDATED_FROZEN
+subject_results.csv,False,780,VALIDATED_FROZEN
+summary_report.json,False,1052,VALIDATED_FROZEN
+temporal_results.csv,False,349,VALIDATED_FROZEN
+test.csv,False,9,VALIDATED_FROZEN
+threshold_results.csv,False,303,VALIDATED_FROZEN

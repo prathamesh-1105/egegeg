@@ -1,0 +1,8 @@
+{
+  "prob_threshold": 0.7,
+  "margin_threshold": 0.05,
+  "entropy_threshold": 1.2,
+  "coverage": 65.56,
+  "selective_accuracy": 77.12,
+  "abstention_rate": 34.44
+}

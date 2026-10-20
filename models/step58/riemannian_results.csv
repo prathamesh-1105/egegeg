@@ -1,0 +1,3 @@
+feature_representation,dev_cv_accuracy,dev_cv_macro_f1
+FBCSP Features (Standard),40.67,38.36
+Riemannian Tangent Space (LWF Covariance),40.83,34.74

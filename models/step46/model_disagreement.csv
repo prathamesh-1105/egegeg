@@ -1,0 +1,3 @@
+model_pair,prediction_disagreement_pct,error_complementarity
+Step 34 FBCSP vs Multi-Scale Temporal CNN,16.5,HIGH
+Step 34 FBCSP vs TCN Model,14.8,MEDIUM

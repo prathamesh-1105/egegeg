@@ -1,0 +1,2 @@
+architecture,val_accuracy,val_macro_f1,parameters,latency_ms
+Dilated Temporal Convolutional Network (TCN),76.8,71.0,82000,21.0

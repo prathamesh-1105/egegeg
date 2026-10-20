@@ -1,0 +1,4 @@
+loss_function,val_accuracy
+Standard Cross-Entropy,77.2
+Class-Weighted Cross-Entropy,77.5
+Focal Loss (gamma=2.0),77.0

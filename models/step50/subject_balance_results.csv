@@ -1,0 +1,3 @@
+strategy,cv_accuracy
+Uniform Trial Sampling,77.2
+Subject-Balanced Uniform Weighting,77.5

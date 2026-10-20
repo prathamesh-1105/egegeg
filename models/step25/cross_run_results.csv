@@ -1,0 +1,3 @@
+experiment,train_runs,test_run,step17b_accuracy,step24_accuracy,accuracy_delta,step17b_macro_f1,step24_macro_f1,macro_f1_delta,domain
+Experiment_A_Task1_Execution,R03 + R07,R11,71.33,57.33,-14.0,66.02,44.1,-21.92,Motor Execution
+Experiment_B_Task2_Imagery,R04 + R08,R12,67.33,51.0,-16.33,59.51,35.18,-24.33,Motor Imagery

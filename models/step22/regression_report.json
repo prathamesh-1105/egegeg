@@ -1,0 +1,23 @@
+{
+  "step17b_official_benchmark_parity": {
+    "accuracy": 71.33,
+    "macro_f1": 66.02,
+    "rest_recall": 90.0,
+    "left_fist_recall": 51.32,
+    "right_fist_recall": 54.05,
+    "benchmark_preserved": true,
+    "held_out_run": "R11",
+    "subjects_evaluated": [
+      "S001",
+      "S002",
+      "S003",
+      "S004",
+      "S005",
+      "S006",
+      "S007",
+      "S008",
+      "S009",
+      "S010"
+    ]
+  }
+}

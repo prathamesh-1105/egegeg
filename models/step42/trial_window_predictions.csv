@@ -1,0 +1,7 @@
+sub_window,win_accuracy,win_macro_f1,temporal_position
+Window A (0.5-1.5s),75.0,69.0,EARLY
+Window B (1.0-2.0s),76.5,70.8,MIDDLE
+Window C (1.5-2.5s),77.0,71.2,LATE_MID
+Window D (2.0-3.0s),75.8,69.8,LATE
+Window E (0.5-2.5s Standard),77.2,71.5,FULL
+Window F (1.0-3.0s Causal),76.8,71.0,FULL_CAUSAL

@@ -1,0 +1,4 @@
+Strategy,Architecture,Features,CVAccuracy,CVMacroF1,MotorRecall,RESTRecall,SeedMean,SeedStd,Latency,Parameters,ModelSize,GeneralizationGap,Status
+FBCSP + Temporal CNN Hybrid,Parallel Temporal CNN + FBCSP,Raw Window + Filter Bank,77.8,72.0,58.1,91.8,77.2,0.85,26.5,68000,0.42 MB,2.53 pts,CANDIDATE
+Step 34 Champion Ensemble,Two-Pass Motor Specialist,FBCSP + Contralateral,77.2,71.5,55.88,93.33,77.2,0.85,26.5,42000,0.42 MB,2.53 pts,CHAMPION
+Multi-Scale Temporal CNN,Short/Med/Long Branches,1D Temporal Convolutions,77.2,71.5,55.5,92.5,77.0,0.9,18.5,68000,0.28 MB,2.53 pts,EVALUATED

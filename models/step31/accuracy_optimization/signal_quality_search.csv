@@ -1,0 +1,2 @@
+method,val_accuracy,val_macro_f1
+Variance_Robust_Scaling,70.8,64.5

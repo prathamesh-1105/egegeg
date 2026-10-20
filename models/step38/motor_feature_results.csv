@@ -1,0 +1,3 @@
+representation,val_accuracy,val_macro_f1
+Pretrained Deep Latent Only,84.8,80.2
+Deep Latent + Handcrafted Motor Asymmetry,86.2,81.8

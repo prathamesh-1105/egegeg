@@ -1,0 +1,4 @@
+confidence_tier,raw_accuracy,selective_accuracy,coverage,abstention_rate
+High Confidence (P > 0.70),74.67,89.5,0.65,0.0
+Medium Confidence (0.45 < P <= 0.70),74.67,76.2,0.25,0.0
+Low Confidence (P <= 0.45),74.67,54.0,0.1,0.1

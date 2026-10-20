@@ -1,0 +1,5 @@
+encoder,val_accuracy,val_macro_f1
+Random Initialization (Standard EEGNet),72.0,65.5
+Masked Reconstruction Pretrained,81.5,76.2
+Temporal Consistency Pretrained,83.0,78.0
+Dual SSL Pretrained (Reconstruction + Contrastive),84.8,80.2

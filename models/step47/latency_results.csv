@@ -1,0 +1,5 @@
+component,latency_ms
+Signal Quality Profiler & Preprocessing,4.0
+Multi-Window Evidence & Baseline ERD%,12.5
+Continuous Motor Direction Score & OOF Fusion,10.0
+Total Single-Window Pipeline Latency,26.5

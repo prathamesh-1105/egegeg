@@ -1,0 +1,11 @@
+subject,total_windows,total_errors,accuracy,macro_f1,LEFT->REST,RIGHT->REST,LEFT->RIGHT,RIGHT->LEFT,primary_error_type
+S001,30,11,63.33,54.01,4,4,1,1,Motor-vs-REST Confusion
+S002,30,7,76.67,74.6,0,1,3,0,Lateral Asymmetry Overlap
+S003,30,9,70.0,65.24,0,1,1,4,Lateral Asymmetry Overlap
+S004,30,4,86.67,83.56,1,1,1,1,Lateral Asymmetry Overlap
+S005,30,12,60.0,48.3,4,3,2,2,Motor-vs-REST Confusion
+S006,30,12,60.0,45.07,3,6,0,2,Motor-vs-REST Confusion
+S007,30,6,80.0,76.43,2,3,1,0,Motor-vs-REST Confusion
+S008,30,9,70.0,56.81,2,3,1,3,Motor-vs-REST Confusion
+S009,30,8,73.33,64.13,2,3,0,3,Motor-vs-REST Confusion
+S010,30,10,66.67,63.1,2,3,1,1,Motor-vs-REST Confusion

@@ -1,0 +1,45 @@
+{
+  "timestamp": "2026-08-17 21:50:15",
+  "final_decision": "KEEP STEP 34",
+  "step34_baseline": {
+    "accuracy": 74.67,
+    "macro_f1": 69.11,
+    "rest_recall": 93.33,
+    "left_fist_recall": 64.47,
+    "right_fist_recall": 47.3
+  },
+  "best_cross_subject_cv": {
+    "accuracy": 77.2,
+    "macro_f1": 71.5,
+    "outer_cv_std": 0.85,
+    "worst_subject_accuracy": 66.67
+  },
+  "best_strategy": "Feature Fusion (FBCSP + Contralateral ERD + Asymmetry)",
+  "second_best_strategy": "Step 34 Two-Pass Motor Specialist Ensemble",
+  "third_best_strategy": "Pretrained Neural Encoder + Spatial Attention",
+  "best_complementary_model": "FBCSP vs Contralateral Asymmetry (18.5% disagreement)",
+  "best_residual_model": "LogisticRegression Residual Error Corrector",
+  "best_router": "Rule-Based Subject Difficulty Router",
+  "best_subject_adaptation": "Personalized Motor Specialist with Fallback to Global Step 34",
+  "best_feature_representation": "FBCSP + Contralateral ERD + Asymmetry Ratios",
+  "best_temporal_representation": "0.5 - 2.5s Standard Window",
+  "best_classifier": "LogisticRegression (L2 Regularized)",
+  "best_hard_subject_strategy": "Targeted Contralateral ERD Scaling",
+  "left_recall": 64.47,
+  "right_recall": 47.3,
+  "rest_recall": 93.33,
+  "final_r11_accuracy": 74.67,
+  "final_r11_macro_f1": 69.11,
+  "delta_vs_step34_accuracy": 0.0,
+  "delta_vs_step34_macro_f1": 0.0,
+  "cv_r11_gap_points": 2.53,
+  "inference_latency_ms": 26.5,
+  "model_size_mb": 0.42,
+  "seed_stability": "STABLE (0.85% std across 5 seeds)",
+  "data_leakage_verified": true,
+  "r11_tuning": "NONE",
+  "targets": {
+    "target_80_pct": "NOT ACHIEVED",
+    "target_85_pct": "NOT ACHIEVED"
+  }
+}

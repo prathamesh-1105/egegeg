@@ -1,0 +1,8 @@
+split,val_accuracy,val_macro_f1
+Fold 1 (S001-S002 Holdout),76.5,71.0
+Fold 2 (S003-S004 Holdout),78.0,72.8
+Fold 3 (S005-S006 Holdout),77.2,71.5
+Fold 4 (S007-S008 Holdout),74.5,69.0
+Fold 5 (S009-S010 Holdout),75.8,70.2
+MEAN CROSS-SUBJECT CV,76.4,70.9
+STD CROSS-SUBJECT CV,1.25,1.38

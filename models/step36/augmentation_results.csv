@@ -1,0 +1,3 @@
+method,val_accuracy,val_macro_f1
+NO AUGMENTATION,40.0,34.34
+TRAINING AUGMENTATION (Scaling + Noise),25.83,24.44

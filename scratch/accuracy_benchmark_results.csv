@@ -1,0 +1,23 @@
+experiment,dev_group_kfold,r11_accuracy,macro_f1,rest_recall,left_recall,right_recall,latency_ms
+Step60 Champion (RegLDA),64.0,70.67,65.78,88.0,56.58,50.0,0.45
+Step61 Multimodal Ensemble,63.17,72.0,67.23,89.33,57.89,51.35,0.79
+Raw EEG + Bandpower Baseline,49.67,49.67,39.11,78.67,23.68,17.57,0.75
+Standard FBCSP Baseline,67.33,70.67,65.28,88.67,51.32,54.05,0.56
+FBCSP + ERD Features,66.83,70.67,65.34,88.67,51.32,54.05,0.52
+FBCSP + Riemannian Features,68.83,70.33,64.55,89.33,52.63,50.0,0.55
+FBCSP + ERD + Riemannian Fusion,68.83,70.33,64.55,89.33,52.63,50.0,0.53
+Subject Peak Freq Adaptation,64.0,70.67,65.78,88.0,56.58,50.0,0.52
+Window Length 2.0s,62.5,65.67,57.86,91.33,48.68,31.08,0.38
+Window Length 4.0s,54.67,68.67,63.62,87.33,43.42,56.76,0.35
+Window Length 5.0s,58.97,69.66,63.36,90.0,47.14,48.57,0.53
+Post-Event Offset 0.0s,52.83,60.33,53.57,82.67,36.84,39.19,0.46
+Post-Event Offset 1.0s,65.5,72.33,67.11,92.0,48.68,56.76,23.56
+Post-Event Offset 1.5s,52.83,60.33,53.57,82.67,36.84,39.19,1.11
+Post-Event Offset 2.0s,52.83,60.33,53.57,82.67,36.84,39.19,0.91
+Classifier Sweep: shrinkage_lda,64.5,71.33,66.09,90.67,53.95,50.0,5.0
+Classifier Sweep: logreg,61.5,70.67,64.37,93.33,55.26,40.54,8.67
+Classifier Sweep: linear_svm,62.17,70.0,64.36,91.33,52.63,44.59,17.11
+Class Weighting Balanced,59.83,71.33,65.97,90.67,53.95,50.0,0.76
+REST Threshold th=0.5,63.17,72.0,67.23,89.33,57.89,51.35,0.87
+REST Threshold th=0.65,63.17,72.0,67.23,89.33,57.89,51.35,0.68
+REST Threshold th=0.7,63.17,72.0,67.23,89.33,57.89,51.35,23.24

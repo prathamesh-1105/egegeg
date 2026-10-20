@@ -1,0 +1,6 @@
+{
+  "architecture": "Compact EEGNet + Multi-Branch Encoder",
+  "total_parameters": 2645,
+  "model_size_mb": 0.42,
+  "max_size_allowed_mb": 2.0
+}

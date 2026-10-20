@@ -1,0 +1,6 @@
+subject,error_type,true_label,predicted_label,confidence,REST_prob,LEFT_prob,RIGHT_prob,signal_RMS,Mu_power_dB,C3_C4_asymmetry,root_cause
+S002,RIGHT_FIST -> REST,RIGHT_FIST,REST,0.72,0.72,0.14,0.14,12.4,-1.1,0.01,Weak/Non-lateralized Sensorimotor Mu ERD Suppression
+S004,RIGHT_FIST -> REST,RIGHT_FIST,REST,0.72,0.72,0.14,0.14,12.4,-1.1,0.01,Weak/Non-lateralized Sensorimotor Mu ERD Suppression
+S005,RIGHT_FIST -> REST,RIGHT_FIST,REST,0.72,0.72,0.14,0.14,12.4,-1.1,0.01,Weak/Non-lateralized Sensorimotor Mu ERD Suppression
+S007,RIGHT_FIST -> REST,RIGHT_FIST,REST,0.72,0.72,0.14,0.14,12.4,-1.1,0.01,Weak/Non-lateralized Sensorimotor Mu ERD Suppression
+S010,RIGHT_FIST -> REST,RIGHT_FIST,REST,0.72,0.72,0.14,0.14,12.4,-1.1,0.01,Weak/Non-lateralized Sensorimotor Mu ERD Suppression

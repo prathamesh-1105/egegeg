@@ -1,0 +1,4 @@
+strategy,val_accuracy,val_macro_f1,rest_recall,left_recall,right_recall
+Unweighted Standard Loss,73.5,66.0,94.0,60.0,44.0
+Class-Balanced Weighting,40.0,34.33994823123383,93.3,64.5,47.3
+Sample Subsampling Balance,74.0,67.5,91.0,63.0,46.0

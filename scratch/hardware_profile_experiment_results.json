@@ -1,0 +1,20 @@
+{
+  "trials_count": 300,
+  "condition_a_gt15": {
+    "accuracy": 67.67,
+    "f1": 62.24,
+    "latency_ms": 10.51
+  },
+  "condition_b_cyton_daisy16": {
+    "accuracy": 67.67,
+    "f1": 62.24,
+    "latency_ms": 10.35,
+    "info_preserved": "100.0%"
+  },
+  "condition_c_cyton8_interp": {
+    "accuracy": 46.33,
+    "f1": 45.1,
+    "latency_ms": 10.49,
+    "accuracy_drop": 21.33
+  }
+}

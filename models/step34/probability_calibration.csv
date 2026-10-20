@@ -1,0 +1,4 @@
+method,brier_score,ece,status
+Uncalibrated Step 33 Probabilities,0.1488,0.1471,BASELINE
+Platt Scaling (Sigmoid Validation),0.1354,0.1251,CALIBRATED
+Isotonic Regression,0.1309,0.1207,CALIBRATED

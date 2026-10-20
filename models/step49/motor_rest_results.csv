@@ -1,0 +1,2 @@
+stage,cv_accuracy,cv_macro_f1
+Stage 1: REST vs MOTOR Classifier,82.5,78.0

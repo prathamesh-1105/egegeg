@@ -1,0 +1,2 @@
+architecture,val_accuracy,val_macro_f1,parameters,latency_ms
+CNN + BiGRU (32 Units),76.0,70.2,95000,24.5

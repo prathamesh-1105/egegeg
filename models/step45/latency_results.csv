@@ -1,0 +1,5 @@
+component,latency_ms
+Step 34 FBCSP Base Probabilities,4.0
+Error Window Detection & Motor Specialist,12.5
+Two-Pass Decision Recovery & Evidence Fusion,10.0
+Total Single-Window Pipeline Latency,26.5

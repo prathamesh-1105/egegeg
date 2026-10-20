@@ -1,0 +1,6 @@
+error_id,subject,true_class,pred_class,confidence,c3_erd,c4_erd,cause
+1,S002,RIGHT_FIST,REST,0.68,-0.05,-0.22,Weak Left-Hemisphere C3 ERD
+2,S004,RIGHT_FIST,REST,0.71,-0.08,-0.2,Weak Left-Hemisphere C3 ERD
+3,S005,LEFT_FIST,REST,0.64,-0.15,-0.06,Low Signal-to-Noise Ratio
+4,S007,RIGHT_FIST,LEFT_FIST,0.55,-0.18,-0.21,Symmetric Bithreshold ERD
+5,S010,RIGHT_FIST,REST,0.62,-0.04,-0.19,Weak Left-Hemisphere C3 ERD

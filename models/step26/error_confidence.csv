@@ -1,0 +1,2 @@
+total_predictions,mean_confidence_correct,mean_confidence_wrong,high_confidence_wrong_count,high_confidence_wrong_rate,model_calibration_assessment
+180,0.8279,0.6854,34,18.89,WELL_CALIBRATED

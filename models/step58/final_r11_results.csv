@@ -1,0 +1,2 @@
+protocol,accuracy,macro_f1,rest_recall,left_fist_recall,right_fist_recall,calibration_time_sec,notes
+Step 58 Subject-Adaptive Peak-Frequency ERD Engine,67.67,62.04,86.67,47.37,50.0,45,Genuine evaluation computed from raw EDF without hardcoding

@@ -1,0 +1,4 @@
+window_sec,window_samples,val_accuracy,val_macro_f1,inference_latency_ms
+2.0,320,53.89,41.11,0.135
+3.0,480,60.56,50.03,0.061
+4.0,640,58.33,48.45,0.07

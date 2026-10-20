@@ -1,0 +1,2 @@
+total_windows_inspected,valid_windows,rejected_windows,rejected_nan_inf,rejected_extreme_amplitude_gt_500uV,rejected_flatline,valid_percentage
+900,900,0,0,0,0,100.0

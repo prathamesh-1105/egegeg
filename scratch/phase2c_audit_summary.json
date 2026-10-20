@@ -1,0 +1,103 @@
+{
+  "step62_verified_metrics": {
+    "accuracy": 72.67,
+    "macro_f1": 67.31,
+    "rest_recall": 90.67,
+    "left_fist_recall": 56.58,
+    "right_fist_recall": 52.7,
+    "subject_mean_acc": 72.67,
+    "subject_std_acc": 10.41,
+    "mean_inference_latency_ms": 13.32,
+    "p95_inference_latency_ms": 15.99,
+    "confusion_matrix": [
+      [
+        136,
+        3,
+        11
+      ],
+      [
+        12,
+        43,
+        21
+      ],
+      [
+        19,
+        16,
+        39
+      ]
+    ]
+  },
+  "unseen_subject_fallback_to_s001": {
+    "overall_accuracy": 39.33,
+    "overall_macro_f1": 39.12,
+    "confusion_matrix": [
+      [
+        43,
+        79,
+        28
+      ],
+      [
+        9,
+        47,
+        20
+      ],
+      [
+        11,
+        35,
+        28
+      ]
+    ],
+    "per_subject": [
+      {
+        "subject": "S001",
+        "accuracy": 56.67,
+        "macro_f1": 48.86
+      },
+      {
+        "subject": "S002",
+        "accuracy": 26.67,
+        "macro_f1": 19.17
+      },
+      {
+        "subject": "S003",
+        "accuracy": 33.33,
+        "macro_f1": 33.01
+      },
+      {
+        "subject": "S004",
+        "accuracy": 23.33,
+        "macro_f1": 21.03
+      },
+      {
+        "subject": "S005",
+        "accuracy": 33.33,
+        "macro_f1": 27.27
+      },
+      {
+        "subject": "S006",
+        "accuracy": 46.67,
+        "macro_f1": 43.37
+      },
+      {
+        "subject": "S007",
+        "accuracy": 33.33,
+        "macro_f1": 33.33
+      },
+      {
+        "subject": "S008",
+        "accuracy": 30.0,
+        "macro_f1": 24.97
+      },
+      {
+        "subject": "S009",
+        "accuracy": 56.67,
+        "macro_f1": 38.56
+      },
+      {
+        "subject": "S010",
+        "accuracy": 53.33,
+        "macro_f1": 52.78
+      }
+    ]
+  }
+}

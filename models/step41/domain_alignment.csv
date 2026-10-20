@@ -1,0 +1,5 @@
+alignment,outer_cv_acc,outer_cv_f1
+Baseline (No Alignment),76.0,70.0
+Euclidean Mean Alignment,76.8,71.0
+Riemannian Mean Alignment,77.2,71.4
+CORAL Covariance Alignment,77.5,71.8

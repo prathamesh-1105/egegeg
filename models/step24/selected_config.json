@@ -1,0 +1,10 @@
+{
+  "filter_bank_name": "Bank_A",
+  "n_components_per_bank": 2,
+  "k_best_features": 12,
+  "classifier_name": "Logistic_Regression",
+  "class_weight": "Custom_1.0_1.25_1.35",
+  "rest_probability_bias": 0.85,
+  "temporal_strategy": "A_Raw_Prediction",
+  "ensemble_config": "Single_Best_FBCSP"
+}

@@ -1,0 +1,5 @@
+base_model,oof_val_accuracy
+FBCSP Bank_A Classifier,77.2
+Riemannian Tangent Space Classifier,76.8
+Multi-Branch Neural Sequence Encoder,77.2
+OOF Meta-Stacker Candidate,77.8

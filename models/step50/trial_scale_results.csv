@@ -1,0 +1,5 @@
+trial_percent,cv_accuracy
+25,71.0
+50,75.0
+75,76.5
+100,77.2

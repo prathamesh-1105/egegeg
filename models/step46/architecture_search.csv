@@ -1,0 +1,7 @@
+architecture,val_accuracy,val_macro_f1,parameters,latency_ms
+"1D Temporal CNN (Kernel=7, Dilation=1)",76.5,70.8,45000,12.0
+Multi-Scale Temporal CNN (Short/Med/Long),77.2,71.5,68000,18.5
+Dilated Temporal Convolutional Network (TCN),76.8,71.0,82000,21.0
+CNN + BiGRU (32 Units),76.0,70.2,95000,24.5
+CNN + BiLSTM (32 Units),75.8,70.0,110000,26.0
+"Lightweight Temporal Transformer (2 Layers, 4 Heads)",76.2,70.5,140000,28.5

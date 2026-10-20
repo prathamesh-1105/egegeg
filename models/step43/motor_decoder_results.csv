@@ -1,0 +1,3 @@
+architecture,cv_accuracy,cv_macro_f1
+Single 3-Class Classifier (Baseline),77.2,71.5
+"Two-Head Decoder (HEAD1: REST/MOTOR, HEAD2: LEFT/RIGHT)",77.8,72.0

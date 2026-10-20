@@ -1,0 +1,51 @@
+{
+  "session_id": "session_20260815_192159",
+  "timestamp": "2026-08-15T19:21:59.454183",
+  "device_name": "OpenBCI Cyton + Daisy",
+  "sampling_rate_hz": 160.0,
+  "channel_names": [
+    "Ch1",
+    "Ch2",
+    "Ch3",
+    "Ch4",
+    "Ch5",
+    "Ch6",
+    "Ch7",
+    "Ch8",
+    "Ch9",
+    "Ch10",
+    "Ch11",
+    "Ch12",
+    "Ch13",
+    "Ch14",
+    "Ch15"
+  ],
+  "channel_count": 15,
+  "total_samples": 0,
+  "duration_sec": 0.0,
+  "events_count": 3,
+  "events": [
+    {
+      "event_label": "REST",
+      "label_type": "USER-PROVIDED CALIBRATION LABEL",
+      "timestamp_utc": "2026-08-15T13:51:59.454183",
+      "relative_sec": 0.0,
+      "sample_index": 0
+    },
+    {
+      "event_label": "LEFT_FIST",
+      "label_type": "USER-PROVIDED CALIBRATION LABEL",
+      "timestamp_utc": "2026-08-15T13:51:59.454183",
+      "relative_sec": 0.0,
+      "sample_index": 0
+    },
+    {
+      "event_label": "RIGHT_FIST",
+      "label_type": "USER-PROVIDED CALIBRATION LABEL",
+      "timestamp_utc": "2026-08-15T13:51:59.454183",
+      "relative_sec": 0.0,
+      "sample_index": 0
+    }
+  ],
+  "raw_eeg_uv": []
+}

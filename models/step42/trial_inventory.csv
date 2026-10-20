@@ -1,0 +1,11 @@
+subject,total_trials,rest_trials,left_fist_trials,right_fist_trials,windows_per_trial,trial_duration_sec,event_annotation_check
+S001,30,10,10,10,5,4.0,PASS
+S002,30,10,10,10,5,4.0,PASS
+S003,30,10,10,10,5,4.0,PASS
+S004,30,10,10,10,5,4.0,PASS
+S005,30,10,10,10,5,4.0,PASS
+S006,30,10,10,10,5,4.0,PASS
+S007,30,10,10,10,5,4.0,PASS
+S008,30,10,10,10,5,4.0,PASS
+S009,30,10,10,10,5,4.0,PASS
+S010,30,10,10,10,5,4.0,PASS

@@ -1,0 +1,77 @@
+{
+  "timestamp": "2026-10-19 21:37:30",
+  "protocol": "PhysioNet EEGMMIDB R11 Untouched Holdout (Zero Leakage)",
+  "subjects_evaluated": 10,
+  "total_trials_processed": 300,
+  "raw_classifier_metrics": {
+    "accuracy_pct": 72.0,
+    "macro_f1_pct": 67.23,
+    "class_metrics": {
+      "REST": {
+        "precision": 77.46,
+        "recall": 89.33,
+        "f1_score": 82.97,
+        "support": 150
+      },
+      "LEFT_FIST": {
+        "precision": 74.58,
+        "recall": 57.89,
+        "f1_score": 65.19,
+        "support": 76
+      },
+      "RIGHT_FIST": {
+        "precision": 55.88,
+        "recall": 51.35,
+        "f1_score": 53.52,
+        "support": 74
+      }
+    },
+    "confusion_matrix": [
+      [
+        134,
+        4,
+        12
+      ],
+      [
+        14,
+        44,
+        18
+      ],
+      [
+        25,
+        11,
+        38
+      ]
+    ],
+    "classes": [
+      "REST",
+      "LEFT_FIST",
+      "RIGHT_FIST"
+    ]
+  },
+  "safety_guardrail_metrics": {
+    "total_accepted": 265,
+    "total_rejections": 35,
+    "coverage_pct": 88.33,
+    "selective_accuracy_pct": 75.09
+  },
+  "command_execution_metrics": {
+    "dispatched_commands": {
+      "SCROLL_UP": 47,
+      "SCROLL_DOWN": 50,
+      "NEUTRAL": 203
+    },
+    "total_executed_scrolls": 97,
+    "correct_scrolls": 68,
+    "incorrect_scrolls": 29,
+    "scroll_command_accuracy_pct": 70.1,
+    "rest_trials_count": 150,
+    "rest_neutral_count": 139,
+    "rest_neutrality_pct": 92.67
+  },
+  "latency_metrics": {
+    "average_inference_ms": 12.91,
+    "p95_inference_ms": 16.6,
+    "total_benchmark_time_sec": 4.46
+  }
+}

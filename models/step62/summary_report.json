@@ -1,0 +1,36 @@
+{
+  "timestamp": "2026-09-12 12:37:34",
+  "model_name": "Step 62 Multi-Scale Riemannian ExtraTrees Ensemble",
+  "step58_baseline_r11_accuracy": 60.33,
+  "step59_baseline_r11_accuracy": 67.67,
+  "step60_baseline_r11_accuracy": 70.67,
+  "step61_baseline_r11_accuracy": 72.0,
+  "step62_authentic_r11_accuracy": 67.0,
+  "step62_authentic_r11_macro_f1": 60.53,
+  "rest_recall": 88.67,
+  "left_fist_recall": 48.68,
+  "right_fist_recall": 41.89,
+  "inference_latency_ms": 28.01,
+  "confusion_matrix": [
+    [
+      133,
+      6,
+      11
+    ],
+    [
+      19,
+      37,
+      20
+    ],
+    [
+      29,
+      14,
+      31
+    ]
+  ],
+  "classes": [
+    "REST",
+    "LEFT_FIST",
+    "RIGHT_FIST"
+  ]
+}

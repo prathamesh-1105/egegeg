@@ -1,0 +1,33 @@
+{
+  "timestamp": "2026-08-17 21:33:29",
+  "final_decision": "KEEP STEP 34",
+  "step34_baseline": {
+    "accuracy": 74.67,
+    "macro_f1": 69.11,
+    "rest_recall": 93.33,
+    "left_fist_recall": 64.47,
+    "right_fist_recall": 47.3
+  },
+  "step39_cv": {
+    "mean_accuracy": 77.2
+  },
+  "best_cross_subject_model": "Step 34 Two-Pass Motor Specialist Ensemble",
+  "mean_cv_accuracy": 77.2,
+  "cv_std": 0.85,
+  "worst_subject_accuracy": 66.67,
+  "mean_cv_macro_f1": 71.5,
+  "left_recall": 64.47,
+  "right_recall": 47.3,
+  "rest_recall": 93.33,
+  "final_r11_accuracy": 74.67,
+  "final_r11_macro_f1": 69.11,
+  "delta_vs_step34_accuracy": 0.0,
+  "delta_vs_step34_macro_f1": 0.0,
+  "inference_latency_ms": 26.5,
+  "data_leakage_verified": true,
+  "r11_tuning": "NONE",
+  "targets": {
+    "target_80_pct": "NOT ACHIEVED",
+    "target_85_pct": "NOT ACHIEVED"
+  }
+}

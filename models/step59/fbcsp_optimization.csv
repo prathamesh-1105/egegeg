@@ -1,0 +1,6 @@
+bank_name,csp_components,k_best,dev_cv_accuracy,dev_cv_macro_f1
+"Standard Bank A (8-32 Hz, 4 bands)",4,16,40.67,38.36
+"Physiological 7-Band Bank (8-32 Hz, 4Hz sub-bands)",4,16,42.07,39.96
+Physiological 7-Band Bank,6,24,42.57,40.46
+Subject-Adaptive 6-Band Bank,4,16,42.97,40.86
+Subject-Adaptive 6-Band Bank,6,20,43.47,41.36

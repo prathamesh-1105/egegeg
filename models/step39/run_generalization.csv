@@ -1,0 +1,5 @@
+transfer_task,accuracy,macro_f1,transfer_type
+R03 -> R07 (Intra-Session Transfer),88.5,84.2,SAME_SESSION
+R03/R07 -> R11 (Cross-Session Transfer),74.67,69.11,NEW_SESSION
+R03 -> R11,73.5,67.8,NEW_SESSION
+R07 -> R11,74.0,68.2,NEW_SESSION

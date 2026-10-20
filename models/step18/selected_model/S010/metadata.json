@@ -1,0 +1,12 @@
+{
+  "subject": "S010",
+  "pipeline": "Step 17B Advanced Motor Imagery Classifier",
+  "winning_representation": "Representation C: Filter Bank CSP (FBCSP)",
+  "classes": [
+    "LEFT_FIST",
+    "REST",
+    "RIGHT_FIST"
+  ],
+  "step18_verified": true,
+  "r11_holdout_accuracy": 73.33
+}

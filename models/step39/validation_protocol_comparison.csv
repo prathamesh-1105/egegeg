@@ -1,0 +1,4 @@
+protocol,val_accuracy,val_macro_f1,predictiveness_of_r11
+A. Window-Level Stratified CV (Random),92.5,89.2,POOR (Overoptimistic)
+B. Trial-Grouped Stratified CV,87.2,83.0,MODERATE
+C. Strict Leave-Subject-Out CV (GroupKFold),76.5,71.0,HIGH (Realistic)

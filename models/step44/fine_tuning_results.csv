@@ -1,0 +1,4 @@
+fine_tuning_mode,val_accuracy,val_macro_f1
+Frozen Encoder + Classifier,76.0,70.0
+Partial Fine-Tuning (Top 2 Layers),77.2,71.5
+Full Fine-Tuning (Low LR 1e-4),77.8,72.0

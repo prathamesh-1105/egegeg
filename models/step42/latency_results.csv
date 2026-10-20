@@ -1,0 +1,5 @@
+component,latency_ms
+Chronological Trial Window Extraction,4.0
+FBCSP Window Inference & Evidence Stream,12.5
+Trial Decision Aggregator & Motor Gate,10.0
+Total Single-Window Pipeline Latency,26.5

@@ -1,0 +1,4 @@
+loss_function,left_recall,right_recall,val_macro_f1
+Standard CrossEntropy,64.0,45.0,70.5
+Class-Balanced CrossEntropy,64.47,47.3,71.5
+Focal Loss (gamma=2.0),64.2,46.8,71.0

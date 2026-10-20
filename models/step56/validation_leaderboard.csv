@@ -1,0 +1,4 @@
+Protocol,CVAccuracy,CVMacroF1,R11Accuracy,R11MacroF1,Latency,Status
+Step 56 Independent Unseen-Run Champion (R03/R07 calib -> R11 test),85.8,82.0,85.8,82.0,26.5,PROMOTED STEP 56 CHAMPION
+Step 55 Unseen-Run Baseline (R03/R07 calib -> R11 test),84.5,80.5,84.5,80.5,26.5,PREVIOUS UNSEEN-RUN CHAMPION
+Step 34 Zero-Shot Champion (0 trials = 0s),77.2,71.5,74.67,69.11,26.5,PROMOTED ZERO-SHOT CHAMPION

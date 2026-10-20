@@ -1,0 +1,4 @@
+Model,Features,Bands,Window,Channels,Classifier,Accuracy,Macro F1,LEFT recall,RIGHT recall,REST recall,Latency
+Step 36 Scaled Global FBCSP Ensemble,FBCSP + Asymmetry + PSD (Scaled Subjects),Bank_A,0.5-2.5s,15,LogisticRegression,80.5,75.2,71.5,68.0,93.5,27.5
+Step 34 Two-Pass Motor Specialist Ensemble,FBCSP + Asymmetry + PSD + Specialist,Bank_A,0.5-2.5s,15,Two-Pass Cascade,78.5,73.2,68.0,66.5,92.5,26.5
+Step 24 FBCSP Baseline,FBCSP,Bank_A,3.0s,15,LogisticRegression,70.67,64.33,59.21,39.19,92.0,27.25

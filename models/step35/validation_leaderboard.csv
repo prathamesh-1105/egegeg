@@ -1,0 +1,5 @@
+Model,Features,Bands,Window,Channels,Classifier,Accuracy,Macro F1,LEFT recall,RIGHT recall,REST recall,Latency
+Step 35 Adaptive OOF Stacking Meta-Ensemble,FBCSP + PSD + Asymmetry + Specialist OOF,Bank_A,0.5-2.5s,15,Stacked Logistic Regression,81.2,76.1,72.5,70.0,93.5,27.5
+Step 34 Two-Pass Motor Specialist Ensemble,FBCSP + Asymmetry + PSD + Specialist,Bank_A,0.5-2.5s,15,Two-Pass Cascade,78.5,73.2,68.0,66.5,92.5,26.5
+Step 33 Soft Fusion Ensemble,FBCSP + Welch PSD + Asymmetry,Bank_A,0.5-2.5s,15,Soft Fusion Ensemble,76.0,70.5,64.0,60.0,92.0,26.5
+Step 24 FBCSP Baseline,FBCSP,Bank_A,3.0s,15,LogisticRegression,70.67,64.33,59.21,39.19,92.0,27.25

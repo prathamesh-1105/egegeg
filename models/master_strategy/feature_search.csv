@@ -1,0 +1,4 @@
+representation,cv_accuracy
+FBCSP Bank_A Features,76.5
+Contralateral ERD + Asymmetry Ratios,77.2
+Neural Spatial-Temporal Embedding,77.0

@@ -1,0 +1,13 @@
+{
+  "subject": "S002",
+  "pipeline": "Step 14: Config B: Event-Aligned (0.5s offset) + Riemannian",
+  "channel_group": "Group B",
+  "use_event_alignment": true,
+  "use_motor_spectral": false,
+  "use_csp": false,
+  "classes": [
+    "LEFT_FIST",
+    "REST",
+    "RIGHT_FIST"
+  ]
+}

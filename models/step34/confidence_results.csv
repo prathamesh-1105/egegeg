@@ -1,0 +1,5 @@
+confidence_threshold,raw_accuracy,selective_accuracy,coverage_pct,rejection_pct
+None (Full Coverage),70.67,70.67,100.0,0.0
+Pmax > 0.50,70.67,74.17,92.5,7.5
+Pmax > 0.60,70.67,77.87,84.0,16.0
+Pmax > 0.70,70.67,82.17,71.0,29.0

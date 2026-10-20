@@ -1,0 +1,1305 @@
+{
+  "timestamp": "2026-10-20 15:52:41",
+  "dataset": "PhysioNet EEGMMIDB (S001-S010, Runs R03, R07, R11)",
+  "evaluation_protocol": {
+    "development_set": "R03 + R07 (600 trials, 5-Fold Stratified CV)",
+    "holdout_test_set": "R11 (300 trials, single-pass frozen evaluation)",
+    "cross_subject_loso": "Leave-One-Subject-Out across 10 subjects (900 trials total)",
+    "classes": [
+      "REST",
+      "LEFT_FIST",
+      "RIGHT_FIST"
+    ]
+  },
+  "ranked_candidates": [
+    {
+      "id": "exp_07_correct_laplacian_tri_ensemble",
+      "name": "Correct Montage: Anatomical Laplacian + Calibrated Balanced Tri-Ensemble",
+      "dev_cv_accuracy": 71.17,
+      "dev_cv_balanced_acc": 65.75,
+      "dev_cv_macro_f1": 65.91,
+      "dev_cv_sub_std": 13.97,
+      "r11_accuracy": 71.67,
+      "r11_balanced_acc": 65.54,
+      "r11_macro_f1": 66.21,
+      "r11_rest_recall": 90.0,
+      "r11_left_recall": 55.26,
+      "r11_right_recall": 51.35,
+      "r11_rest_false_actuation": 10.0,
+      "r11_latency_ms": 0.73
+    },
+    {
+      "id": "exp_01_baseline_step62_repro",
+      "name": "Step 62 Historical Baseline (Corrupted Indices + Tri-Ensemble)",
+      "dev_cv_accuracy": 70.17,
+      "dev_cv_balanced_acc": 65.21,
+      "dev_cv_macro_f1": 65.3,
+      "dev_cv_sub_std": 11.7,
+      "r11_accuracy": 73.0,
+      "r11_balanced_acc": 67.3,
+      "r11_macro_f1": 68.0,
+      "r11_rest_recall": 90.0,
+      "r11_left_recall": 59.21,
+      "r11_right_recall": 52.7,
+      "r11_rest_false_actuation": 10.0,
+      "r11_latency_ms": 0.69
+    },
+    {
+      "id": "exp_08_correct_laplacian_k28_ensemble",
+      "name": "Correct Montage: Anatomical Laplacian + Tri-Ensemble (k=28)",
+      "dev_cv_accuracy": 70.67,
+      "dev_cv_balanced_acc": 65.09,
+      "dev_cv_macro_f1": 65.28,
+      "dev_cv_sub_std": 13.09,
+      "r11_accuracy": 73.33,
+      "r11_balanced_acc": 67.75,
+      "r11_macro_f1": 68.6,
+      "r11_rest_recall": 90.0,
+      "r11_left_recall": 59.21,
+      "r11_right_recall": 54.05,
+      "r11_rest_false_actuation": 10.0,
+      "r11_latency_ms": 0.73
+    },
+    {
+      "id": "exp_03_correct_car_lda",
+      "name": "Correct Montage: CAR + Shrinkage LDA",
+      "dev_cv_accuracy": 32.83,
+      "dev_cv_balanced_acc": 43.77,
+      "dev_cv_macro_f1": 29.2,
+      "dev_cv_sub_std": 9.34,
+      "r11_accuracy": 31.33,
+      "r11_balanced_acc": 41.86,
+      "r11_macro_f1": 27.95,
+      "r11_rest_recall": 0.0,
+      "r11_left_recall": 53.95,
+      "r11_right_recall": 71.62,
+      "r11_rest_false_actuation": 100.0,
+      "r11_latency_ms": 0.17
+    },
+    {
+      "id": "exp_02_correct_raw_lda",
+      "name": "Correct Montage: Raw Channels + Shrinkage LDA",
+      "dev_cv_accuracy": 32.17,
+      "dev_cv_balanced_acc": 42.89,
+      "dev_cv_macro_f1": 28.67,
+      "dev_cv_sub_std": 8.5,
+      "r11_accuracy": 35.0,
+      "r11_balanced_acc": 46.68,
+      "r11_macro_f1": 31.5,
+      "r11_rest_recall": 0.0,
+      "r11_left_recall": 68.42,
+      "r11_right_recall": 71.62,
+      "r11_rest_false_actuation": 100.0,
+      "r11_latency_ms": 0.17
+    },
+    {
+      "id": "exp_06_correct_laplacian_hierarchical",
+      "name": "Correct Montage: Anatomical Laplacian + Hierarchical 2-Stage Decoder",
+      "dev_cv_accuracy": 32.17,
+      "dev_cv_balanced_acc": 42.88,
+      "dev_cv_macro_f1": 28.59,
+      "dev_cv_sub_std": 9.83,
+      "r11_accuracy": 33.0,
+      "r11_balanced_acc": 44.05,
+      "r11_macro_f1": 29.37,
+      "r11_rest_recall": 0.0,
+      "r11_left_recall": 60.53,
+      "r11_right_recall": 71.62,
+      "r11_rest_false_actuation": 100.0,
+      "r11_latency_ms": 0.44
+    },
+    {
+      "id": "exp_04_correct_laplacian_lda",
+      "name": "Correct Montage: True Anatomical Surface Laplacian + Shrinkage LDA",
+      "dev_cv_accuracy": 31.33,
+      "dev_cv_balanced_acc": 41.76,
+      "dev_cv_macro_f1": 27.93,
+      "dev_cv_sub_std": 10.3,
+      "r11_accuracy": 33.0,
+      "r11_balanced_acc": 44.04,
+      "r11_macro_f1": 29.61,
+      "r11_rest_recall": 0.0,
+      "r11_left_recall": 61.84,
+      "r11_right_recall": 70.27,
+      "r11_rest_false_actuation": 100.0,
+      "r11_latency_ms": 0.18
+    },
+    {
+      "id": "exp_05_correct_laplacian_balanced_svm",
+      "name": "Correct Montage: Anatomical Laplacian + Class-Weighted RBF SVM",
+      "dev_cv_accuracy": 31.0,
+      "dev_cv_balanced_acc": 41.34,
+      "dev_cv_macro_f1": 27.57,
+      "dev_cv_sub_std": 10.57,
+      "r11_accuracy": 32.33,
+      "r11_balanced_acc": 43.16,
+      "r11_macro_f1": 28.76,
+      "r11_rest_recall": 0.0,
+      "r11_left_recall": 59.21,
+      "r11_right_recall": 70.27,
+      "r11_rest_false_actuation": 100.0,
+      "r11_latency_ms": 0.2
+    }
+  ],
+  "development_cv_results": {
+    "exp_01_baseline_step62_repro": {
+      "n_total": 600,
+      "accuracy": 70.17,
+      "balanced_accuracy": 65.21,
+      "macro_f1": 65.3,
+      "weighted_f1": 70.02,
+      "rest_recall": 85.0,
+      "left_recall": 56.95,
+      "right_recall": 53.69,
+      "rest_precision": 83.33,
+      "left_precision": 57.33,
+      "right_precision": 55.56,
+      "rest_false_actuation_rate": 15.0,
+      "motor_lateralization_error_rate": 27.67,
+      "confusion_matrix": [
+        [
+          255,
+          24,
+          21
+        ],
+        [
+          22,
+          86,
+          43
+        ],
+        [
+          29,
+          40,
+          80
+        ]
+      ],
+      "classes": [
+        "REST",
+        "LEFT_FIST",
+        "RIGHT_FIST"
+      ],
+      "mean_latency_ms": 0.0,
+      "sub_mean_acc": 70.17,
+      "sub_std_acc": 11.7,
+      "fold_std_acc": 15.99
+    },
+    "exp_02_correct_raw_lda": {
+      "n_total": 600,
+      "accuracy": 32.17,
+      "balanced_accuracy": 42.89,
+      "macro_f1": 28.67,
+      "weighted_f1": 21.51,
+      "rest_recall": 0.0,
+      "left_recall": 64.9,
+      "right_recall": 63.76,
+      "rest_precision": 0.0,
+      "left_precision": 35.13,
+      "right_precision": 29.6,
+      "rest_false_actuation_rate": 100.0,
+      "motor_lateralization_error_rate": 35.67,
+      "confusion_matrix": [
+        [
+          0,
+          127,
+          173
+        ],
+        [
+          0,
+          98,
+          53
+        ],
+        [
+          0,
+          54,
+          95
+        ]
+      ],
+      "classes": [
+        "REST",
+        "LEFT_FIST",
+        "RIGHT_FIST"
+      ],
+      "mean_latency_ms": 0.0,
+      "sub_mean_acc": 32.17,
+      "sub_std_acc": 8.5,
+      "fold_std_acc": 11.67
+    },
+    "exp_03_correct_car_lda": {
+      "n_total": 600,
+      "accuracy": 32.83,
+      "balanced_accuracy": 43.77,
+      "macro_f1": 29.2,
+      "weighted_f1": 21.91,
+      "rest_recall": 0.0,
+      "left_recall": 68.21,
+      "right_recall": 63.09,
+      "rest_precision": 0.0,
+      "left_precision": 34.92,
+      "right_precision": 30.82,
+      "rest_false_actuation_rate": 100.0,
+      "motor_lateralization_error_rate": 34.33,
+      "confusion_matrix": [
+        [
+          0,
+          137,
+          163
+        ],
+        [
+          0,
+          103,
+          48
+        ],
+        [
+          0,
+          55,
+          94
+        ]
+      ],
+      "classes": [
+        "REST",
+        "LEFT_FIST",
+        "RIGHT_FIST"
+      ],
+      "mean_latency_ms": 0.0,
+      "sub_mean_acc": 32.83,
+      "sub_std_acc": 9.34,
+      "fold_std_acc": 12.07
+    },
+    "exp_04_correct_laplacian_lda": {
+      "n_total": 600,
+      "accuracy": 31.33,
+      "balanced_accuracy": 41.76,
+      "macro_f1": 27.93,
+      "weighted_f1": 20.96,
+      "rest_recall": 0.0,
+      "left_recall": 66.23,
+      "right_recall": 59.06,
+      "rest_precision": 0.0,
+      "left_precision": 35.09,
+      "right_precision": 27.94,
+      "rest_false_actuation_rate": 100.0,
+      "motor_lateralization_error_rate": 37.33,
+      "confusion_matrix": [
+        [
+          0,
+          124,
+          176
+        ],
+        [
+          0,
+          100,
+          51
+        ],
+        [
+          0,
+          61,
+          88
+        ]
+      ],
+      "classes": [
+        "REST",
+        "LEFT_FIST",
+        "RIGHT_FIST"
+      ],
+      "mean_latency_ms": 0.0,
+      "sub_mean_acc": 31.33,
+      "sub_std_acc": 10.3,
+      "fold_std_acc": 12.42
+    },
+    "exp_05_correct_laplacian_balanced_svm": {
+      "n_total": 600,
+      "accuracy": 31.0,
+      "balanced_accuracy": 41.34,
+      "macro_f1": 27.57,
+      "weighted_f1": 20.68,
+      "rest_recall": 0.0,
+      "left_recall": 61.59,
+      "right_recall": 62.42,
+      "rest_precision": 0.0,
+      "left_precision": 32.29,
+      "right_precision": 29.81,
+      "rest_false_actuation_rate": 100.0,
+      "motor_lateralization_error_rate": 38.0,
+      "confusion_matrix": [
+        [
+          0,
+          139,
+          161
+        ],
+        [
+          0,
+          93,
+          58
+        ],
+        [
+          0,
+          56,
+          93
+        ]
+      ],
+      "classes": [
+        "REST",
+        "LEFT_FIST",
+        "RIGHT_FIST"
+      ],
+      "mean_latency_ms": 0.0,
+      "sub_mean_acc": 31.0,
+      "sub_std_acc": 10.57,
+      "fold_std_acc": 12.59
+    },
+    "exp_06_correct_laplacian_hierarchical": {
+      "n_total": 600,
+      "accuracy": 32.17,
+      "balanced_accuracy": 42.88,
+      "macro_f1": 28.59,
+      "weighted_f1": 21.45,
+      "rest_recall": 0.0,
+      "left_recall": 66.89,
+      "right_recall": 61.74,
+      "rest_precision": 0.0,
+      "left_precision": 33.55,
+      "right_precision": 30.77,
+      "rest_false_actuation_rate": 100.0,
+      "motor_lateralization_error_rate": 35.67,
+      "confusion_matrix": [
+        [
+          0,
+          143,
+          157
+        ],
+        [
+          0,
+          101,
+          50
+        ],
+        [
+          0,
+          57,
+          92
+        ]
+      ],
+      "classes": [
+        "REST",
+        "LEFT_FIST",
+        "RIGHT_FIST"
+      ],
+      "mean_latency_ms": 0.0,
+      "sub_mean_acc": 32.17,
+      "sub_std_acc": 9.83,
+      "fold_std_acc": 12.02
+    },
+    "exp_07_correct_laplacian_tri_ensemble": {
+      "n_total": 600,
+      "accuracy": 71.17,
+      "balanced_accuracy": 65.75,
+      "macro_f1": 65.91,
+      "weighted_f1": 70.82,
+      "rest_recall": 87.33,
+      "left_recall": 60.26,
+      "right_recall": 49.66,
+      "rest_precision": 83.71,
+      "left_precision": 61.49,
+      "right_precision": 53.24,
+      "rest_false_actuation_rate": 12.67,
+      "motor_lateralization_error_rate": 28.0,
+      "confusion_matrix": [
+        [
+          262,
+          12,
+          26
+        ],
+        [
+          21,
+          91,
+          39
+        ],
+        [
+          30,
+          45,
+          74
+        ]
+      ],
+      "classes": [
+        "REST",
+        "LEFT_FIST",
+        "RIGHT_FIST"
+      ],
+      "mean_latency_ms": 0.0,
+      "sub_mean_acc": 71.17,
+      "sub_std_acc": 13.97,
+      "fold_std_acc": 16.26
+    },
+    "exp_08_correct_laplacian_k28_ensemble": {
+      "n_total": 600,
+      "accuracy": 70.67,
+      "balanced_accuracy": 65.09,
+      "macro_f1": 65.28,
+      "weighted_f1": 70.24,
+      "rest_recall": 87.33,
+      "left_recall": 58.94,
+      "right_recall": 48.99,
+      "rest_precision": 82.91,
+      "left_precision": 60.54,
+      "right_precision": 53.28,
+      "rest_false_actuation_rate": 12.67,
+      "motor_lateralization_error_rate": 28.0,
+      "confusion_matrix": [
+        [
+          262,
+          14,
+          24
+        ],
+        [
+          22,
+          89,
+          40
+        ],
+        [
+          32,
+          44,
+          73
+        ]
+      ],
+      "classes": [
+        "REST",
+        "LEFT_FIST",
+        "RIGHT_FIST"
+      ],
+      "mean_latency_ms": 0.0,
+      "sub_mean_acc": 70.67,
+      "sub_std_acc": 13.09,
+      "fold_std_acc": 15.83
+    }
+  },
+  "holdout_results_r11": {
+    "exp_01_baseline_step62_repro": {
+      "n_total": 300,
+      "accuracy": 73.0,
+      "balanced_accuracy": 67.3,
+      "macro_f1": 68.0,
+      "weighted_f1": 72.25,
+      "rest_recall": 90.0,
+      "left_recall": 59.21,
+      "right_recall": 52.7,
+      "rest_precision": 80.36,
+      "left_precision": 68.18,
+      "right_precision": 59.09,
+      "rest_false_actuation_rate": 10.0,
+      "motor_lateralization_error_rate": 22.0,
+      "confusion_matrix": [
+        [
+          135,
+          6,
+          9
+        ],
+        [
+          13,
+          45,
+          18
+        ],
+        [
+          20,
+          15,
+          39
+        ]
+      ],
+      "classes": [
+        "REST",
+        "LEFT_FIST",
+        "RIGHT_FIST"
+      ],
+      "mean_latency_ms": 0.69,
+      "sub_mean_acc": 73.0,
+      "sub_std_acc": 10.27,
+      "per_subject": [
+        {
+          "subject": "S001",
+          "accuracy": 56.67,
+          "macro_f1": 48.59
+        },
+        {
+          "subject": "S002",
+          "accuracy": 86.67,
+          "macro_f1": 85.91
+        },
+        {
+          "subject": "S003",
+          "accuracy": 56.67,
+          "macro_f1": 49.38
+        },
+        {
+          "subject": "S004",
+          "accuracy": 80.0,
+          "macro_f1": 74.75
+        },
+        {
+          "subject": "S005",
+          "accuracy": 70.0,
+          "macro_f1": 61.62
+        },
+        {
+          "subject": "S006",
+          "accuracy": 63.33,
+          "macro_f1": 54.56
+        },
+        {
+          "subject": "S007",
+          "accuracy": 80.0,
+          "macro_f1": 76.35
+        },
+        {
+          "subject": "S008",
+          "accuracy": 76.67,
+          "macro_f1": 70.8
+        },
+        {
+          "subject": "S009",
+          "accuracy": 76.67,
+          "macro_f1": 70.56
+        },
+        {
+          "subject": "S010",
+          "accuracy": 83.33,
+          "macro_f1": 79.78
+        }
+      ]
+    },
+    "exp_02_correct_raw_lda": {
+      "n_total": 300,
+      "accuracy": 35.0,
+      "balanced_accuracy": 46.68,
+      "macro_f1": 31.5,
+      "weighted_f1": 23.66,
+      "rest_recall": 0.0,
+      "left_recall": 68.42,
+      "right_recall": 71.62,
+      "rest_precision": 0.0,
+      "left_precision": 42.28,
+      "right_precision": 29.94,
+      "rest_false_actuation_rate": 100.0,
+      "motor_lateralization_error_rate": 30.0,
+      "confusion_matrix": [
+        [
+          0,
+          50,
+          100
+        ],
+        [
+          0,
+          52,
+          24
+        ],
+        [
+          0,
+          21,
+          53
+        ]
+      ],
+      "classes": [
+        "REST",
+        "LEFT_FIST",
+        "RIGHT_FIST"
+      ],
+      "mean_latency_ms": 0.17,
+      "sub_mean_acc": 35.0,
+      "sub_std_acc": 4.53,
+      "per_subject": [
+        {
+          "subject": "S001",
+          "accuracy": 33.33,
+          "macro_f1": 30.36
+        },
+        {
+          "subject": "S002",
+          "accuracy": 40.0,
+          "macro_f1": 35.49
+        },
+        {
+          "subject": "S003",
+          "accuracy": 30.0,
+          "macro_f1": 26.61
+        },
+        {
+          "subject": "S004",
+          "accuracy": 33.33,
+          "macro_f1": 31.91
+        },
+        {
+          "subject": "S005",
+          "accuracy": 33.33,
+          "macro_f1": 31.31
+        },
+        {
+          "subject": "S006",
+          "accuracy": 30.0,
+          "macro_f1": 25.85
+        },
+        {
+          "subject": "S007",
+          "accuracy": 43.33,
+          "macro_f1": 38.67
+        },
+        {
+          "subject": "S008",
+          "accuracy": 30.0,
+          "macro_f1": 26.86
+        },
+        {
+          "subject": "S009",
+          "accuracy": 36.67,
+          "macro_f1": 32.14
+        },
+        {
+          "subject": "S010",
+          "accuracy": 40.0,
+          "macro_f1": 34.73
+        }
+      ]
+    },
+    "exp_03_correct_car_lda": {
+      "n_total": 300,
+      "accuracy": 31.33,
+      "balanced_accuracy": 41.86,
+      "macro_f1": 27.95,
+      "weighted_f1": 20.97,
+      "rest_recall": 0.0,
+      "left_recall": 53.95,
+      "right_recall": 71.62,
+      "rest_precision": 0.0,
+      "left_precision": 35.65,
+      "right_precision": 28.65,
+      "rest_false_actuation_rate": 100.0,
+      "motor_lateralization_error_rate": 37.33,
+      "confusion_matrix": [
+        [
+          0,
+          53,
+          97
+        ],
+        [
+          0,
+          41,
+          35
+        ],
+        [
+          0,
+          21,
+          53
+        ]
+      ],
+      "classes": [
+        "REST",
+        "LEFT_FIST",
+        "RIGHT_FIST"
+      ],
+      "mean_latency_ms": 0.17,
+      "sub_mean_acc": 31.33,
+      "sub_std_acc": 7.02,
+      "per_subject": [
+        {
+          "subject": "S001",
+          "accuracy": 20.0,
+          "macro_f1": 17.53
+        },
+        {
+          "subject": "S002",
+          "accuracy": 40.0,
+          "macro_f1": 36.93
+        },
+        {
+          "subject": "S003",
+          "accuracy": 23.33,
+          "macro_f1": 17.67
+        },
+        {
+          "subject": "S004",
+          "accuracy": 36.67,
+          "macro_f1": 35.1
+        },
+        {
+          "subject": "S005",
+          "accuracy": 33.33,
+          "macro_f1": 29.64
+        },
+        {
+          "subject": "S006",
+          "accuracy": 26.67,
+          "macro_f1": 15.24
+        },
+        {
+          "subject": "S007",
+          "accuracy": 43.33,
+          "macro_f1": 40.2
+        },
+        {
+          "subject": "S008",
+          "accuracy": 30.0,
+          "macro_f1": 24.84
+        },
+        {
+          "subject": "S009",
+          "accuracy": 26.67,
+          "macro_f1": 23.35
+        },
+        {
+          "subject": "S010",
+          "accuracy": 33.33,
+          "macro_f1": 29.37
+        }
+      ]
+    },
+    "exp_04_correct_laplacian_lda": {
+      "n_total": 300,
+      "accuracy": 33.0,
+      "balanced_accuracy": 44.04,
+      "macro_f1": 29.61,
+      "weighted_f1": 22.23,
+      "rest_recall": 0.0,
+      "left_recall": 61.84,
+      "right_recall": 70.27,
+      "rest_precision": 0.0,
+      "left_precision": 38.84,
+      "right_precision": 29.05,
+      "rest_false_actuation_rate": 100.0,
+      "motor_lateralization_error_rate": 34.0,
+      "confusion_matrix": [
+        [
+          0,
+          52,
+          98
+        ],
+        [
+          0,
+          47,
+          29
+        ],
+        [
+          0,
+          22,
+          52
+        ]
+      ],
+      "classes": [
+        "REST",
+        "LEFT_FIST",
+        "RIGHT_FIST"
+      ],
+      "mean_latency_ms": 0.18,
+      "sub_mean_acc": 33.0,
+      "sub_std_acc": 4.58,
+      "per_subject": [
+        {
+          "subject": "S001",
+          "accuracy": 26.67,
+          "macro_f1": 24.29
+        },
+        {
+          "subject": "S002",
+          "accuracy": 36.67,
+          "macro_f1": 32.67
+        },
+        {
+          "subject": "S003",
+          "accuracy": 30.0,
+          "macro_f1": 26.61
+        },
+        {
+          "subject": "S004",
+          "accuracy": 33.33,
+          "macro_f1": 31.91
+        },
+        {
+          "subject": "S005",
+          "accuracy": 33.33,
+          "macro_f1": 29.78
+        },
+        {
+          "subject": "S006",
+          "accuracy": 30.0,
+          "macro_f1": 22.22
+        },
+        {
+          "subject": "S007",
+          "accuracy": 40.0,
+          "macro_f1": 36.27
+        },
+        {
+          "subject": "S008",
+          "accuracy": 33.33,
+          "macro_f1": 29.64
+        },
+        {
+          "subject": "S009",
+          "accuracy": 26.67,
+          "macro_f1": 22.4
+        },
+        {
+          "subject": "S010",
+          "accuracy": 40.0,
+          "macro_f1": 34.73
+        }
+      ]
+    },
+    "exp_05_correct_laplacian_balanced_svm": {
+      "n_total": 300,
+      "accuracy": 32.33,
+      "balanced_accuracy": 43.16,
+      "macro_f1": 28.76,
+      "weighted_f1": 21.57,
+      "rest_recall": 0.0,
+      "left_recall": 59.21,
+      "right_recall": 70.27,
+      "rest_precision": 0.0,
+      "left_precision": 34.35,
+      "right_precision": 30.77,
+      "rest_false_actuation_rate": 100.0,
+      "motor_lateralization_error_rate": 35.33,
+      "confusion_matrix": [
+        [
+          0,
+          64,
+          86
+        ],
+        [
+          0,
+          45,
+          31
+        ],
+        [
+          0,
+          22,
+          52
+        ]
+      ],
+      "classes": [
+        "REST",
+        "LEFT_FIST",
+        "RIGHT_FIST"
+      ],
+      "mean_latency_ms": 0.2,
+      "sub_mean_acc": 32.33,
+      "sub_std_acc": 5.59,
+      "per_subject": [
+        {
+          "subject": "S001",
+          "accuracy": 30.0,
+          "macro_f1": 26.61
+        },
+        {
+          "subject": "S002",
+          "accuracy": 33.33,
+          "macro_f1": 29.97
+        },
+        {
+          "subject": "S003",
+          "accuracy": 33.33,
+          "macro_f1": 30.36
+        },
+        {
+          "subject": "S004",
+          "accuracy": 33.33,
+          "macro_f1": 31.91
+        },
+        {
+          "subject": "S005",
+          "accuracy": 30.0,
+          "macro_f1": 28.16
+        },
+        {
+          "subject": "S006",
+          "accuracy": 20.0,
+          "macro_f1": 15.83
+        },
+        {
+          "subject": "S007",
+          "accuracy": 43.33,
+          "macro_f1": 42.22
+        },
+        {
+          "subject": "S008",
+          "accuracy": 33.33,
+          "macro_f1": 30.86
+        },
+        {
+          "subject": "S009",
+          "accuracy": 30.0,
+          "macro_f1": 26.67
+        },
+        {
+          "subject": "S010",
+          "accuracy": 36.67,
+          "macro_f1": 31.98
+        }
+      ]
+    },
+    "exp_06_correct_laplacian_hierarchical": {
+      "n_total": 300,
+      "accuracy": 33.0,
+      "balanced_accuracy": 44.05,
+      "macro_f1": 29.37,
+      "weighted_f1": 22.03,
+      "rest_recall": 0.0,
+      "left_recall": 60.53,
+      "right_recall": 71.62,
+      "rest_precision": 0.0,
+      "left_precision": 35.38,
+      "right_precision": 31.18,
+      "rest_false_actuation_rate": 100.0,
+      "motor_lateralization_error_rate": 34.0,
+      "confusion_matrix": [
+        [
+          0,
+          63,
+          87
+        ],
+        [
+          0,
+          46,
+          30
+        ],
+        [
+          0,
+          21,
+          53
+        ]
+      ],
+      "classes": [
+        "REST",
+        "LEFT_FIST",
+        "RIGHT_FIST"
+      ],
+      "mean_latency_ms": 0.44,
+      "sub_mean_acc": 33.0,
+      "sub_std_acc": 5.26,
+      "per_subject": [
+        {
+          "subject": "S001",
+          "accuracy": 30.0,
+          "macro_f1": 26.75
+        },
+        {
+          "subject": "S002",
+          "accuracy": 33.33,
+          "macro_f1": 29.97
+        },
+        {
+          "subject": "S003",
+          "accuracy": 33.33,
+          "macro_f1": 31.51
+        },
+        {
+          "subject": "S004",
+          "accuracy": 36.67,
+          "macro_f1": 36.36
+        },
+        {
+          "subject": "S005",
+          "accuracy": 33.33,
+          "macro_f1": 31.95
+        },
+        {
+          "subject": "S006",
+          "accuracy": 23.33,
+          "macro_f1": 13.33
+        },
+        {
+          "subject": "S007",
+          "accuracy": 43.33,
+          "macro_f1": 42.22
+        },
+        {
+          "subject": "S008",
+          "accuracy": 33.33,
+          "macro_f1": 32.33
+        },
+        {
+          "subject": "S009",
+          "accuracy": 26.67,
+          "macro_f1": 22.76
+        },
+        {
+          "subject": "S010",
+          "accuracy": 36.67,
+          "macro_f1": 31.98
+        }
+      ]
+    },
+    "exp_07_correct_laplacian_tri_ensemble": {
+      "n_total": 300,
+      "accuracy": 71.67,
+      "balanced_accuracy": 65.54,
+      "macro_f1": 66.21,
+      "weighted_f1": 70.91,
+      "rest_recall": 90.0,
+      "left_recall": 55.26,
+      "right_recall": 51.35,
+      "rest_precision": 80.36,
+      "left_precision": 68.85,
+      "right_precision": 53.52,
+      "rest_false_actuation_rate": 10.0,
+      "motor_lateralization_error_rate": 24.67,
+      "confusion_matrix": [
+        [
+          135,
+          4,
+          11
+        ],
+        [
+          12,
+          42,
+          22
+        ],
+        [
+          21,
+          15,
+          38
+        ]
+      ],
+      "classes": [
+        "REST",
+        "LEFT_FIST",
+        "RIGHT_FIST"
+      ],
+      "mean_latency_ms": 0.73,
+      "sub_mean_acc": 71.67,
+      "sub_std_acc": 10.88,
+      "per_subject": [
+        {
+          "subject": "S001",
+          "accuracy": 56.67,
+          "macro_f1": 49.15
+        },
+        {
+          "subject": "S002",
+          "accuracy": 76.67,
+          "macro_f1": 70.51
+        },
+        {
+          "subject": "S003",
+          "accuracy": 53.33,
+          "macro_f1": 51.39
+        },
+        {
+          "subject": "S004",
+          "accuracy": 76.67,
+          "macro_f1": 69.32
+        },
+        {
+          "subject": "S005",
+          "accuracy": 73.33,
+          "macro_f1": 65.4
+        },
+        {
+          "subject": "S006",
+          "accuracy": 60.0,
+          "macro_f1": 47.18
+        },
+        {
+          "subject": "S007",
+          "accuracy": 83.33,
+          "macro_f1": 79.11
+        },
+        {
+          "subject": "S008",
+          "accuracy": 80.0,
+          "macro_f1": 75.24
+        },
+        {
+          "subject": "S009",
+          "accuracy": 70.0,
+          "macro_f1": 56.81
+        },
+        {
+          "subject": "S010",
+          "accuracy": 86.67,
+          "macro_f1": 82.96
+        }
+      ]
+    },
+    "exp_08_correct_laplacian_k28_ensemble": {
+      "n_total": 300,
+      "accuracy": 73.33,
+      "balanced_accuracy": 67.75,
+      "macro_f1": 68.6,
+      "weighted_f1": 72.57,
+      "rest_recall": 90.0,
+      "left_recall": 59.21,
+      "right_recall": 54.05,
+      "rest_precision": 79.41,
+      "left_precision": 70.31,
+      "right_precision": 60.61,
+      "rest_false_actuation_rate": 10.0,
+      "motor_lateralization_error_rate": 20.0,
+      "confusion_matrix": [
+        [
+          135,
+          7,
+          8
+        ],
+        [
+          13,
+          45,
+          18
+        ],
+        [
+          22,
+          12,
+          40
+        ]
+      ],
+      "classes": [
+        "REST",
+        "LEFT_FIST",
+        "RIGHT_FIST"
+      ],
+      "mean_latency_ms": 0.73,
+      "sub_mean_acc": 73.34,
+      "sub_std_acc": 11.35,
+      "per_subject": [
+        {
+          "subject": "S001",
+          "accuracy": 53.33,
+          "macro_f1": 46.76
+        },
+        {
+          "subject": "S002",
+          "accuracy": 76.67,
+          "macro_f1": 70.51
+        },
+        {
+          "subject": "S003",
+          "accuracy": 66.67,
+          "macro_f1": 65.74
+        },
+        {
+          "subject": "S004",
+          "accuracy": 76.67,
+          "macro_f1": 69.32
+        },
+        {
+          "subject": "S005",
+          "accuracy": 73.33,
+          "macro_f1": 65.4
+        },
+        {
+          "subject": "S006",
+          "accuracy": 56.67,
+          "macro_f1": 42.86
+        },
+        {
+          "subject": "S007",
+          "accuracy": 86.67,
+          "macro_f1": 83.63
+        },
+        {
+          "subject": "S008",
+          "accuracy": 86.67,
+          "macro_f1": 83.75
+        },
+        {
+          "subject": "S009",
+          "accuracy": 70.0,
+          "macro_f1": 56.81
+        },
+        {
+          "subject": "S010",
+          "accuracy": 86.67,
+          "macro_f1": 82.96
+        }
+      ]
+    }
+  },
+  "loso_cross_subject_results": {
+    "n_total": 300,
+    "accuracy": 52.33,
+    "balanced_accuracy": 46.05,
+    "macro_f1": 45.94,
+    "weighted_f1": 51.21,
+    "rest_recall": 71.33,
+    "left_recall": 27.63,
+    "right_recall": 39.19,
+    "rest_precision": 63.31,
+    "left_precision": 40.38,
+    "right_precision": 36.71,
+    "rest_false_actuation_rate": 28.67,
+    "motor_lateralization_error_rate": 25.33,
+    "confusion_matrix": [
+      [
+        107,
+        19,
+        24
+      ],
+      [
+        29,
+        21,
+        26
+      ],
+      [
+        33,
+        12,
+        29
+      ]
+    ],
+    "classes": [
+      "REST",
+      "LEFT_FIST",
+      "RIGHT_FIST"
+    ],
+    "mean_latency_ms": 0.0,
+    "sub_mean_acc": 52.33,
+    "sub_std_acc": 8.31
+  },
+  "calibration_budget_curve": [
+    {
+      "budget_trials_per_class": 5,
+      "total_calibration_trials": 15,
+      "r11_accuracy": 52.0,
+      "r11_macro_f1": 46.05,
+      "rest_recall": 69.33,
+      "left_recall": 26.32,
+      "right_recall": 43.24
+    },
+    {
+      "budget_trials_per_class": 10,
+      "total_calibration_trials": 30,
+      "r11_accuracy": 63.33,
+      "r11_macro_f1": 59.66,
+      "rest_recall": 73.33,
+      "left_recall": 48.68,
+      "right_recall": 58.11
+    },
+    {
+      "budget_trials_per_class": 20,
+      "total_calibration_trials": 60,
+      "r11_accuracy": 68.0,
+      "r11_macro_f1": 64.33,
+      "rest_recall": 78.67,
+      "left_recall": 60.53,
+      "right_recall": 54.05
+    }
+  ],
+  "top_candidate": {
+    "id": "exp_07_correct_laplacian_tri_ensemble",
+    "name": "Correct Montage: Anatomical Laplacian + Calibrated Balanced Tri-Ensemble",
+    "dev_cv_accuracy": 71.17,
+    "dev_cv_balanced_acc": 65.75,
+    "dev_cv_macro_f1": 65.91,
+    "dev_cv_sub_std": 13.97,
+    "r11_accuracy": 71.67,
+    "r11_balanced_acc": 65.54,
+    "r11_macro_f1": 66.21,
+    "r11_rest_recall": 90.0,
+    "r11_left_recall": 55.26,
+    "r11_right_recall": 51.35,
+    "r11_rest_false_actuation": 10.0,
+    "r11_latency_ms": 0.73
+  },
+  "promotion_decision": {
+    "promoted_model_id": "exp_07_correct_laplacian_tri_ensemble",
+    "promoted_model_name": "Correct Montage: Anatomical Laplacian + Calibrated Balanced Tri-Ensemble",
+    "retained_step62_status": "Step 62 artifacts preserved 100% immutable in models/step62",
+    "holdout_champion_id": "exp_08_correct_laplacian_k28_ensemble",
+    "holdout_champion_name": "Correct Montage: Anatomical Laplacian + Tri-Ensemble (k=28)",
+    "justification": "Candidate exp_07 achieved the highest 5-fold cross-validation Macro F1 on Development data (65.91% vs 65.30% Step 62), while exp_08 achieved the highest R11 holdout accuracy (73.33% vs 72.67%/73.00% Step 62) and Macro F1 (68.60% vs 67.31%/68.00% Step 62). Both are serialized in models/research_phase4/ with Step 62 preserved as primary production rollback."
+  }
+}

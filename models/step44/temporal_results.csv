@@ -1,0 +1,5 @@
+window,val_accuracy,val_macro_f1
+0.5 - 1.5s,75.0,69.0
+0.5 - 2.5s (Standard),77.2,71.5
+1.0 - 3.0s (Causal),76.8,71.0
+Multi-Window Concatenated Representation,77.8,72.0

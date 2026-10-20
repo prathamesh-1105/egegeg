@@ -1,0 +1,5 @@
+component,accuracy_gain,impact
+Subject-Specific Baseline ERD Normalization,+4.3%,HIGH
+Subject-Specific Contralateral Asymmetry Thresholds,+3.7%,HIGH
+Subject-Specific CSP Re-alignment,+1.8%,MEDIUM
+Classifier Fine-Tuning (Logistic Regression),+2.5%,MEDIUM

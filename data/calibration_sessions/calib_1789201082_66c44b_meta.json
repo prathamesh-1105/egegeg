@@ -1,0 +1,15 @@
+{
+  "session_id": "calib_1789201082_66c44b",
+  "hardware_profile_id": "OPENBCI_CYTON_DAISY_16CH",
+  "start_time": 1789201082.5980644,
+  "completion_time": 1789201082.5990648,
+  "target_windows_per_class": 3,
+  "collected_counts": {
+    "REST": 3,
+    "LEFT_FIST": 3,
+    "RIGHT_FIST": 3
+  },
+  "rejected_windows_count": 0,
+  "software_version": "2.0.0-Phase7",
+  "model_version": "Step60-SOTA-RegLDA"
+}

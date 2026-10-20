@@ -1,0 +1,4 @@
+transition,baseline_errors,mitigated_errors,recoverable
+LEFT -> REST,27,18,PARTIALLY
+RIGHT -> REST,39,25,PARTIALLY
+LEFT -> RIGHT,10,8,LOW

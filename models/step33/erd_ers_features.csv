@@ -1,0 +1,2 @@
+feature_set,channels_used,val_accuracy,val_macro_f1,separable_signature
+ERD_ERS_TimeFrequency,"C3, C4, Cz, FC3, FC4",24.79,13.24,PARTIAL

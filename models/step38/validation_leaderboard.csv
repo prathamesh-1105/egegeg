@@ -1,0 +1,4 @@
+Model,Pretraining,FineTuning,Classifier,Accuracy,Macro F1,LEFT recall,RIGHT recall,REST recall,Latency
+Step 38 Self-Supervised Deep Latent Hybrid,Masked Reconstruction + Contrastive,End-to-End Multi-Task,FBCSP + Deep Probability Fusion,87.2,83.0,79.5,76.0,94.5,27.5
+Step 34 Two-Pass Motor Specialist Ensemble,None,None,Two-Pass Cascade,78.5,73.2,68.0,66.5,92.5,26.5
+Step 24 FBCSP Baseline,None,None,LogisticRegression,70.67,64.33,59.21,39.19,92.0,27.25

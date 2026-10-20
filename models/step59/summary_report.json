@@ -1,0 +1,24 @@
+{
+  "timestamp": "2026-09-01 21:50:07",
+  "final_decision": "RETAIN STEP 58 BENCHMARK (INVESTIGATE BOTTLENECK)",
+  "is_promoted": false,
+  "authentic_step58_baseline": {
+    "accuracy": 60.33,
+    "macro_f1": 56.53
+  },
+  "step58_candidate_benchmark": {
+    "accuracy": 67.67,
+    "macro_f1": 62.04
+  },
+  "step59_authentic_r11_metrics": {
+    "accuracy": 67.67,
+    "macro_f1": 62.24,
+    "rest_recall": 85.33,
+    "left_fist_recall": 57.89,
+    "right_fist_recall": 41.89
+  },
+  "latency_ms": 37.3,
+  "artifacts_generated_count": 29,
+  "mathematical_consistency_verified": true,
+  "r11_zero_leakage_verified": true
+}

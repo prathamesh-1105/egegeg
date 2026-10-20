@@ -1,0 +1,2 @@
+base_model,full_data_accuracy,selective_accuracy,coverage_pct,abstention_pct,p_max_threshold,margin_threshold,entropy_threshold
+STEP 24 FBCSP,52.0,59.76,27.33,72.67,0.7,0.05,1.2

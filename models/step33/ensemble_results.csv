@@ -1,0 +1,10 @@
+ensemble_config,models_included,val_accuracy,val_macro_f1
+A only (Step 24 FBCSP),A,23.54,24.72
+A + B (FBCSP + Spectral PSD),A+B,22.71,23.67
+A + C (FBCSP + ERD/ERS),A+C,23.33,24.45
+A + D (FBCSP + Contralateral Asymmetry),A+D,23.54,24.72
+A + E (FBCSP + Temporal Subwindow),A+E,24.17,24.88
+A + B + C,A+B+C,24.38,25.46
+A + B + D,A+B+D,22.71,23.67
+A + C + D,A+C+D,23.33,24.45
+A + B + C + D + E (Full Soft Fusion),A+B+C+D+E,23.54,24.01

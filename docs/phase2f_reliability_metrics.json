@@ -1,0 +1,206 @@
+[
+  {
+    "session_id": "bench_Immediate Execution (Dwell=1, w=1)",
+    "total_trials_processed": 300,
+    "labeled_trials_count": 300,
+    "classification_accuracy_pct": 72.0,
+    "classification_errors_count": 84,
+    "macro_f1_pct": 67.23,
+    "per_class_metrics": {
+      "LEFT_FIST": {
+        "precision": 74.58,
+        "recall": 57.89,
+        "f1": 65.19,
+        "support": 76
+      },
+      "REST": {
+        "precision": 77.46,
+        "recall": 89.33,
+        "f1": 82.97,
+        "support": 150
+      },
+      "RIGHT_FIST": {
+        "precision": 55.88,
+        "recall": 51.35,
+        "f1": 53.52,
+        "support": 74
+      }
+    },
+    "safety_rejection_rate_pct": 6.0,
+    "safety_rejected_count": 18,
+    "safety_accepted_count": 282,
+    "accepted_trial_accuracy_pct": 74.47,
+    "command_execution_rate_pct": 37.0,
+    "actions_executed_count": 111,
+    "actions_correct_count": 77,
+    "actions_incorrect_count": 34,
+    "incorrect_command_rate_total_pct": 11.33,
+    "incorrect_command_rate_executed_pct": 30.63,
+    "shield_suppressed_errors_count": 50,
+    "shield_suppressed_correct_count": 5,
+    "rest_neutrality_rate_pct": 91.33,
+    "rest_neutral_trials_count": 137,
+    "total_rest_trials_count": 150,
+    "stale_suppressed_count": 0,
+    "emergency_lock_suppressed_count": 0,
+    "latencies_ms": {
+      "mean": 20.29,
+      "p50": 20.16,
+      "p95": 22.25,
+      "p99": 25.62,
+      "min": 12.65,
+      "max": 48.72
+    },
+    "metric_definitions": {
+      "classification_accuracy": "Correct predictions / Labeled trials (offline test only)",
+      "safety_rejection_rate": "Safety-rejected predictions / Total processed trials",
+      "accepted_trial_accuracy": "Correct predictions within accepted / Safety-accepted trials",
+      "command_execution_rate": "Executed actions / Total processed trials",
+      "incorrect_command_rate_total": "Incorrectly executed actions / Total processed trials",
+      "incorrect_command_rate_executed": "Incorrectly executed actions / Total executed actions",
+      "rest_neutrality_rate": "True REST trials producing ZERO action / Total true REST trials"
+    },
+    "config_name": "Immediate Execution (Dwell=1, w=1)",
+    "dwell_windows": 1,
+    "cooldown_sec": 0.0,
+    "confidence_thresh": 0.5,
+    "margin_thresh": 0.05,
+    "smoothing_window_size": 1
+  },
+  {
+    "session_id": "bench_Two-Window Confirmation (Dwell=2, w=2)",
+    "total_trials_processed": 300,
+    "labeled_trials_count": 300,
+    "classification_accuracy_pct": 72.0,
+    "classification_errors_count": 84,
+    "macro_f1_pct": 67.23,
+    "per_class_metrics": {
+      "LEFT_FIST": {
+        "precision": 74.58,
+        "recall": 57.89,
+        "f1": 65.19,
+        "support": 76
+      },
+      "REST": {
+        "precision": 77.46,
+        "recall": 89.33,
+        "f1": 82.97,
+        "support": 150
+      },
+      "RIGHT_FIST": {
+        "precision": 55.88,
+        "recall": 51.35,
+        "f1": 53.52,
+        "support": 74
+      }
+    },
+    "safety_rejection_rate_pct": 60.67,
+    "safety_rejected_count": 182,
+    "safety_accepted_count": 118,
+    "accepted_trial_accuracy_pct": 56.78,
+    "command_execution_rate_pct": 1.0,
+    "actions_executed_count": 3,
+    "actions_correct_count": 2,
+    "actions_incorrect_count": 1,
+    "incorrect_command_rate_total_pct": 0.33,
+    "incorrect_command_rate_executed_pct": 33.33,
+    "shield_suppressed_errors_count": 83,
+    "shield_suppressed_correct_count": 80,
+    "rest_neutrality_rate_pct": 93.33,
+    "rest_neutral_trials_count": 140,
+    "total_rest_trials_count": 150,
+    "stale_suppressed_count": 0,
+    "emergency_lock_suppressed_count": 11,
+    "latencies_ms": {
+      "mean": 20.0,
+      "p50": 20.09,
+      "p95": 21.99,
+      "p99": 23.5,
+      "min": 11.67,
+      "max": 29.29
+    },
+    "metric_definitions": {
+      "classification_accuracy": "Correct predictions / Labeled trials (offline test only)",
+      "safety_rejection_rate": "Safety-rejected predictions / Total processed trials",
+      "accepted_trial_accuracy": "Correct predictions within accepted / Safety-accepted trials",
+      "command_execution_rate": "Executed actions / Total processed trials",
+      "incorrect_command_rate_total": "Incorrectly executed actions / Total processed trials",
+      "incorrect_command_rate_executed": "Incorrectly executed actions / Total executed actions",
+      "rest_neutrality_rate": "True REST trials producing ZERO action / Total true REST trials"
+    },
+    "config_name": "Two-Window Confirmation (Dwell=2, w=2)",
+    "dwell_windows": 2,
+    "cooldown_sec": 0.5,
+    "confidence_thresh": 0.6,
+    "margin_thresh": 0.1,
+    "smoothing_window_size": 2
+  },
+  {
+    "session_id": "bench_Standard Confirmation (Dwell=3, w=3)",
+    "total_trials_processed": 300,
+    "labeled_trials_count": 300,
+    "classification_accuracy_pct": 72.0,
+    "classification_errors_count": 84,
+    "macro_f1_pct": 67.23,
+    "per_class_metrics": {
+      "LEFT_FIST": {
+        "precision": 74.58,
+        "recall": 57.89,
+        "f1": 65.19,
+        "support": 76
+      },
+      "REST": {
+        "precision": 77.46,
+        "recall": 89.33,
+        "f1": 82.97,
+        "support": 150
+      },
+      "RIGHT_FIST": {
+        "precision": 55.88,
+        "recall": 51.35,
+        "f1": 53.52,
+        "support": 74
+      }
+    },
+    "safety_rejection_rate_pct": 44.67,
+    "safety_rejected_count": 134,
+    "safety_accepted_count": 166,
+    "accepted_trial_accuracy_pct": 72.89,
+    "command_execution_rate_pct": 0.0,
+    "actions_executed_count": 0,
+    "actions_correct_count": 0,
+    "actions_incorrect_count": 0,
+    "incorrect_command_rate_total_pct": 0.0,
+    "incorrect_command_rate_executed_pct": 0.0,
+    "shield_suppressed_errors_count": 84,
+    "shield_suppressed_correct_count": 82,
+    "rest_neutrality_rate_pct": 97.33,
+    "rest_neutral_trials_count": 146,
+    "total_rest_trials_count": 150,
+    "stale_suppressed_count": 0,
+    "emergency_lock_suppressed_count": 2,
+    "latencies_ms": {
+      "mean": 20.22,
+      "p50": 20.14,
+      "p95": 22.72,
+      "p99": 25.49,
+      "min": 12.76,
+      "max": 34.1
+    },
+    "metric_definitions": {
+      "classification_accuracy": "Correct predictions / Labeled trials (offline test only)",
+      "safety_rejection_rate": "Safety-rejected predictions / Total processed trials",
+      "accepted_trial_accuracy": "Correct predictions within accepted / Safety-accepted trials",
+      "command_execution_rate": "Executed actions / Total processed trials",
+      "incorrect_command_rate_total": "Incorrectly executed actions / Total processed trials",
+      "incorrect_command_rate_executed": "Incorrectly executed actions / Total executed actions",
+      "rest_neutrality_rate": "True REST trials producing ZERO action / Total true REST trials"
+    },
+    "config_name": "Standard Confirmation (Dwell=3, w=3)",
+    "dwell_windows": 3,
+    "cooldown_sec": 0.8,
+    "confidence_thresh": 0.6,
+    "margin_thresh": 0.12,
+    "smoothing_window_size": 3
+  }
+]

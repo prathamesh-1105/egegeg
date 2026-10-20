@@ -1,0 +1,5 @@
+strategy,trials_for_85_pct,accuracy_at_6_per_class
+Random Selection,10,83.2
+Class-Balanced Random,8,84.5
+ERD Diversity Prototype Selection,6,85.2
+Active Confidence-Based Calibration,5,86.5

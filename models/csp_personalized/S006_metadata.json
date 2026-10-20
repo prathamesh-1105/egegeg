@@ -1,0 +1,155 @@
+{
+  "subject": "S006",
+  "n_components": 8,
+  "model_name": "SVM (RBF)",
+  "calibration_runs": [
+    "R03",
+    "R07"
+  ],
+  "evaluation_runs": [
+    "R11"
+  ],
+  "training_windows": 60,
+  "evaluation_windows": 30,
+  "step8_accuracy": 0.4333333333333333,
+  "metrics": {
+    "accuracy": 0.4,
+    "precision": 0.3194444444444444,
+    "recall": 0.40277777777777773,
+    "f1": 0.3058470764617691,
+    "difference_vs_step8": -0.03333333333333327,
+    "confusion_matrix": [
+      [
+        5,
+        1,
+        9
+      ],
+      [
+        2,
+        0,
+        5
+      ],
+      [
+        1,
+        0,
+        7
+      ]
+    ],
+    "report": {
+      "REST": {
+        "precision": 0.625,
+        "recall": 0.3333333333333333,
+        "f1-score": 0.43478260869565216,
+        "support": 15.0
+      },
+      "LEFT_FIST": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1-score": 0.0,
+        "support": 7.0
+      },
+      "RIGHT_FIST": {
+        "precision": 0.3333333333333333,
+        "recall": 0.875,
+        "f1-score": 0.4827586206896552,
+        "support": 8.0
+      },
+      "accuracy": 0.4,
+      "macro avg": {
+        "precision": 0.3194444444444444,
+        "recall": 0.40277777777777773,
+        "f1-score": 0.3058470764617691,
+        "support": 30.0
+      },
+      "weighted avg": {
+        "precision": 0.40138888888888885,
+        "recall": 0.4,
+        "f1-score": 0.3461269365317341,
+        "support": 30.0
+      }
+    }
+  },
+  "sample_predictions": [
+    {
+      "subject": "S006",
+      "run": "R11",
+      "window_time": "0.0\u20133.0 sec",
+      "actual_label": "REST",
+      "predicted_label": "RIGHT_FIST",
+      "status": "INCORRECT"
+    },
+    {
+      "subject": "S006",
+      "run": "R11",
+      "window_time": "4.1\u20137.1 sec",
+      "actual_label": "RIGHT_FIST",
+      "predicted_label": "REST",
+      "status": "INCORRECT"
+    },
+    {
+      "subject": "S006",
+      "run": "R11",
+      "window_time": "8.2\u201311.2 sec",
+      "actual_label": "REST",
+      "predicted_label": "LEFT_FIST",
+      "status": "INCORRECT"
+    },
+    {
+      "subject": "S006",
+      "run": "R11",
+      "window_time": "12.3\u201315.3 sec",
+      "actual_label": "LEFT_FIST",
+      "predicted_label": "RIGHT_FIST",
+      "status": "INCORRECT"
+    },
+    {
+      "subject": "S006",
+      "run": "R11",
+      "window_time": "16.4\u201319.4 sec",
+      "actual_label": "REST",
+      "predicted_label": "REST",
+      "status": "CORRECT"
+    },
+    {
+      "subject": "S006",
+      "run": "R11",
+      "window_time": "20.5\u201323.5 sec",
+      "actual_label": "RIGHT_FIST",
+      "predicted_label": "RIGHT_FIST",
+      "status": "CORRECT"
+    },
+    {
+      "subject": "S006",
+      "run": "R11",
+      "window_time": "24.6\u201327.6 sec",
+      "actual_label": "REST",
+      "predicted_label": "REST",
+      "status": "CORRECT"
+    },
+    {
+      "subject": "S006",
+      "run": "R11",
+      "window_time": "28.7\u201331.7 sec",
+      "actual_label": "LEFT_FIST",
+      "predicted_label": "RIGHT_FIST",
+      "status": "INCORRECT"
+    },
+    {
+      "subject": "S006",
+      "run": "R11",
+      "window_time": "32.8\u201335.8 sec",
+      "actual_label": "REST",
+      "predicted_label": "REST",
+      "status": "CORRECT"
+    },
+    {
+      "subject": "S006",
+      "run": "R11",
+      "window_time": "36.9\u201339.9 sec",
+      "actual_label": "RIGHT_FIST",
+      "predicted_label": "RIGHT_FIST",
+      "status": "CORRECT"
+    }
+  ],
+  "timestamp": "2026-08-11T18:54:33.164025"
+}

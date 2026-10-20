@@ -1,0 +1,5 @@
+metric,value,leakage_risk
+Adjacent Window Cosine Similarity (Within Trial),0.84,HIGH_IF_SPLIT_RANDOMLY
+Adjacent Window Cosine Similarity (Across Trials),0.32,LOW
+Trial-Level Autocorrelation (Lag 1),0.76,MEDIUM
+Session-Level Autocorrelation (Lag 1),0.28,NEGLIGIBLE

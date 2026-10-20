@@ -1,0 +1,5 @@
+csp_components_per_bank,total_raw_features,val_accuracy,val_macro_f1,training_time_sec,inference_latency_ms
+2,12,71.88,65.71,59.55,0.092
+4,24,69.58,62.07,61.45,0.102
+6,36,68.54,60.52,51.26,0.1
+8,48,68.33,60.54,42.68,0.094

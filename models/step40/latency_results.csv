@@ -1,0 +1,5 @@
+component,latency_ms
+Signal Preprocessing & Normalization,5.0
+Representation Bank Feature Extraction,11.5
+Classifier Inference & Decision Gate,10.0
+Total Single-Window Pipeline Latency,26.5

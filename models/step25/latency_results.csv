@@ -1,0 +1,7 @@
+stage,mean_ms,p95_ms,max_ms
+Filtering,7.661,9.811,43.527
+FBCSP,2.607,3.683,5.308
+Feature_Selection,0.365,1.004,1.245
+Scaling,0.306,1.0,1.51
+Classification,0.286,1.001,1.045
+Total_Inference,11.225,13.415,48.483

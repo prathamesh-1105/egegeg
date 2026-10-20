@@ -1,0 +1,4 @@
+subset_name,channel_count,validation_accuracy,validation_macro_f1
+Group_A_C3_Cz_C4,3,53.33,48.16
+Group_B_15_Channels,15,66.67,64.06
+Central_Subset_C1_C2_C3_C4_Cz,5,56.67,49.15

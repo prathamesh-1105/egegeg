@@ -1,0 +1,57 @@
+{
+  "model_name": "Step 61 Multimodal Riemannian-FBCSP Ensemble",
+  "pipeline_version": "2.0.0-Phase7-Canonical",
+  "channel_group": "Group B (15 Sensorimotor Channels)",
+  "channels": [
+    "FC3", "FC1", "FCz", "FC2", "FC4",
+    "C3", "C1", "Cz", "C2", "C4",
+    "CP3", "CP1", "CPz", "CP2", "CP4"
+  ],
+  "window_size_sec": 3.0,
+  "sampling_rate_hz": 160.0,
+  "onset_offset_sec": 0.5,
+  "feature_set": "Multimodal Fusion (FBCSP + Riemannian Tangent Space + Contralateral Motor Asymmetry)",
+  "classes": [
+    "REST",
+    "LEFT_FIST",
+    "RIGHT_FIST"
+  ],
+  "training_subjects": [
+    "S001", "S002", "S003", "S004", "S005", "S006", "S007", "S008", "S009", "S010"
+  ],
+  "training_runs": ["R03", "R07"],
+  "test_runs": ["R11"],
+  "evaluation_protocol": "Strict Zero-Data-Leakage Cross-Subject Single-Pass Holdout",
+  "training_date": "2026-09-12T13:45:00",
+  "authentic_r11_metrics": {
+    "accuracy_pct": 72.0,
+    "macro_f1_pct": 67.23,
+    "rest_recall_pct": 89.33,
+    "left_fist_recall_pct": 57.89,
+    "right_fist_recall_pct": 51.35,
+    "inference_latency_ms": 4.1,
+    "confusion_matrix": [
+      [134, 4, 12],
+      [14, 44, 18],
+      [25, 11, 38]
+    ]
+  },
+  "baseline_metrics": {
+    "step58_baseline_accuracy": 60.33,
+    "step59_baseline_accuracy": 67.67,
+    "step60_champion_accuracy": 70.67
+  },
+  "hardware_profiles": {
+    "recommended": "OPENBCI_CYTON_DAISY_16CH",
+    "channel_count": 16,
+    "interpolation_active": false,
+    "auxiliary_channels": ["O1"]
+  },
+  "dataset_info": {
+    "dataset_name": "PhysioNet EEGMMIDB",
+    "total_subjects": 10,
+    "total_edf_files": 30,
+    "calibration_trials": 600,
+    "holdout_test_trials": 300
+  }
+}

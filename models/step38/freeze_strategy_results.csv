@@ -1,0 +1,4 @@
+freeze_strategy,val_accuracy,val_macro_f1
+1. Frozen Encoder + Linear Classifier,79.5,74.2
+2. Partially Frozen (Top 2 Blocks Unfrozen),82.8,78.0
+3. Full Fine-Tuning (End-to-End),84.8,80.2

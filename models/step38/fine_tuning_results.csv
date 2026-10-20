@@ -1,0 +1,3 @@
+strategy,val_accuracy,val_macro_f1
+Standard Supervised (No Pretraining),72.0,65.5
+SSL Pretrained + Fine-Tuning,84.8,80.2

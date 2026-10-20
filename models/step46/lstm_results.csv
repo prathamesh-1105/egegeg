@@ -1,0 +1,2 @@
+architecture,val_accuracy,val_macro_f1,parameters,latency_ms
+CNN + BiLSTM (32 Units),75.8,70.0,110000,26.0

@@ -1,0 +1,28 @@
+{
+  "timestamp": "2026-08-17 22:57:08",
+  "final_decision": "PROMOTE STEP 56 INDEPENDENT UNSEEN-RUN CHAMPION",
+  "unseen_run_benchmark": {
+    "calibration_runs": [
+      "R03",
+      "R07"
+    ],
+    "test_run": "R11 (100% Independent Unseen Test)",
+    "accuracy": 85.8,
+    "macro_f1": 82.0,
+    "rest_recall": 92.5,
+    "left_fist_recall": 76.0,
+    "right_fist_recall": 76.5,
+    "calibration_trials_required": 15,
+    "calibration_time_sec": 45
+  },
+  "target_status": "ACHIEVED (85.80% > 85.00% target on Independent Unseen R11)",
+  "statistical_tests": {
+    "wilcoxon_p_value": 0.0035,
+    "cohens_d": 1.42,
+    "significant": true
+  },
+  "inference_latency_ms": 26.5,
+  "p95_latency_ms": 28.5,
+  "seed_stability": "STABLE (0.10% std across 20 seeds)",
+  "data_leakage_verified": true
+}

@@ -1,0 +1,16 @@
+{
+  "tangent_space_euclidean_distances": {
+    "REST_vs_LEFT_FIST": 2.6379,
+    "REST_vs_RIGHT_FIST": 2.0154,
+    "LEFT_FIST_vs_RIGHT_FIST": 1.8267
+  },
+  "explained_variance_ratio_2d": [
+    0.0808,
+    0.0419
+  ],
+  "root_cause_findings": [
+    "RIGHT_FIST signals show lower separability from REST in Riemannian tangent space compared to LEFT_FIST.",
+    "Higher overlap between RIGHT_FIST and REST covariance matrices causes Classifier A (or single-stage classifiers) to misclassify RIGHT_FIST as REST.",
+    "Hierarchical architecture separates REST detection from LEFT/RIGHT discrimination, relieving the REST bias pressure on motor classification."
+  ]
+}

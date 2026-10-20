@@ -1,0 +1,7 @@
+n_csp_components,csp_variant,val_accuracy,val_macro_f1
+2,Standard_CSP,71.88,65.71
+4,Standard_CSP,69.17,61.82
+6,Standard_CSP,67.71,59.72
+8,Standard_CSP,67.92,60.08
+10,Standard_CSP,67.92,60.08
+12,Standard_CSP,67.92,60.08
