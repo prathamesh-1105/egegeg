@@ -64,7 +64,8 @@ export default function ModelCenter({ statusData }) {
     { step: 'Phase 6 Pure Imagery', arch: 'Pure Imagery Calibrated Contralateral Ensemble', acc: '57.00% (Up to 80% S007)', f1: '47.87% (78.0% S007)', status: 'PURE IMAGERY CHAMPION (1,800 Trials)' },
     { step: 'Phase 6 Hierarchical', arch: 'Two-Stage Gating Intent-Lateralization (Pure Imagery)', acc: '57.00%', f1: '47.38%', status: 'LOW FALSE ACTUATION (8.67% FAR)' },
     { step: 'Phase 7 Pure Imagery', arch: 'Full-Cohort Calibrated Contralateral Ensemble (k=32)', acc: '57.00% (Up to 80% S007)', f1: '47.87%', status: 'PHASE 7 FULL-COHORT CHAMPION' },
-    { step: 'Phase 7 Hierarchical', arch: 'Cross-Subject LOSO Two-Stage Intent Gating', acc: '48.00% (Zero-Shot)', f1: '40.50%', status: 'LOSO GENERALIZATION (30% REST FAR)' }
+    { step: 'Phase 7 Hierarchical', arch: 'Cross-Subject LOSO Two-Stage Intent Gating', acc: '48.00% (Zero-Shot)', f1: '40.50%', status: 'LOSO GENERALIZATION (30% REST FAR)' },
+    { step: 'Phase 8 Champion', arch: 'Expanded 20-Subject Multimodal Ensemble (3,600 Windows)', acc: '58.50% (Up to 81.67% S004)', f1: '49.55% (76.9% S004)', status: 'EXPANDED COHORT CHAMPION (20 SUBJECTS)' }
   ];
 
   const calibrationCurve = [
@@ -163,6 +164,55 @@ export default function ModelCenter({ statusData }) {
         </h2>
 
         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(290px, 1fr))', gap: '16px' }}>
+          {/* Card: Phase 8 Expanded 20-Subject Multimodal Champion */}
+          <div className="glass-card" style={{
+            padding: '20px',
+            borderRadius: '10px',
+            border: activeModelId.includes('Phase8') ? '2px solid #00F2FE' : '1px solid #334155',
+            background: activeModelId.includes('Phase8') ? 'rgba(0, 242, 254, 0.08)' : 'rgba(15, 23, 42, 0.6)',
+            position: 'relative'
+          }}>
+            <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start' }}>
+              <span style={{ fontSize: '0.72rem', fontWeight: 800, padding: '3px 8px', borderRadius: '4px', background: '#00F2FE', color: '#090D16' }}>
+                PHASE 8 EXPANDED COHORT
+              </span>
+              {activeModelId.includes('Phase8') && (
+                <span style={{ display: 'flex', alignItems: 'center', gap: '4px', fontSize: '0.75rem', color: '#00F2FE', fontWeight: 700 }}>
+                  <CheckCircle2 size={14} /> ACTIVE
+                </span>
+              )}
+            </div>
+            <h3 style={{ margin: '10px 0 4px 0', fontSize: '1.05rem', color: '#F8FAFC' }}>
+              Phase 8: Expanded 20-Subject Multimodal Champion
+            </h3>
+            <p style={{ fontSize: '0.8rem', color: '#94A3B8', marginBottom: '14px' }}>
+              Expanded to 20 subjects (S001-S020, 120 EDFs, 3,600 windows) with multi-epoch deep learning & calibrated ensemble.
+            </p>
+            <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '6px', fontSize: '0.8rem', marginBottom: '14px' }}>
+              <div><span style={{ color: '#64748B' }}>Cohort Mean:</span> <strong style={{ color: '#00F2FE' }}>58.50% Acc</strong></div>
+              <div><span style={{ color: '#64748B' }}>Peak Subject:</span> <strong style={{ color: '#10B981' }}>81.67% (S004)</strong></div>
+              <div><span style={{ color: '#64748B' }}>Deep NN Val F1:</span> <strong style={{ color: '#8B5CF6' }}>48.11%</strong></div>
+              <div><span style={{ color: '#64748B' }}>Verified Trials:</span> <strong style={{ color: '#38BDF8' }}>3,600 Real</strong></div>
+            </div>
+            <button
+              disabled={isSwitching || activeModelId === 'Phase8-ExpandedCohort-Ensemble'}
+              onClick={() => handleSelectModel('Phase8-ExpandedCohort-Ensemble')}
+              style={{
+                width: '100%',
+                padding: '9px',
+                borderRadius: '6px',
+                border: 'none',
+                background: activeModelId === 'Phase8-ExpandedCohort-Ensemble' ? 'rgba(0, 242, 254, 0.2)' : '#00F2FE',
+                color: activeModelId === 'Phase8-ExpandedCohort-Ensemble' ? '#00F2FE' : '#090D16',
+                fontWeight: 700,
+                fontSize: '0.82rem',
+                cursor: activeModelId === 'Phase8-ExpandedCohort-Ensemble' ? 'default' : 'pointer'
+              }}
+            >
+              {activeModelId === 'Phase8-ExpandedCohort-Ensemble' ? 'Active Champion' : 'Switch to Phase 8 Champion'}
+            </button>
+          </div>
+
           {/* Card 0: Phase 7 Full-Cohort Pure Motor Imagery Champion */}
           <div className="glass-card" style={{
             padding: '20px',

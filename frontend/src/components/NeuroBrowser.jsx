@@ -53,7 +53,7 @@ export default function NeuroBrowser() {
   // 4. Model Registry & Stream Telemetry
   // ---------------------------------------------------------------------------
   const [availableModels, setAvailableModels] = useState([]);
-  const [activeModelId, setActiveModelId] = useState('Phase7-PureImagery-Calibrated');
+  const [activeModelId, setActiveModelId] = useState('Phase8-ExpandedCohort-Ensemble');
   const [subjectId, setSubjectId] = useState('S001');
   const [runId, setRunId] = useState('R03');
   const [currentTrialIdx, setCurrentTrialIdx] = useState(0);
@@ -201,6 +201,7 @@ export default function NeuroBrowser() {
       })
       .catch(() => {
         setAvailableModels([
+          { id: 'Phase8-ExpandedCohort-Ensemble', name: 'Phase 8 Champion: Expanded 20-Subject Multimodal Ensemble', threshold: 0.55 },
           { id: 'Phase7-PureImagery-Calibrated', name: 'Phase 7 Champion: Pure Motor Imagery Calibrated Ensemble', threshold: 0.55 },
           { id: 'Phase7-Hierarchical-LOSO', name: 'Phase 7 Generalization Model: Two-Stage Hierarchical BCI', threshold: 0.55 },
           { id: 'Phase6-PureImagery-Calibrated', name: 'Phase 6 Champion: Pure Motor Imagery Calibrated Ensemble', threshold: 0.55 },
@@ -2465,10 +2466,69 @@ export default function NeuroBrowser() {
               fontSize: '0.76rem'
             }}>
               <div style={{ background: 'rgba(9, 13, 22, 0.6)', padding: '8px 10px', borderRadius: '8px' }}>
-                <span style={{ color: '#64748B' }}>EEG Source:</span>
-                <div style={{ color: '#F8FAFC', fontWeight: 700, marginTop: '2px' }}>
-                  {subjectId} {runId} EDF Replay
-                </div>
+                <span style={{ color: '#64748B', display: 'block', marginBottom: '2px' }}>PhysioNet Subject:</span>
+                <select
+                  value={subjectId}
+                  onChange={(e) => {
+                    const newSub = e.target.value;
+                    setSubjectId(newSub);
+                    setCurrentTrialIdx(0);
+                    fetch('http://localhost:8050/api/neuro-os/session/init', {
+                      method: 'POST',
+                      headers: { 'Content-Type': 'application/json' },
+                      body: JSON.stringify({ subject_id: newSub, run_id: runId })
+                    }).catch(() => {});
+                  }}
+                  style={{
+                    width: '100%',
+                    background: '#090D16',
+                    border: '1px solid rgba(51, 65, 85, 0.7)',
+                    borderRadius: '6px',
+                    color: '#00F2FE',
+                    fontSize: '0.74rem',
+                    fontWeight: 700,
+                    padding: '2px 6px',
+                    outline: 'none',
+                    cursor: 'pointer'
+                  }}
+                >
+                  {Array.from({ length: 20 }, (_, i) => `S${String(i + 1).padStart(3, '0')}`).map((s) => (
+                    <option key={s} value={s}>{s}</option>
+                  ))}
+                </select>
+              </div>
+
+              <div style={{ background: 'rgba(9, 13, 22, 0.6)', padding: '8px 10px', borderRadius: '8px' }}>
+                <span style={{ color: '#64748B', display: 'block', marginBottom: '2px' }}>EEG Run:</span>
+                <select
+                  value={runId}
+                  onChange={(e) => {
+                    const newRun = e.target.value;
+                    setRunId(newRun);
+                    setCurrentTrialIdx(0);
+                    fetch('http://localhost:8050/api/neuro-os/session/init', {
+                      method: 'POST',
+                      headers: { 'Content-Type': 'application/json' },
+                      body: JSON.stringify({ subject_id: subjectId, run_id: newRun })
+                    }).catch(() => {});
+                  }}
+                  style={{
+                    width: '100%',
+                    background: '#090D16',
+                    border: '1px solid rgba(51, 65, 85, 0.7)',
+                    borderRadius: '6px',
+                    color: '#38BDF8',
+                    fontSize: '0.74rem',
+                    fontWeight: 700,
+                    padding: '2px 6px',
+                    outline: 'none',
+                    cursor: 'pointer'
+                  }}
+                >
+                  {['R03', 'R04', 'R07', 'R08', 'R11', 'R12'].map((r) => (
+                    <option key={r} value={r}>{r} ({r === 'R03' || r === 'R07' || r === 'R11' ? 'Execution' : 'Imagery'})</option>
+                  ))}
+                </select>
               </div>
 
               <div style={{ background: 'rgba(9, 13, 22, 0.6)', padding: '8px 10px', borderRadius: '8px' }}>

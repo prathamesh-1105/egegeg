@@ -54,6 +54,18 @@ SEL_MODEL_DIR = os.path.join(STEP62_DIR, "selected_model") if os.path.exists(os.
 
 # Versioned Model Registry
 AVAILABLE_MODELS = {
+    "Phase8-ExpandedCohort-Ensemble": {
+        "id": "Phase8-ExpandedCohort-Ensemble",
+        "name": "Phase 8 Champion: Expanded 20-Subject Multimodal Ensemble",
+        "dir": "models/research_phase8/p8_expanded_cohort_champion",
+        "threshold": 0.55,
+        "is_phase8": True,
+        "is_phase7": False,
+        "is_phase6": False,
+        "is_phase5": False,
+        "is_phase4": False,
+        "description": "Expanded 20-subject cohort (3,600 authentic windows across 120 EDF runs) multimodal ensemble with Contralateral Spectral Asymmetry, Riemannian Tangent Space, and Multiclass CSP (58.50% Mean Holdout Acc across 20 subjects, up to 81.67%)"
+    },
     "Phase7-PureImagery-Calibrated": {
         "id": "Phase7-PureImagery-Calibrated",
         "name": "Phase 7 Champion: Pure Motor Imagery Calibrated Ensemble",
@@ -185,9 +197,11 @@ def load_subject_model(subject_id: str = "S001", model_version: str = None):
         model_version = getattr(neuro_session_manager, "active_model_id", "Phase5-AdvancedMotor-Ensemble")
 
     # Map aliases to keys unambiguously
-    target_key = "Phase5-AdvancedMotor-Ensemble"
+    target_key = "Phase8-ExpandedCohort-Ensemble"
     mv_lower = str(model_version).lower()
-    if "phase7" in mv_lower or "p7" in mv_lower:
+    if "phase8" in mv_lower or "p8" in mv_lower or "expanded" in mv_lower or "20-subject" in mv_lower or "20_subject" in mv_lower:
+        target_key = "Phase8-ExpandedCohort-Ensemble"
+    elif "phase7" in mv_lower or "p7" in mv_lower:
         if "hierarchical" in mv_lower or "loso" in mv_lower:
             target_key = "Phase7-Hierarchical-LOSO"
         else:
@@ -380,7 +394,7 @@ def predict_eeg_window(subject_id: str = "S001", run_id: str = "R11", trial_idx:
         adapt_bank = [(5.5, 9.5), (7.0, 11.0), (9.5, 13.5), (14.0, 20.0), (16.0, 22.0), (20.0, 26.0)]
 
     # Preprocessing according to model family
-    if model_cfg.get("is_phase7", False) or model_cfg.get("is_phase6", False):
+    if model_cfg.get("is_phase8", False) or model_cfg.get("is_phase7", False) or model_cfg.get("is_phase6", False):
         win_proc = apply_anatomical_surface_laplacian(win_data)
         from scratch.run_phase6_dataset_expansion import extract_lateralized_spectral_features
         feats_eng = extract_lateralized_spectral_features(win_proc)
@@ -466,6 +480,7 @@ def predict_eeg_window(subject_id: str = "S001", run_id: str = "R11", trial_idx:
 
 
 @app.get("/api/neuro-os/models")
+@app.get("/api/models")
 def list_available_models():
     """Returns registry of available BCI decoder models with versions, metadata, and status."""
     active_id = getattr(neuro_session_manager, "active_model_id", "Step 62 Surface Laplacian Multimodal Balanced Ensemble (Frozen Base)")
@@ -476,6 +491,10 @@ def list_available_models():
             "name": cfg["name"],
             "path": cfg["dir"],
             "threshold": cfg["threshold"],
+            "is_phase8": cfg.get("is_phase8", False),
+            "is_phase7": cfg.get("is_phase7", False),
+            "is_phase6": cfg.get("is_phase6", False),
+            "is_phase5": cfg.get("is_phase5", False),
             "is_phase4": cfg["is_phase4"],
             "is_active": (k.lower() in active_id.lower() or active_id.lower() in k.lower()),
             "description": cfg["description"]
@@ -495,7 +514,9 @@ def select_model_version(req: ModelSelectRequest):
     """Selects active BCI decoder model version with graceful fallback to Step 62."""
     matched = None
     r_lower = req.model_id.lower()
-    if "phase7" in r_lower or "p7" in r_lower:
+    if "phase8" in r_lower or "p8" in r_lower or "expanded" in r_lower or "20-subject" in r_lower or "20_subject" in r_lower:
+        matched = "Phase8-ExpandedCohort-Ensemble"
+    elif "phase7" in r_lower or "p7" in r_lower:
         if "hierarchical" in r_lower or "loso" in r_lower:
             matched = "Phase7-Hierarchical-LOSO"
         else:
