@@ -239,13 +239,13 @@ class NeuroOSActionExecutor:
         # ----------------------------------------------------------------------
         if self.mode == "SCROLL_DEMO":
             demo_st = self.state_store["scroll_demo"]
-            if command in ["PREVIOUS", "SCROLL_UP"]:
+            if command in ["PREVIOUS", "SCROLL_UP", "WEB_SCROLL_UP"]:
                 action_name = "SCROLL_UP"
                 old_off = demo_st["scroll_offset_px"]
                 demo_st["scroll_offset_px"] = max(0, old_off - demo_st["step_px"])
                 demo_st["last_direction"] = "UP"
                 details = f"Scrolled webpage UP: {old_off}px -> {demo_st['scroll_offset_px']}px"
-            elif command in ["NEXT", "SCROLL_DOWN"]:
+            elif command in ["NEXT", "SCROLL_DOWN", "WEB_SCROLL_DOWN"]:
                 action_name = "SCROLL_DOWN"
                 old_off = demo_st["scroll_offset_px"]
                 demo_st["scroll_offset_px"] = min(demo_st["max_scroll_px"], old_off + demo_st["step_px"])

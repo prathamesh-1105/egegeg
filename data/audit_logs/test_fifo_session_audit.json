@@ -1,7 +1,7 @@
 {
   "session_id": "test_fifo_session",
-  "export_timestamp": 1792501464.7428377,
-  "export_iso": "2026-10-20 18:34:24",
+  "export_timestamp": 1793599625.5180652,
+  "export_iso": "2026-11-02 11:37:05",
   "summary_metrics": {
     "session_id": "test_fifo_session",
     "total_trials_processed": 15,

@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import Navbar from './components/Navbar';
+import NeuroBrowser from './components/NeuroBrowser';
 import MultiCommandCenter from './components/MultiCommandCenter';
 import EEGScrollingDemo from './components/EEGScrollingDemo';
 import CalibrationStudio from './components/CalibrationStudio';
@@ -15,7 +16,7 @@ import HardwareTelemetry from './components/HardwareTelemetry';
 import DatasetExplorer from './components/DatasetExplorer';
 
 export default function App() {
-  const [activeTab, setActiveTab] = useState('multi-command');
+  const [activeTab, setActiveTab] = useState('neuro-browser');
   const [statusData, setStatusData] = useState(null);
   const [apiStatus, setApiStatus] = useState('CHECKING');
 
@@ -46,6 +47,7 @@ export default function App() {
       <Navbar activeTab={activeTab} setActiveTab={setActiveTab} apiStatus={apiStatus} />
 
       <main style={{ flex: 1, paddingBottom: '30px' }}>
+        {activeTab === 'neuro-browser' && <NeuroBrowser />}
         {activeTab === 'multi-command' && <MultiCommandCenter />}
         {activeTab === 'scroll-demo' && <EEGScrollingDemo />}
         {activeTab === 'calibration' && <CalibrationStudio />}

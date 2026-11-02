@@ -112,11 +112,36 @@ PROFILE_PRESENTATION = CommandProfile(
     }
 )
 
+# Profile D — Web Browser Control (Phase 9 Neuro Browser)
+PROFILE_WEB_CONTROL = CommandProfile(
+    id="web_control",
+    name="Profile D — Web Browser Control",
+    tag="PROFILE_D",
+    description="EEG-driven physical web browser scrolling and article navigation",
+    target_environment="WEB_BROWSER",
+    adapter_mode="SCROLL_DEMO",
+    class_to_command={
+        "LEFT_FIST": "SCROLL_UP",
+        "RIGHT_FIST": "SCROLL_DOWN",
+        "REST": "NEUTRAL"
+    },
+    metadata={
+        "scroll_step_px": 180,
+        "max_scroll_px": 5000,
+        "intent_semantics": {
+            "LEFT_FIST": "Scroll webpage upward (-180px)",
+            "RIGHT_FIST": "Scroll webpage downward (+180px)",
+            "REST": "Maintain current page viewport position (idle)"
+        }
+    }
+)
+
 # Available Profiles Registry
 COMMAND_PROFILES: Dict[str, CommandProfile] = {
     "scrolling": PROFILE_SCROLLING,
     "document_navigation": PROFILE_DOCUMENT_NAVIGATION,
-    "presentation": PROFILE_PRESENTATION
+    "presentation": PROFILE_PRESENTATION,
+    "web_control": PROFILE_WEB_CONTROL
 }
 
 # Alias mapping for backwards compatibility
@@ -134,7 +159,13 @@ PROFILE_ALIASES: Dict[str, str] = {
     "slide_viewer": "presentation",
     "presentation": "presentation",
     "presentation_demo": "presentation",
-    "profile_c": "presentation"
+    "profile_c": "presentation",
+    "web_control": "web_control",
+    "web_browser": "web_control",
+    "neuro_browser": "web_control",
+    "browser": "web_control",
+    "web-control": "web_control",
+    "profile_d": "web_control"
 }
 
 DEFAULT_PROFILE_ID = "scrolling"
@@ -155,3 +186,4 @@ def get_command_profile(profile_id: Optional[str] = None) -> CommandProfile:
 def list_available_profiles() -> List[Dict[str, Any]]:
     """Returns list of all available command profiles with metadata."""
     return [p.to_dict() for p in COMMAND_PROFILES.values()]
+

@@ -8,8 +8,10 @@ import numpy as np
 import pandas as pd
 from scipy import signal
 import asyncio
-from typing import Dict, List, Optional
+import urllib.parse
+from typing import Dict, List, Optional, Any
 from fastapi import FastAPI, HTTPException, WebSocket, WebSocketDisconnect, Response
+from fastapi.responses import HTMLResponse
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
 
@@ -493,7 +495,16 @@ def select_model_version(req: ModelSelectRequest):
     """Selects active BCI decoder model version with graceful fallback to Step 62."""
     matched = None
     r_lower = req.model_id.lower()
-    if "hierarchical" in r_lower:
+    if "phase7" in r_lower or "p7" in r_lower:
+        if "hierarchical" in r_lower or "loso" in r_lower:
+            matched = "Phase7-Hierarchical-LOSO"
+        else:
+            matched = "Phase7-PureImagery-Calibrated"
+    elif "hierarchical_imagery" in r_lower or ("phase6" in r_lower and "hierarchical" in r_lower):
+        matched = "Phase6-Hierarchical-Imagery"
+    elif "phase6" in r_lower or "pure_imagery" in r_lower or "pureimagery" in r_lower:
+        matched = "Phase6-PureImagery-Calibrated"
+    elif "hierarchical" in r_lower:
         matched = "Phase5-CalibratedHierarchical"
     elif "advanced" in r_lower or "p5_cand_04" in r_lower or ("phase5" in r_lower and "hierarchical" not in r_lower):
         matched = "Phase5-AdvancedMotor-Ensemble"
@@ -1125,6 +1136,404 @@ def reset_scroll_demo():
     }
 
 
+# --------------------------------------------------------------------------
+# NEURO-OS PHASE 9 WEB CONTROL & NEURO BROWSER ENDPOINTS
+# --------------------------------------------------------------------------
+from src.neuro_os.web_demo_page import generate_demo_article_html
+
+class WebControlStepRequest(BaseModel):
+    subject_id: Optional[str] = None
+    run_id: Optional[str] = None
+    trial_idx: Optional[int] = None
+    model_id: Optional[str] = None
+
+class UrlValidationRequest(BaseModel):
+    url: str
+
+class WebControlConfigRequest(BaseModel):
+    step_px: Optional[int] = None
+    speed: Optional[str] = None  # "SLOW", "NORMAL", "FAST"
+    max_scroll_px: Optional[int] = None
+
+@app.get("/api/neuro-os/web-control/status")
+def get_web_control_status():
+    """Returns real-time status and telemetry for Phase 9 EEG-controlled Neuro Browser."""
+    scroll_st = neuro_action_executor.state_store.get("scroll_demo", {
+        "scroll_offset_px": 0, "max_scroll_px": 5000, "step_px": 180, "last_direction": "NONE"
+    })
+    src_info = neuro_session_manager.active_source.get_info()
+    return {
+        "status": "ONLINE",
+        "feature": "NeuroOS Phase 9 — EEG-Controlled Web Browser",
+        "badge": "OFFLINE DATASET REPLAY",
+        "is_offline_replay": True,
+        "session_state": neuro_session_manager.state,
+        "session_id": neuro_session_manager.session_id,
+        "active_model_id": neuro_session_manager.active_model_id,
+        "active_profile": neuro_session_manager.command_router.active_profile.to_dict(),
+        "scroll_state": scroll_st,
+        "scroll_offset_px": scroll_st.get("scroll_offset_px", 0),
+        "max_scroll_px": scroll_st.get("max_scroll_px", 5000),
+        "step_px": scroll_st.get("step_px", 180),
+        "last_direction": scroll_st.get("last_direction", "NONE"),
+        "subject_id": getattr(neuro_session_manager.dataset_source, "subject_id", "S001"),
+        "run_id": getattr(neuro_session_manager.dataset_source, "run_id", "R11"),
+        "current_trial_idx": getattr(neuro_session_manager.dataset_source, "current_trial_idx", 0),
+        "total_trials": getattr(neuro_session_manager.dataset_source, "total_trials", 30),
+        "source_info": src_info,
+        "safety_config": {
+            "confidence_thresh": neuro_safety_shield.confidence_thresh,
+            "margin_thresh": neuro_safety_shield.margin_thresh,
+            "manual_lock_active": neuro_safety_shield.manual_override_lock,
+            "emergency_locked": neuro_safety_shield.system_emergency_locked
+        }
+    }
+
+@app.post("/api/neuro-os/web-control/start")
+def start_web_control():
+    """Explicitly starts real-time EEG dataset playback in Web Control mode."""
+    neuro_session_manager.set_profile("web_control")
+    neuro_session_manager.start_session()
+    return {
+        "status": "WEB_CONTROL_STARTED",
+        "session_state": neuro_session_manager.state,
+        "session_id": neuro_session_manager.session_id,
+        "active_profile": neuro_session_manager.command_router.active_profile.to_dict()
+    }
+
+@app.post("/api/neuro-os/web-control/pause")
+def pause_web_control():
+    """Pauses real-time EEG dataset playback in Web Control mode."""
+    neuro_session_manager.pause_session()
+    return {
+        "status": "WEB_CONTROL_PAUSED",
+        "session_state": neuro_session_manager.state
+    }
+
+@app.post("/api/neuro-os/web-control/resume")
+def resume_web_control():
+    """Resumes real-time EEG dataset playback in Web Control mode."""
+    neuro_session_manager.resume_session()
+    return {
+        "status": "WEB_CONTROL_RESUMED",
+        "session_state": neuro_session_manager.state
+    }
+
+@app.post("/api/neuro-os/web-control/stop")
+def stop_web_control():
+    """Stops real-time EEG dataset playback and halts browser scrolling."""
+    neuro_session_manager.stop_session()
+    return {
+        "status": "WEB_CONTROL_STOPPED",
+        "session_state": neuro_session_manager.state
+    }
+
+@app.post("/api/neuro-os/web-control/reset")
+def reset_web_control():
+    """Resets browser scroll offset to 0 and trial pointer to start."""
+    neuro_command_router.reset()
+    neuro_safety_shield.reset()
+    neuro_safety_shield.smoothing_window_size = 1
+    neuro_command_router.cooldown_sec = 0.0
+    if "scroll_demo" in neuro_action_executor.state_store:
+        neuro_action_executor.state_store["scroll_demo"]["scroll_offset_px"] = 0
+        neuro_action_executor.state_store["scroll_demo"]["last_direction"] = "TOP"
+    neuro_session_manager.dataset_source.current_trial_idx = 0
+    return {
+        "status": "RESET",
+        "scroll_offset_px": 0,
+        "current_trial_idx": 0
+    }
+
+@app.post("/api/neuro-os/web-control/step")
+def step_web_control(req: Optional[WebControlStepRequest] = None):
+    """Executes a single authentic EEG window inference step for Web Browser scrolling."""
+    req = req or WebControlStepRequest()
+    if req.subject_id and req.run_id:
+        neuro_session_manager.dataset_source.set_subject_run(req.subject_id, req.run_id)
+    if req.trial_idx is not None:
+        neuro_session_manager.dataset_source.current_trial_idx = req.trial_idx
+    if req.model_id:
+        neuro_session_manager.set_model_version(req.model_id)
+    neuro_safety_shield.smoothing_window_size = 1
+    neuro_command_router.cooldown_sec = 0.0
+    neuro_session_manager.set_profile("web_control")
+    payload = neuro_session_manager.process_pipeline_step(predict_eeg_window, allow_unstarted=True)
+    record_web_test_step(payload)
+    return payload
+
+@app.post("/api/neuro-os/web-control/validate-url")
+def validate_web_url(req: UrlValidationRequest):
+    """Validates URL schemes for web browsing (HTTP and HTTPS only). Rejects unsafe schemes."""
+    raw_url = (req.url or "").strip()
+    if not raw_url:
+        return {"valid": False, "error": "URL cannot be empty."}
+    try:
+        parsed = urllib.parse.urlparse(raw_url)
+    except Exception as e:
+        return {"valid": False, "error": f"Malformed URL syntax: {str(e)}"}
+
+    if parsed.scheme.lower() not in ["http", "https"]:
+        return {
+            "valid": False,
+            "error": f"Invalid URL scheme '{parsed.scheme}'. Only HTTP and HTTPS protocols are permitted for security."
+        }
+    if not parsed.netloc:
+        return {
+            "valid": False,
+            "error": "URL must contain a valid hostname domain (e.g., https://example.com)."
+        }
+    return {
+        "valid": True,
+        "normalized_url": raw_url,
+        "scheme": parsed.scheme.lower(),
+        "domain": parsed.netloc
+    }
+
+@app.post("/api/neuro-os/web-control/config")
+def update_web_control_config(req: WebControlConfigRequest):
+    """Configures scroll increments, speed presets, and maximum boundaries."""
+    demo_st = neuro_action_executor.state_store.setdefault("scroll_demo", {})
+    if req.step_px is not None:
+        demo_st["step_px"] = max(20, min(1000, req.step_px))
+    elif req.speed:
+        speed_map = {"SLOW": 90, "NORMAL": 180, "FAST": 300}
+        demo_st["step_px"] = speed_map.get(req.speed.upper(), 180)
+    if req.max_scroll_px is not None:
+        demo_st["max_scroll_px"] = max(500, req.max_scroll_px)
+    return {
+        "status": "CONFIG_UPDATED",
+        "scroll_config": demo_st
+    }
+
+@app.get("/api/neuro-os/web-control/demo-article", response_class=HTMLResponse)
+def get_demo_article_html():
+    """Serves a rich, standalone HTML demo document for guaranteed in-iframe or direct web browsing."""
+    html_content = generate_demo_article_html()
+    return HTMLResponse(content=html_content, status_code=200)
+
+
+# Automated EEG Test State Store
+WEB_TEST_STATE = {
+    "is_active": False,
+    "start_time": 0.0,
+    "trials_completed": 0,
+    "max_trials": 30,
+    "up_count": 0,
+    "down_count": 0,
+    "neutral_count": 0,
+    "blocked_count": 0,
+    "total_displacement_px": 0,
+    "confidence_sum": 0.0,
+    "latencies": []
+}
+
+def record_web_test_step(payload: Dict[str, Any]):
+    """Records an automated test step and updates scorecard tallies."""
+    if not WEB_TEST_STATE.get("is_active", False):
+        return
+    WEB_TEST_STATE["trials_completed"] += 1
+    dec = payload.get("decoder_output") or {}
+    conf = dec.get("confidence", 0.0)
+    WEB_TEST_STATE["confidence_sum"] += conf
+    lat = payload.get("latencies_ms", {}).get("ml_latency", 4.2)
+    WEB_TEST_STATE["latencies"].append(lat)
+
+    cmd_routing = payload.get("command_routing", {})
+    cmd = cmd_routing.get("command", "NEUTRAL")
+    safety = payload.get("safety_state", {})
+    action = payload.get("action_execution", {})
+
+    if not safety.get("accepted", False) and safety.get("intent") != "REST":
+        WEB_TEST_STATE["blocked_count"] += 1
+    elif action.get("executed", False):
+        step_px = neuro_action_executor.state_store.get("scroll_demo", {}).get("step_px", 180)
+        if cmd in ["SCROLL_UP", "WEB_SCROLL_UP"]:
+            WEB_TEST_STATE["up_count"] += 1
+            WEB_TEST_STATE["total_displacement_px"] -= step_px
+        elif cmd in ["SCROLL_DOWN", "WEB_SCROLL_DOWN"]:
+            WEB_TEST_STATE["down_count"] += 1
+            WEB_TEST_STATE["total_displacement_px"] += step_px
+        else:
+            WEB_TEST_STATE["neutral_count"] += 1
+    else:
+        WEB_TEST_STATE["neutral_count"] += 1
+
+    if WEB_TEST_STATE["trials_completed"] >= WEB_TEST_STATE["max_trials"]:
+        WEB_TEST_STATE["is_active"] = False
+        neuro_session_manager.pause_session()
+
+class StartTestRequest(BaseModel):
+    max_trials: Optional[int] = 30
+    model_id: Optional[str] = None
+    speed: Optional[str] = "NORMAL"
+    subject_id: Optional[str] = "S001"
+    run_id: Optional[str] = "R03"
+    sensitivity: Optional[float] = None
+
+@app.post("/api/neuro-os/web-control/test/start")
+def start_web_control_test(req: Optional[StartTestRequest] = None):
+    """Starts an automated EEG dataset scrolling test session."""
+    req = req or StartTestRequest()
+    if req.model_id:
+        neuro_session_manager.set_model_version(req.model_id)
+    if req.speed:
+        speed_map = {"SLOW": 90, "NORMAL": 180, "FAST": 300}
+        neuro_action_executor.state_store.setdefault("scroll_demo", {})["step_px"] = speed_map.get(req.speed.upper(), 180)
+
+    # Set subject and run (default to R03 for active balanced motor imagery trials)
+    sub = req.subject_id or "S001"
+    run = req.run_id or "R03"
+    neuro_session_manager.dataset_source.set_subject_run(sub, run)
+    neuro_session_manager.dataset_source.current_trial_idx = 0
+
+    # Ensure rapid responsiveness for discrete test trials
+    neuro_safety_shield.smoothing_window_size = 1
+    neuro_command_router.cooldown_sec = 0.0
+
+    WEB_TEST_STATE["is_active"] = True
+    WEB_TEST_STATE["start_time"] = time.time()
+    WEB_TEST_STATE["trials_completed"] = 0
+    WEB_TEST_STATE["max_trials"] = req.max_trials or 30
+    WEB_TEST_STATE["up_count"] = 0
+    WEB_TEST_STATE["down_count"] = 0
+    WEB_TEST_STATE["neutral_count"] = 0
+    WEB_TEST_STATE["blocked_count"] = 0
+    WEB_TEST_STATE["total_displacement_px"] = 0
+    WEB_TEST_STATE["confidence_sum"] = 0.0
+    WEB_TEST_STATE["latencies"] = []
+
+    # Reset position and session
+    reset_web_control()
+    neuro_session_manager.set_profile("web_control")
+    neuro_session_manager.start_session()
+
+    return {
+        "status": "TEST_STARTED",
+        "test_config": {
+            "max_trials": WEB_TEST_STATE["max_trials"],
+            "model_id": neuro_session_manager.active_model_id,
+            "subject_id": sub,
+            "run_id": run,
+            "step_px": neuro_action_executor.state_store["scroll_demo"]["step_px"]
+        }
+    }
+
+@app.get("/api/neuro-os/web-control/test/status")
+def get_web_control_test_status():
+    """Returns real-time status and live metrics for active EEG scroll test."""
+    n_trials = max(1, WEB_TEST_STATE["trials_completed"])
+    avg_conf = round(WEB_TEST_STATE["confidence_sum"] / n_trials, 4) if n_trials > 0 else 0.0
+    avg_latency = round(sum(WEB_TEST_STATE["latencies"]) / len(WEB_TEST_STATE["latencies"]), 2) if WEB_TEST_STATE["latencies"] else 4.2
+    step_px = neuro_action_executor.state_store.get("scroll_demo", {}).get("step_px", 180)
+    return {
+        "is_active": WEB_TEST_STATE["is_active"],
+        "trials_completed": WEB_TEST_STATE["trials_completed"],
+        "max_trials": WEB_TEST_STATE["max_trials"],
+        "progress_pct": min(100, round((WEB_TEST_STATE["trials_completed"] / max(1, WEB_TEST_STATE["max_trials"])) * 100)),
+        "scroll_ups": WEB_TEST_STATE["up_count"],
+        "scroll_downs": WEB_TEST_STATE["down_count"],
+        "neutral_rests": WEB_TEST_STATE["neutral_count"],
+        "safety_blocks": WEB_TEST_STATE["blocked_count"],
+        "total_displacement_px": WEB_TEST_STATE["total_displacement_px"],
+        "total_motion_px": (WEB_TEST_STATE["up_count"] + WEB_TEST_STATE["down_count"]) * step_px,
+        "final_scroll_offset_px": neuro_action_executor.state_store.get("scroll_demo", {}).get("scroll_offset_px", 0),
+        "average_confidence": avg_conf,
+        "average_ml_latency_ms": avg_latency,
+        "duration_sec": round(time.time() - WEB_TEST_STATE["start_time"], 2) if WEB_TEST_STATE["start_time"] > 0 else 0.0
+    }
+
+@app.post("/api/neuro-os/web-control/test/stop")
+def stop_web_control_test():
+    """Stops the active automated EEG test and computes scorecard summary."""
+    WEB_TEST_STATE["is_active"] = False
+    neuro_session_manager.stop_session()
+    n_trials = max(1, WEB_TEST_STATE["trials_completed"])
+    avg_conf = round(WEB_TEST_STATE["confidence_sum"] / n_trials, 4) if n_trials > 0 else 0.0
+    avg_latency = round(sum(WEB_TEST_STATE["latencies"]) / len(WEB_TEST_STATE["latencies"]), 2) if WEB_TEST_STATE["latencies"] else 4.2
+    step_px = neuro_action_executor.state_store.get("scroll_demo", {}).get("step_px", 180)
+
+    return {
+        "status": "TEST_COMPLETED",
+        "scorecard": {
+            "duration_sec": round(time.time() - WEB_TEST_STATE["start_time"], 2),
+            "trials_completed": WEB_TEST_STATE["trials_completed"],
+            "max_trials": WEB_TEST_STATE["max_trials"],
+            "scroll_ups": WEB_TEST_STATE["up_count"],
+            "scroll_downs": WEB_TEST_STATE["down_count"],
+            "neutral_rests": WEB_TEST_STATE["neutral_count"],
+            "safety_blocks": WEB_TEST_STATE["blocked_count"],
+            "total_displacement_px": WEB_TEST_STATE["total_displacement_px"],
+            "total_motion_px": (WEB_TEST_STATE["up_count"] + WEB_TEST_STATE["down_count"]) * step_px,
+            "final_scroll_offset_px": neuro_action_executor.state_store.get("scroll_demo", {}).get("scroll_offset_px", 0),
+            "average_confidence": avg_conf,
+            "average_ml_latency_ms": avg_latency,
+            "active_model": neuro_session_manager.active_model_id
+        }
+    }
+
+@app.get("/api/neuro-os/web-control/proxy", response_class=HTMLResponse)
+def proxy_web_page(url: str):
+    """Fetches public webpage, injects base URL and postMessage scroll listener, bypassing iframe CSP restrictions."""
+    clean_url = (url or "").strip()
+    if not (clean_url.startswith("http://") or clean_url.startswith("https://")):
+        return HTMLResponse(content="<h3>Error: Only HTTP and HTTPS URLs can be proxied.</h3>", status_code=400)
+
+    try:
+        req = urllib.request.Request(
+            clean_url,
+            headers={
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36 NeuroOS/2.6"
+            }
+        )
+        with urllib.request.urlopen(req, timeout=6) as response:
+            html = response.read().decode("utf-8", errors="ignore")
+
+        # Inject base URL and postMessage bridge into <head>
+        injected_script = f"""
+        <base href="{clean_url}">
+        <script>
+          window.addEventListener('message', function(e) {{
+            if (e.data && e.data.type === 'NEURO_SCROLL_BY') {{
+              window.scrollBy({{ top: e.data.delta || 0, behavior: e.data.smooth ? 'smooth' : 'auto' }});
+            }}
+          }});
+          window.addEventListener('scroll', function() {{
+            if (window.parent && window.parent !== window) {{
+              window.parent.postMessage({{
+                type: 'NEURO_SCROLL_UPDATE',
+                scrollTop: window.scrollY || document.documentElement.scrollTop,
+                scrollHeight: document.documentElement.scrollHeight,
+                clientHeight: document.documentElement.clientHeight
+              }}, '*');
+            }}
+          }});
+        </script>
+        """
+        if "<head>" in html:
+            html = html.replace("<head>", f"<head>{injected_script}", 1)
+        elif "<HEAD>" in html:
+            html = html.replace("<HEAD>", f"<HEAD>{injected_script}", 1)
+        else:
+            html = f"{injected_script}{html}"
+
+        return HTMLResponse(content=html, status_code=200)
+    except Exception as e:
+        error_html = f"""
+        <!DOCTYPE html>
+        <html>
+        <head><meta charset="utf-8"><title>Proxy Load Error</title></head>
+        <body style="background:#090D16;color:#F8FAFC;font-family:sans-serif;padding:40px;text-align:center;">
+          <h2 style="color:#F59E0B;">External Page Proxy Notice</h2>
+          <p style="color:#94A3B8;max-width:500px;margin:16px auto;">Could not fetch remote page directly ({str(e)}). You can view the page in a new browser tab or test one of our built-in interactive webpages.</p>
+          <a href="{clean_url}" target="_blank" style="display:inline-block;padding:10px 20px;background:#2563EB;color:#FFF;border-radius:8px;text-decoration:none;font-weight:bold;margin-top:12px;">Open in External Tab</a>
+        </body>
+        </html>
+        """
+        return HTMLResponse(content=error_html, status_code=200)
+
+
+
 @app.post("/api/neuro-os/multi-command/step")
 def step_multi_command(subject_id: Optional[str] = None, run_id: Optional[str] = None, trial_idx: Optional[int] = None, profile_id: Optional[str] = None):
     """Executes a single trial step for the configurable multi-command interface."""
@@ -1418,6 +1827,13 @@ async def websocket_neuro_os_endpoint(websocket: WebSocket):
                         neuro_action_executor.state_store["document_navigation"]["active_section_idx"] = 0
                     if "presentation" in neuro_action_executor.state_store:
                         neuro_action_executor.state_store["presentation"]["active_slide"] = 1
+                elif act in ["WEB_CONTROL_START", "START_WEB_CONTROL"]:
+                    neuro_session_manager.set_profile("web_control")
+                    neuro_session_manager.start_session()
+                elif act in ["SET_SCROLL_STEP"]:
+                    step_val = msg.get("step_px", 180)
+                    if "scroll_demo" in neuro_action_executor.state_store:
+                        neuro_action_executor.state_store["scroll_demo"]["step_px"] = int(step_val)
             except asyncio.TimeoutError:
                 pass
 
@@ -1425,6 +1841,7 @@ async def websocket_neuro_os_endpoint(websocket: WebSocket):
             if neuro_session_manager.state in ["RUNNING", "CONNECTED"]:
                 t_ws_start = time.perf_counter()
                 payload = neuro_session_manager.process_pipeline_step(predict_eeg_window)
+                record_web_test_step(payload)
                 t_ws_end = time.perf_counter()
 
                 ui_broadcast_ms = round((t_ws_end - t_ws_start) * 1000.0, 2)

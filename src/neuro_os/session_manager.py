@@ -378,7 +378,7 @@ class NeuroOSSessionManager:
         sfreq = win_sample.get("sampling_rate_hz", 160.0)
         win_ts = win_sample.get("timestamp")
 
-        expected_ch = ch_names if (self.active_source_type == "DATASET" and ch_names) else None
+        expected_ch = ch_names if (self.active_source_type in ["DATASET", "SIMULATED_EDF"] and ch_names) else None
         quality_res = self.signal_quality_gate.evaluate_quality(
             win_data, ch_names, sfreq, timestamp=win_ts, expected_channels=expected_ch
         )
@@ -394,7 +394,7 @@ class NeuroOSSessionManager:
         trial_idx = win_sample.get("trial_idx", 0)
 
         try:
-            pred_res = predictor_func(subject_id=subject_id, run_id=run_id, trial_idx=trial_idx)
+            pred_res = predictor_func(subject_id=subject_id, run_id=run_id, trial_idx=trial_idx, model_version=self.active_model_id)
             if not isinstance(pred_res, dict) or "probabilities" not in pred_res:
                 raise ValueError("Predictor returned invalid result schema (missing probabilities).")
             raw_probs = pred_res["probabilities"]

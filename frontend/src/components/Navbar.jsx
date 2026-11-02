@@ -13,7 +13,8 @@ import {
   Compass,
   Layers,
   ChevronDown,
-  Sparkles
+  Sparkles,
+  Globe
 } from 'lucide-react';
 
 export default function Navbar({ activeTab, setActiveTab, apiStatus }) {
@@ -21,6 +22,7 @@ export default function Navbar({ activeTab, setActiveTab, apiStatus }) {
 
   // Core high-frequency tabs (simple, immediate, intuitive)
   const primaryTabs = [
+    { id: 'neuro-browser', label: 'Neuro Browser', icon: Globe, badge: 'PHASE 9' },
     { id: 'multi-command', label: 'Live BCI Control', icon: Layers, badge: 'FLAGSHIP' },
     { id: 'scroll-demo', label: 'EEG Scroller', icon: Compass },
     { id: 'models', label: 'AI Models & Benchmarks', icon: Cpu, badge: 'PHASE 7' },
